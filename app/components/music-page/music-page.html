@@ -8,12 +8,11 @@
     </div>
   </div>
   <div class="dropdown-btn-container">
-    
-    <!-- source dropdown start -->
+    <!-- 'source' dropdown start -->
 
     <div class="dropdown">
       <button
-        class="btn btn-lg dropdown-toggle"
+        class="btn btn-lg"
         type="button"
         onclick="musicPageModule.openMusicSourceDropdown()"
         id="musicSourceDropdown"
@@ -21,7 +20,8 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Source
+        <span>SOURCE</span>
+        <span class="d-block"><i class="fas fa-caret-down"></i> </span>
       </button>
       <div
         id="music-source-dropdown"
@@ -52,11 +52,12 @@
     </div>
   </div>
   <!-- source dropdown end -->
-  <span
-    class="source-name"
-    data-ch5-textContent="Rooms.Music.SelectedSourceName"
-    >Source Name</span
-  >
+  <div class="source-name">
+    <i class="fas fa-angle-right mr-1"></i>
+    <span class="" data-ch5-textContent="Rooms.Music.SelectedSourceName"
+      >Source Name</span
+    >
+  </div>
 
   <div class="container-fluid mt-2 main-player-container">
     <div class="row">

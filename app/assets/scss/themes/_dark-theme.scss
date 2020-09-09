@@ -610,11 +610,16 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
   .music-page {
     .dropdown-btn-container {
       button {
-        background-color: $ch5-lighting-btn-dark;
-        box-shadow: 0px 0px 3px 1px rgb(156, 156, 156);
-        color: rgb(212, 212, 212);
+        // background-color: $ch5-lighting-btn-dark;
+        // box-shadow: 0px 0px 3px 1px rgb(156, 156, 156);
+        // color: rgb(212, 212, 212);
+        color: $ch5-headings-color-dark;
+      }
+      .ch5-button {
+        color: $ch5-lighting-btn-light;
       }
     }
+
     .source-name {
       color: $music-icon-bg-dark;
     }

@@ -466,9 +466,16 @@ $gradient-btn-pressed-light: linear-gradient(
   .lighting-page {
     .examples-container {
       span {
-        &.label {
+        &.light-name-label {
           // color: rgb(53, 53, 53);
           color: $music-icon-bg-light;
+        }
+      }
+      .navbar-toggler {
+        &.sidebar-toggler-btn {
+          span {
+            color: $ch5-headings-color-light;
+          }
         }
       }
     }

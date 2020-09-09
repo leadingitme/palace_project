@@ -1175,6 +1175,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           transition: transform 300ms ease-out;
           transform: translateX(-100%);
         }
+        .ch5-select__main {
+          display: none;
+        }
       }
     }
 
@@ -1218,10 +1221,24 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       .navbar-action {
         display: flex;
         white-space: nowrap;
+        margin-top: 2.8rem;
 
         .navbar-toggler {
           padding: 0 $navbar-toggler-padding-y;
           margin-left: 0.5rem;
+          background-color: transparent;
+          border: none;
+          span {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            font-size: 1.48rem;
+
+            i {
+              font-size: 1.6rem;
+            }
+          }
 
           .navbar-toggler-icon {
             @include size(22px);

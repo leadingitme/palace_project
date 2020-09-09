@@ -21,7 +21,6 @@
             min="0"
             max="50"
             receivestatevalue="Room.Blinds.LeftBlackoutValue"
-            
           >
           </ch5-slider>
           <ch5-slider
@@ -41,7 +40,6 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.OpenBlackout"
-              receivestateselected="Room.Blinds.OpenBlackoutFb"
             >
             </ch5-button>
             <ch5-button
@@ -58,7 +56,6 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.CloseBlackout"
-              receivestateselected="Room.Blinds.CloseBlackoutFb"
             >
             </ch5-button>
           </div>
@@ -70,7 +67,7 @@
     <!-- show horizontal list when large and above -->
 
     <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
-        <ch5-list size="6" orientation="horizontal" indexId="idx">
+        <ch5-list size="1" orientation="horizontal" indexId="idx">
             <template>
         <span class="window-label">Window #{{idx}} </span>
 

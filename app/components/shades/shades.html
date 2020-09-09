@@ -40,9 +40,6 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.OpenShades"
-              receivestateselected="Room.Blinds.OpenShadesFb"
-            
-              
             >
             </ch5-button>
             <ch5-button
@@ -51,8 +48,6 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.StopShades"
-              
-              
             >
             </ch5-button>
             <ch5-button
@@ -61,8 +56,6 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.CloseShades"
-              receivestateselected="Room.Blinds.CloseShadesFb"
-            
             >
             </ch5-button>
           </div>
@@ -73,7 +66,7 @@
     <!-- show horizontal list when large and above -->
 
     <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
-        <ch5-list size="7" orientation="horizontal" indexId="idx" id="blinds-horiz-list">
+        <ch5-list size="1" orientation="horizontal" indexId="idx" id="blinds-horiz-list">
             <template>
         <span class="window-label">Window #{{idx}} </span>
 

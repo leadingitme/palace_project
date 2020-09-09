@@ -1155,6 +1155,16 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         font-size: 13px !important;
       }
     }
+    .navbar {
+      .dim {
+        @include media-breakpoint-down(sm) {
+          position: absolute;
+          top: 0;
+          left: 40%;
+          width: auto !important;
+        }
+      }
+    }
 
     & > .row {
       height: calc(100% - 70.4px);

@@ -37,11 +37,11 @@
         >All Lights</a
       > -->
       <button
-        class="navbar-toggler d-md-none"
+        class="navbar-toggler d-md-none sidebar-toggler-btn"
         type="button"
         onclick="lightingModule.lightingSidebarToggle()"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class=""><i class="fas fa-caret-left mr-1"></i>SCENES</span>
       </button>
     </div>
   </nav>
@@ -59,7 +59,7 @@
         <template>
           <div class="vertical-list-item">
             <span
-              class="label"
+              class="light-name-label"
               data-ch5-textcontent="Room.DimmableLights[{{idx}}].NameOfLight"
               >Label</span
             >
@@ -94,14 +94,12 @@
     <aside class="col-md-3 lighting-sidebar" id="lightingSidebar">
       <ch5-select
         class="sidebar ch5-custom-select"
-        class="sidebar ch5-custom-select"
         mode="panel"
         maxWidth="none"
         indexId="idx"
         receiveStateSize="Room.NumberOfScenes"
-        noneSelectedPrompt="-+lighting.sceneTitle+-"
         receiveStateValue="NotDefinedOnPurpose"
-        signalValueSyncTimeout="2500"
+        signalValueSyncTimeout="3000"
         panelScrollHeight="300"
       >
         <template>

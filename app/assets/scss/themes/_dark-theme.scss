@@ -486,8 +486,17 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
   .lighting-page {
     .examples-container {
       span {
-        &.label {
+        &.light-name-label {
           color: rgba(139, 139, 139, 0.938);
+        }
+      }
+      .navbar-toggler {
+        &.sidebar-toggler-btn {
+          span {
+            color: $ch5-headings-color-dark;
+
+            // color: rgba(139, 139, 139, 0.938);
+          }
         }
       }
     }

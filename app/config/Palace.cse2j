@@ -1,0 +1,421 @@
+{
+	"name": "Palace",
+	"timestamp": "2020-09-09 17:13:02.980",
+	"version": "1.0.0.0",
+	"schema_version": 1,
+	"extra_value": "Palace",
+	"signals": {
+		"states": {
+			"boolean": {
+				"27": {
+					"1": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
+					"2": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
+					"3": "Climate.GuestRoom.Room[0].Mode.OffIsSelected"
+				},
+				"28": {
+					"1": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
+					"2": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
+					"3": "Climate.GuestRoom.Room[1].Mode.OffIsSelected"
+				},
+				"29": {
+					"1": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
+					"2": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
+					"3": "Climate.GuestRoom.Room[2].Mode.OffIsSelected"
+				},
+				"30": {
+					"1": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
+					"2": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
+					"3": "Climate.GuestRoom.Room[3].Mode.OffIsSelected"
+				}
+			},
+			"numeric": {
+				"2": {
+					"2": "Room.DimmableLights[0].LightIsAtLevel"
+				},
+				"3": {
+					"2": "Room.DimmableLights[1].LightIsAtLevel"
+				},
+				"4": {
+					"2": "Room.DimmableLights[2].LightIsAtLevel"
+				},
+				"5": {
+					"2": "Room.DimmableLights[3].LightIsAtLevel"
+				},
+				"6": {
+					"2": "Room.DimmableLights[4].LightIsAtLevel"
+				},
+				"7": {
+					"2": "Room.DimmableLights[5].LightIsAtLevel"
+				},
+				"8": {
+					"2": "Room.DimmableLights[6].LightIsAtLevel"
+				},
+				"9": {
+					"2": "Room.DimmableLights[7].LightIsAtLevel"
+				},
+				"10": {
+					"2": "Room.DimmableLights[8].LightIsAtLevel"
+				},
+				"11": {
+					"2": "Room.DimmableLights[9].LightIsAtLevel"
+				},
+				"12": {
+					"1": "Room.Lighting.NumberOfLights",
+					"2": "Room.Lighting.NumberOfScenes"
+				},
+				"20": {
+					"1": "Room.Blinds.LeftShadeValue",
+					"2": "Room.Blinds.RightShadeValue",
+					"3": "Room.Blinds.LeftBlackoutValue",
+					"4": "Room.Blinds.RightBlackoutValue"
+				}
+			},
+			"string": {
+				"1": {
+					"1": "Room.RoomName"
+				},
+				"2": {
+					"1": "Room.DimmableLights[0].NameOfLight"
+				},
+				"3": {
+					"1": "Room.DimmableLights[1].NameOfLight"
+				},
+				"4": {
+					"1": "Room.DimmableLights[2].NameOfLight"
+				},
+				"5": {
+					"1": "Room.DimmableLights[3].NameOfLight"
+				},
+				"6": {
+					"1": "Room.DimmableLights[4].NameOfLight"
+				},
+				"7": {
+					"1": "Room.DimmableLights[5].NameOfLight"
+				},
+				"8": {
+					"1": "Room.DimmableLights[6].NameOfLight"
+				},
+				"9": {
+					"1": "Room.DimmableLights[7].NameOfLight"
+				},
+				"10": {
+					"1": "Room.DimmableLights[8].NameOfLight"
+				},
+				"11": {
+					"1": "Room.DimmableLights[9].NameOfLight"
+				},
+				"13": {
+					"1": "Room.Scenes[0].NameOfScene"
+				},
+				"14": {
+					"1": "Room.Scenes[1].NameOfScene"
+				},
+				"15": {
+					"1": "Room.Scenes[2].NameOfScene"
+				},
+				"16": {
+					"1": "Room.Scenes[3].NameOfScene"
+				},
+				"17": {
+					"1": "Room.Scenes[4].NameOfScene"
+				},
+				"18": {
+					"1": "Room.Scenes[5].NameOfScene"
+				},
+				"19": {
+					"1": "Room.Scenes[6].NameOfScene"
+				},
+				"23": {
+					"1": "Climate.GuestRoom.Room[0].RoomName",
+					"2": "Climate.GuestRoom.Room[0].TempString"
+				},
+				"24": {
+					"1": "Climate.GuestRoom.Room[1].RoomName",
+					"2": "Climate.GuestRoom.Room[1].TempString"
+				},
+				"25": {
+					"1": "Climate.GuestRoom.Room[2].RoomName",
+					"2": "Climate.GuestRoom.Room[2].TempString"
+				},
+				"26": {
+					"1": "Climate.GuestRoom.Room[3].RoomName",
+					"2": "Climate.GuestRoom.Room[3].TempString"
+				}
+			}
+		},
+		"events": {
+			"boolean": {
+				"Room.DimmableLights[0].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 2
+				},
+				"Room.DimmableLights[0].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 2
+				},
+				"Room.DimmableLights[1].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 3
+				},
+				"Room.DimmableLights[1].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 3
+				},
+				"Room.DimmableLights[2].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 4
+				},
+				"Room.DimmableLights[2].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 4
+				},
+				"Room.DimmableLights[3].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 5
+				},
+				"Room.DimmableLights[3].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 5
+				},
+				"Room.DimmableLights[4].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 6
+				},
+				"Room.DimmableLights[4].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 6
+				},
+				"Room.DimmableLights[5].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 7
+				},
+				"Room.DimmableLights[5].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 7
+				},
+				"Room.DimmableLights[6].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 8
+				},
+				"Room.DimmableLights[6].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 8
+				},
+				"Room.DimmableLights[7].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 9
+				},
+				"Room.DimmableLights[7].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 9
+				},
+				"Room.DimmableLights[8].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 10
+				},
+				"Room.DimmableLights[8].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 10
+				},
+				"Room.DimmableLights[9].TurnLightOn": {
+					"joinId": 1,
+					"smartObjectId": 11
+				},
+				"Room.DimmableLights[9].TurnLightOff": {
+					"joinId": 2,
+					"smartObjectId": 11
+				},
+				"Room.Scenes[0].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 13
+				},
+				"Room.Scenes[1].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 14
+				},
+				"Room.Scenes[2].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 15
+				},
+				"Room.Scenes[3].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 16
+				},
+				"Room.Scenes[4].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 17
+				},
+				"Room.Scenes[5].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 18
+				},
+				"Room.Scenes[6].TriggerStartScene": {
+					"joinId": 1,
+					"smartObjectId": 19
+				},
+				"Room.Blinds.OpenShades": {
+					"joinId": 1,
+					"smartObjectId": 20
+				},
+				"Room.Blinds.StopShades": {
+					"joinId": 2,
+					"smartObjectId": 20
+				},
+				"Room.Blinds.CloseShades": {
+					"joinId": 3,
+					"smartObjectId": 20
+				},
+				"Room.Blinds.OpenBlackout": {
+					"joinId": 4,
+					"smartObjectId": 20
+				},
+				"Room.Blinds.StopBlackout": {
+					"joinId": 5,
+					"smartObjectId": 20
+				},
+				"Room.Blinds.CloseBlackout": {
+					"joinId": 6,
+					"smartObjectId": 20
+				},
+				"Climate.GuestRoom.Room[0].IncrementTemp": {
+					"joinId": 1,
+					"smartObjectId": 23
+				},
+				"Climate.GuestRoom.Room[0].DecrementTemp": {
+					"joinId": 2,
+					"smartObjectId": 23
+				},
+				"Climate.GuestRoom.Room[1].IncrementTemp": {
+					"joinId": 1,
+					"smartObjectId": 24
+				},
+				"Climate.GuestRoom.Room[1].DecrementTemp": {
+					"joinId": 2,
+					"smartObjectId": 24
+				},
+				"Climate.GuestRoom.Room[2].IncrementTemp": {
+					"joinId": 1,
+					"smartObjectId": 25
+				},
+				"Climate.GuestRoom.Room[2].DecrementTemp": {
+					"joinId": 2,
+					"smartObjectId": 25
+				},
+				"Climate.GuestRoom.Room[3].IncrementTemp": {
+					"joinId": 1,
+					"smartObjectId": 26
+				},
+				"Climate.GuestRoom.Room[3].DecrementTemp": {
+					"joinId": 2,
+					"smartObjectId": 26
+				},
+				"Climate.GuestRoom.Room[0].Mode.FanSetSelected": {
+					"joinId": 1,
+					"smartObjectId": 27
+				},
+				"Climate.GuestRoom.Room[0].Mode.CoolSetSelected": {
+					"joinId": 2,
+					"smartObjectId": 27
+				},
+				"Climate.GuestRoom.Room[0].Mode.OffSetSelected": {
+					"joinId": 3,
+					"smartObjectId": 27
+				},
+				"Climate.GuestRoom.Room[1].Mode.FanSetSelected": {
+					"joinId": 1,
+					"smartObjectId": 28
+				},
+				"Climate.GuestRoom.Room[1].Mode.CoolSetSelected": {
+					"joinId": 2,
+					"smartObjectId": 28
+				},
+				"Climate.GuestRoom.Room[1].Mode.OffSetSelected": {
+					"joinId": 3,
+					"smartObjectId": 28
+				},
+				"Climate.GuestRoom.Room[2].Mode.FanSetSelected": {
+					"joinId": 1,
+					"smartObjectId": 29
+				},
+				"Climate.GuestRoom.Room[2].Mode.CoolSetSelected": {
+					"joinId": 2,
+					"smartObjectId": 29
+				},
+				"Climate.GuestRoom.Room[2].Mode.OffSetSelected": {
+					"joinId": 3,
+					"smartObjectId": 29
+				},
+				"Climate.GuestRoom.Room[3].Mode.FanSetSelected": {
+					"joinId": 1,
+					"smartObjectId": 30
+				},
+				"Climate.GuestRoom.Room[3].Mode.CoolSetSelected": {
+					"joinId": 2,
+					"smartObjectId": 30
+				},
+				"Climate.GuestRoom.Room[3].Mode.OffSetSelected": {
+					"joinId": 3,
+					"smartObjectId": 30
+				}
+			},
+			"numeric": {
+				"Room.DimmableLights[0].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 2
+				},
+				"Room.DimmableLights[1].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 3
+				},
+				"Room.DimmableLights[2].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 4
+				},
+				"Room.DimmableLights[3].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 5
+				},
+				"Room.DimmableLights[4].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 6
+				},
+				"Room.DimmableLights[5].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 7
+				},
+				"Room.DimmableLights[6].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 8
+				},
+				"Room.DimmableLights[7].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 9
+				},
+				"Room.DimmableLights[8].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 10
+				},
+				"Room.DimmableLights[9].SetLightLevel": {
+					"joinId": 1,
+					"smartObjectId": 11
+				},
+				"Climate.GuestRoom.Room[0].TempIsSet": {
+					"joinId": 1,
+					"smartObjectId": 23
+				},
+				"Climate.GuestRoom.Room[1].TempIsSet": {
+					"joinId": 1,
+					"smartObjectId": 24
+				},
+				"Climate.GuestRoom.Room[2].TempIsSet": {
+					"joinId": 1,
+					"smartObjectId": 25
+				},
+				"Climate.GuestRoom.Room[3].TempIsSet": {
+					"joinId": 1,
+					"smartObjectId": 26
+				}
+			}
+		}
+	}
+}

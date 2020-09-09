@@ -1,249 +1,239 @@
 {
-  "cues": [
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.ShowShades",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.ShadesAreShown",
-          "value": true,
-          "type": "b",
-          "logic": "set"
+    "cues": [{
+            "type": "b",
+            "event": "Room.Blinds.ShowShades",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.ShadesAreShown",
+                    "value": true,
+                    "type": "b",
+                    "logic": "set"
+                },
+                {
+                    "state": "Room.Blinds.BlackoutAreShown",
+                    "value": false,
+                    "type": "b",
+                    "logic": "set"
+                }
+            ]
         },
         {
-          "state": "Rooms.Blinds.BlackoutAreShown",
-          "value": false,
-          "type": "b",
-          "logic": "set"
-        }
-      ]
-    },
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.ShowBlackout",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.ShadesAreShown",
-          "value": false,
-          "type": "b",
-          "logic": "set"
+            "type": "b",
+            "event": "Room.Blinds.ShowBlackout",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.ShadesAreShown",
+                    "value": false,
+                    "type": "b",
+                    "logic": "set"
+                },
+                {
+                    "state": "Room.Blinds.BlackoutAreShown",
+                    "value": true,
+                    "type": "b",
+                    "logic": "set"
+                }
+            ]
         },
         {
-          "state": "Rooms.Blinds.BlackoutAreShown",
-          "value": true,
-          "type": "b",
-          "logic": "set"
-        }
-      ]
-    },
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.StopShades",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.LeftShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 25,
-              "time": 2000
-            }
-          }
+            "type": "b",
+            "event": "Room.Blinds.StopShades",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.LeftShadeValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 25,
+                            "time": 2000
+                        }
+                    }
+                },
+                {
+                    "state": "Room.Blinds.RightShadeValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 25,
+                            "time": 2000
+                        }
+                    }
+                }
+            ]
         },
         {
-          "state": "Rooms.Blinds.RightShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 25,
-              "time": 2000
-            }
-          }
-        }
-      ]
-    },
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.OpenShades",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.LeftShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 0,
-              "time": 5000
-            }
-          }
+            "type": "b",
+            "event": "Room.Blinds.OpenShades",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.LeftShadeValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 0,
+                            "time": 5000
+                        }
+                    }
+                },
+                {
+                    "state": "Room.Blinds.RightShadeValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 0,
+                            "time": 5000
+                        }
+                    }
+                }
+            ]
         },
         {
-          "state": "Rooms.Blinds.RightShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 0,
-              "time": 5000
-            }
-          }
-        }
-      ]
-    },
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.CloseShades",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.LeftShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 50,
-              "time": 5000
-            }
-          }
+            "type": "b",
+            "event": "Room.Blinds.CloseShades",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.LeftShadeValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 50,
+                            "time": 5000
+                        }
+                    }
+                },
+                {
+                    "state": "Room.Blinds.RightShadeValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 50,
+                            "time": 5000
+                        }
+                    }
+                }
+            ]
         },
         {
-          "state": "Rooms.Blinds.RightShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 50,
-              "time": 5000
-            }
-          }
-        }
-      ]
-    },
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.StopBlackout",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.LeftBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 25,
-              "time": 2000
-            }
-          }
+            "type": "b",
+            "event": "Room.Blinds.StopBlackout",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.LeftBlackoutValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 25,
+                            "time": 2000
+                        }
+                    }
+                },
+                {
+                    "state": "Room.Blinds.RightBlackoutValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 25,
+                            "time": 2000
+                        }
+                    }
+                }
+            ]
         },
-        {
-          "state": "Rooms.Blinds.RightBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 25,
-              "time": 2000
-            }
-          }
-        }
-      ]
-    },
 
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.OpenBlackout",
-      "trigger": true,
-      "actions": [
         {
-          "state": "Rooms.Blinds.LeftBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 0,
-              "time": 5000
-            }
-          }
+            "type": "b",
+            "event": "Room.Blinds.OpenBlackout",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.LeftBlackoutValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 0,
+                            "time": 5000
+                        }
+                    }
+                },
+                {
+                    "state": "Room.Blinds.RightBlackoutValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 0,
+                            "time": 5000
+                        }
+                    }
+                }
+            ]
         },
         {
-          "state": "Rooms.Blinds.RightBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 0,
-              "time": 5000
-            }
-          }
+            "type": "b",
+            "event": "Room.Blinds.CloseBlackout",
+            "trigger": true,
+            "actions": [{
+                    "state": "Room.Blinds.LeftBlackoutValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 50,
+                            "time": 5000
+                        }
+                    }
+                },
+                {
+                    "state": "Room.Blinds.RightBlackoutValue",
+                    "type": "object",
+                    "logic": "set",
+                    "value": {
+                        "rcb": {
+                            "value": 50,
+                            "time": 5000
+                        }
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "type": "b",
-      "event": "Rooms.Blinds.CloseBlackout",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Blinds.LeftBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 50,
-              "time": 5000
-            }
-          }
+    ],
+    "onStart": [{
+            "state": "Room.Blinds.ShadesAreShown",
+            "value": true,
+            "type": "b",
+            "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.RightBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 50,
-              "time": 5000
-            }
-          }
+            "state": "Room.Blinds.LeftShadeValue",
+            "value": 0,
+            "type": "n",
+            "logic": "set"
+        },
+        {
+            "state": "Room.Blinds.RightShadeValue",
+            "value": 0,
+            "type": "n",
+            "logic": "set"
+        },
+        {
+            "state": "Room.Blinds.LeftBlackoutValue",
+            "value": 0,
+            "type": "n",
+            "logic": "set"
+        },
+        {
+            "state": "Room.Blinds.RightBlackoutValue",
+            "value": 0,
+            "type": "n",
+            "logic": "set"
         }
-      ]
-    }
-  ],
-  "onStart": [
-    {
-      "state": "Rooms.Blinds.ShadesAreShown",
-      "value": true,
-      "type": "b",
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Blinds.LeftShadeValue",
-      "value": 0,
-      "type": "n",
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Blinds.RightShadeValue",
-      "value": 0,
-      "type": "n",
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Blinds.LeftBlackoutValue",
-      "value": 0,
-      "type": "n",
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Blinds.RightBlackoutValue",
-      "value": 0,
-      "type": "n",
-      "logic": "set"
-    }
-  ]
+    ]
 }

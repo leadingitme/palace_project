@@ -1,12 +1,18 @@
 {
 	"name": "Palace",
-	"timestamp": "2020-09-09 17:13:02.980",
+	"timestamp": "2020-09-09 19:53:35.421",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Palace",
 	"signals": {
 		"states": {
 			"boolean": {
+				"20": {
+					"1": "Room.Blinds.OpenShadesFb",
+					"3": "Room.Blinds.CloseShadesFb",
+					"4": "Room.Blinds.OpenBlackoutFb",
+					"6": "Room.Blinds.CloseBlackoutFb"
+				},
 				"27": {
 					"1": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
 					"2": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
@@ -127,19 +133,27 @@
 				},
 				"23": {
 					"1": "Climate.GuestRoom.Room[0].RoomName",
-					"2": "Climate.GuestRoom.Room[0].TempString"
+					"2": "Climate.GuestRoom.Room[0].TempString",
+					"3": "Climate.GuestRoom.Room[0].RoomTempString",
+					"4": "Climate.GuestRoom.Room[0].HumidityString"
 				},
 				"24": {
 					"1": "Climate.GuestRoom.Room[1].RoomName",
-					"2": "Climate.GuestRoom.Room[1].TempString"
+					"2": "Climate.GuestRoom.Room[1].TempString",
+					"3": "Climate.GuestRoom.Room[1].RoomTempString",
+					"4": "Climate.GuestRoom.Room[1].HumidityString"
 				},
 				"25": {
 					"1": "Climate.GuestRoom.Room[2].RoomName",
-					"2": "Climate.GuestRoom.Room[2].TempString"
+					"2": "Climate.GuestRoom.Room[2].TempString",
+					"3": "Climate.GuestRoom.Room[2].RoomTempString",
+					"4": "Climate.GuestRoom.Room[2].HumidityString"
 				},
 				"26": {
 					"1": "Climate.GuestRoom.Room[3].RoomName",
-					"2": "Climate.GuestRoom.Room[3].TempString"
+					"2": "Climate.GuestRoom.Room[3].TempString",
+					"3": "Climate.GuestRoom.Room[3].RoomTempString",
+					"4": "Climate.GuestRoom.Room[3].HumidityString"
 				}
 			}
 		},

@@ -21,6 +21,7 @@
             min="0"
             max="50"
             receivestatevalue="Room.Blinds.LeftBlackoutValue"
+            
           >
           </ch5-slider>
           <ch5-slider
@@ -40,6 +41,7 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.OpenBlackout"
+              receivestateselected="Room.Blinds.OpenBlackoutFb"
             >
             </ch5-button>
             <ch5-button
@@ -56,6 +58,7 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.CloseBlackout"
+              receivestateselected="Room.Blinds.CloseBlackoutFb"
             >
             </ch5-button>
           </div>

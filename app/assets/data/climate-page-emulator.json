@@ -506,7 +506,7 @@
     "onStart": [{
             "state": "Climate.GuestRoom.NumberOfRooms",
             "type": "n",
-            "value": 4
+            "value": 2
         },
         {
             "state": "Climate.GuestRoom.Room[0].RoomName",
@@ -516,7 +516,7 @@
         {
             "state": "Climate.GuestRoom.Room[1].RoomName",
             "type": "s",
-            "value": "Sitting Area"
+            "value": "Corridor"
         },
         {
             "state": "Climate.GuestRoom.Room[2].RoomName",

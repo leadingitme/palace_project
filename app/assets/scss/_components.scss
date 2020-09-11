@@ -1432,7 +1432,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       grid-template-columns: repeat(1, minmax(auto, 22vmin));
       grid-auto-rows: 11vmin;
       & span {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: bold;
       }
       &.horizontal {
         grid-template-columns: repeat(3, minmax(auto, 22vmin));

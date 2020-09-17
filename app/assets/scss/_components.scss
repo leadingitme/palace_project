@@ -1176,7 +1176,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
 
       .lighting-sidebar {
-        width: 200px;
+        width: auto;
         margin-right: -200px;
         transition: transform 300ms ease-out;
         transform: none;

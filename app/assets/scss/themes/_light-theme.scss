@@ -275,7 +275,8 @@ $gradient-btn-pressed-light: linear-gradient(
 
   // sidebar theme
   .sidebar {
-    background-color: $sidebar-light-bg;
+    // background-color: $sidebar-light-bg;
+    background-color: rgba(#808080, 0.4);
 
     .action-group {
       color: $white;
@@ -312,7 +313,7 @@ $gradient-btn-pressed-light: linear-gradient(
     }
 
     @include media-breakpoint-down(sm) {
-      background-color: rgba(#808080, 0.9);
+      background-color: rgba(#808080, 0.75);
     }
   }
   // room list (dropdown menu)

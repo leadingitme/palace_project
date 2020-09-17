@@ -291,7 +291,8 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
 
   // sidebar theme
   .sidebar {
-    background-color: $sidebar-dark-bg;
+    // background-color: $sidebar-dark-bg;
+    background-color: darken(rgba(#343a40c0, 0.4), 5%);
 
     .action-group {
       color: $white;
@@ -328,7 +329,7 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
     }
 
     @include media-breakpoint-down(sm) {
-      background-color: rgba(#343a40, 0.9);
+      background-color: rgba(#343a40, 0.75);
     }
   }
 

@@ -1,4 +1,4 @@
-<section class="blinds-page">
+<section class="blinds-page" id="blinds-page-page">
   <div class="navbar-text">
     <div class="room-info pt-2 text-uppercase text-white">
       <span class="d-sm-block">Blinds</span>
@@ -7,7 +7,7 @@
       </h2>
     </div>
   </div>
-  <div class="blackout-shades-btn d-none" id="blackout-shades-btn">
+  <div class="blackout-shades-btn" id="blackout-shades-btn">
     <ch5-button
       selected="false"
       id="shades-btn"
@@ -34,7 +34,7 @@
     id="shades-blackout-triggerview"
     activeview="0"
     gestureable="false"
-    class="d-none"
+    class=""
   >
     <ch5-triggerview-child receivestateshow="Rooms.Blinds.ShadesAreShown">
       <ch5-import-htmlsnippet
@@ -53,7 +53,7 @@
   </ch5-triggerview>
 
   <!-- Next block is for shades and blackout when one window in the room -->
-  <div class="windows-container">
+  <div class="windows-container" id="windows-container">
     <div class="window-shades-container">
       <span class="window-label">Shades </span>
 

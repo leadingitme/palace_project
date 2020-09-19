@@ -32,10 +32,8 @@ var menuModule = (function () {
    */
 
   function menuDropdownToggle() {
-    console.log("the menu toggle button works ");
-    console.log(menuDropDown.classList);
-
-    menuDropDown.classList.toggle("open");
+    menuDropDown.classList.toggle("show");
+    event.stopPropagation();
   }
   /**
    * This method will invoke on body click
@@ -43,7 +41,7 @@ var menuModule = (function () {
 
   document.body.addEventListener("click", function () {
     if (!!menuDropDown && menuDropDown.classList) {
-      menuDropDown.classList.remove("open");
+      menuDropDown.classList.remove("show");
     }
   });
 

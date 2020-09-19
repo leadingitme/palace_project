@@ -19,12 +19,18 @@ var blindsPageModule = (function () {
     return outputValue;
   }
 
-  // (HORIZONTAL SHADES AND BLACKOUT) Methods for opening, closing and stoping blinds
-
+  // Method to hide blinds triggerview when list of windows has less then 2 windows
   var shadesListLengthHoriz = document.getElementById("cr-id-26").childNodes
     .length;
   var blackoutListLengthHoriz = document.getElementById("cr-id-30").childNodes
     .length;
+
+  function hideTriggerview() {
+    if (shadesListLengthHoriz < 2 || blackoutListLengthHoriz < 2) {
+    }
+  }
+
+  // (HORIZONTAL SHADES AND BLACKOUT) Methods for opening, closing and stoping blinds
 
   var rightShadesHoriz = document.getElementsByClassName(
     "shade-horizontal-right"

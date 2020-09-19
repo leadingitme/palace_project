@@ -885,6 +885,14 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       left: 42%;
     }
   }
+  .windows-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .window-shades-container {
+      margin-right: 4.5rem;
+    }
+  }
 
   .open-close-btn-container {
     display: flex;

@@ -135,6 +135,9 @@ $gradient-btn-pressed-light: linear-gradient(
   rgb(153, 153, 153),
   rgba(34, 34, 34, 0.8)
 );
+// weather station font colors
+$weather-text-light: #183048;
+$weather-value-light: #0d2335;
 
 .light-theme {
   // Contextual colors
@@ -726,68 +729,35 @@ $gradient-btn-pressed-light: linear-gradient(
       }
     }
   }
+  // Weather Station Page
 
-  // intercom page
-  .intercom-page {
-    .main-intercom-container {
-      // background: transparent;
+  .weather-station-page {
+    .temp-container,
+    .wind-container {
       background-color: $ch5-light-navbar-bg;
-      box-shadow: 0px 3px 9px 2px rgb(70, 70, 70);
+      // box-shadow: 0px 3px 9px 2px rgb(70, 70, 70);
     }
-    .dnd-btn-container {
-      .dnd-btn {
-        .ch5-button {
-          background: $gradient-btn-light;
-          box-shadow: 3px 3px 7px rgb(70, 70, 70);
-          opacity: 1;
-        }
-        .ch5-button--default {
-          box-shadow: none;
-        }
-
-        .ch5-button--pressed {
-          background: $gradient-btn-pressed-light;
-          box-shadow: none;
-          opacity: 1 !important;
-        }
+    .temp-data,
+    .wind-container {
+      h1 {
+        color: $weather-value-light;
       }
-      img {
-        filter: invert(20%) opacity(1);
-        -webkit-filter: invert(20%) opacity(1);
+      h2 {
+        color: $weather-text-light;
       }
     }
-    .phone-btn-container {
-      .green-phone {
-        .ch5-button {
-          svg {
-            fill: #006f65;
-          }
-        }
+    .add-temp-data,
+    .weather-data-container,
+    .wind-data {
+      h2 {
+        color: $weather-value-light;
       }
-      .red-phone {
-        .ch5-button {
-          svg {
-            fill: #850000;
-          }
-        }
-      }
-      .lock-btn {
-        .ch5-button {
-          svg {
-            fill: #3f3f3f;
-          }
-        }
-      }
-    }
-    .volume-btn-container {
-      .ch5-button {
-        i {
-          color: $music-icon-bg-light;
-        }
+      h3,
+      h4 {
+        color: $weather-text-light;
       }
     }
   }
-
   // container background
   .main-section .theme-bg {
     background-color: $ch5-container-light-bg;

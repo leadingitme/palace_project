@@ -136,7 +136,7 @@ $gradient-btn-pressed-light: linear-gradient(
   rgba(34, 34, 34, 0.8)
 );
 // weather station font colors
-$weather-text-light: #183048;
+$weather-text-light: #13273a;
 $weather-value-light: #0d2335;
 
 .light-theme {
@@ -735,7 +735,7 @@ $weather-value-light: #0d2335;
     .temp-container,
     .wind-container {
       background-color: $ch5-light-navbar-bg;
-      // box-shadow: 0px 3px 9px 2px rgb(70, 70, 70);
+      box-shadow: 0px 1px 5px 0 rgb(70, 70, 70);
     }
     .temp-data,
     .wind-container {

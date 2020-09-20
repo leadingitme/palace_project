@@ -141,6 +141,10 @@ $gradient-btn-dark: linear-gradient(-45deg, #2c3136, #8693a7);
 
 $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
 
+// weather station font colors
+$weather-text-dark: #9cabb6;
+$weather-value-dark: #c0d0dd;
+
 .dark-theme {
   // hr color
   hr {
@@ -732,7 +736,34 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
     .temp-container,
     .wind-container {
       background-color: $ch5-dark-navbar-bg;
-      // box-shadow: 0px 2px 7px rgb(124, 124, 124);
+      box-shadow: 0px 2px 7px rgb(124, 124, 124);
+    }
+    .temp-data,
+    .wind-container {
+      h1 {
+        color: $weather-value-dark;
+      }
+      h2 {
+        color: $weather-text-dark;
+      }
+    }
+    .add-temp-data,
+    .weather-data-container,
+    .wind-data {
+      h2 {
+        color: $weather-value-dark;
+      }
+      h3,
+      h4 {
+        color: $weather-text-dark;
+      }
+      span {
+        color: $weather-text-dark;
+      }
+    }
+
+    .compass-img {
+      filter: brightness(2200%);
     }
   }
 

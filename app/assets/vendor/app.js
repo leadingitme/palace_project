@@ -14,7 +14,7 @@ var appModule = (function () {
   let errorClass = "version-error";
   let previousActiveIndex = -1;
   let themeTimer;
-  const NAV_PAGE_COUNT = 4; // Number of buttons in the navigation menu
+  const NAV_PAGE_COUNT = 5; // Number of buttons in the navigation menu
 
   /**
    * This is public method to change the theme
@@ -109,7 +109,7 @@ var appModule = (function () {
     let thumbActionArrow = document.querySelector(".thumb-action");
 
     function hideNavbar() {
-      if (triggerview.getAttribute("activeview") == 4) {
+      if (triggerview.getAttribute("activeview") == 5) {
         navbar.classList.add("hide");
         mainSection.classList.add("main-section-increased");
         navbarThumb.classList.add("hide");
@@ -121,17 +121,10 @@ var appModule = (function () {
     //every second. 1000 milliseconds = 1 second.
     setInterval(function () {
       secondsSinceLastActivity++;
-      // console.log(
-      //   secondsSinceLastActivity + " seconds since the user was last active"
-      // );
       //if the user has been inactive or idle for longer
       //then the seconds specified in maxInactivity
       if (secondsSinceLastActivity > maxInactivity) {
-        // console.log(
-        //   "User has been inactive for more than " + maxInactivity + " seconds"
-        // );
-
-        triggerview.setActiveView(4);
+        triggerview.setActiveView(5);
         hideNavbar();
       }
     }, 1000);
@@ -146,7 +139,7 @@ var appModule = (function () {
       navbarThumb.classList.remove("hide");
       thumbActionArrow.classList.remove("hide");
 
-      if (triggerview.getAttribute("activeview") == 4) {
+      if (triggerview.getAttribute("activeview") == 5) {
         triggerview.setActiveView(0);
       }
     }

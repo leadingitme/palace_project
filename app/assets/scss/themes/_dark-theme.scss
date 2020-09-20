@@ -141,6 +141,10 @@ $gradient-btn-dark: linear-gradient(-45deg, #2c3136, #8693a7);
 
 $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
 
+// weather station font colors
+$weather-text-dark: #9cabb6;
+$weather-value-dark: #c0d0dd;
+
 .dark-theme {
   // hr color
   hr {
@@ -291,7 +295,8 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
 
   // sidebar theme
   .sidebar {
-    background-color: $sidebar-dark-bg;
+    // background-color: $sidebar-dark-bg;
+    background-color: darken(rgba(#343a40c0, 0.4), 5%);
 
     .action-group {
       color: $white;
@@ -328,7 +333,7 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
     }
 
     @include media-breakpoint-down(sm) {
-      background-color: rgba(#343a40, 0.9);
+      background-color: rgba(#343a40, 0.75);
     }
   }
 
@@ -564,7 +569,7 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
         background: $gradient-btn-pressed-dark;
         box-shadow: 0px 0px 15px rgb(156, 156, 156);
         // box-shadow: 1px 1px 3px rgb(58, 57, 57);
-        transform: translateY(1px);
+        // transform: translateY(1px);
       }
     }
     .mode-buttons {
@@ -731,60 +736,39 @@ $gradient-btn-pressed-dark: linear-gradient(-45deg, #8492a5, #2a2e33);
     }
   }
 
-  // intercom page
-  .intercom-page {
-    .main-intercom-container {
+  // Weather Station Page
+  .weather-station-page {
+    .temp-container,
+    .wind-container {
       background-color: $ch5-dark-navbar-bg;
-      box-shadow: 0px 3px 9px 2px rgb(124, 124, 124);
+      box-shadow: 0px 2px 7px rgb(124, 124, 124);
     }
-    .dnd-btn-container {
-      .dnd-btn {
-        .ch5-button {
-          background: $gradient-btn-dark;
-          box-shadow: 0 0 5px rgb(102, 102, 102);
-        }
-        .ch5-button--default {
-          box-shadow: none;
-        }
-        .ch5-button--pressed {
-          background: $gradient-btn-pressed-dark;
-          box-shadow: 0px 0px 15px rgb(156, 156, 156);
-        }
+    .temp-data,
+    .wind-container {
+      h1 {
+        color: $weather-value-dark;
       }
-      img {
-        filter: invert(55%) opacity(1);
-        -webkit-filter: invert(55%) opacity(1);
+      h2 {
+        color: $weather-text-dark;
       }
     }
-    .phone-btn-container {
-      .green-phone {
-        .ch5-button {
-          svg {
-            fill: #006f65;
-          }
-        }
+    .add-temp-data,
+    .weather-data-container,
+    .wind-data {
+      h2 {
+        color: $weather-value-dark;
       }
-      .red-phone {
-        .ch5-button {
-          svg {
-            fill: #850000;
-          }
-        }
+      h3,
+      h4 {
+        color: $weather-text-dark;
       }
-      .lock-btn {
-        .ch5-button {
-          svg {
-            fill: #b1b1b1;
-          }
-        }
+      span {
+        color: $weather-text-dark;
       }
     }
-    .volume-btn-container {
-      .ch5-button {
-        i {
-          color: $music-icon-bg-dark;
-        }
-      }
+
+    .compass-img {
+      filter: brightness(2200%);
     }
   }
 

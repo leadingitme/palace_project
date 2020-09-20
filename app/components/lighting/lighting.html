@@ -91,9 +91,13 @@
         </template>
       </ch5-list>
     </div>
-    <aside class="col-md-3 lighting-sidebar" id="lightingSidebar">
+    <aside
+      class="col-md-3 lighting-sidebar"
+      id="lightingSidebar"
+      onclick="dropDownStopPropagation()"
+    >
       <ch5-select
-        class="sidebar ch5-custom-select"
+        class="sidebar ch5-custom-select lighting-sidebar-select"
         mode="panel"
         maxWidth="none"
         indexId="idx"

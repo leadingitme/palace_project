@@ -1689,7 +1689,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   .dropdown-btn-container {
     position: absolute;
     left: 40%;
-    top: 1.27rem;
+    top: 2rem;
     display: inline-block;
     .btn:not(:disabled):not(.disabled):active:focus {
       box-shadow: none;
@@ -1712,7 +1712,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
     @include media-breakpoint-up(sm) {
       left: 47%;
-      top: 1.5rem;
+      top: 2.7rem;
     }
   }
   .dropdown-menu {
@@ -1748,8 +1748,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   }
   .source-name {
     position: absolute;
-    right: 13px;
-    top: 30px;
+    right: 2rem;
+    top: 2.9rem;
   }
 
   .main-player-container {

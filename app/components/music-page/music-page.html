@@ -16,9 +16,6 @@
         type="button"
         onclick="musicPageModule.openMusicSourceDropdown()"
         id="musicSourceDropdown"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
       >
         <span>SOURCE</span>
         <!-- <span class="d-block"><i class="fas fa-caret-down"></i> </span> -->
@@ -27,7 +24,6 @@
         id="music-source-dropdown"
         onclick="musicPageModule.dropDownStopPropagation()"
         class="dropdown-menu source-list-container animate__animated"
-        aria-labelledby="musicSourceDropdown"
       >
         <ch5-list
           orientation="vertical"
@@ -58,203 +54,27 @@
       >Source Name</span
     >
   </div>
-
-  <div class="container-fluid mt-2 main-player-container">
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="row">
-          <div
-            class="col-12 col-sm-4 col-md-5 d-flex justify-content-center align-items-center"
-          >
-            <ch5-image
-              class="album-img"
-              alt="music-img"
-              url="./assets/img/music-image.jpg"
-              receivestateurl=""
-            >
-            </ch5-image>
-          </div>
-
-          <div class="col-12 col-sm-8 col-md-7 mt-2 artist-album-name">
-            <h2
-              data-ch5-textcontent="Rooms.Music.AirPlay.SelectedArtistName"
-              class=""
-            >
-              Artist Name
-            </h2>
-            <h3
-              data-ch5-textcontent="Rooms.Music.AirPlay.SelectedAlbumName"
-              class="album-name"
-            >
-              Album Name
-            </h3>
-            <div class="features-btn">
-              <i class="fas fa-plus"></i>
-              <i class="far fa-heart"></i>
-              <i class="fas fa-trash-alt"></i>
-            </div>
-          </div>
-
-          <div class="col-12 track-slider-container">
-            <div class="song-name-container">
-              <div class="song-name">
-                <h3
-                  data-ch5-textcontent="Rooms.Music.AirPlay.SelectedSongName"
-                  class=""
-                >
-                  Song Name
-                </h3>
-              </div>
-              <button
-                class="navbar-toggler d-sm-none"
-                type="button"
-                onclick="musicPageModule.songListSidebarToggle()"
-                data-toggle="collapse"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-list-ul"></i>
-              </button>
-            </div>
-            <div class="track-slider">
-              <span data-ch5-textContent="">00:35</span>
-              <ch5-slider
-                value="50"
-                min="0"
-                max="100"
-                stretch="width"
-                handleShape="circle"
-                orientation="horizontal"
-                showtickvalues="true"
-                handlesize="x-small"
-              >
-              </ch5-slider>
-              <span data-ch5-textContent="">03:35</span>
-            </div>
-            <div class="controllers-btn-container">
-              <div class="controllers-btn">
-                <ch5-button
-                  stretch="both"
-                  iconclass="fas fa-backward fa-2x"
-                  sendeventonclick=""
-                >
-                </ch5-button>
-                <ch5-triggerview
-                  class="triggerview-container"
-                  gestureable="false"
-                  noshowtype="display"
-                  disableanimation="true"
-                  receivestateshowchildindex="Rooms.Music.PlayPauseBtnTriggerview"
-                >
-                  <ch5-triggerview-child noshowtype="display">
-                    <ch5-button
-                      stretch="both"
-                      type="success"
-                      shape="rectangle"
-                      iconclass="fa fa-play fa-2x"
-                      sendeventonclick="Rooms.Music.SetPauseBtnActive"
-                    ></ch5-button>
-                  </ch5-triggerview-child>
-
-                  <ch5-triggerview-child noshowtype="display">
-                    <ch5-button
-                      stretch="both"
-                      type="success"
-                      shape="rectangle"
-                      iconclass="fa fa-pause fa-2x"
-                      sendeventonclick="Rooms.Music.SetPlayBtnActive"
-                    ></ch5-button>
-                  </ch5-triggerview-child>
-                </ch5-triggerview>
-                <ch5-button
-                  stretch="both"
-                  iconclass="fas fa-forward fa-2x"
-                  sendeventonclick="btn_id_clicked"
-                >
-                </ch5-button>
-              </div>
-            </div>
-            <div class="volume-slider-container">
-              <i class="fas fa-volume-down"></i>
-              <ch5-slider
-                value="50"
-                min="0"
-                max="100"
-                stretch="width"
-                handleShape="circle"
-                orientation="horizontal"
-                showtickvalues="true"
-                handlesize="x-small"
-              >
-              </ch5-slider>
-              <i class="fas fa-volume-up"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="song-list-wrapper"> -->
-      <aside
-        class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated"
-        id="songListSidebar"
+  <ch5-triggerview
+    id="music-radio-triggerview"
+    gestureable="false"
+    class=""
+    noshowtype="display"
+    receivestateshowchildindex="Rooms.Music.TriggerviewPlayerIsShown"
+  >
+    <ch5-triggerview-child noshowtype="display">
+      <ch5-import-htmlsnippet
+        url="./components/music-player/music-player.html"
+        class="music-player-templ"
       >
-        <ch5-select
-          class="sidebar song-select ch5-custom-select"
-          mode="panel"
-          maxWidth="none"
-          indexId="idx"
-          selectedvalue=""
-          receiveStateSize="Rooms.Music.SongList.ListSize"
-          receiveStateValue="NotDefinedOnPurpose"
-        >
-          <div class="song-select-features">
-            <span class=""> Library</span>
-            <div class="features-btn-container">
-              <div class="features-btn">
-                <ch5-button
-                  stretch="both"
-                  type="success"
-                  shape="rectangle"
-                  iconurl="./assets/img/shuffle-icon.svg"
-                  receivestateselected="Rooms.Music.ShuffleIsSelected"
-                  sendeventonclick="Rooms.Music.ShuffleSetSelected"
-                ></ch5-button>
-                <ch5-button
-                  stretch="both"
-                  type="success"
-                  shape="rectangle"
-                  iconurl="./assets/img/repeat-icon.svg"
-                  receivestateselected="Rooms.Music.RepeatIsSelected"
-                  sendeventonclick="Rooms.Music.RepeatSetSelected"
-                >
-                </ch5-button>
-              </div>
-            </div>
-          </div>
+      </ch5-import-htmlsnippet>
+    </ch5-triggerview-child>
 
-          <template>
-            <ch5-select-option
-              sendEventOnClick="Rooms.Music.AirPlay.Track[{{idx}}].SetTrackSelected"
-              receivestateselected="Rooms.Music.AirPlay.Track[{{idx}}].TrackIsSelected"
-            >
-              <!-- <h3 class="" data-ch5-textContent="">Song Name #{{idx}}</h3>
-              <h4 class="" data-ch5-textContent="">Artist Name #{{idx}}</h4> -->
-              <h4
-                class=""
-                data-ch5-textContent="Rooms.Music.SongList.SongName[{{idx}}]"
-              >
-                Song Name
-              </h4>
-              <h5
-                class=""
-                data-ch5-textContent="Rooms.Music.SongList.ArtistName[{{idx}}]"
-              >
-                Artist Name
-              </h5>
-            </ch5-select-option>
-          </template>
-        </ch5-select>
-      </aside>
-      <!-- </div> -->
-    </div>
-  </div>
+    <ch5-triggerview-child noshowtype="display">
+      <ch5-import-htmlsnippet
+        url="./components/radio-player/radio-player.html"
+        class="radio-player-templ"
+      >
+      </ch5-import-htmlsnippet>
+    </ch5-triggerview-child>
+  </ch5-triggerview>
 </section>

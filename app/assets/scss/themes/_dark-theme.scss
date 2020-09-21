@@ -632,6 +632,12 @@ $weather-value-dark: #c0d0dd;
       .ch5-button {
         color: $ch5-lighting-btn-light;
       }
+      .dropdown-menu {
+        background-color: #151617;
+        .ch5-button--selected {
+          background-color: #374044;
+        }
+      }
     }
 
     .source-name {

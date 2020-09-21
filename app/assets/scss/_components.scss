@@ -1742,7 +1742,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       transform: translate3d(-35%, 45px, 0px) !important;
       min-width: 25rem;
       @include media-breakpoint-up(sm) {
-        transform: translate3d(-37%, 41px, 0px) !important;
+        transform: translate3d(-37%, 0, 0px) !important;
       }
       @include media-breakpoint-up(md) {
         min-width: 40rem;
@@ -1751,6 +1751,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         padding: 0.5rem 0rem;
         height: 4rem;
         width: 100%;
+        background-color: transparent !important;
       }
       .ch5-button {
         border: none;
@@ -2061,6 +2062,17 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
     @include media-breakpoint-up(xl) {
       height: 65vh;
+    }
+  }
+
+  .radio-player {
+    .artist-album-name {
+      @include media-breakpoint-up(sm) {
+        padding: 2rem;
+        h2 {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }

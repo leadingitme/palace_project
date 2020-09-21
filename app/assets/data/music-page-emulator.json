@@ -6,6 +6,24 @@
       "trigger": true,
       "actions": [
         {
+          "state": "Rooms.Music.MusicPlayerIsShown",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "Rooms.Music.RadioPlayerIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "type": "numeric",
+          "state": "Rooms.Music.TriggerviewPlayerIsShown",
+          "logic": "set",
+          "value": 0
+        },
+        {
           "state": "Rooms.Music.SelectedSourceName",
           "type": "s",
           "value": "AirPlay",
@@ -171,7 +189,25 @@
         {
           "state": "Rooms.Music.SelectedSourceName",
           "type": "s",
-          "value": "Laptop",
+          "value": "Radio",
+          "logic": "set"
+        },
+        {
+          "state": "Rooms.Music.MusicPlayerIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "type": "numeric",
+          "state": "Rooms.Music.TriggerviewPlayerIsShown",
+          "logic": "set",
+          "value": 1
+        },
+        {
+          "state": "Rooms.Music.RadioPlayerIsShown",
+          "value": true,
+          "type": "b",
           "logic": "set"
         },
         {
@@ -197,80 +233,6 @@
           "state": "Rooms.Music.Source[3].SourceIsSelected",
           "logic": "set",
           "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.Source[2].SetSourceSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Music.SelectedSourceName",
-          "type": "s",
-          "value": "AirMedia",
-          "logic": "set"
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[0].SourceIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[1].SourceIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[2].SourceIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[3].SourceIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.Source[3].SetSourceSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Music.SelectedSourceName",
-          "type": "s",
-          "value": "AirBoard",
-          "logic": "set"
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[0].SourceIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[1].SourceIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[2].SourceIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.Source[3].SourceIsSelected",
-          "logic": "set",
-          "value": true
         }
       ]
     },
@@ -651,21 +613,27 @@
   ],
   "onStart": [
     {
+      "state": "Rooms.Music.RadioPlayerIsShown",
+      "value": true,
+      "type": "b",
+      "logic": "set"
+    },
+    {
       "state": "Rooms.Music.SelectedSourceName",
       "type": "s",
-      "value": "AirPlay",
+      "value": "Radio",
       "logic": "set"
     },
     {
       "type": "b",
-      "state": "Rooms.Music.Source[0].SourceIsSelected",
+      "state": "Rooms.Music.Source[1].SourceIsSelected",
       "logic": "set",
       "value": true
     },
     {
       "state": "Rooms.Music.NumberOfSources",
       "type": "n",
-      "value": 1,
+      "value": 2,
       "logic": "set"
     },
     {
@@ -826,7 +794,7 @@
     {
       "state": "Rooms.Music.Source[1].SourceName",
       "type": "s",
-      "value": "Laptop"
+      "value": "Radio"
     },
     {
       "state": "Rooms.Music.Source[2].SourceName",
@@ -842,6 +810,11 @@
       "state": "Rooms.Music.PlayPauseBtnTriggerview",
       "type": "numeric",
       "value": 0
+    },
+    {
+      "state": "Rooms.Music.TriggerviewPlayerIsShown",
+      "type": "numeric",
+      "value": 1
     }
   ]
 }

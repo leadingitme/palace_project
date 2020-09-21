@@ -315,7 +315,7 @@
         {
           "type": "b",
           "state": "Rooms.Music.RepeatIsSelected",
-          "logic": "toggle",
+          "logic": "set",
           "value": true
         },
         {
@@ -323,6 +323,98 @@
           "state": "Rooms.Music.ShuffleIsSelected",
           "logic": "set",
           "value": false
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Room.Music.Radio.FavouritesSetSelected",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "b",
+          "state": "Room.Music.Radio.FavouritesIsSelected",
+          "logic": "set",
+          "value": true
+        },
+        {
+          "type": "b",
+          "state": "Room.Music.Radio.StationsListIsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "n",
+          "state": "Room.Music.Radio.StationListSize",
+          "logic": "set",
+          "value": 4
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[0]",
+          "type": "s",
+          "logic": "set",
+          "value": "GoodDay FM"
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[1]",
+          "type": "s",
+          "logic": "set",
+          "value": "Just Rock It"
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[2]",
+          "type": "s",
+          "logic": "set",
+          "value": "Pop FM"
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Room.Music.Radio.StationsListSetSelected",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "b",
+          "state": "Room.Music.Radio.StationsListIsSelected",
+          "logic": "toggle",
+          "value": true
+        },
+        {
+          "type": "b",
+          "state": "Room.Music.Radio.FavouritesIsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "n",
+          "state": "Room.Music.Radio.StationListSize",
+          "logic": "set",
+          "value": 4
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[3]",
+          "type": "s",
+          "logic": "set",
+          "value": "GoodDay FM"
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[2]",
+          "type": "s",
+          "logic": "set",
+          "value": "Just Rock It"
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[1]",
+          "type": "s",
+          "logic": "set",
+          "value": "Pop FM"
+        },
+        {
+          "state": "Rooms.Music.Radio.StationName[0]",
+          "type": "s",
+          "logic": "set",
+          "value": "Dance All Day FM"
         }
       ]
     },
@@ -831,6 +923,42 @@
       "state": "Rooms.Music.Source[3].SourceName",
       "type": "s",
       "value": "AirBoard"
+    },
+    {
+      "type": "b",
+      "state": "Room.Music.Radio.FavouritesIsSelected",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "type": "n",
+      "state": "Room.Music.Radio.StationListSize",
+      "logic": "set",
+      "value": 4
+    },
+    {
+      "state": "Rooms.Music.Radio.StationName[0]",
+      "type": "s",
+      "logic": "set",
+      "value": "GoodDay FM"
+    },
+    {
+      "state": "Rooms.Music.Radio.StationName[1]",
+      "type": "s",
+      "logic": "set",
+      "value": "Just Rock It"
+    },
+    {
+      "state": "Rooms.Music.Radio.StationName[2]",
+      "type": "s",
+      "logic": "set",
+      "value": "Pop FM"
+    },
+    {
+      "state": "Rooms.Music.Radio.StationName[3]",
+      "type": "s",
+      "logic": "set",
+      "value": "Dance All Day FM"
     },
     {
       "state": "Rooms.Music.PlayPauseBtnTriggerview",

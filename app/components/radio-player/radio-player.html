@@ -11,7 +11,6 @@
               class=""
               gestureable="false"
               noshowtype="display"
-              debug="true"
               disableanimation="true"
               receivestateshowchildindex="Rooms.Music.Radio.FavouriteBtnTriggerview"
             >
@@ -148,10 +147,11 @@
         <ch5-select
           class="sidebar song-select ch5-custom-select"
           mode="panel"
+          size="5"
           maxWidth="none"
           indexId="idx"
           selectedvalue=""
-          receiveStateSize=""
+          receiveStateSize="Room.Music.Radio.StationListSize"
           receiveStateValue="NotDefinedOnPurpose"
         >
           <div class="song-select-features">
@@ -163,8 +163,8 @@
                   type="success"
                   shape="rectangle"
                   iconclass="far fa-heart"
-                  receivestateselected="Rooms.Music.ShuffleIsSelected"
-                  sendeventonclick="Rooms.Music.ShuffleSetSelected"
+                  receivestateselected="Room.Music.Radio.FavouritesIsSelected"
+                  sendeventonclick="Room.Music.Radio.FavouritesSetSelected"
                 ></ch5-button>
                 <ch5-button
                   stretch="both"
@@ -172,8 +172,8 @@
                   type="success"
                   shape="rectangle"
                   iconclass="fas fa-list"
-                  receivestateselected="Rooms.Music.RepeatIsSelected"
-                  sendeventonclick="Rooms.Music.RepeatSetSelected"
+                  receivestateselected="Room.Music.Radio.StationsListIsSelected"
+                  sendeventonclick="Room.Music.Radio.StationsListSetSelected"
                 >
                 </ch5-button>
               </div>
@@ -188,7 +188,7 @@
               <!-- <h3 class="" data-ch5-textContent="">Song Name #{{idx}}</h3>
                   <h4 class="" data-ch5-textContent="">Artist Name #{{idx}}</h4> -->
               <h4 class="" data-ch5-textContent="">Song Name</h4>
-              <h5 class="" data-ch5-textContent="">Artist Name</h5>
+              <h5 class="" data-ch5-textContent="Rooms.Music.Radio.StationName[{{idx}}]">Artist Name</h5>
             </ch5-select-option>
           </template>
         </ch5-select>

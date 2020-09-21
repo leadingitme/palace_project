@@ -1,6 +1,6 @@
 {
 	"name": "Palace",
-	"timestamp": "2020-09-09 19:53:35.421",
+	"timestamp": "2020-09-21 16:32:54.680",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Palace",
@@ -32,6 +32,10 @@
 					"1": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
 					"2": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
 					"3": "Climate.GuestRoom.Room[3].Mode.OffIsSelected"
+				},
+				"31": {
+					"7": "Radio.RadioIsScanning",
+					"8": "Radio.RadioPresetSaveToggleFb"
 				}
 			},
 			"numeric": {
@@ -74,6 +78,149 @@
 					"2": "Room.Blinds.RightShadeValue",
 					"3": "Room.Blinds.LeftBlackoutValue",
 					"4": "Room.Blinds.RightBlackoutValue"
+				},
+				"31": {
+					"1": "Radio.RadioCurrentFrequency",
+					"2": "Radio.RadioSignalStrength",
+					"3": "Radio.RadioPresetMode"
+				},
+				"32": {
+					"1": "Radio.Preset[0].RadioPresetFrequency"
+				},
+				"33": {
+					"1": "Radio.Preset[1].RadioPresetFrequency"
+				},
+				"34": {
+					"1": "Radio.Preset[2].RadioPresetFrequency"
+				},
+				"35": {
+					"1": "Radio.Preset[3].RadioPresetFrequency"
+				},
+				"36": {
+					"1": "Radio.Preset[4].RadioPresetFrequency"
+				},
+				"37": {
+					"1": "Radio.Preset[5].RadioPresetFrequency"
+				},
+				"38": {
+					"1": "Radio.Preset[6].RadioPresetFrequency"
+				},
+				"39": {
+					"1": "Radio.Preset[7].RadioPresetFrequency"
+				},
+				"40": {
+					"1": "Radio.List[0].RadioListValue"
+				},
+				"41": {
+					"1": "Radio.List[1].RadioListValue"
+				},
+				"42": {
+					"1": "Radio.List[2].RadioListValue"
+				},
+				"43": {
+					"1": "Radio.List[3].RadioListValue"
+				},
+				"44": {
+					"1": "Radio.List[4].RadioListValue"
+				},
+				"45": {
+					"1": "Radio.List[5].RadioListValue"
+				},
+				"46": {
+					"1": "Radio.List[6].RadioListValue"
+				},
+				"47": {
+					"1": "Radio.List[7].RadioListValue"
+				},
+				"48": {
+					"1": "Radio.List[8].RadioListValue"
+				},
+				"49": {
+					"1": "Radio.List[9].RadioListValue"
+				},
+				"50": {
+					"1": "Radio.List[10].RadioListValue"
+				},
+				"51": {
+					"1": "Radio.List[11].RadioListValue"
+				},
+				"52": {
+					"1": "Radio.List[12].RadioListValue"
+				},
+				"53": {
+					"1": "Radio.List[13].RadioListValue"
+				},
+				"54": {
+					"1": "Radio.List[14].RadioListValue"
+				},
+				"55": {
+					"1": "Radio.List[15].RadioListValue"
+				},
+				"56": {
+					"1": "Radio.List[16].RadioListValue"
+				},
+				"57": {
+					"1": "Radio.List[17].RadioListValue"
+				},
+				"58": {
+					"1": "Radio.List[18].RadioListValue"
+				},
+				"59": {
+					"1": "Radio.List[19].RadioListValue"
+				},
+				"60": {
+					"1": "Radio.List[20].RadioListValue"
+				},
+				"61": {
+					"1": "Radio.List[21].RadioListValue"
+				},
+				"62": {
+					"1": "Radio.List[22].RadioListValue"
+				},
+				"63": {
+					"1": "Radio.List[23].RadioListValue"
+				},
+				"64": {
+					"1": "Radio.List[24].RadioListValue"
+				},
+				"65": {
+					"1": "Radio.List[25].RadioListValue"
+				},
+				"66": {
+					"1": "Radio.List[26].RadioListValue"
+				},
+				"67": {
+					"1": "Radio.List[27].RadioListValue"
+				},
+				"68": {
+					"1": "Radio.List[28].RadioListValue"
+				},
+				"69": {
+					"1": "Radio.List[29].RadioListValue"
+				},
+				"70": {
+					"1": "Radio.List[30].RadioListValue"
+				},
+				"71": {
+					"1": "Radio.List[31].RadioListValue"
+				},
+				"72": {
+					"1": "Radio.List[32].RadioListValue"
+				},
+				"73": {
+					"1": "Radio.List[33].RadioListValue"
+				},
+				"74": {
+					"1": "Radio.List[34].RadioListValue"
+				},
+				"75": {
+					"1": "Radio.List[35].RadioListValue"
+				},
+				"76": {
+					"1": "Radio.List[36].RadioListValue"
+				},
+				"77": {
+					"1": "List.RadioListValue"
 				}
 			},
 			"string": {
@@ -154,11 +301,72 @@
 					"2": "Climate.GuestRoom.Room[3].TempString",
 					"3": "Climate.GuestRoom.Room[3].RoomTempString",
 					"4": "Climate.GuestRoom.Room[3].HumidityString"
+				},
+				"31": {
+					"1": "Radio.ServiceName",
+					"2": "Radio.StationText",
+					"3": "Radio.ProgramTypeName"
+				},
+				"32": {
+					"1": "Radio.Preset[0].RadioPresetStringConvert"
+				},
+				"33": {
+					"1": "Radio.Preset[1].RadioPresetStringConvert"
+				},
+				"34": {
+					"1": "Radio.Preset[2].RadioPresetStringConvert"
+				},
+				"35": {
+					"1": "Radio.Preset[3].RadioPresetStringConvert"
+				},
+				"36": {
+					"1": "Radio.Preset[4].RadioPresetStringConvert"
+				},
+				"37": {
+					"1": "Radio.Preset[5].RadioPresetStringConvert"
+				},
+				"38": {
+					"1": "Radio.Preset[6].RadioPresetStringConvert"
+				},
+				"39": {
+					"1": "Radio.Preset[7].RadioPresetStringConvert"
 				}
 			}
 		},
 		"events": {
 			"boolean": {
+				"Radio.StationUp": {
+					"joinId": 1,
+					"smartObjectId": 31
+				},
+				"Radio.StationDown": {
+					"joinId": 2,
+					"smartObjectId": 31
+				},
+				"Radio.SearchUp": {
+					"joinId": 3,
+					"smartObjectId": 31
+				},
+				"Radio.SearchDown": {
+					"joinId": 4,
+					"smartObjectId": 31
+				},
+				"Radio.ScanUp": {
+					"joinId": 5,
+					"smartObjectId": 31
+				},
+				"Radio.ScanDown": {
+					"joinId": 6,
+					"smartObjectId": 31
+				},
+				"Radio.RadioPresetSaveToggle": {
+					"joinId": 8,
+					"smartObjectId": 31
+				},
+				"List.RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 77
+				},
 				"Room.DimmableLights[0].TurnLightOn": {
 					"joinId": 1,
 					"smartObjectId": 2
@@ -291,6 +499,186 @@
 					"joinId": 6,
 					"smartObjectId": 20
 				},
+				"Radio.Preset[0].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 32
+				},
+				"Radio.Preset[1].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 33
+				},
+				"Radio.Preset[2].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 34
+				},
+				"Radio.Preset[3].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 35
+				},
+				"Radio.Preset[4].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 36
+				},
+				"Radio.Preset[5].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 37
+				},
+				"Radio.Preset[6].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 38
+				},
+				"Radio.Preset[7].RadioPreset": {
+					"joinId": 1,
+					"smartObjectId": 39
+				},
+				"Radio.List[0].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 40
+				},
+				"Radio.List[1].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 41
+				},
+				"Radio.List[2].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 42
+				},
+				"Radio.List[3].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 43
+				},
+				"Radio.List[4].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 44
+				},
+				"Radio.List[5].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 45
+				},
+				"Radio.List[6].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 46
+				},
+				"Radio.List[7].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 47
+				},
+				"Radio.List[8].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 48
+				},
+				"Radio.List[9].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 49
+				},
+				"Radio.List[10].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 50
+				},
+				"Radio.List[11].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 51
+				},
+				"Radio.List[12].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 52
+				},
+				"Radio.List[13].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 53
+				},
+				"Radio.List[14].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 54
+				},
+				"Radio.List[15].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 55
+				},
+				"Radio.List[16].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 56
+				},
+				"Radio.List[17].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 57
+				},
+				"Radio.List[18].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 58
+				},
+				"Radio.List[19].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 59
+				},
+				"Radio.List[20].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 60
+				},
+				"Radio.List[21].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 61
+				},
+				"Radio.List[22].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 62
+				},
+				"Radio.List[23].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 63
+				},
+				"Radio.List[24].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 64
+				},
+				"Radio.List[25].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 65
+				},
+				"Radio.List[26].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 66
+				},
+				"Radio.List[27].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 67
+				},
+				"Radio.List[28].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 68
+				},
+				"Radio.List[29].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 69
+				},
+				"Radio.List[30].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 70
+				},
+				"Radio.List[31].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 71
+				},
+				"Radio.List[32].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 72
+				},
+				"Radio.List[33].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 73
+				},
+				"Radio.List[34].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 74
+				},
+				"Radio.List[35].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 75
+				},
+				"Radio.List[36].RadioListName": {
+					"joinId": 1,
+					"smartObjectId": 76
+				},
 				"Climate.GuestRoom.Room[0].IncrementTemp": {
 					"joinId": 1,
 					"smartObjectId": 23
@@ -373,6 +761,10 @@
 				}
 			},
 			"numeric": {
+				"Radio.RadioFrequency": {
+					"joinId": 1,
+					"smartObjectId": 31
+				},
 				"Room.DimmableLights[0].SetLightLevel": {
 					"joinId": 1,
 					"smartObjectId": 2

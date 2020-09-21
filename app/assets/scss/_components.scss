@@ -2067,16 +2067,25 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
   .radio-player {
     .artist-album-name {
+      .favourite-btn-container {
+        width: 5rem;
+        .triggerview-container {
+          .ch5-viewchild {
+            overflow-y: hidden !important;
+          }
+        }
+      }
       .ch5-button {
         background-color: transparent;
         border: none;
         box-shadow: none;
+        padding: 0.4rem 0 0 1.8rem;
         &.ch5-button--pressed {
           background-color: transparent;
         }
         i {
           font-size: 1.5rem;
-          padding-bottom: 0.7rem;
+          // padding-bottom: 0.7rem;
         }
         .fas.fa-heart {
           color: rgb(175, 62, 62);

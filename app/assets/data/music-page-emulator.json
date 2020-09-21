@@ -264,6 +264,32 @@
     },
     {
       "type": "boolean",
+      "event": "Rooms.Music.Radio.SetFavouriteBtnActive",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "numeric",
+          "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
+          "logic": "set",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Rooms.Music.Radio.SetFavouriteBtnInactive",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "numeric",
+          "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
+          "logic": "set",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "boolean",
       "event": "Rooms.Music.ShuffleSetSelected",
       "trigger": true,
       "actions": [
@@ -808,6 +834,11 @@
     },
     {
       "state": "Rooms.Music.PlayPauseBtnTriggerview",
+      "type": "numeric",
+      "value": 0
+    },
+    {
+      "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
       "type": "numeric",
       "value": 0
     },

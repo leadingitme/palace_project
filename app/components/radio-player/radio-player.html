@@ -4,13 +4,46 @@
       <div class="col-sm-7">
         <div class="row">
           <div class="col-12 col-md-7 mt-2 artist-album-name">
-            <h2 data-ch5-textcontent="" class="">Rock Wave</h2>
-            <h3 data-ch5-textcontent="" class="album-name">106.6 FM</h3>
-            <div class="features-btn">
-              <i class="fas fa-plus"></i>
-              <i class="far fa-heart"></i>
-              <i class="fas fa-trash-alt"></i>
+            <div class="radio-station-name d-flex">
+              <h2 data-ch5-textcontent="" class="">Rock Wave</h2>
+              <ch5-triggerview
+              class=""
+              gestureable="false"
+              noshowtype="display"
+              disableanimation="true"
+              receivestateshowchildindex="Rooms.Music.Radio.FavouriteBtnTriggerview"
+            >
+              <ch5-triggerview-child noshowtype="display">
+                <ch5-button
+                type="success"
+                type="success"
+                shape="rectangle"
+                iconclass="far fa-heart"
+                sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnActive"
+                >
+                </ch5-button>
+              </ch5-triggerview-child>
+
+              <ch5-triggerview-child noshowtype="display">
+                <ch5-button
+                type="success"
+                shape="rectangle"
+                type="success"
+                iconclass="fas fa-heart"
+                sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnInactive"
+                ></ch5-button>
+              </ch5-triggerview-child>
+            </ch5-triggerview>
+
             </div>
+            <h3 data-ch5-textcontent="" class="album-name">
+              106.6 FM </i>
+            </h3>
+            <!-- <div class="features-btn">
+              <i class="fas fa-plus"></i> 
+              <i class="far fa-heart"></i>
+              <i class="fas fa-trash-alt"></i> 
+            </div> -->
           </div>
 
           <div class="col-12 track-slider-container">
@@ -120,22 +153,23 @@
           receiveStateValue="NotDefinedOnPurpose"
         >
           <div class="song-select-features">
-            <span class=""> Library</span>
+            <!-- <span class=""> Library</span> -->
             <div class="features-btn-container">
-              <div class="features-btn">
+              <div class="features-btn station-selection">
                 <ch5-button
                   stretch="both"
                   type="success"
                   shape="rectangle"
-                  iconurl="./assets/img/shuffle-icon.svg"
+                  iconclass="far fa-heart"
                   receivestateselected="Rooms.Music.ShuffleIsSelected"
                   sendeventonclick="Rooms.Music.ShuffleSetSelected"
                 ></ch5-button>
                 <ch5-button
                   stretch="both"
+                  class="station-list-btn"
                   type="success"
                   shape="rectangle"
-                  iconurl="./assets/img/repeat-icon.svg"
+                  iconclass="fas fa-list"
                   receivestateselected="Rooms.Music.RepeatIsSelected"
                   sendeventonclick="Rooms.Music.RepeatSetSelected"
                 >

@@ -75,7 +75,7 @@ var musicPageModule = (function () {
   function closeMusicSourceDropdown() {
     setTimeout(function () {
       dropdown.classList.remove("show");
-    }, 1000);
+    }, 500);
 
     // let dropdown = document.getElementById("music-source-dropdown");
     // setTimeout(addClosingAnimation, 100);

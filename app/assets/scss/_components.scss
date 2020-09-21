@@ -2067,11 +2067,41 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
   .radio-player {
     .artist-album-name {
+      .ch5-button {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        &.ch5-button--pressed {
+          background-color: transparent;
+        }
+        i {
+          font-size: 1.5rem;
+          padding-bottom: 0.7rem;
+        }
+        .fas.fa-heart {
+          color: rgb(175, 62, 62);
+        }
+      }
       @include media-breakpoint-up(sm) {
         padding: 2rem;
         h2 {
+          display: inline-block;
           font-size: 2rem;
         }
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .volume-slider-container {
+      margin: 2rem 3rem 0;
+    }
+    .station-selection {
+      .ch5-button {
+        font-size: 1.5rem;
+      }
+      .station-list-btn {
+        margin-left: 11rem;
       }
     }
   }

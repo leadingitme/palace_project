@@ -52,34 +52,43 @@ var musicPageModule = (function () {
 
     event.stopPropagation();
   }
+  let dropdown = document.getElementById("music-source-dropdown");
 
   function openMusicSourceDropdown() {
-    let dropdown = document.getElementById("music-source-dropdown");
+    // dropdown.classList.add("animate__fadeIn");
+    dropdown.classList.toggle("show");
 
-    dropdown.classList.add("animate__fadeIn");
-
-    setTimeout(function () {
-      dropdown.classList.remove("animate__fadeIn");
-    }, 500);
+    // setTimeout(function () {
+    //   dropdown.classList.remove("animate__fadeIn");
+    // }, 500);
   }
 
-  function addClosingAnimation() {
-    let dropdown = document.getElementById("music-source-dropdown");
-    dropdown.classList.add("animate__fadeOut");
-  }
-  function removeClosingAnimation() {
-    let dropdown = document.getElementById("music-source-dropdown");
-    dropdown.classList.remove("animate__fadeOut");
-  }
+  // function addClosingAnimation() {
+  //   let dropdown = document.getElementById("music-source-dropdown");
+  //   dropdown.classList.add("animate__fadeOut");
+  // }
+  // function removeClosingAnimation() {
+  //   let dropdown = document.getElementById("music-source-dropdown");
+  //   dropdown.classList.remove("animate__fadeOut");
+  // }
 
   function closeMusicSourceDropdown() {
-    let dropdown = document.getElementById("music-source-dropdown");
-    setTimeout(addClosingAnimation, 100);
-    setTimeout(removeClosingAnimation, 1000);
     setTimeout(function () {
       dropdown.classList.remove("show");
-    }, 1000);
+    }, 500);
+
+    // let dropdown = document.getElementById("music-source-dropdown");
+    // setTimeout(addClosingAnimation, 100);
+    // setTimeout(removeClosingAnimation, 1000);
+    // setTimeout(function () {
+    //   dropdown.classList.remove("show");
+    // }, 1000);
   }
+  // document.body.addEventListener("click", function () {
+  //   if (!!dropdown) {
+  //     dropdown.classList.remove("show");
+  //   }
+  // });
 
   /**
    * All public method and properties are exported here

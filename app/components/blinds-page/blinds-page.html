@@ -1,4 +1,4 @@
-<section class="blinds-page">
+<section class="blinds-page" id="blinds-page-page">
     <div class="navbar-text">
         <div class="room-info pt-2 text-uppercase text-white">
             <span class="d-sm-block">Blinds</span>
@@ -7,22 +7,66 @@
             </h2>
         </div>
     </div>
-    <div class="blackout-shades-btn">
-        <ch5-button selected="false" id="shades-btn" label="Shades" size="regular" shape="rectangle" sendeventonclick="Room.Blinds.ShowShades" receiveStateSelected="Room.Blinds.ShadesAreShown">
+    <div class="blackout-shades-btn" id="blackout-shades-btn">
+        <ch5-button selected="false" id="shades-btn" label="Shades" size="regular" shape="rectangle" sendeventonclick="Rooms.Blinds.ShowShades" receiveStateSelected="Rooms.Blinds.ShadesAreShown">
         </ch5-button>
-        <ch5-button id="blackout-btn" label="Blackout" size="regular" shape="rectangle" sendeventonclick="Room.Blinds.ShowBlackout" receiveStateSelected="Room.Blinds.BlackoutAreShown">
+        <ch5-button id="blackout-btn" label="Blackout" size="regular" shape="rectangle" sendeventonclick="Rooms.Blinds.ShowBlackout" receiveStateSelected="Rooms.Blinds.BlackoutAreShown">
         </ch5-button>
     </div>
 
     <hr />
-    <ch5-triggerview class="" activeview="0">
-        <ch5-triggerview-child receivestateshow="Room.Blinds.ShadesAreShown">
+    <ch5-triggerview id="shades-blackout-triggerview" activeview="0" gestureable="false" class="">
+        <ch5-triggerview-child receivestateshow="Rooms.Blinds.ShadesAreShown">
             <ch5-import-htmlsnippet url="./components/shades/shades.html" class="shades-templ">
             </ch5-import-htmlsnippet>
         </ch5-triggerview-child>
-        <ch5-triggerview-child receivestateshow="Room.Blinds.BlackoutAreShown">
+        <ch5-triggerview-child receivestateshow="Rooms.Blinds.BlackoutAreShown">
             <ch5-import-htmlsnippet url="./components/blackout/blackout.html" class="blackout-templ">
             </ch5-import-htmlsnippet>
         </ch5-triggerview-child>
     </ch5-triggerview>
+
+    <!-- Next block is for shades and blackout when one window in the room -->
+    <div class="windows-container" id="windows-container">
+        <div class="window-shades-container">
+            <span class="window-label">Shades </span>
+
+            <div class="slider-container shades-container container">
+                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Rooms.Blinds.LeftShadeValue">
+                </ch5-slider>
+                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Rooms.Blinds.RightShadeValue">
+                </ch5-slider>
+            </div>
+            <div class="open-close-btn-container mt-4">
+                <div class="open-close-btn" id="horizontal-buttons">
+                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Rooms.Blinds.OpenShades">
+                    </ch5-button>
+                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Rooms.Blinds.StopShades">
+                    </ch5-button>
+                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Rooms.Blinds.CloseShades">
+                    </ch5-button>
+                </div>
+            </div>
+        </div>
+        <div class="window-blackout-container">
+            <span class="window-label">Blackout </span>
+
+            <div class="slider-container blackout-container container">
+                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Rooms.Blinds.LeftBlackoutValue">
+                </ch5-slider>
+                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Rooms.Blinds.RightBlackoutValue">
+                </ch5-slider>
+            </div>
+            <div class="open-close-btn-container mt-4">
+                <div class="open-close-btn" id="horizontal-buttons">
+                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Rooms.Blinds.OpenBlackout">
+                    </ch5-button>
+                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Rooms.Blinds.StopBlackout">
+                    </ch5-button>
+                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Rooms.Blinds.CloseBlackout">
+                    </ch5-button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

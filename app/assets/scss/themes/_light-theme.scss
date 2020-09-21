@@ -135,6 +135,9 @@ $gradient-btn-pressed-light: linear-gradient(
   rgb(153, 153, 153),
   rgba(34, 34, 34, 0.8)
 );
+// weather station font colors
+$weather-text-light: #13273a;
+$weather-value-light: #0d2335;
 
 .light-theme {
   // Contextual colors
@@ -275,7 +278,8 @@ $gradient-btn-pressed-light: linear-gradient(
 
   // sidebar theme
   .sidebar {
-    background-color: $sidebar-light-bg;
+    // background-color: $sidebar-light-bg;
+    background-color: rgba(#808080, 0.4);
 
     .action-group {
       color: $white;
@@ -312,7 +316,7 @@ $gradient-btn-pressed-light: linear-gradient(
     }
 
     @include media-breakpoint-down(sm) {
-      background-color: rgba(#808080, 0.9);
+      background-color: rgba(#808080, 0.75);
     }
   }
   // room list (dropdown menu)
@@ -574,7 +578,7 @@ $gradient-btn-pressed-light: linear-gradient(
 
     .mode-buttons {
       .ch5-button {
-        background: linear-gradient(-25deg, #383737, #808080);
+        background: linear-gradient(-25deg, #383737, #9e9e9e);
         box-shadow: 3px 3px 7px rgb(70, 70, 70);
         opacity: 0.9;
         color: rgba(0, 0, 0, 0.856);
@@ -582,7 +586,7 @@ $gradient-btn-pressed-light: linear-gradient(
       .ch5-button--selected {
         opacity: 1;
         color: rgb(255, 255, 255);
-        transform: translateY(2px);
+        // transform: translateY(2px);
         box-shadow: none;
       }
     }
@@ -622,9 +626,18 @@ $gradient-btn-pressed-light: linear-gradient(
   .music-page {
     .dropdown-btn-container {
       button {
-        background-color: $ch5-lighting-btn-light;
-        box-shadow: 2px 2px 6px rgb(70, 70, 70);
-        color: rgb(212, 212, 212);
+        // background-color: $ch5-lighting-btn-light;
+        // box-shadow: 2px 2px 6px rgb(70, 70, 70);
+        // color: rgb(212, 212, 212);
+        color: $ch5-headings-color-light;
+      }
+      .ch5-button {
+        color: $ch5-lighting-btn-light;
+      }
+      .dropdown-menu {
+        .ch5-button--selected {
+          background-color: #6e6e6e;
+        }
       }
     }
     .source-name {
@@ -725,68 +738,35 @@ $gradient-btn-pressed-light: linear-gradient(
       }
     }
   }
+  // Weather Station Page
 
-  // intercom page
-  .intercom-page {
-    .main-intercom-container {
-      // background: transparent;
+  .weather-station-page {
+    .temp-container,
+    .wind-container {
       background-color: $ch5-light-navbar-bg;
-      box-shadow: 0px 3px 9px 2px rgb(70, 70, 70);
+      box-shadow: 0px 1px 5px 0 rgb(70, 70, 70);
     }
-    .dnd-btn-container {
-      .dnd-btn {
-        .ch5-button {
-          background: $gradient-btn-light;
-          box-shadow: 3px 3px 7px rgb(70, 70, 70);
-          opacity: 1;
-        }
-        .ch5-button--default {
-          box-shadow: none;
-        }
-
-        .ch5-button--pressed {
-          background: $gradient-btn-pressed-light;
-          box-shadow: none;
-          opacity: 1 !important;
-        }
+    .temp-data,
+    .wind-container {
+      h1 {
+        color: $weather-value-light;
       }
-      img {
-        filter: invert(20%) opacity(1);
-        -webkit-filter: invert(20%) opacity(1);
+      h2 {
+        color: $weather-text-light;
       }
     }
-    .phone-btn-container {
-      .green-phone {
-        .ch5-button {
-          svg {
-            fill: #006f65;
-          }
-        }
+    .add-temp-data,
+    .weather-data-container,
+    .wind-data {
+      h2 {
+        color: $weather-value-light;
       }
-      .red-phone {
-        .ch5-button {
-          svg {
-            fill: #850000;
-          }
-        }
-      }
-      .lock-btn {
-        .ch5-button {
-          svg {
-            fill: #3f3f3f;
-          }
-        }
-      }
-    }
-    .volume-btn-container {
-      .ch5-button {
-        i {
-          color: $music-icon-bg-light;
-        }
+      h3,
+      h4 {
+        color: $weather-text-light;
       }
     }
   }
-
   // container background
   .main-section .theme-bg {
     background-color: $ch5-container-light-bg;

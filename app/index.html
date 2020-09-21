@@ -31,7 +31,7 @@
         </nav>
         <!-- Header end -->
         <ch5-background receivestateurl="common_background_url" url="./assets/img/ch5-stone-light-bg.jpg"></ch5-background>
-        <ch5-triggerview class="triggerview-main triggerview" gestureable="false" endless="false" disableanimation="true">
+        <ch5-triggerview class="triggerview-main triggerview" gestureable="true" disableanimation="true">
             <!-- Blinds start -->
             <ch5-triggerview-child>
                 <ch5-import-htmlsnippet class="blinds-page" url="./components/blinds-page/blinds-page.html">
@@ -55,6 +55,12 @@
                 </ch5-import-htmlsnippet>
             </ch5-triggerview-child>
             <!-- Music end -->
+            <!-- Weather Station start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet class="weather-station-page" url="./components/weather-station/weather-station.html">
+                </ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
+            <!-- Weather Station end -->
             <!-- Inactivity Page start -->
             <ch5-triggerview-child>
                 <ch5-import-htmlsnippet id="inactivity-page" url="./components/inactivity-page/inactivity-page.html"></ch5-import-htmlsnippet>

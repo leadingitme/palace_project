@@ -3,7 +3,7 @@
   overflow: auto;
 
   .action-group {
-    &+.action-group {
+    & + .action-group {
       margin-top: 10px;
     }
 
@@ -32,6 +32,11 @@
       &:hover {
         color: inherit;
       }
+    }
+  }
+  &.lighting-sidebar-select {
+    .ch5-select__panel__item:first-child {
+      border-top: none;
     }
   }
 

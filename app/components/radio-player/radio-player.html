@@ -7,39 +7,37 @@
             <div class="radio-station-name d-flex">
               <h2 data-ch5-textcontent="" class="">Rock Wave</h2>
               <div class="favourite-btn-container">
-              <ch5-triggerview
-              class=""
-              gestureable="false"
-              noshowtype="display"
-              disableanimation="true"
-              receivestateshowchildindex="Rooms.Music.Radio.FavouriteBtnTriggerview"
-            >
-              <ch5-triggerview-child noshowtype="display">
-                <ch5-button
-                type="success"
-                stretch="both"
-                shape="rectangle"
-                iconclass="far fa-heart"
-                sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnActive"
+                <ch5-triggerview
+                  class=""
+                  gestureable="false"
+                  noshowtype="display"
+                  disableanimation="true"
+                  receivestateshowchildindex="Rooms.Music.Radio.FavouriteBtnTriggerview"
                 >
-                </ch5-button>
-              </ch5-triggerview-child>
+                  <ch5-triggerview-child noshowtype="display">
+                    <ch5-button
+                      type="success"
+                      stretch="both"
+                      shape="rectangle"
+                      iconclass="far fa-heart"
+                      sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnActive"
+                    >
+                    </ch5-button>
+                  </ch5-triggerview-child>
 
-              <ch5-triggerview-child noshowtype="display">
-                <ch5-button
-                type="success"
-                stretch="both"
-                shape="rectangle"
-                iconclass="fas fa-heart"
-                sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnInactive"
-                ></ch5-button>
-              </ch5-triggerview-child>
-            </ch5-triggerview>
-          </div>
+                  <ch5-triggerview-child noshowtype="display">
+                    <ch5-button
+                      type="success"
+                      stretch="both"
+                      shape="rectangle"
+                      iconclass="fas fa-heart"
+                      sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnInactive"
+                    ></ch5-button>
+                  </ch5-triggerview-child>
+                </ch5-triggerview>
+              </div>
             </div>
-            <h3 data-ch5-textcontent="" class="album-name">
-              106.6 FM </i>
-            </h3>
+            <h3 data-ch5-textcontent="" class="album-name">106.6 FM</h3>
             <!-- <div class="features-btn">
               <i class="fas fa-plus"></i> 
               <i class="far fa-heart"></i>
@@ -188,7 +186,12 @@
               <!-- <h3 class="" data-ch5-textContent="">Song Name #{{idx}}</h3>
                   <h4 class="" data-ch5-textContent="">Artist Name #{{idx}}</h4> -->
               <h4 class="" data-ch5-textContent="">Song Name</h4>
-              <h5 class="" data-ch5-textContent="Rooms.Music.Radio.StationName[{{idx}}]">Artist Name</h5>
+              <h5
+                class=""
+                data-ch5-textContent="Rooms.Music.Radio.StationName[{{idx}}]"
+              >
+                Artist Name
+              </h5>
             </ch5-select-option>
           </template>
         </ch5-select>

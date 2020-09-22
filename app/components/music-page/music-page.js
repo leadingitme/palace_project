@@ -32,6 +32,56 @@ var musicPageModule = (function () {
     return outputValue;
   }
 
+  let triggerviewMusic = document.querySelector(".music-radio-triggerview");
+  let activeIndex = 0;
+  // number of sources
+  const SOURCE_COUNT = 2;
+  let musicPlayerSnippet = document.querySelector(".music-player-templ");
+  let radioPlayerSnippet = document.querySelector(".radio-player-templ");
+
+  function showPlayerSnippet(idx) {
+    let sourceBtn = document.querySelector(".music-source-btn-" + idx);
+    console.log("sourceBtn:" + sourceBtn);
+    console.log("idx=" + idx);
+
+    if (sourceBtn) {
+      sourceBtn.addEventListener("click", function () {
+        console.log("source btn was clicked");
+
+        if (idx == 0) {
+          musicPlayerSnippet.classList.remove("d-none");
+          radioPlayerSnippet.classList.add("d-none");
+          closeMusicSourceDropdown();
+        } else {
+          radioPlayerSnippet.classList.remove("d-none");
+          musicPlayerSnippet.classList.add("d-none");
+          closeMusicSourceDropdown();
+        }
+      });
+    }
+  }
+
+  for (let idx = 0; idx < SOURCE_COUNT; idx++) {
+    showPlayerSnippet(idx);
+  }
+
+  // function addMusicSourceItemClickListener(idx) {
+  //   let sourceBtn = document.querySelector(".music-source-btn-" + idx);
+  //   console.log("source button:" + sourceBtn);
+  //   if (sourceBtn) {
+  //     sourceBtn.addEventListener("click", function () {
+  //       console.log("source btn was clicked");
+
+  //       if (triggerviewMusic !== null && idx !== activeIndex) {
+  //         triggerviewMusic.setActiveView(idx);
+  //         // closeMusicSourceDropdown();
+  //         return;
+  //       } else {
+  //         console.log("Something went wrong!!!!");
+  //       }
+  //     });
+  //   }
+  // }
   /**
    * All public or private methods which need to call onInit
    */
@@ -57,6 +107,7 @@ var musicPageModule = (function () {
   function openMusicSourceDropdown() {
     // dropdown.classList.add("animate__fadeIn");
     dropdown.classList.toggle("show");
+    event.stopPropagation();
 
     // setTimeout(function () {
     //   dropdown.classList.remove("animate__fadeIn");
@@ -73,22 +124,13 @@ var musicPageModule = (function () {
   // }
 
   function closeMusicSourceDropdown() {
-    setTimeout(function () {
-      dropdown.classList.remove("show");
-    }, 500);
-
-    // let dropdown = document.getElementById("music-source-dropdown");
-    // setTimeout(addClosingAnimation, 100);
-    // setTimeout(removeClosingAnimation, 1000);
-    // setTimeout(function () {
-    //   dropdown.classList.remove("show");
-    // }, 1000);
+    dropdown.classList.remove("show");
   }
-  // document.body.addEventListener("click", function () {
-  //   if (!!dropdown) {
-  //     dropdown.classList.remove("show");
-  //   }
-  // });
+  document.body.addEventListener("click", function () {
+    if (!!dropdown && dropdown.classList) {
+      closeMusicSourceDropdown();
+    }
+  });
 
   /**
    * All public method and properties are exported here

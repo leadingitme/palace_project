@@ -1,34 +1,32 @@
 <section id="radio-player-page" class="radio-player">
     <div class="container-fluid mt-2 main-player-container">
         <div class="row">
-            <div class="col-sm-7">
-                <div class="row">
-                    <div class="col-12 col-md-7 mt-2 artist-album-name">
-                        <div class="radio-station-name d-flex">
-                            <h2 data-ch5-textcontent="" class="">Rock Wave</h2>
-                            <div class="favourite-btn-container">
-                                <ch5-triggerview class="" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.Music.Radio.FavouriteBtnTriggerview">
-                                    <ch5-triggerview-child noshowtype="display">
-                                        <ch5-button type="success" stretch="both" shape="rectangle" iconclass="far fa-heart" sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnActive">
-                                        </ch5-button>
-                                    </ch5-triggerview-child>
+            <div class="col-12 col-md-7 mt-2 artist-album-name">
+                <div class="radio-station-name d-flex">
+                    <h2 data-ch5-textcontent="" class="">Rock Wave</h2>
+                    <div class="favourite-btn-container">
+                        <ch5-triggerview class="" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.Music.Radio.FavouriteBtnTriggerview">
+                            <ch5-triggerview-child noshowtype="display">
+                                <ch5-button type="success" stretch="both" shape="rectangle" iconclass="far fa-heart" sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnActive">
+                                </ch5-button>
+                            </ch5-triggerview-child>
 
-                                    <ch5-triggerview-child noshowtype="display">
-                                        <ch5-button type="success" stretch="both" shape="rectangle" iconclass="fas fa-heart" sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnInactive"></ch5-button>
-                                    </ch5-triggerview-child>
-                                </ch5-triggerview>
-                            </div>
-                        </div>
-                        <h3 data-ch5-textcontent="" class="album-name">106.6 FM</h3>
-                        <!-- <div class="features-btn">
+                            <ch5-triggerview-child noshowtype="display">
+                                <ch5-button type="success" stretch="both" shape="rectangle" iconclass="fas fa-heart" sendeventonclick="Rooms.Music.Radio.SetFavouriteBtnInactive"></ch5-button>
+                            </ch5-triggerview-child>
+                        </ch5-triggerview>
+                    </div>
+                </div>
+                <h3 data-ch5-textcontent="" class="album-name">106.6 FM</h3>
+                <!-- <div class="features-btn">
               <i class="fas fa-plus"></i> 
               <i class="far fa-heart"></i>
               <i class="fas fa-trash-alt"></i> 
             </div> -->
-                    </div>
+            </div>
 
-                    <div class="col-12 track-slider-container">
-                        <!-- <div class="song-name-container">
+            <div class="col-12 track-slider-container">
+                <!-- <div class="song-name-container">
               <div class="song-name">
                 <h3 data-ch5-textcontent="" class="">Song Name</h3>
               </div>
@@ -43,7 +41,7 @@
                 <i class="fas fa-list-ul"></i>
               </button>
             </div> -->
-                        <!-- <div class="track-slider">
+                <!-- <div class="track-slider">
               <span data-ch5-textContent="">00:35</span>
               <ch5-slider
                 value="50"
@@ -58,47 +56,65 @@
               </ch5-slider>
               <span data-ch5-textContent="">03:35</span>
             </div> -->
-                        <div class="controllers-btn-container">
-                            <div class="controllers-btn">
-                                <ch5-button stretch="both" iconclass="fas fa-backward fa-2x" sendeventonclick="">
-                                </ch5-button>
-                                <ch5-triggerview class="triggerview-container" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.Music.PlayPauseBtnTriggerview">
-                                    <ch5-triggerview-child noshowtype="display">
-                                        <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-play fa-2x" sendeventonclick="Rooms.Music.SetPauseBtnActive"></ch5-button>
-                                    </ch5-triggerview-child>
+                <div class="controllers-btn-container">
+                    <div class="controllers-btn">
+                        <ch5-button stretch="both" iconclass="fas fa-backward fa-2x" sendeventonclick="">
+                        </ch5-button>
+                        <ch5-triggerview class="triggerview-container" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.Music.PlayPauseBtnTriggerview">
+                            <ch5-triggerview-child noshowtype="display">
+                                <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-play fa-2x" sendeventonclick="Rooms.Music.SetPauseBtnActive"></ch5-button>
+                            </ch5-triggerview-child>
 
-                                    <ch5-triggerview-child noshowtype="display">
-                                        <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-pause fa-2x" sendeventonclick="Rooms.Music.SetPlayBtnActive"></ch5-button>
-                                    </ch5-triggerview-child>
-                                </ch5-triggerview>
-                                <ch5-button stretch="both" iconclass="fas fa-forward fa-2x" sendeventonclick="btn_id_clicked">
-                                </ch5-button>
-                            </div>
-                        </div>
-                        <div class="volume-slider-container">
-                            <i class="fas fa-volume-down"></i>
-                            <ch5-slider value="50" min="0" max="100" stretch="width" handleShape="circle" orientation="horizontal" showtickvalues="true" handlesize="x-small">
-                            </ch5-slider>
-                            <i class="fas fa-volume-up"></i>
+                            <ch5-triggerview-child noshowtype="display">
+                                <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-pause fa-2x" sendeventonclick="Rooms.Music.SetPlayBtnActive"></ch5-button>
+                            </ch5-triggerview-child>
+                        </ch5-triggerview>
+                        <ch5-button stretch="both" iconclass="fas fa-forward fa-2x" sendeventonclick="btn_id_clicked">
+                        </ch5-button>
+                    </div>
+                </div>
+                <div class="volume-slider-container">
+                    <i class="fas fa-volume-down"></i>
+                    <ch5-slider value="50" min="0" max="100" stretch="width" handleShape="circle" orientation="horizontal" showtickvalues="true" handlesize="x-small">
+                    </ch5-slider>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <<<<<<< HEAD <!-- <div class="song-list-wrapper"> -->
+        <aside class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated" id="songListSidebar">
+            <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" size="5" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Room.Music.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
+                <div class="song-select-features">
+                    <!-- <span class=""> Library</span> -->
+                    <div class="features-btn-container">
+                        <div class="features-btn station-selection">
+                            <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Room.Music.Radio.FavouritesIsSelected" sendeventonclick="Room.Music.Radio.FavouritesSetSelected"></ch5-button>
+                            <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Room.Music.Radio.StationsListIsSelected" sendeventonclick="Room.Music.Radio.StationsListSetSelected">
+                            </ch5-button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="song-list-wrapper"> -->
-            <aside class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated" id="songListSidebar">
-                <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" size="5" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Room.Music.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
-                    <div class="song-select-features">
-                        <!-- <span class=""> Library</span> -->
-                        <div class="features-btn-container">
-                            <div class="features-btn station-selection">
-                                <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Room.Music.Radio.FavouritesIsSelected" sendeventonclick="Room.Music.Radio.FavouritesSetSelected"></ch5-button>
-                                <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Room.Music.Radio.StationsListIsSelected" sendeventonclick="Room.Music.Radio.StationsListSetSelected">
-                                </ch5-button>
+                =======
+                </div>
+                </div>
+                </div>
+                <!-- <div class="song-list-wrapper"> -->
+                <aside class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated" id="songListSidebar">
+                    <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Room.Music.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
+                        <div class="song-select-features">
+                            <!-- <span class=""> Library</span> -->
+                            <div class="features-btn-container">
+                                <div class="features-btn station-selection">
+                                    <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Room.Music.Radio.FavouritesIsSelected" sendeventonclick="Room.Music.Radio.FavouritesSetSelected"></ch5-button>
+                                    <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Room.Music.Radio.StationsListIsSelected" sendeventonclick="Room.Music.Radio.StationsListSetSelected">
+                                    </ch5-button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        >>>>>>> origin/feature-MusicPage-Radio
 
-                    <template>
+                        <template>
             <ch5-select-option
               sendEventOnClick="Rooms.Music.AirPlay.Track[{{idx}}].SetTrackSelected"
               receivestateselected="Rooms.Music.AirPlay.Track[{{idx}}].TrackIsSelected"
@@ -114,9 +130,9 @@
               </h5>
             </ch5-select-option>
           </template>
-                </ch5-select>
-            </aside>
-            <!-- </div> -->
-        </div>
-    </div>
+                    </ch5-select>
+                </aside>
+                <!-- </div> -->
+                </div>
+                </div>
 </section>

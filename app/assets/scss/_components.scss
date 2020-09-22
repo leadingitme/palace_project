@@ -1741,6 +1741,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       // transform: translate3d(-216px, 45px, 0px) !important;
       transform: translate3d(-35%, 45px, 0px) !important;
       min-width: 25rem;
+      transition: ease-in-out;
       @include media-breakpoint-up(sm) {
         transform: translate3d(-37%, 0, 0px) !important;
       }
@@ -1749,7 +1750,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
       .list-item {
         padding: 0.5rem 0rem;
-        height: 4rem;
+        height: 3.5rem;
         width: 100%;
         background-color: transparent !important;
       }

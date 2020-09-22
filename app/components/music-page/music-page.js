@@ -32,6 +32,28 @@ var musicPageModule = (function () {
     return outputValue;
   }
 
+  let triggerviewMusic = document.querySelector(".music-radio-triggerview");
+  let activeIndex = 0;
+  // number of sources
+  const SOURCE_COUNT = 2;
+
+  function addMusicSourceItemClickListener(idx) {
+    let sourceBtn = document.querySelector("music-source-btn-" + idx);
+    console.log("source button:" + sourceBtn);
+    sourceBtn.addEventListener("click", function () {
+      console.log("source btn was clicked");
+      if (triggerviewMusic !== null && idx !== activeIndex) {
+        triggerviewMusic.setActiveView(idx);
+        // closeMusicSourceDropdown();
+        return;
+      } else {
+        console.log("Something went wrong!!!!");
+      }
+    });
+  }
+  for (let idx = 0; idx < SOURCE_COUNT; idx++) {
+    addMusicSourceItemClickListener(idx);
+  }
   /**
    * All public or private methods which need to call onInit
    */
@@ -75,7 +97,7 @@ var musicPageModule = (function () {
   function closeMusicSourceDropdown() {
     setTimeout(function () {
       dropdown.classList.remove("show");
-    }, 500);
+    }, 400);
 
     // let dropdown = document.getElementById("music-source-dropdown");
     // setTimeout(addClosingAnimation, 100);

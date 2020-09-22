@@ -32,16 +32,19 @@
           receivestatesize="Rooms.Music.NumberOfSources"
         >
           <template>
-            <ch5-button
-              id=""
-              onclick="musicPageModule.closeMusicSourceDropdown()"
-              stretch="both"
-              shape="rectangle"
-              receivestatelabel="Rooms.Music.Source[{{idx}}].SourceName"
-              sendeventonclick="Rooms.Music.Source[{{idx}}].SetSourceSelected"
-              receivestateselected="Rooms.Music.Source[{{idx}}].SourceIsSelected"
-            >
-            </ch5-button>
+            <div>
+              <ch5-button
+                id=""
+                customclass="music-source-btn-{{idx}}"
+                onclick=""
+                stretch="both"
+                shape="rectangle"
+                receivestatelabel="Rooms.Music.Source[{{idx}}].SourceName"
+                sendeventonclick="Rooms.Music.Source[{{idx}}].SetSourceSelected"
+                receivestateselected="Rooms.Music.Source[{{idx}}].SourceIsSelected"
+              >
+              </ch5-button>
+            </div>
           </template>
         </ch5-list>
       </div>
@@ -54,14 +57,8 @@
       >Source Name</span
     >
   </div>
-  <ch5-triggerview
-    id="music-radio-triggerview"
-    gestureable="false"
-    class=""
-    noshowtype="display"
-    receivestateshowchildindex="Rooms.Music.TriggerviewPlayerIsShown"
-  >
-    <ch5-triggerview-child noshowtype="display">
+  <ch5-triggerview id="" gestureable="false" class="music-radio-triggerview">
+    <ch5-triggerview-child>
       <ch5-import-htmlsnippet
         url="./components/music-player/music-player.html"
         class="music-player-templ"
@@ -69,7 +66,7 @@
       </ch5-import-htmlsnippet>
     </ch5-triggerview-child>
 
-    <ch5-triggerview-child noshowtype="display">
+    <ch5-triggerview-child>
       <ch5-import-htmlsnippet
         url="./components/radio-player/radio-player.html"
         class="radio-player-templ"

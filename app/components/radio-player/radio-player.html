@@ -15,6 +15,7 @@
 
 
                                 </ch5-triggerview>
+
                             </div>
                         </div>
                         <h3 data-ch5-textcontent="Room.Radio.CurrentStationText" class="album-name">106.6 FM</h3>
@@ -102,7 +103,8 @@
                 <!-- receivestateselected="Room.AirPlay.Track[{{idx}}].TrackIsSelected" -->
               <!-- > -->
               <ch5-select-option
-              
+              sendEventOnClick="Room.Radio.Room.Radio.ViewAll"
+              receivestateselected="Room.Radio.StationsListIsSelected"
             >
                 <!-- <h3 class="" data-ch5-textContent="">Song Name #{{idx}}</h3>
                     <h4 class="" data-ch5-textContent="">Artist Name #{{idx}}</h4> -->

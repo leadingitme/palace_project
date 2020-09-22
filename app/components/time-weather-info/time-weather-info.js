@@ -93,6 +93,7 @@ var timeWeatherInfoModule = (function () {
   toggleButton.addEventListener("click", timeWeatherToggle);
 
   function timeWeatherToggle() {
+    console.log("timeWeatherToggle was clicked");
     let sunIconCls = "fa-cloud-sun";
     let clockIconCls = "fa-clock";
 

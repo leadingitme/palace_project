@@ -7,14 +7,17 @@
                         <div class="radio-station-name d-flex">
                             <h2 data-ch5-textcontent="Room.Radio.CurrentStationName" class="">Rock Wave</h2>
                             <div class="favourite-btn-container">
-                                <ch5-triggerview class="" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Room.Radio.FavouritesTogglePressed">
+                                <ch5-triggerview class="" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.Radio.FavouriteBtnTriggerview">
                                     <ch5-triggerview-child noshowtype="display">
-                                        <ch5-button type="success" stretch="both" shape="rectangle" iconclass="far fa-heart" sendeventonclick="Room.Radio.FavouritesTogglePressedFb">
+                                        <ch5-button type="success" stretch="both" shape="rectangle" iconclass="far fa-heart" sendeventonclick="Room.Radio.FavouritesTogglePressed">
                                         </ch5-button>
                                     </ch5-triggerview-child>
 
-
+                                    <ch5-triggerview-child noshowtype="display">
+                                        <ch5-button type="success" stretch="both" shape="rectangle" iconclass="fas fa-heart" sendeventonclick="Room.Radio.FavouritesTogglePressedFb"></ch5-button>
+                                    </ch5-triggerview-child>
                                 </ch5-triggerview>
+
 
                             </div>
                         </div>
@@ -35,36 +38,7 @@
                   class="navbar-toggler d-sm-none"
                   type="button"
                   onclick="musicPageModule.songListSidebarToggle()"
-                  data-toggle="collapse"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i class="fas fa-list-ul"></i>
-                </button>
-              </div> -->
-                        <!-- <div class="track-slider">
-                <span data-ch5-textContent="">00:35</span>
-                <ch5-slider
-                  value="50"
-                  min="0"
-                  max="100"
-                  stretch="width"
-                  handleShape="circle"
-                  orientation="horizontal"
-                  showtickvalues="true"
-                  handlesize="x-small"
-                >
-                </ch5-slider>
-                <span data-ch5-textContent="">03:35</span>
-              </div> -->
-                        <div class="controllers-btn-container">
-                            <div class="controllers-btn">
-                                <ch5-button stretch="both" iconclass="fas fa-backward fa-2x" sendeventonclick="">
-                                </ch5-button>
-                                <ch5-triggerview class="triggerview-container" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Room.PlayPauseBtnTriggerview">
-                                    <ch5-triggerview-child noshowtype="display">
-                                        <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-play fa-2x" sendeventonclick="Room.SetPauseBtnActive"></ch5-button>
-                                    </ch5-triggerview-child>
+                  data-toggle="collapse"a
 
                                     <ch5-triggerview-child noshowtype="display">
                                         <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-pause fa-2x" sendeventonclick="Room.SetPlayBtnActive"></ch5-button>
@@ -84,20 +58,20 @@
                 </div>
             </div>
             <!-- <div class="song-list-wrapper"> -->
-            <aside class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated" id="songListSidebar">
-                <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" size="37" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Room.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
-                    <div class="song-select-features">
-                        <!-- <span class=""> Library</span> -->
-                        <div class="features-btn-container">
-                            <div class="features-btn station-selection">
-                                <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Room.Radio.FavouritesIsSelected" sendeventonclick="Room.Radio.ViewFavourites"></ch5-button>
-                                <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Room.Radio.StationsListIsSelected" sendeventonclick="Room.Radio.ViewAll">
-                                </ch5-button>
-                            </div>
-                        </div>
-                    </div>
+                        <aside class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated" id="songListSidebar">
+                            <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" size="37" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Room.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
+                                <div class="song-select-features">
+                                    <!-- <span class=""> Library</span> -->
+                                    <div class="features-btn-container">
+                                        <div class="features-btn station-selection">
+                                            <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Room.Radio.FavouritesIsSelected" sendeventonclick="Room.Radio.ViewFavourites"></ch5-button>
+                                            <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Room.Radio.StationsListIsSelected" sendeventonclick="Room.Radio.ViewAll">
+                                            </ch5-button>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <template>
+                                <template>
               <!-- <ch5-select-option -->
                 <!-- sendEventOnClick="Room.AirPlay.Track[{{idx}}].SetTrackSelected" -->
                 <!-- receivestateselected="Room.AirPlay.Track[{{idx}}].TrackIsSelected" -->
@@ -108,20 +82,20 @@
             >
                 <!-- <h3 class="" data-ch5-textContent="">Song Name #{{idx}}</h3>
                     <h4 class="" data-ch5-textContent="">Artist Name #{{idx}}</h4> -->
-                    <h4 class="" data-ch5-textContent="Room.Radio.RadioText[{{idx}}]">106.6</h4>
+                    <h4 class="" data-ch5-textContent="Room.Radio.StationName[{{idx}}].RadioText">106.6</h4>
               
            
                 <h5
                   class=""
-                  data-ch5-textContent="Room.Radio.StationName[{{idx}}]"
+                  data-ch5-textContent="Room.Radio.StationName[{{idx}}].StationName"
                 >
                   Station Name
                 </h5>
               </ch5-select-option>
             </template>
-                </ch5-select>
-            </aside>
-            <!-- </div> -->
-        </div>
-    </div>
+                            </ch5-select>
+                        </aside>
+                        <!-- </div> -->
+                    </div>
+                </div>
 </section>

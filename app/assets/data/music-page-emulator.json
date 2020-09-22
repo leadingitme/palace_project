@@ -257,7 +257,7 @@
         },
         {
             "type": "boolean",
-            "event": "Room.Radio.SetFavouriteBtnActive",
+            "event": "Room.Radio.FavouritesTogglePressed",
             "trigger": true,
             "actions": [{
                 "type": "numeric",
@@ -268,7 +268,7 @@
         },
         {
             "type": "boolean",
-            "event": "Room.Radio.SetFavouriteBtnInactive",
+            "event": "Room.Radio.FavouritesTogglePressedFb",
             "trigger": true,
             "actions": [{
                 "type": "numeric",

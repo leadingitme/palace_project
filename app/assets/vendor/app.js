@@ -70,7 +70,7 @@ var appModule = (function () {
    */
   function addNavItemClickListener(idx) {
     let itemElem = document.querySelector(".thumb-btn-" + idx);
-    console.log(itemElem);
+    console.log("Bottom Navbar Buttons:" + itemElem);
     if (itemElem) {
       itemElem.addEventListener("click", function () {
         if (triggerview !== null && idx !== activeIndex) {

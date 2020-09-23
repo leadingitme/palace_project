@@ -75,12 +75,15 @@ var musicPageModule = (function () {
         if (idx == 0) {
           musicPlayerSnippet.classList.remove("d-none");
           radioPlayerSnippet.classList.add("d-none");
-          // setTimeout(() => {
-          //   closeMusicSourceDropdown();
-          // }, 300);
+          setTimeout(() => {
+            closeMusicSourceDropdown();
+          }, 300);
         } else {
           radioPlayerSnippet.classList.remove("d-none");
           musicPlayerSnippet.classList.add("d-none");
+          setTimeout(() => {
+            closeMusicSourceDropdown();
+          }, 300);
         }
       });
     }

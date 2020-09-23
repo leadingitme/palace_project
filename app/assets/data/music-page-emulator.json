@@ -249,6 +249,7 @@
         }
       ]
     },
+
     {
       "type": "boolean",
       "event": "Rooms.Music.SetPlayBtnActive",
@@ -285,6 +286,18 @@
           "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
           "logic": "set",
           "value": 0
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Radio.FavouriteBtnToggle",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "b",
+          "state": "Radio.FavouriteBtnState",
+          "logic": "toggle"
         }
       ]
     },

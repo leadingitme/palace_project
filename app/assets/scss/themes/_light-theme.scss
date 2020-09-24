@@ -737,6 +737,24 @@ $weather-value-light: #0d2335;
         }
       }
     }
+    .radio-player {
+      .artist-album-name {
+        .favourite-btn-container {
+          .ch5-button {
+            i {
+              color: #afafaf;
+              -webkit-text-stroke: 2px rgb(88, 88, 88);
+            }
+            &.ch5-button--selected {
+              i {
+                color: rgb(175, 62, 62) !important;
+                -webkit-text-stroke: 0px !important;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   // Weather Station Page
 

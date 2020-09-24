@@ -2004,7 +2004,6 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       align-items: center;
       padding: 1rem 0 0.5rem 1rem;
       position: sticky;
-
       top: 0;
       z-index: 100;
       .features-btn-container {
@@ -2085,15 +2084,11 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           background-color: transparent;
         }
         i {
-          font-size: 1.5rem;
-          color: #dcdcdc;
+          font-size: 1.4rem;
         }
-        // .fas.fa-heart {
-        //   color: rgb(175, 62, 62);
-        // }
         &.ch5-button--selected {
           i {
-            color: rgb(175, 62, 62);
+            font-size: 1.7rem;
           }
         }
       }
@@ -2117,6 +2112,34 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
       .station-list-btn {
         margin-left: 11rem;
+      }
+    }
+    .song-list-sidebar {
+      .artist-name {
+        h5 {
+          margin: 0.7rem 0 0 0;
+        }
+        margin: 0;
+        width: 100%;
+      }
+      .fav-icon {
+        .ch5-button {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          padding: 0;
+          .cb-btn {
+            height: 2rem;
+            width: 2rem;
+          }
+          &.ch5-button--pressed {
+            background-color: transparent;
+          }
+        }
+        i {
+          font-size: 1.5rem;
+          color: rgb(175, 62, 62);
+        }
       }
     }
   }

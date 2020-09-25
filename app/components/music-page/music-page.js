@@ -67,23 +67,21 @@ var musicPageModule = (function () {
 
   function showPlayerSnippet(idx) {
     let sourceBtnBtn = document.querySelector(".music-source-btn-" + idx);
-    console.log("sourceBtnArray:" + sourceBtnBtn);
 
     {
       sourceBtnBtn.addEventListener("click", function () {
-        console.log("source btn was clicked");
         if (idx == 0) {
           musicPlayerSnippet.classList.remove("d-none");
           radioPlayerSnippet.classList.add("d-none");
           setTimeout(() => {
             closeMusicSourceDropdown();
-          }, 150);
+          }, 100);
         } else {
           radioPlayerSnippet.classList.remove("d-none");
           musicPlayerSnippet.classList.add("d-none");
           setTimeout(() => {
             closeMusicSourceDropdown();
-          }, 150);
+          }, 100);
         }
       });
     }
@@ -94,6 +92,10 @@ var musicPageModule = (function () {
       showPlayerSnippet(idx);
     }
   }, 5000);
+
+  function alertMessage() {
+    alert("Source was clicked through alertMessage function");
+  }
 
   //   if (sourceBtnBtn) {
   //     sourceBtnBtn[idx].addEventListener("click", function () {
@@ -158,5 +160,6 @@ var musicPageModule = (function () {
     openMusicSourceDropdown: openMusicSourceDropdown,
     dropDownStopPropagation: dropDownStopPropagation,
     songListSidebarToggle: songListSidebarToggle,
+    alertMessage: alertMessage,
   };
 })();

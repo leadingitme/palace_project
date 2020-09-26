@@ -238,26 +238,51 @@
     },
     {
       "type": "boolean",
-      "event": "Rooms.Music.SetPauseBtnActive",
+      "event": "Rooms.MusicPlayer.SetPauseBtnActive",
       "trigger": true,
       "actions": [
         {
           "type": "numeric",
-          "state": "Rooms.Music.PlayPauseBtnTriggerview",
+          "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
           "logic": "set",
           "value": 1
         }
       ]
     },
-
     {
       "type": "boolean",
-      "event": "Rooms.Music.SetPlayBtnActive",
+      "event": "Rooms.MusicPlayer.SetPlayBtnActive",
       "trigger": true,
       "actions": [
         {
           "type": "numeric",
-          "state": "Rooms.Music.PlayPauseBtnTriggerview",
+          "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+          "logic": "set",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Rooms.RadioPlayer.SetPauseBtnActive",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "numeric",
+          "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
+          "logic": "set",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Rooms.RadioPlayer.SetPlayBtnActive",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "numeric",
+          "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
           "logic": "set",
           "value": 0
         }
@@ -745,6 +770,18 @@
           "value": "The best of Foster The People"
         }
       ]
+    },
+    {
+      "type": "boolean",
+      "event": "Music.MuteBtnToggle",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Music.MuteBtnToggleState",
+          "type": "b",
+          "logic": "toggle"
+        }
+      ]
     }
   ],
   "onStart": [
@@ -979,7 +1016,12 @@
       "value": "Dance All Day FM"
     },
     {
-      "state": "Rooms.Music.PlayPauseBtnTriggerview",
+      "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+      "type": "numeric",
+      "value": 0
+    },
+    {
+      "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
       "type": "numeric",
       "value": 0
     },

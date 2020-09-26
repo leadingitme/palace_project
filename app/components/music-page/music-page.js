@@ -75,13 +75,13 @@ var musicPageModule = (function () {
           radioPlayerSnippet.classList.add("d-none");
           setTimeout(() => {
             closeMusicSourceDropdown();
-          }, 100);
+          }, 150);
         } else {
           radioPlayerSnippet.classList.remove("d-none");
           musicPlayerSnippet.classList.add("d-none");
           setTimeout(() => {
             closeMusicSourceDropdown();
-          }, 100);
+          }, 150);
         }
       });
     }

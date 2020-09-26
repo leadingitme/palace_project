@@ -703,6 +703,17 @@ $weather-value-dark: #c0d0dd;
           }
         }
       }
+      .ch5-toggle {
+        .ch5-toggle__handle {
+          background-color: #adadad;
+          i {
+            color: rgb(58, 58, 58);
+          }
+          a {
+            border-color: #adadad;
+          }
+        }
+      }
     }
     .song-list-sidebar {
       background-color: $ch5-lighting-btn-dark;

@@ -1702,7 +1702,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 .music-page {
   .navbar-text {
     @include media-breakpoint-up(sm) {
-      margin-top: 0.3rem;
+      margin-top: 0rem;
       padding-top: 0.2rem;
       padding-bottom: 0.2rem;
     }
@@ -1733,7 +1733,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
     @include media-breakpoint-up(sm) {
       left: 47%;
-      top: 2.7rem;
+      top: 2.4rem;
     }
   }
   .dropdown-menu {
@@ -1798,8 +1798,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       height: 150px;
       width: 150px;
       @include media-breakpoint-up(sm) {
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
       }
       @include media-breakpoint-up(lg) {
         height: 158px;
@@ -1971,7 +1971,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       font-size: 1rem;
 
       @include media-breakpoint-only(sm) {
-        margin: 0 0.5rem 0 0;
+        margin: 0;
         height: 3.5rem;
       }
       @include media-breakpoint-up(md) {
@@ -1981,8 +1981,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         margin: 2rem 8rem 0;
       }
       .ch5-button {
-        max-width: 2.5rem;
-        max-height: 2.5rem;
+        max-width: 3rem;
+        max-height: 3rem;
         background: transparent;
         box-shadow: none;
         margin-bottom: 0.8rem;
@@ -2176,7 +2176,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
     .volume-slider-container {
       height: 4rem;
-      margin: 2.5rem 1rem 0 0;
+      margin: 2.5rem 0 0 0;
     }
     .station-selection {
       .ch5-button {

@@ -1937,7 +1937,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         grid-auto-rows: 5vh;
         @include media-breakpoint-only(sm) {
           grid-template-columns: repeat(3, minmax(auto, 26vmin));
-          grid-auto-rows: 7.5vh;
+          grid-auto-rows: 8vh;
           i {
             font-size: 1.6rem;
           }

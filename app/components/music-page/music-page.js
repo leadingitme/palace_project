@@ -65,6 +65,12 @@ var musicPageModule = (function () {
   //   showPlayerSnippet(idx);
   // }
 
+  window.onload = function () {
+    setTimeout(() => {
+      musicPlayerSnippet.classList.add("d-none");
+    }, 5000);
+  };
+
   function showPlayerSnippet(idx) {
     let sourceBtnBtn = document.querySelector(".music-source-btn-" + idx);
 
@@ -73,15 +79,16 @@ var musicPageModule = (function () {
         if (idx == 0) {
           musicPlayerSnippet.classList.remove("d-none");
           radioPlayerSnippet.classList.add("d-none");
-          setTimeout(() => {
+          setTimeout(function () {
             closeMusicSourceDropdown();
-          }, 150);
+          }, 300);
         } else {
+          // window.location.reload();
           radioPlayerSnippet.classList.remove("d-none");
           musicPlayerSnippet.classList.add("d-none");
-          setTimeout(() => {
+          setTimeout(function () {
             closeMusicSourceDropdown();
-          }, 150);
+          }, 300);
         }
       });
     }
@@ -91,11 +98,7 @@ var musicPageModule = (function () {
     for (let idx = 0; idx < SOURCE_COUNT; idx++) {
       showPlayerSnippet(idx);
     }
-  }, 5000);
-
-  function alertMessage() {
-    alert("Source was clicked through alertMessage function");
-  }
+  }, 10000);
 
   //   if (sourceBtnBtn) {
   //     sourceBtnBtn[idx].addEventListener("click", function () {
@@ -160,6 +163,5 @@ var musicPageModule = (function () {
     openMusicSourceDropdown: openMusicSourceDropdown,
     dropDownStopPropagation: dropDownStopPropagation,
     songListSidebarToggle: songListSidebarToggle,
-    alertMessage: alertMessage,
   };
 })();

@@ -12,6 +12,12 @@
           "logic": "set"
         },
         {
+          "type": "numeric",
+          "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
+          "logic": "set",
+          "value": 0
+        },
+        {
           "state": "Rooms.Music.RadioPlayerIsShown",
           "value": false,
           "type": "b",
@@ -197,6 +203,12 @@
           "value": false,
           "type": "b",
           "logic": "set"
+        },
+        {
+          "type": "numeric",
+          "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+          "logic": "set",
+          "value": 0
         },
         {
           "type": "numeric",

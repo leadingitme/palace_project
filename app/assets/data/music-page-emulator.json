@@ -785,13 +785,77 @@
     },
     {
       "type": "boolean",
-      "event": "Music.MuteBtnToggle",
+      "event": "Music.RadioPlayer.MuteBtnToggle",
       "trigger": true,
       "actions": [
         {
-          "state": "Music.MuteBtnToggleState",
+          "state": "Music.RadioPlayer.MuteBtnToggleState",
           "type": "b",
           "logic": "toggle"
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Music.RadioPlayer.VolDownIsClicked",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Music.RadioPlayer.VolSliderValue",
+          "type": "n",
+          "logic": "decrement",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Music.RadioPlayer.VolUpIsClicked",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Music.RadioPlayer.VolSliderValue",
+          "type": "n",
+          "logic": "increment",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Music.MusicPlayer.MuteBtnToggle",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Music.MusicPlayer.MuteBtnToggleState",
+          "type": "b",
+          "logic": "toggle"
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Music.MusicPlayer.VolDownIsClicked",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Music.MusicPlayer.VolSliderValue",
+          "type": "n",
+          "logic": "decrement",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Music.MusicPlayer.VolUpIsClicked",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Music.MusicPlayer.VolSliderValue",
+          "type": "n",
+          "logic": "increment",
+          "value": 10
         }
       ]
     }
@@ -1046,6 +1110,16 @@
       "state": "Rooms.Music.TriggerviewPlayerIsShown",
       "type": "numeric",
       "value": 1
+    },
+    {
+      "state": "Music.RadioPlayer.VolSliderValue",
+      "type": "numeric",
+      "value": 20
+    },
+    {
+      "state": "Music.MusicPlayer.VolSliderValue",
+      "type": "numeric",
+      "value": 20
     }
   ]
 }

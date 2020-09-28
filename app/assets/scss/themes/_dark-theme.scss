@@ -703,6 +703,11 @@ $weather-value-dark: #c0d0dd;
           }
         }
       }
+      .ch5-button--selected {
+        .fa-volume-mute {
+          color: $ch5-dark-primary;
+        }
+      }
       .ch5-toggle {
         .ch5-toggle__handle {
           background-color: #adadad;

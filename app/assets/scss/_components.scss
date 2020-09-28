@@ -1870,6 +1870,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           padding-top: 0.8rem;
           display: inline-block;
         }
+
         button {
           margin-left: 14rem;
         }
@@ -1877,6 +1878,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           margin-top: 0.4rem;
           h2 {
             font-size: 1.1rem;
+          }
+          h3 {
+            margin-bottom: 0;
           }
         }
         @include media-breakpoint-up(xl) {
@@ -1965,14 +1969,62 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       align-items: center;
       margin: 0.8rem 2.3rem 0;
       font-size: 1rem;
+
       @include media-breakpoint-only(sm) {
-        margin: 0.5rem 5rem 0 0;
+        margin: 0 0.5rem 0 0;
+        height: 3.5rem;
       }
       @include media-breakpoint-up(md) {
         margin: 0.8rem 5rem 0;
       }
       @include media-breakpoint-up(xl) {
         margin: 2rem 8rem 0;
+      }
+      .ch5-button {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+        background: transparent;
+        box-shadow: none;
+        margin-bottom: 0.8rem;
+
+        .fa-volume-mute {
+          font-size: 1.3rem;
+        }
+        .fa-volume-down,
+        .fa-volume-up {
+          font-size: 1.2rem;
+        }
+        .cb-btn {
+          width: 100%;
+          padding: 1rem;
+        }
+        &.ch5-button--pressed {
+          background-color: transparent;
+          box-shadow: none;
+
+          .fa-volume-down,
+          .fa-volume-up {
+            font-size: 1.5rem;
+          }
+          // .fa-volume-up {
+          //   font-size: 1.3rem;
+          // }
+        }
+      }
+      // .ch5-button {
+      //   &.ch5-button--selected {
+      //     margin-bottom: 1rem;
+      //   }
+      // }
+      .mute-btn {
+        margin-bottom: 0.2 rem;
+
+        .ch5-button--selected {
+          .fa-volume-mute {
+            font-size: 1.6rem;
+            // margin-bottom: 0.5rem;
+          }
+        }
       }
 
       .ch5-slider {
@@ -2123,7 +2175,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
     }
     .volume-slider-container {
-      margin: 2rem 3rem 0 0;
+      height: 4rem;
+      margin: 2.5rem 1rem 0 0;
     }
     .station-selection {
       .ch5-button {

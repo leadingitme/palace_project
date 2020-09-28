@@ -701,8 +701,13 @@ $weather-value-light: #0d2335;
         }
         &.ch5-slider--pressed {
           .noUi-connect {
-            background-color: rgb(82, 82, 82);
+            background-color: rgb(71, 71, 71);
           }
+        }
+      }
+      .ch5-button--selected {
+        .fa-volume-mute {
+          color: #356973;
         }
       }
     }

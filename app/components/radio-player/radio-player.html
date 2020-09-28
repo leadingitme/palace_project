@@ -94,26 +94,42 @@
               </div>
             </div>
             <div class="volume-slider-container">
-              <ch5-toggle
+              <!-- <ch5-toggle
                 iconOn="fas fa-volume-mute"
                 iconOff="fas fa-volume-mute"
                 sendeventonclick="Music.MuteBtnToggle"
                 receivestatevalue="Music.MuteBtnToggleState"
               >
-              </ch5-toggle>
-              <i class="fas fa-volume-down"></i>
+              </ch5-toggle> -->
+              <ch5-button
+                class="mute-btn mr-4"
+                size="x-small"
+                iconclass="fas fa-volume-mute"
+                sendeventonclick="Music.RadioPlayer.MuteBtnToggle"
+                receivestateselected="Music.RadioPlayer.MuteBtnToggleState"
+              ></ch5-button>
+              <ch5-button
+                class="mr-1"
+                size="x-small"
+                iconclass="fas fa-volume-down"
+                sendeventonclick="Music.RadioPlayer.VolDownIsClicked"
+              ></ch5-button>
               <ch5-slider
-                value="50"
                 min="0"
                 max="100"
                 stretch="width"
                 handleShape="circle"
                 orientation="horizontal"
-                showtickvalues="true"
                 handlesize="x-small"
+                receivestatevalue="Music.RadioPlayer.VolSliderValue"
               >
               </ch5-slider>
-              <i class="fas fa-volume-up"></i>
+              <ch5-button
+                class="ml-1"
+                size="x-small"
+                iconclass="fas fa-volume-up"
+                sendeventonclick="Music.RadioPlayer.VolUpIsClicked"
+              ></ch5-button>
             </div>
           </div>
         </div>

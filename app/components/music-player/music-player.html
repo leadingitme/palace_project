@@ -84,7 +84,7 @@
                   gestureable="false"
                   noshowtype="display"
                   disableanimation="true"
-                  receivestateshowchildindex="Rooms.Music.PlayPauseBtnTriggerview"
+                  receivestateshowchildindex="Rooms.MusicPlayer.PlayPauseBtnTriggerview"
                 >
                   <ch5-triggerview-child noshowtype="display">
                     <ch5-button
@@ -92,7 +92,7 @@
                       type="success"
                       shape="rectangle"
                       iconclass="fa fa-play fa-2x"
-                      sendeventonclick="Rooms.Music.SetPauseBtnActive"
+                      sendeventonclick="Rooms.MusicPlayer.SetPauseBtnActive"
                     ></ch5-button>
                   </ch5-triggerview-child>
 
@@ -102,7 +102,7 @@
                       type="success"
                       shape="rectangle"
                       iconclass="fa fa-pause fa-2x"
-                      sendeventonclick="Rooms.Music.SetPlayBtnActive"
+                      sendeventonclick="Rooms.MusicPlayer.SetPlayBtnActive"
                     ></ch5-button>
                   </ch5-triggerview-child>
                 </ch5-triggerview>
@@ -115,9 +115,26 @@
               </div>
             </div>
             <div class="volume-slider-container">
-              <i class="fas fa-volume-down"></i>
+              <!-- <ch5-toggle
+                iconOn="fas fa-volume-mute"
+                iconOff="fas fa-volume-mute"
+                sendeventonclick="Music.MuteBtnToggle"
+                receivestatevalue="Music.MuteBtnToggleState"
+              >
+              </ch5-toggle> -->
+              <ch5-button
+                class="mute-btn mr-4"
+                size="x-small"
+                iconclass="fas fa-volume-mute"
+                sendeventonclick="Music.MusicPlayer.MuteBtnToggle"
+                receivestateselected="Music.MusicPlayer.MuteBtnToggleState"
+              ></ch5-button>
+              <ch5-button
+                size="x-small"
+                iconclass="fas fa-volume-down"
+                sendeventonclick="Music.MusicPlayer.VolDownIsClicked"
+              ></ch5-button>
               <ch5-slider
-                value="50"
                 min="0"
                 max="100"
                 stretch="width"
@@ -125,9 +142,14 @@
                 orientation="horizontal"
                 showtickvalues="true"
                 handlesize="x-small"
+                receivestatevalue="Music.MusicPlayer.VolSliderValue"
               >
               </ch5-slider>
-              <i class="fas fa-volume-up"></i>
+              <ch5-button
+                size="x-small"
+                iconclass="fas fa-volume-up"
+                sendeventonclick="Music.MusicPlayer.VolUpIsClicked"
+              ></ch5-button>
             </div>
           </div>
         </div>

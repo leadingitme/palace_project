@@ -439,7 +439,7 @@ $weather-value-light: #0d2335;
         // background-color: $ch5-lighting-btn-light;
         box-shadow: 3px 3px 7px rgb(70, 70, 70);
       }
-      .ch5-button--pressed {
+      .ch5-button--selected {
         background: $gradient-btn-pressed-light;
 
         box-shadow: 1px 1px 3px rgb(58, 57, 57);
@@ -701,8 +701,13 @@ $weather-value-light: #0d2335;
         }
         &.ch5-slider--pressed {
           .noUi-connect {
-            background-color: rgb(82, 82, 82);
+            background-color: rgb(71, 71, 71);
           }
+        }
+      }
+      .ch5-button--selected {
+        .fa-volume-mute {
+          color: #356973;
         }
       }
     }
@@ -734,6 +739,24 @@ $weather-value-light: #0d2335;
         h4,
         h5 {
           color: rgb(63, 63, 63);
+        }
+      }
+    }
+    .radio-player {
+      .artist-album-name {
+        .favourite-btn-container {
+          .ch5-button {
+            i {
+              color: #afafaf;
+              -webkit-text-stroke: 2px rgb(88, 88, 88);
+            }
+            &.ch5-button--selected {
+              i {
+                color: rgb(175, 62, 62) !important;
+                -webkit-text-stroke: 0px !important;
+              }
+            }
+          }
         }
       }
     }

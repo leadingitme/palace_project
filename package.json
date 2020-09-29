@@ -1,4 +1,5 @@
 {
+
     "name": "shell-template",
     "version": "0.1.0",
     "main": "index.js",
@@ -55,3 +56,4 @@
         "lodash": "^4.17.19"
     }
 }
+

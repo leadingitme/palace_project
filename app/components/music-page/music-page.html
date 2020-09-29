@@ -15,10 +15,21 @@
         <span>SOURCE</span>
         <!-- <span class="d-block"><i class="fas fa-caret-down"></i> </span> -->
       </button>
-            <div id="music-source-dropdown" onclick="musicPageModule.dropDownStopPropagation()" class="dropdown-menu source-list-container">
-                <ch5-list orientation="vertical" class="ch5-custom-list" indexid="idx" receivestatesize="Rooms.Music.NumberOfSources">
-                    <template>
-            <div class="vertical-list-item">
+
+      <div
+        id="music-source-dropdown"
+        onclick="musicPageModule.dropDownStopPropagation()"
+        class="dropdown-menu source-list-container"
+      >
+        <ch5-list
+          orientation="vertical"
+          class="ch5-custom-list"
+          indexid="idx"
+          receivestatesize="Rooms.Music.NumberOfSources"
+        >
+          <template>
+            <div class="vertical-list-item music-source-btn-div">
+
               <ch5-button
                 customClass="music-source-btn-{{idx}}"
                 type="text"
@@ -45,7 +56,7 @@
   <div>
     <ch5-import-htmlsnippet
       url="./components/music-player/music-player.html"
-      class="music-player-templ d-none"
+      class="music-player-templ"
     >
     </ch5-import-htmlsnippet>
   </div>

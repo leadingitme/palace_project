@@ -32,56 +32,91 @@ var musicPageModule = (function () {
     return outputValue;
   }
 
-  let triggerviewMusic = document.querySelector(".music-radio-triggerview");
-  let activeIndex = 0;
   // number of sources
   const SOURCE_COUNT = 2;
   let musicPlayerSnippet = document.querySelector(".music-player-templ");
   let radioPlayerSnippet = document.querySelector(".radio-player-templ");
 
+  // function showPlayerSnippet(idx) {
+  //   let sourceBtnBtn = document.querySelector(".music-source-btn-" + idx);
+  //   let sourceBtnBtn = document.querySelectorAll(".music-source-btn-" + idx);
+
+  //   // console.log("sourceBtn:" + sourceBtnBtn);
+  //   // console.log("idx=" + idx);
+
+  //   if (sourceBtnBtn) {
+  //     sourceBtnBtn.addEventListener("click", function () {
+  //       console.log("source btn was clicked");
+
+  //       if (idx == 0) {
+  //         musicPlayerSnippet.classList.remove("d-none");
+  //         radioPlayerSnippet.classList.add("d-none");
+  //         closeMusicSourceDropdown();
+  //       } else {
+  //         radioPlayerSnippet.classList.remove("d-none");
+  //         musicPlayerSnippet.classList.add("d-none");
+  //         closeMusicSourceDropdown();
+  //       }
+  //     });
+  //   }
+  // }
+
+  // for (let idx = 0; idx < SOURCE_COUNT; idx++) {
+  //   showPlayerSnippet(idx);
+  // }
+
+  window.onload = function () {
+    setTimeout(() => {
+      musicPlayerSnippet.classList.add("d-none");
+    }, 5000);
+  };
+
   function showPlayerSnippet(idx) {
-    let sourceBtn = document.querySelector(".music-source-btn-" + idx);
-    console.log("sourceBtn:" + sourceBtn);
-    console.log("idx=" + idx);
+    let sourceBtnBtn = document.querySelector(".music-source-btn-" + idx);
 
-    if (sourceBtn) {
-      sourceBtn.addEventListener("click", function () {
-        console.log("source btn was clicked");
-
+    {
+      sourceBtnBtn.addEventListener("click", function () {
         if (idx == 0) {
           musicPlayerSnippet.classList.remove("d-none");
           radioPlayerSnippet.classList.add("d-none");
-          closeMusicSourceDropdown();
+          setTimeout(function () {
+            closeMusicSourceDropdown();
+          }, 300);
         } else {
+          // window.location.reload();
           radioPlayerSnippet.classList.remove("d-none");
           musicPlayerSnippet.classList.add("d-none");
-          closeMusicSourceDropdown();
+          setTimeout(function () {
+            closeMusicSourceDropdown();
+          }, 300);
         }
       });
     }
   }
 
-  for (let idx = 0; idx < SOURCE_COUNT; idx++) {
-    showPlayerSnippet(idx);
-  }
+  setTimeout(function () {
+    for (let idx = 0; idx < SOURCE_COUNT; idx++) {
+      showPlayerSnippet(idx);
+    }
+  }, 10000);
 
-  // function addMusicSourceItemClickListener(idx) {
-  //   let sourceBtn = document.querySelector(".music-source-btn-" + idx);
-  //   console.log("source button:" + sourceBtn);
-  //   if (sourceBtn) {
-  //     sourceBtn.addEventListener("click", function () {
+  //   if (sourceBtnBtn) {
+  //     sourceBtnBtn[idx].addEventListener("click", function () {
   //       console.log("source btn was clicked");
 
-  //       if (triggerviewMusic !== null && idx !== activeIndex) {
-  //         triggerviewMusic.setActiveView(idx);
-  //         // closeMusicSourceDropdown();
-  //         return;
+  //       if (idx == 0) {
+  //         musicPlayerSnippet.classList.remove("d-none");
+  //         radioPlayerSnippet.classList.add("d-none");
+  //         closeMusicSourceDropdown();
   //       } else {
-  //         console.log("Something went wrong!!!!");
+  //         radioPlayerSnippet.classList.remove("d-none");
+  //         musicPlayerSnippet.classList.add("d-none");
+  //         closeMusicSourceDropdown();
   //       }
   //     });
   //   }
   // }
+
   /**
    * All public or private methods which need to call onInit
    */
@@ -105,27 +140,14 @@ var musicPageModule = (function () {
   let dropdown = document.getElementById("music-source-dropdown");
 
   function openMusicSourceDropdown() {
-    // dropdown.classList.add("animate__fadeIn");
     dropdown.classList.toggle("show");
     event.stopPropagation();
-
-    // setTimeout(function () {
-    //   dropdown.classList.remove("animate__fadeIn");
-    // }, 500);
   }
-
-  // function addClosingAnimation() {
-  //   let dropdown = document.getElementById("music-source-dropdown");
-  //   dropdown.classList.add("animate__fadeOut");
-  // }
-  // function removeClosingAnimation() {
-  //   let dropdown = document.getElementById("music-source-dropdown");
-  //   dropdown.classList.remove("animate__fadeOut");
-  // }
 
   function closeMusicSourceDropdown() {
     dropdown.classList.remove("show");
   }
+
   document.body.addEventListener("click", function () {
     if (!!dropdown && dropdown.classList) {
       closeMusicSourceDropdown();

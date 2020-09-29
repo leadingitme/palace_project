@@ -70,7 +70,6 @@ var appModule = (function () {
    */
   function addNavItemClickListener(idx) {
     let itemElem = document.querySelector(".thumb-btn-" + idx);
-
     if (itemElem) {
       itemElem.addEventListener("click", function () {
         if (triggerview !== null && idx !== activeIndex) {
@@ -401,7 +400,7 @@ var appModule = (function () {
       for (let idx = 0; idx < NAV_PAGE_COUNT; idx++) {
         addNavItemClickListener(idx);
       }
-    }, 500);
+    }, 5000);
     triggerview.addEventListener("select", function (event) {
       setTimeout(() => {
         activeIndex = event.detail;

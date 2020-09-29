@@ -1702,7 +1702,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 .music-page {
   .navbar-text {
     @include media-breakpoint-up(sm) {
-      margin-top: 0.3rem;
+      margin-top: 0rem;
       padding-top: 0.2rem;
       padding-bottom: 0.2rem;
     }
@@ -1733,7 +1733,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
     @include media-breakpoint-up(sm) {
       left: 47%;
-      top: 2.7rem;
+      top: 2.4rem;
     }
   }
   .dropdown-menu {
@@ -1798,8 +1798,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       height: 150px;
       width: 150px;
       @include media-breakpoint-up(sm) {
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
       }
       @include media-breakpoint-up(lg) {
         height: 158px;
@@ -1870,6 +1870,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           padding-top: 0.8rem;
           display: inline-block;
         }
+
         button {
           margin-left: 14rem;
         }
@@ -1877,6 +1878,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           margin-top: 0.4rem;
           h2 {
             font-size: 1.1rem;
+          }
+          h3 {
+            margin-bottom: 0;
           }
         }
         @include media-breakpoint-up(xl) {
@@ -1926,7 +1930,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       align-items: center;
       margin-top: 0.4rem;
       @include media-breakpoint-only(sm) {
-        // margin-top: 0;
+        margin-top: 0;
       }
       @include media-breakpoint-up(xl) {
         margin-top: 1.5rem;
@@ -1937,7 +1941,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         grid-auto-rows: 5vh;
         @include media-breakpoint-only(sm) {
           grid-template-columns: repeat(3, minmax(auto, 26vmin));
-          grid-auto-rows: 7vh;
+          grid-auto-rows: 8vh;
           i {
             font-size: 1.6rem;
           }
@@ -1965,14 +1969,62 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       align-items: center;
       margin: 0.8rem 2.3rem 0;
       font-size: 1rem;
+
       @include media-breakpoint-only(sm) {
-        margin: 0.5rem 5rem 0;
+        margin: 0;
+        height: 3.5rem;
       }
       @include media-breakpoint-up(md) {
         margin: 0.8rem 5rem 0;
       }
       @include media-breakpoint-up(xl) {
         margin: 2rem 8rem 0;
+      }
+      .ch5-button {
+        max-width: 3rem;
+        max-height: 3rem;
+        background: transparent;
+        box-shadow: none;
+        margin-bottom: 0.8rem;
+
+        .fa-volume-mute {
+          font-size: 1.3rem;
+        }
+        .fa-volume-down,
+        .fa-volume-up {
+          font-size: 1.2rem;
+        }
+        .cb-btn {
+          width: 100%;
+          padding: 1rem;
+        }
+        &.ch5-button--pressed {
+          background-color: transparent;
+          box-shadow: none;
+
+          .fa-volume-down,
+          .fa-volume-up {
+            font-size: 1.5rem;
+          }
+          // .fa-volume-up {
+          //   font-size: 1.3rem;
+          // }
+        }
+      }
+      // .ch5-button {
+      //   &.ch5-button--selected {
+      //     margin-bottom: 1rem;
+      //   }
+      // }
+      .mute-btn {
+        margin-bottom: 0.2 rem;
+
+        .ch5-button--selected {
+          .fa-volume-mute {
+            font-size: 1.6rem;
+            // margin-bottom: 0.5rem;
+          }
+        }
       }
 
       .ch5-slider {
@@ -1987,6 +2039,25 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           top: -3px;
           right: -9px;
           border: none;
+        }
+      }
+      .ch5-toggle {
+        font-size: 12px;
+        &.ch5-toggle--on {
+          .ch5-toggle__handle {
+            box-shadow: inset 0px 0px 0px 20px #ad6c7b;
+            a {
+              border-color: #ad6c7b;
+            }
+          }
+        }
+        .ch5-toggle__handle {
+          min-width: 4.5rem;
+          height: 2rem;
+          min-height: 2rem;
+          div {
+            line-height: 1.9rem;
+          }
         }
       }
     }
@@ -2004,7 +2075,6 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       align-items: center;
       padding: 1rem 0 0.5rem 1rem;
       position: sticky;
-
       top: 0;
       z-index: 100;
       .features-btn-container {
@@ -2080,16 +2150,17 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         background-color: transparent;
         border: none;
         box-shadow: none;
-        padding: 0.4rem 0 0 1.8rem;
+        padding: 0 0 0 1.8rem;
         &.ch5-button--pressed {
           background-color: transparent;
         }
         i {
-          font-size: 1.5rem;
-          // padding-bottom: 0.7rem;
+          font-size: 1.4rem;
         }
-        .fas.fa-heart {
-          color: rgb(175, 62, 62);
+        &.ch5-button--selected {
+          i {
+            font-size: 1.7rem;
+          }
         }
       }
       @include media-breakpoint-up(sm) {
@@ -2104,7 +2175,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
     }
     .volume-slider-container {
-      margin: 2rem 3rem 0;
+      height: 4rem;
+      margin: 2.5rem 0 0 0;
     }
     .station-selection {
       .ch5-button {
@@ -2112,6 +2184,34 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
       .station-list-btn {
         margin-left: 11rem;
+      }
+    }
+    .song-list-sidebar {
+      .artist-name {
+        h5 {
+          margin: 0.7rem 0 0 0;
+        }
+        margin: 0;
+        width: 100%;
+      }
+      .fav-icon {
+        .ch5-button {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          padding: 0;
+          .cb-btn {
+            height: 2rem;
+            width: 2rem;
+          }
+          &.ch5-button--pressed {
+            background-color: transparent;
+          }
+        }
+        i {
+          font-size: 1.5rem;
+          color: rgb(175, 62, 62);
+        }
       }
     }
   }

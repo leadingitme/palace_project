@@ -456,7 +456,7 @@ $weather-value-dark: #c0d0dd;
         // background-color: $ch5-lighting-btn-dark;
         // border: none;
       }
-      .ch5-button--pressed {
+      .ch5-button--selected {
         background: $gradient-btn-pressed-dark;
         // background: linear-gradient(-45deg, #8492a5, #2a2e33);
         box-shadow: 0px 0px 15px rgb(156, 156, 156);
@@ -703,6 +703,22 @@ $weather-value-dark: #c0d0dd;
           }
         }
       }
+      .ch5-button--selected {
+        .fa-volume-mute {
+          color: $ch5-dark-primary;
+        }
+      }
+      .ch5-toggle {
+        .ch5-toggle__handle {
+          background-color: #adadad;
+          i {
+            color: rgb(58, 58, 58);
+          }
+          a {
+            border-color: #adadad;
+          }
+        }
+      }
     }
     .song-list-sidebar {
       background-color: $ch5-lighting-btn-dark;
@@ -737,6 +753,22 @@ $weather-value-dark: #c0d0dd;
         h3,
         h4 {
           color: rgb(148, 148, 148);
+        }
+      }
+    }
+    .radio-player {
+      .artist-album-name {
+        .ch5-button {
+          i {
+            color: #2a2e33;
+            -webkit-text-stroke: 2px #6f6f6f;
+          }
+          &.ch5-button--selected {
+            i {
+              color: rgb(175, 62, 62) !important;
+              -webkit-text-stroke: 0px !important;
+            }
+          }
         }
       }
     }

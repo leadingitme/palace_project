@@ -1,606 +1,596 @@
 {
-  "cues": [
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[0].IncrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[0].TempIsSet",
-          "type": "n",
-          "logic": "increment",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[0].DecrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[0].TempIsSet",
-          "type": "n",
-          "logic": "decrement",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[1].IncrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[1].TempIsSet",
-          "type": "n",
-          "logic": "increment",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[1].DecrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[1].TempIsSet",
-          "type": "n",
-          "logic": "decrement",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[2].IncrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[2].TempIsSet",
-          "type": "n",
-          "logic": "increment",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[2].DecrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[2].TempIsSet",
-          "type": "n",
-          "logic": "decrement",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[3].IncrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[3].TempIsSet",
-          "type": "n",
-          "logic": "increment",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[3].DecrementTemp",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Climate.GuestRoom.Room[3].TempIsSet",
-          "type": "n",
-          "logic": "decrement",
-          "offset": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[0].Mode.FanSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
-          "logic": "set",
-          "value": true
+    "cues": [{
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[0].IncrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[0].TempIsSet",
+                "type": "n",
+                "logic": "increment",
+                "offset": 1
+            }]
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[0].DecrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[0].TempIsSet",
+                "type": "n",
+                "logic": "decrement",
+                "offset": 1
+            }]
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[0].Mode.CoolSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": true
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[1].IncrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[1].TempIsSet",
+                "type": "n",
+                "logic": "increment",
+                "offset": 1
+            }]
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[1].DecrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[1].TempIsSet",
+                "type": "n",
+                "logic": "decrement",
+                "offset": 1
+            }]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[2].IncrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[2].TempIsSet",
+                "type": "n",
+                "logic": "increment",
+                "offset": 1
+            }]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[2].DecrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[2].TempIsSet",
+                "type": "n",
+                "logic": "decrement",
+                "offset": 1
+            }]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[3].IncrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[3].TempIsSet",
+                "type": "n",
+                "logic": "increment",
+                "offset": 1
+            }]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[3].DecrementTemp",
+            "trigger": true,
+            "actions": [{
+                "state": "Climate.GuestRoom.Room[3].TempIsSet",
+                "type": "n",
+                "logic": "decrement",
+                "offset": 1
+            }]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[0].Mode.FanSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[0].Mode.CoolSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[0].Mode.OffSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[1].Mode.FanSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[1].Mode.CoolSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[1].Mode.OffSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[2].Mode.FanSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[2].Mode.CoolSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[2].Mode.OffSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[3].Mode.FanSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[3].Mode.CoolSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Climate.GuestRoom.Room[3].Mode.OffSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
         },
 
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "boolean",
+            "event": "Rooms.Climate.Fan.HighSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.HighIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.MediumIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.LowIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.AutoIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Rooms.Climate.Fan.MediumSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.MediumIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.HighIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.LowIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.AutoIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Rooms.Climate.Fan.LowSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.LowIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.HighIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.MediumIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.AutoIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "Rooms.Climate.Fan.AutoSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.AutoIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.HighIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.MediumIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Climate.Fan.LowIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
         }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[0].Mode.OffSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
-          "logic": "set",
-          "value": true
+    ],
+    "onStart": [{
+            "state": "Climate.GuestRoom.NumberOfRooms",
+            "type": "n",
+            "value": 2
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
+            "state": "Climate.GuestRoom.Room[0].RoomName",
+            "type": "s",
+            "value": "Bedroom"
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[1].Mode.FanSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
-          "logic": "set",
-          "value": true
+            "state": "Climate.GuestRoom.Room[1].RoomName",
+            "type": "s",
+            "value": "Corridor"
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
+            "state": "Climate.GuestRoom.Room[2].RoomName",
+            "type": "s",
+            "value": "Closet"
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[1].Mode.CoolSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": true
+            "state": "Climate.GuestRoom.Room[3].RoomName",
+            "type": "s",
+            "value": "Washroom"
         },
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
+            "state": "Rooms.Climate.TempIsSet",
+            "type": "n",
+            "value": 29
+        },
+        {
+            "state": "Rooms.Climate.RoomTemp",
+            "type": "n",
+            "value": 25
+        },
+        {
+            "state": "Rooms.Climate.RoomHumidity",
+            "type": "n",
+            "value": 60
+        },
+        {
+            "type": "b",
+            "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
+            "value": true
+        },
+        {
+            "type": "b",
+            "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
+            "value": true
+        },
+        {
+            "type": "b",
+            "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
+            "value": true
+        },
+        {
+            "type": "b",
+            "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
+            "value": true
+        },
+        {
+            "type": "b",
+            "state": "Rooms.Climate.Fan.AutoIsSelected",
+            "value": true
         },
 
         {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "s",
+            "state": "Climate.GuestRoom.Room[0].TempString",
+            "value": "15"
+        },
+        {
+            "type": "s",
+            "state": "Climate.GuestRoom.Room[1].TempString",
+            "value": "16"
+        },
+        {
+            "type": "s",
+            "state": "Climate.GuestRoom.Room[2].TempString",
+            "value": "17"
+        },
+        {
+            "type": "s",
+            "state": "Climate.GuestRoom.Room[3].TempString",
+            "value": "18"
         }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[1].Mode.OffSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[2].Mode.FanSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[2].Mode.CoolSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
-        },
 
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[2].Mode.OffSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[3].Mode.FanSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[3].Mode.CoolSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
-        },
 
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Climate.GuestRoom.Room[3].Mode.OffSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
 
-    {
-      "type": "boolean",
-      "event": "Rooms.Climate.Fan.HighSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.HighIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.MediumIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.LowIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.AutoIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Climate.Fan.MediumSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.MediumIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.HighIsSelected",
-          "logic": "set",
-          "value": false
-        },
-
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.LowIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.AutoIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Climate.Fan.LowSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.LowIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.HighIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.MediumIsSelected",
-          "logic": "set",
-          "value": false
-        },
-
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.AutoIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Climate.Fan.AutoSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.AutoIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.HighIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.MediumIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Climate.Fan.LowIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    }
-  ],
-  "onStart": [
-    {
-      "state": "Climate.GuestRoom.NumberOfRooms",
-      "type": "n",
-      "value": 4
-    },
-    {
-      "state": "Climate.GuestRoom.Room[0].RoomName",
-      "type": "s",
-      "value": "Bedroom"
-    },
-    {
-      "state": "Climate.GuestRoom.Room[1].RoomName",
-      "type": "s",
-      "value": "Sitting Area"
-    },
-    {
-      "state": "Climate.GuestRoom.Room[2].RoomName",
-      "type": "s",
-      "value": "Closet"
-    },
-    {
-      "state": "Climate.GuestRoom.Room[3].RoomName",
-      "type": "s",
-      "value": "Washroom"
-    },
-    {
-      "state": "Rooms.Climate.TempIsSet",
-      "type": "n",
-      "value": 29
-    },
-    {
-      "state": "Rooms.Climate.RoomTemp",
-      "type": "n",
-      "value": 25
-    },
-    {
-      "state": "Rooms.Climate.RoomHumidity",
-      "type": "n",
-      "value": 60
-    },
-    {
-      "type": "b",
-      "state": "Climate.GuestRoom.Room[0].Mode.OffIsSelected",
-      "value": true
-    },
-    {
-      "type": "b",
-      "state": "Climate.GuestRoom.Room[1].Mode.OffIsSelected",
-      "value": true
-    },
-    {
-      "type": "b",
-      "state": "Climate.GuestRoom.Room[2].Mode.OffIsSelected",
-      "value": true
-    },
-    {
-      "type": "b",
-      "state": "Climate.GuestRoom.Room[3].Mode.OffIsSelected",
-      "value": true
-    },
-    {
-      "type": "b",
-      "state": "Rooms.Climate.Fan.AutoIsSelected",
-      "value": true
-    }
-  ]
+    ]
 }

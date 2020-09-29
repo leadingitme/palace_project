@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title data-ch5-i18n="">Palace</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
     <!-- Animate css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <!-- inject:css -->
     <link rel="stylesheet" href="./assets/css/external.css" />
     <link rel="stylesheet" href="./assets/css/light-theme.css" />
@@ -21,106 +16,60 @@
     <!-- <link rel="stylesheet" href="./assets/css/components.css" /> -->
 
     <!-- endinject -------->
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="loader" class="loader"></div>
 
     <section class="main-section">
-      <!-- Header start -->
-      <nav
-        id="main-navbar"
-        class="navbar navbar-dark navbar-default fixed-top"
-        onclick=""
-      >
-        <ch5-import-htmlsnippet
-          id="room-list-templ"
-          url="./components/room-list-templ/room-list-templ.html"
-        ></ch5-import-htmlsnippet>
-        <ch5-import-htmlsnippet
-          id="time-weather-info"
-          url="./components/time-weather-info/time-weather-info.html"
-        ></ch5-import-htmlsnippet>
+        <!-- Header start -->
+        <nav id="main-navbar" class="navbar navbar-dark navbar-default fixed-top" onclick="">
+            <ch5-import-htmlsnippet id="room-list-templ" url="./components/room-list-templ/room-list-templ.html"></ch5-import-htmlsnippet>
+            <ch5-import-htmlsnippet id="time-weather-info" url="./components/time-weather-info/time-weather-info.html"></ch5-import-htmlsnippet>
 
-        <ch5-import-htmlsnippet
-          id="menu"
-          url="./components/menu/menu.html"
-        ></ch5-import-htmlsnippet>
-      </nav>
-      <!-- Header end -->
-      <ch5-background
-        receivestateurl="common_background_url"
-        url="./assets/img/ch5-stone-light-bg.jpg"
-      ></ch5-background>
-      <ch5-triggerview
-        class="triggerview-main triggerview"
-        gestureable="true"
-        disableanimation="true"
-      >
-        <!-- Blinds start -->
-        <ch5-triggerview-child>
-          <ch5-import-htmlsnippet
-            class="blinds-page"
-            url="./components/blinds-page/blinds-page.html"
-          >
-          </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <!-- Blinds end -->
-        <!-- Lighting start -->
-        <ch5-triggerview-child>
-          <ch5-import-htmlsnippet
-            class="lighting-page"
-            url="./components/lighting/lighting.html"
-          >
-          </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <!-- Lighting end -->
-        <!-- Climate start -->
-        <ch5-triggerview-child>
-          <ch5-import-htmlsnippet
-            class="climate-page"
-            url="./components/climate-page/climate-page.html"
-          ></ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <!-- Climate end -->
-        <!-- Music start -->
-        <ch5-triggerview-child>
-          <ch5-import-htmlsnippet
-            class="source-page"
-            url="./components/music-page/music-page.html"
-          >
-          </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <!-- Music end -->
-        <!-- Weather Station start -->
-        <ch5-triggerview-child>
-          <ch5-import-htmlsnippet
-            class="weather-station-page"
-            url="./components/weather-station/weather-station.html"
-          >
-          </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <!-- Weather Station end -->
-        <!-- Inactivity Page start -->
-        <ch5-triggerview-child>
-          <ch5-import-htmlsnippet
-            id="inactivity-page"
-            url="./components/inactivity-page/inactivity-page.html"
-          ></ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
+            <ch5-import-htmlsnippet id="menu" url="./components/menu/menu.html"></ch5-import-htmlsnippet>
+        </nav>
+        <!-- Header end -->
+        <ch5-background receivestateurl="common_background_url" url="./assets/img/ch5-stone-light-bg.jpg"></ch5-background>
+        <ch5-triggerview class="triggerview-main triggerview" gestureable="true" disableanimation="true">
+            <!-- Blinds start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet class="blinds-page" url="./components/blinds-page/blinds-page.html">
+                </ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
+            <!-- Blinds end -->
+            <!-- Lighting start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet class="lighting-page" url="./components/lighting/lighting.html">
+                </ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
+            <!-- Lighting end -->
+            <!-- Climate start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet class="climate-page" url="./components/climate-page/climate-page.html"></ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
+            <!-- Climate end -->
+            <!-- Music start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet class="source-page" url="./components/music-page/music-page.html">
+                </ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
+            <!-- Music end -->
+            <!-- Weather Station start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet class="weather-station-page" url="./components/weather-station/weather-station.html">
+                </ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
+            <!-- Weather Station end -->
+            <!-- Inactivity Page start -->
+            <ch5-triggerview-child>
+                <ch5-import-htmlsnippet id="inactivity-page" url="./components/inactivity-page/inactivity-page.html"></ch5-import-htmlsnippet>
+            </ch5-triggerview-child>
 
-        <!-- Inactivity Page end -->
-      </ch5-triggerview>
-      <ch5-list
-        class="swiper-thumb"
-        orientation="horizontal"
-        maxHeight="auto"
-        indexId="idx"
-        itemHeight="100%"
-        scrollbar="true"
-        receiveStateSize="nav.items.size"
-      >
-        <template>
+            <!-- Inactivity Page end -->
+        </ch5-triggerview>
+        <ch5-list class="swiper-thumb" orientation="horizontal" maxHeight="auto" indexId="idx" itemHeight="100%" scrollbar="true" receiveStateSize="nav.items.size">
+            <template>
           <div class="horizontal-list-item">
             <ch5-button
               customClass="thumb-btn-{{idx}}"
@@ -133,12 +82,8 @@
             ></ch5-button>
           </div>
         </template>
-      </ch5-list>
-      <a
-        class="thumb-action"
-        onclick="appModule.openThumbNav()"
-        id="floatingArrow"
-        ><svg
+        </ch5-list>
+        <a class="thumb-action" onclick="appModule.openThumbNav()" id="floatingArrow"><svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -153,20 +98,9 @@
     <script src="./assets/vendor/component.js"></script>
     <!-- endinject -->
     <!-- Bootstrap and others -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
 </html>

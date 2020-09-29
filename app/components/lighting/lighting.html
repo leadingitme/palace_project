@@ -1,9 +1,8 @@
 <section class="examples-container">
-  <nav class="navbar navbar-dark">
-    <div class="navbar-text">
-      <div class="room-info pt-3 text-uppercase">
-        <span class="d-sm-block" data-ch5-i18n="-+lighting.title+-"
-          >Lighting</span
+    <nav class="navbar navbar-dark">
+        <div class="navbar-text">
+            <div class="room-info pt-3 text-uppercase">
+                <span class="d-sm-block" data-ch5-i18n="-+lighting.title+-">Lighting</span
         >
         <h2 class="mb-0" data-ch5-textcontent="Rooms.SelectedRoomName">
           Room Name
@@ -17,14 +16,15 @@
             <ch5-button
               class="lighting-button dim-btn"
               shape="circle"
-              sendEventOnClick="Room.DimmableLights[{{idx}}].TurnLightOff"
+              sendeventonclick="61"
+              
               iconclass="fas fa-caret-down "
             ></ch5-button>
             <h3 class="p-2 text-white">Dim</h3>
             <ch5-button
               class="lighting-button dim-btn"
               shape="circle"
-              sendEventOnClick="Room.DimmableLights[{{idx}}].TurnLightOff"
+              sendeventontouch="60"
               iconclass="fas fa-caret-up "
             ></ch5-button>
           </div>
@@ -42,21 +42,13 @@
         onclick="lightingModule.lightingSidebarToggle()"
       >
         <span class=""><i class="fas fa-caret-left mr-1"></i>SCENES</span>
-      </button>
-    </div>
-  </nav>
-  <div class="row no-gutters">
-    <div class="col-md-9">
-      <ch5-list
-        class="ch5-custom-list"
-        maxHeight="85%"
-        itemWidth="100%"
-        orientation="vertical"
-        indexId="idx"
-        scrollbar="true"
-        receiveStateSize="Room.NumberOfLights"
-      >
-        <template>
+                </button>
+            </div>
+    </nav>
+    <div class="row no-gutters">
+        <div class="col-md-9">
+            <ch5-list class="ch5-custom-list" maxHeight="85%" itemWidth="100%" orientation="vertical" indexId="idx" scrollbar="true" receiveStateSize="Room.NumberOfLights">
+                <template>
           <div class="vertical-list-item">
             <span
               class="light-name-label"
@@ -89,33 +81,20 @@
             </div>
           </div>
         </template>
-      </ch5-list>
-    </div>
-    <aside
-      class="col-md-3 lighting-sidebar"
-      id="lightingSidebar"
-      onclick="dropDownStopPropagation()"
-    >
-      <ch5-select
-        class="sidebar ch5-custom-select lighting-sidebar-select"
-        mode="panel"
-        maxWidth="none"
-        indexId="idx"
-        receiveStateSize="Room.NumberOfScenes"
-        receiveStateValue="NotDefinedOnPurpose"
-        signalValueSyncTimeout="3000"
-        panelScrollHeight="300"
-      >
-        <template>
+            </ch5-list>
+        </div>
+        <aside class="col-md-3 lighting-sidebar" id="lightingSidebar" onclick="dropDownStopPropagation()">
+            <ch5-select class="sidebar ch5-custom-select lighting-sidebar-select" mode="panel" maxWidth="none" indexId="idx" receiveStateSize="Room.NumberOfScenes" receiveStateValue="NotDefinedOnPurpose" signalValueSyncTimeout="3000" panelScrollHeight="300">
+                <template>
           <ch5-select-option
-            sendEventOnClick="Room.Scenes[{{idx}}].TriggerSceneStart"
+            sendEventOnClick="Room.Scenes[{{idx}}].TriggerStartScene"
           >
             <span
               data-ch5-textContent="Room.Scenes[{{idx}}].NameOfScene"
             ></span>
           </ch5-select-option>
         </template>
-      </ch5-select>
-    </aside>
-  </div>
+            </ch5-select>
+        </aside>
+    </div>
 </section>

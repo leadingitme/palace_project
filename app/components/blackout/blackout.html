@@ -1,10 +1,8 @@
 <section class="blackout">
-  <!-- show vertical list when below large -->
-  <div
-    class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center"
-  >
-    <ch5-list size="3" orientation="vertical" indexId="idx">
-      <template>
+    <!-- show vertical list when below large -->
+    <div class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center">
+        <ch5-list size="3" orientation="vertical" indexId="idx">
+            <template>
         <span class="window-label">Window #{{idx}} </span>
 
         <div class="slider-container blackout-container container">
@@ -22,7 +20,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Rooms.Blinds.LeftBlackoutValue"
+            receivestatevalue="Room.Blinds.LeftBlackoutValue"
           >
           </ch5-slider>
           <ch5-slider
@@ -30,7 +28,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Rooms.Blinds.RightBlackoutValue"
+            receivestatevalue="Room.Blinds.RightBlackoutValue"
           >
           </ch5-slider>
         </div>
@@ -41,7 +39,7 @@
               label="Open"
               shape="circle"
               stretch="both"
-              sendeventonclick="Rooms.Blinds.OpenBlackout"
+              sendeventonclick="Room.Blinds.OpenBlackout"
             >
             </ch5-button>
             <ch5-button
@@ -49,7 +47,7 @@
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Rooms.Blinds.StopBlackout"
+              sendeventonclick="Room.Blinds.StopBlackout"
             >
             </ch5-button>
             <ch5-button
@@ -57,27 +55,20 @@
               label="Close"
               shape="circle"
               stretch="both"
-              sendeventonclick="Rooms.Blinds.CloseBlackout"
+              sendeventonclick="Room.Blinds.CloseBlackout"
             >
             </ch5-button>
           </div>
         </div>
       </template>
-    </ch5-list>
-  </div>
+        </ch5-list>
+    </div>
 
-  <!-- show horizontal list when large and above -->
+    <!-- show horizontal list when large and above -->
 
-  <div
-    class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center"
-  >
-    <ch5-list
-      id="blackout-horiz-list"
-      size="1"
-      orientation="horizontal"
-      indexId="idx"
-    >
-      <template>
+    <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
+        <ch5-list id="blackout-horiz-list" size="1" orientation="horizontal" indexId="idx">
+            <template>
         <span class="window-label">Window #{{idx}} </span>
 
         <div class="slider-container blackout-container container">
@@ -87,7 +78,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Rooms.Blinds.LeftBlackoutValue"
+            receivestatevalue="Room.Blinds.LeftBlackoutValue"
           >
           </ch5-slider>
           <ch5-slider
@@ -95,7 +86,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Rooms.Blinds.RightBlackoutValue"
+            receivestatevalue="Room.Blinds.RightBlackoutValue"
           >
           </ch5-slider>
 
@@ -132,7 +123,7 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Rooms.Blinds.OpenBlackout"
+              sendeventonclick="Room.Blinds.OpenBlackout"
             >
             </ch5-button>
             <ch5-button
@@ -141,7 +132,7 @@
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Rooms.Blinds.StopBlackout"
+              sendeventonclick="Room.Blinds.StopBlackout"
             >
             </ch5-button>
             <ch5-button
@@ -151,12 +142,12 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Rooms.Blinds.CloseBlackout"
+              sendeventonclick="Room.Blinds.CloseBlackout"
             >
             </ch5-button>
           </div>
         </div>
       </template>
-    </ch5-list>
-  </div>
+        </ch5-list>
+    </div>
 </section>

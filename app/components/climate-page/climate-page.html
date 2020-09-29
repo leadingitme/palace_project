@@ -1,14 +1,14 @@
 <section class="climate-page">
-  <!-- <nav class="navbar navbar-dark"> -->
-  <div class="navbar-text">
-    <div class="room-info pt-2 text-uppercase text-white">
-      <span class="d-sm-block">Climate</span>
-      <h2 class="mb-0" data-ch5-textcontent="Rooms.SelectedRoomName">
-        Room Name
-      </h2>
+    <!-- <nav class="navbar navbar-dark"> -->
+    <div class="navbar-text">
+        <div class="room-info pt-2 text-uppercase text-white">
+            <span class="d-sm-block">Climate</span>
+            <h2 class="mb-0" data-ch5-textcontent="Rooms.SelectedRoomName">
+                Room Name
+            </h2>
+        </div>
     </div>
-  </div>
-  <!-- <div class="weather-info">
+    <!-- <div class="weather-info">
     <ch5-button
       type="primary"
       shape="circle"
@@ -53,18 +53,11 @@
     </ch5-modal-dialog>
   </div> -->
 
-  <hr />
-  <!-- </nav> -->
-  <div
-    class="climate-list-container d-sm-flex d-none justify-content-center align-items-center"
-  >
-    <ch5-list
-      id="climate-horizontal-list"
-      orientation="horizontal"
-      indexId="idx"
-      receivestatesize="Climate.GuestRoom.NumberOfRooms"
-    >
-      <template>
+    <hr />
+    <!-- </nav> -->
+    <div class="climate-list-container d-sm-flex d-none justify-content-center align-items-center">
+        <ch5-list id="climate-horizontal-list" orientation="horizontal" indexId="idx" receivestatesize="Climate.GuestRoom.NumberOfRooms">
+            <template>
         <div class="room-temp d-flex align-items-center">
           <span
             class="room-label"
@@ -73,13 +66,13 @@
           >
           <div class="temp-humidity ml-auto">
             <div class="temp d-flex justify-content-end">
-              <h4 class="mt-1">Room Temp: &nbsp;</h4>
-              <h2 id="room-temp-index">30</h2>
+              <h4 class="mt-1"> Room Temp: &nbsp;</h4>
+              <h2 id="room-temp-index" data-ch5-textcontent="Climate.GuestRoom.Room[{{idx}}].RoomTempString"></h2>
               <h3 class="">ºC</h3>
             </div>
             <div class="humidity d-flex justify-content-end">
               <h4 class="mt-1">Humidity: &nbsp;</h4>
-              <h2 id="humidity-index">30</h2>
+              <h2 id="humidity-index" data-ch5-textcontent="Climate.GuestRoom.Room[{{idx}}].HumidityString"></h2>
               <h3>%</h3>
             </div>
           </div>
@@ -182,10 +175,10 @@
                 >
                   <h1
                     class="temp-index"
-                    data-ch5-textcontent=""
+                    data-ch5-textcontent="Climate.GuestRoom.Room[{{idx}}].TempString"
                     id="temp-index-{{idx}}"
                   >
-                    28
+                   
                   </h1>
                   <h3>ºC</h3>
                 </div>
@@ -220,6 +213,6 @@
           </div>
         </div>
       </template>
-    </ch5-list>
-  </div>
+        </ch5-list>
+    </div>
 </section>

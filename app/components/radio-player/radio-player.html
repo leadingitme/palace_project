@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-12 col-md-7 mt-2 artist-album-name">
             <div class="radio-station-name d-flex">
-              <h2 data-ch5-textcontent="" class="">Rock Wave</h2>
+              <h2 data-ch5-textcontent="Room.Radio.CurrentStationName" class="">Rock Wave</h2>
               <div class="favourite-btn-container">
                 <ch5-button
                   type="success"
@@ -46,7 +46,7 @@
                 </ch5-triggerview> -->
               </div>
             </div>
-            <h3 data-ch5-textcontent="" class="album-name">106.6 FM</h3>
+            <h3 data-ch5-textcontent="Room.Radio.CurrentStationText" class="album-name">106.6 FM</h3>
           </div>
 
           <div class="col-12 track-slider-container">
@@ -144,7 +144,7 @@
           maxWidth="none"
           indexId="idx"
           selectedvalue=""
-          receiveStateSize="Room.Music.Radio.StationListSize"
+          receiveStateSize="Room.Radio.StationListSize"
           receiveStateValue="NotDefinedOnPurpose"
         >
           <div class="song-select-features">
@@ -155,8 +155,8 @@
                   type="success"
                   shape="rectangle"
                   iconclass="far fa-heart"
-                  receivestateselected="Room.Music.Radio.FavouritesIsSelected"
-                  sendeventonclick="Room.Music.Radio.FavouritesSetSelected"
+                  receivestateselected="Room.Radio.FavouritesIsSelected"
+                  sendeventonclick="Room.Radio.ViewFavourites"
                 ></ch5-button>
                 <ch5-button
                   stretch="both"
@@ -164,8 +164,8 @@
                   type="success"
                   shape="rectangle"
                   iconclass="fas fa-list"
-                  receivestateselected="Room.Music.Radio.StationsListIsSelected"
-                  sendeventonclick="Room.Music.Radio.StationsListSetSelected"
+                  receivestateselected="Room.Radio.StationsListIsSelected"
+                  sendeventonclick="Room.Radio.ViewAll"
                 >
                 </ch5-button>
               </div>
@@ -174,16 +174,16 @@
 
           <template>
             <ch5-select-option
-              sendEventOnClick="Rooms.Music.AirPlay.Track[{{idx}}].SetTrackSelected"
-              receivestateselected="Rooms.Music.AirPlay.Track[{{idx}}].TrackIsSelected"
+              sendEventOnClick="Room.Radio.StationTrack[{{idx}}].SelectStation"
+              receivestateselected="Room.Radio.StationTrack[{{idx}}].SelectStationSelected"
             >
               <!-- <div class="row">
               <div class="col-8"> -->
-              <h4 class="" data-ch5-textContent="">Song Name</h4>
+              <h4 class="" data-ch5-textContent="Room.Radio.StationName[{{idx}}].RadioText">Song Name</h4>
               <div class="artist-name d-flex">
                 <h5
                   class="mr-auto"
-                  data-ch5-textContent="Rooms.Music.Radio.StationName[{{idx}}]"
+                  data-ch5-textContent="Room.Radio.StationName[{{idx}}].StationName"
                 >
                   Artist Name
                 </h5>

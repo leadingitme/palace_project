@@ -101,19 +101,14 @@ var appModule = (function () {
     //Two minutes. 60 x 2 = 120 seconds.
     var maxInactivity = 60 * 2;
 
-    //   Hide navbar on inactivity page
+    //   Hide main-page - show inactivity page
 
-    let navbar = document.getElementById("main-navbar");
-    let mainSection = document.querySelector(".main-section");
-    let thumbActionArrow = document.querySelector(".thumb-action");
+    let mainPage = document.getElementById("main-page");
+    let inactivityPage = document.getElementById("inactivity-page");
 
-    function hideNavbar() {
-      if (triggerview.getAttribute("activeview") == 5) {
-        navbar.classList.add("hide");
-        mainSection.classList.add("main-section-increased");
-        navbarThumb.classList.add("hide");
-        thumbActionArrow.classList.add("hide");
-      }
+    function hideMainPage() {
+      inactivityPage.classList.remove("d-none");
+      mainPage.classList.add("d-none");
     }
 
     //Setup the setInterval method to run
@@ -123,24 +118,17 @@ var appModule = (function () {
       //if the user has been inactive or idle for longer
       //then the seconds specified in maxInactivity
       if (secondsSinceLastActivity > maxInactivity) {
-        triggerview.setActiveView(5);
-        hideNavbar();
+        hideMainPage();
       }
     }, 1000);
 
     //The function that will be called whenever a user is active
-    function activity() {
+    function showMainPage() {
       //reset the secondsSinceLastActivity variable
       //back to 0
       secondsSinceLastActivity = 0;
-      navbar.classList.remove("hide");
-      mainSection.classList.remove("main-section-increased");
-      navbarThumb.classList.remove("hide");
-      thumbActionArrow.classList.remove("hide");
-
-      if (triggerview.getAttribute("activeview") == 5) {
-        triggerview.setActiveView(0);
-      }
+      inactivityPage.classList.add("d-none");
+      mainPage.classList.remove("d-none");
     }
 
     //An array of DOM events that should be interpreted as
@@ -156,7 +144,7 @@ var appModule = (function () {
     //add these events to the document.
     //register the activity function as the listener parameter.
     activityEvents.forEach(function (eventName) {
-      document.addEventListener(eventName, activity, true);
+      document.addEventListener(eventName, showMainPage, true);
     });
   }
 

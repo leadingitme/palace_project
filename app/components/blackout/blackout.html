@@ -1,8 +1,8 @@
 <section class="blackout">
-    <!-- show vertical list when below large -->
+  <!-- show vertical list when below large -->
 
-    <!-- ........... -->
-    <!-- <div
+  <!-- ........... -->
+  <!-- <div
     class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center"
   >
     <ch5-list size="3" orientation="vertical" indexId="idx">
@@ -59,13 +59,20 @@
     </ch5-list>
   </div> -->
 
-    <!-- .............. -->
+  <!-- .............. -->
 
-    <!-- show horizontal list when large and above -->
+  <!-- show horizontal list when large and above -->
 
-    <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
-        <ch5-list id="blackout-horiz-list" receivestatesize="Room.Blinds.BlackOutListSize" orientation="horizontal" indexId="idx">
-            <template>
+  <div
+    class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center"
+  >
+    <ch5-list
+      id="blackout-horiz-list"
+      receivestatesize="Room.Blinds.BlackOutListSize"
+      orientation="horizontal"
+      indexId="idx"
+    >
+      <template>
         <span class="window-label">Window #{{idx}} </span>
 
         <div class="slider-container blackout-container container">
@@ -148,6 +155,6 @@
           </div>
         </div>
       </template>
-        </ch5-list>
-    </div>
+    </ch5-list>
+  </div>
 </section>

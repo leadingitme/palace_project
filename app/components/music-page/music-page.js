@@ -34,7 +34,7 @@ var musicPageModule = (function () {
 
   // number of sources
   const SOURCE_COUNT = 2;
-  let musicPlayerSnippet = document.querySelector(".music-player-templ");
+  let airplayPlayerSnippet = document.querySelector(".airplay-player-templ");
   let radioPlayerSnippet = document.querySelector(".radio-player-templ");
 
   // function showPlayerSnippet(idx) {
@@ -67,7 +67,7 @@ var musicPageModule = (function () {
 
   window.onload = function () {
     setTimeout(() => {
-      musicPlayerSnippet.classList.add("d-none");
+      airplayPlayerSnippet.classList.add("d-none");
     }, 5000);
   };
 
@@ -77,7 +77,7 @@ var musicPageModule = (function () {
     {
       sourceBtnBtn.addEventListener("click", function () {
         if (idx == 0) {
-          musicPlayerSnippet.classList.remove("d-none");
+          airplayPlayerSnippet.classList.remove("d-none");
           radioPlayerSnippet.classList.add("d-none");
           setTimeout(function () {
             closeMusicSourceDropdown();
@@ -85,7 +85,7 @@ var musicPageModule = (function () {
         } else {
           // window.location.reload();
           radioPlayerSnippet.classList.remove("d-none");
-          musicPlayerSnippet.classList.add("d-none");
+          airplayPlayerSnippet.classList.add("d-none");
           setTimeout(function () {
             closeMusicSourceDropdown();
           }, 300);

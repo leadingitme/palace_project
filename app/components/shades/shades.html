@@ -1,20 +1,22 @@
 <section id="" class="shades">
+<<<<<<< HEAD
     <!-- show vertical list when below large -->
     <div class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center">
         <ch5-list size="3" orientation="vertical" indexId="idx">
             <template>
+=======
+  <!-- show vertical list when below large -->
+  <!-- ......... -->
+  <!-- <div
+    class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center"
+  >
+    <ch5-list size="3" orientation="vertical" indexId="idx">
+      <template>
+>>>>>>> 99994367152f8e9938d710db5334c15206af7461
         <span class="window-label">Window #{{idx}} </span>
 
         <div class="slider-container shades-container container">
-          <!-- <ch5-slider
-            nohandle="false"
-            range="true"
-            min="0"
-            max="100"
-            receivestatevalue="receive_left_shades_value"
-            receivestatevaluehigh="receive_right_shades_value"
-          >
-          </ch5-slider> -->
+          
           <ch5-slider
             class="left-slider"
             nohandle="true"
@@ -61,14 +63,34 @@
           </div>
         </div>
       </template>
+<<<<<<< HEAD
         </ch5-list>
     </div>
+=======
+    </ch5-list>
+  </div> -->
+
+  <!-- .............. -->
+>>>>>>> 99994367152f8e9938d710db5334c15206af7461
 
     <!-- show horizontal list when large and above -->
 
+<<<<<<< HEAD
     <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
         <ch5-list size="1" orientation="horizontal" indexId="idx" id="shades-horiz-list">
             <template>
+=======
+  <div
+    class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center"
+  >
+    <ch5-list
+      size="5"
+      orientation="horizontal"
+      indexId="idx"
+      id="shades-horiz-list"
+    >
+      <template>
+>>>>>>> 99994367152f8e9938d710db5334c15206af7461
         <span class="window-label">Window #{{idx}} </span>
 
         <div class="slider-container shades-container container">
@@ -78,7 +100,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Room.Blinds.LeftShadeValue"
+            receivestatevalue="Room.Blinds.ShadeSliderValue"
           >
           </ch5-slider>
           <ch5-slider
@@ -86,7 +108,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Room.Blinds.RightShadeValue"
+            receivestatevalue="Room.Blinds.ShadeSliderValue"
           >
           </ch5-slider>
 

@@ -76,7 +76,7 @@ var inactivityPageModule = (function () {
 
     // setTimeout(newClock, 1000);
   }
-  setTimeout(inactivityClockDate, 1000);
+  // setTimeout(inactivityClockDate, 1000);
 
   /**
    * All public or private methods which need to call onInit

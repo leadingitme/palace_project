@@ -80,9 +80,9 @@ var timeWeatherInfoModule = (function () {
       months[month];
 
     document.getElementById("time").innerHTML = print_clock;
-    setTimeout(newClock, 1000);
+    // setTimeout(newClock, 1000);
   }
-  setTimeout(newClock, 1000);
+  // setTimeout(newClock, 1000);
 
   var toggleButton = document.getElementById("time-weather-toggle-btn");
   var toggleIcon = document.getElementById("time-weather-toggle-icon");

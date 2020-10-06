@@ -247,7 +247,7 @@
         },
         {
             "type": "boolean",
-            "event": "RadioPlayer.SetPauseBtnActive",
+            "event": "Radio.SetPauseBtnActive",
             "trigger": true,
             "actions": [{
                 "type": "numeric",
@@ -258,7 +258,7 @@
         },
         {
             "type": "boolean",
-            "event": "RadioPlayer.SetPlayBtnActive",
+            "event": "Radio.SetPlayBtnActive",
             "trigger": true,
             "actions": [{
                 "type": "numeric",
@@ -269,7 +269,7 @@
         },
         {
             "type": "boolean",
-            "event": "RadioPlayer.SetPauseBtnActive",
+            "event": "Radio.SetPauseBtnActive",
             "trigger": true,
             "actions": [{
                 "type": "numeric",
@@ -280,7 +280,7 @@
         },
         {
             "type": "boolean",
-            "event": "RadioPlayer.SetPlayBtnActive",
+            "event": "Radio.SetPlayBtnActive",
             "trigger": true,
             "actions": [{
                 "type": "numeric",
@@ -752,16 +752,6 @@
                     "value": "The best of Foster The People"
                 }
             ]
-        },
-        {
-            "type": "boolean",
-            "event": "Music.RadioPlayer.MuteBtnToggle",
-            "trigger": true,
-            "actions": [{
-                "state": "Music.RadioPlayer.MuteBtnToggleState",
-                "type": "b",
-                "logic": "toggle"
-            }]
         },
         {
             "type": "boolean",

@@ -691,6 +691,11 @@ $weather-value-light: #0d2335;
         color: $music-icon-bg-light;
       }
       .ch5-slider {
+        &.ch5-slider--orientation--horizontal {
+          .noUi-target {
+            background: radial-gradient(#8c8b8bcf, transparent);
+          }
+        }
         .noUi-connect {
           background-color: $ch5-lighting-btn-light;
           // background-color: rgb(99, 99, 99);

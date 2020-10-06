@@ -99,18 +99,7 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.LeftShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 25,
-              "time": 2000
-            }
-          }
-        },
-        {
-          "state": "Room.Blinds.RightShadeValue",
+          "state": "Room.Blinds.ShadeSliderValue",
           "type": "object",
           "logic": "set",
           "value": {
@@ -146,24 +135,13 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.LeftShadeValue",
+          "state": "Room.Blinds.ShadeSliderValue",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
               "value": 0,
-              "time": 5000
-            }
-          }
-        },
-        {
-          "state": "Room.Blinds.RightShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 0,
-              "time": 5000
+              "time": 8000
             }
           }
         }
@@ -194,24 +172,13 @@
         },
 
         {
-          "state": "Room.Blinds.LeftShadeValue",
+          "state": "Room.Blinds.ShadeSliderValue",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
               "value": 50,
-              "time": 5000
-            }
-          }
-        },
-        {
-          "state": "Room.Blinds.RightShadeValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 50,
-              "time": 5000
+              "time": 8000
             }
           }
         }
@@ -241,18 +208,7 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.LeftBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 25,
-              "time": 2000
-            }
-          }
-        },
-        {
-          "state": "Room.Blinds.RightBlackoutValue",
+          "state": "Room.Blinds.BlackoutSliderValue",
           "type": "object",
           "logic": "set",
           "value": {
@@ -288,24 +244,13 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.LeftBlackoutValue",
+          "state": "Room.Blinds.BlackoutSliderValue",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
               "value": 0,
-              "time": 5000
-            }
-          }
-        },
-        {
-          "state": "Room.Blinds.RightBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 0,
-              "time": 5000
+              "time": 8000
             }
           }
         }
@@ -335,24 +280,13 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.LeftBlackoutValue",
+          "state": "Room.Blinds.BlackoutSliderValue",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
               "value": 50,
-              "time": 5000
-            }
-          }
-        },
-        {
-          "state": "Room.Blinds.RightBlackoutValue",
-          "type": "object",
-          "logic": "set",
-          "value": {
-            "rcb": {
-              "value": 50,
-              "time": 5000
+              "time": 8000
             }
           }
         }

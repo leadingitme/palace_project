@@ -16,6 +16,12 @@
           "value": false,
           "type": "b",
           "logic": "set"
+        },
+        {
+          "state": "Rooms.Blinds.AllAreShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
         }
       ]
     },
@@ -32,6 +38,37 @@
         },
         {
           "state": "Rooms.Blinds.BlackoutAreShown",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "Rooms.Blinds.AllAreShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "Rooms.Blinds.ShowAll",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Rooms.Blinds.ShadesAreShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "Rooms.Blinds.BlackoutAreShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "Rooms.Blinds.AllAreShown",
           "value": true,
           "type": "b",
           "logic": "set"

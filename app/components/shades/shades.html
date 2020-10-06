@@ -61,6 +61,7 @@
           </div>
         </div>
       </template>
+<<<<<<< HEAD
         </ch5-list>
     </div>
     <!-- show horizontal list when large and above -->
@@ -68,6 +69,23 @@
     <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
         <ch5-list size="1" orientation="horizontal" indexId="idx" id="shades-horiz-list">
             <template>
+=======
+    </ch5-list>
+  </div>
+
+  <!-- show horizontal list when large and above -->
+
+  <div
+    class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center"
+  >
+    <ch5-list
+      size="3"
+      orientation="horizontal"
+      indexId="idx"
+      id="shades-horiz-list"
+    >
+      <template>
+>>>>>>> master
         <span class="window-label">Window #{{idx}} </span>
 
         <div class="slider-container shades-container container">
@@ -130,6 +148,7 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.OpenShades"
+              receivestateselected="Blinds.OpenShadesIsSelected"
             >
             </ch5-button>
             <ch5-button
@@ -139,6 +158,7 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.StopShades"
+              receivestateselected="Blinds.StopShadesIsSelected"
             >
             </ch5-button>
             <ch5-button
@@ -149,6 +169,7 @@
               shape="circle"
               stretch="both"
               sendeventonclick="Room.Blinds.CloseShades"
+              receivestateselected="Blinds.CloseShadesIsSelected"
             >
             </ch5-button>
           </div>

@@ -1,21 +1,25 @@
 <section id="music-page" class="music-page">
-    <div class="navbar-text">
-        <div class="room-info mb-1 pt-2 text-uppercase text-white">
-            <span class="d-sm-block">Music</span>
-            <h2 class="mb-0" data-ch5-textcontent="Rooms.SelectedRoomName">
-                Room Name
-            </h2>
-        </div>
+  <div class="navbar-text">
+    <div class="room-info mb-1 pt-2 text-uppercase text-white">
+      <span class="d-sm-block">Music</span>
+      <h2 class="mb-0" data-ch5-textcontent="Rooms.SelectedRoomName">
+        Room Name
+      </h2>
     </div>
-    <div class="dropdown-btn-container">
-        <!-- 'source' dropdown start -->
+  </div>
+  <div class="dropdown-btn-container">
+    <!-- 'source' dropdown start -->
 
-        <div class="dropdown">
-            <button class="btn btn-lg dropdown-toggle" type="button" onclick="musicPageModule.openMusicSourceDropdown()" id="musicSourceDropdown">
+    <div class="dropdown">
+      <button
+        class="btn btn-lg dropdown-toggle"
+        type="button"
+        onclick="musicPageModule.openMusicSourceDropdown()"
+        id="musicSourceDropdown"
+      >
         <span>SOURCE</span>
         <!-- <span class="d-block"><i class="fas fa-caret-down"></i> </span> -->
       </button>
-
       <div
         id="music-source-dropdown"
         onclick="musicPageModule.dropDownStopPropagation()"
@@ -29,28 +33,27 @@
         >
           <template>
             <div class="vertical-list-item music-source-btn-div">
-
               <ch5-button
                 customClass="music-source-btn-{{idx}}"
                 type="text"
-                stretch="both"
+                stretch="width"
                 shape="rectangle"
                 sendeventonclick="Rooms.Music.Source[{{idx}}].SetSourceSelected"
                 receivestatelabel="Rooms.Music.Source[{{idx}}].SourceName"
                 receivestateselected="Rooms.Music.Source[{{idx}}].SourceIsSelected"
-                
               >
               </ch5-button>
             </div>
           </template>
-                </ch5-list>
-            </div>
-        </div>
+        </ch5-list>
+      </div>
     </div>
-    <!-- source dropdown end -->
-    <div class="source-name">
-        <i class="fas fa-angle-right mr-1"></i>
-        <span class="" data-ch5-textContent="Rooms.Music.SelectedSourceName">Source Name</span
+  </div>
+  <!-- source dropdown end -->
+  <div class="source-name">
+    <i class="fas fa-angle-right mr-1"></i>
+    <span class="" data-ch5-textContent="Rooms.Music.SelectedSourceName"
+      >Source Name</span
     >
   </div>
   <div>

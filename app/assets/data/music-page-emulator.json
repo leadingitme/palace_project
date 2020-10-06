@@ -1,1125 +1,1082 @@
 {
-  "cues": [
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.Source[0].SetSourceSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Music.MusicPlayerIsShown",
-          "value": true,
-          "type": "b",
-          "logic": "set"
+    "cues": [{
+            "type": "boolean",
+            "event": "Rooms.Music.Source[0].SetSourceSelected",
+            "trigger": true,
+            "actions": [{
+                    "state": "Rooms.Music.MusicPlayerIsShown",
+                    "value": true,
+                    "type": "b",
+                    "logic": "set"
+                },
+                {
+                    "type": "numeric",
+                    "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
+                    "logic": "set",
+                    "value": 0
+                },
+                {
+                    "state": "Rooms.Music.RadioPlayerIsShown",
+                    "value": false,
+                    "type": "b",
+                    "logic": "set"
+                },
+                {
+                    "type": "numeric",
+                    "state": "Rooms.Music.TriggerviewPlayerIsShown",
+                    "logic": "set",
+                    "value": 0
+                },
+                {
+                    "state": "Rooms.Music.SelectedSourceName",
+                    "type": "s",
+                    "value": "AirPlay",
+                    "logic": "set"
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[0].SourceIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[1].SourceIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[2].SourceIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[3].SourceIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "state": "Rooms.Music.SongList.ListSize",
+                    "type": "n",
+                    "logic": "set",
+                    "value": 10
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[0]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Michael Jackson"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[0]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "You are not alone"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[1]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Jain"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[1]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Dynabeat"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[2]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Coldplay"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[2]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Adventure of a lifetime"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[3]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Michael Kiwanuka"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[3]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Cold little heart"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[4]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Pharrell Williams"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[4]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Freedom"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[5]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Alice Merton"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[5]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "No roots"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[6]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Kaleo"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[6]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Save yourself"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[7]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "One Republic"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[7]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Love runs out"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[8]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Duft Punk"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[8]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Get lucky"
+                },
+                {
+                    "state": "Rooms.Music.SongList.ArtistName[9]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Foster The People"
+                },
+                {
+                    "state": "Rooms.Music.SongList.SongName[9]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Pumped up kicks"
+                }
+            ]
         },
         {
-          "type": "numeric",
-          "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
-          "logic": "set",
-          "value": 0
+            "type": "boolean",
+            "event": "Rooms.Music.Source[1].SetSourceSelected",
+            "trigger": true,
+            "actions": [{
+                    "state": "Rooms.Music.SelectedSourceName",
+                    "type": "s",
+                    "value": "Radio",
+                    "logic": "set"
+                },
+                {
+                    "state": "Rooms.Music.MusicPlayerIsShown",
+                    "value": false,
+                    "type": "b",
+                    "logic": "set"
+                },
+                {
+                    "type": "numeric",
+                    "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+                    "logic": "set",
+                    "value": 0
+                },
+                {
+                    "type": "numeric",
+                    "state": "Rooms.Music.TriggerviewPlayerIsShown",
+                    "logic": "set",
+                    "value": 1
+                },
+                {
+                    "state": "Rooms.Music.RadioPlayerIsShown",
+                    "value": true,
+                    "type": "b",
+                    "logic": "set"
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[0].SourceIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[1].SourceIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[2].SourceIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.Source[3].SourceIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.RadioPlayerIsShown",
-          "value": false,
-          "type": "b",
-          "logic": "set"
+            "type": "boolean",
+            "event": "RadioPlayer.SetPauseBtnActive",
+            "trigger": true,
+            "actions": [{
+                "type": "numeric",
+                "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+                "logic": "set",
+                "value": 1
+            }]
         },
         {
-          "type": "numeric",
-          "state": "Rooms.Music.TriggerviewPlayerIsShown",
-          "logic": "set",
-          "value": 0
+            "type": "boolean",
+            "event": "RadioPlayer.SetPlayBtnActive",
+            "trigger": true,
+            "actions": [{
+                "type": "numeric",
+                "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+                "logic": "set",
+                "value": 0
+            }]
         },
         {
-          "state": "Rooms.Music.SelectedSourceName",
-          "type": "s",
-          "value": "AirPlay",
-          "logic": "set"
+            "type": "boolean",
+            "event": "RadioPlayer.SetPauseBtnActive",
+            "trigger": true,
+            "actions": [{
+                "type": "numeric",
+                "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
+                "logic": "set",
+                "value": 1
+            }]
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[0].SourceIsSelected",
-          "logic": "set",
-          "value": true
+            "type": "boolean",
+            "event": "RadioPlayer.SetPlayBtnActive",
+            "trigger": true,
+            "actions": [{
+                "type": "numeric",
+                "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
+                "logic": "set",
+                "value": 0
+            }]
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[1].SourceIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "boolean",
+            "event": "Rooms.Music.Radio.SetFavouriteBtnActive",
+            "trigger": true,
+            "actions": [{
+                "type": "numeric",
+                "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
+                "logic": "set",
+                "value": 1
+            }]
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[2].SourceIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "boolean",
+            "event": "Rooms.Music.Radio.SetFavouriteBtnInactive",
+            "trigger": true,
+            "actions": [{
+                "type": "numeric",
+                "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
+                "logic": "set",
+                "value": 0
+            }]
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[3].SourceIsSelected",
-          "logic": "set",
-          "value": false
+            "type": "boolean",
+            "event": "Radio.FavouriteBtnToggle",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Radio.FavouriteBtnState",
+                    "logic": "toggle"
+                },
+                {
+                    "type": "b",
+                    "state": "Radio.FavouriteBtnShow",
+                    "logic": "toggle"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ListSize",
-          "type": "n",
-          "logic": "set",
-          "value": 10
+            "type": "boolean",
+            "event": "Rooms.Music.ShuffleSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.ShuffleIsSelected",
+                    "logic": "toggle",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.RepeatIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[0]",
-          "type": "s",
-          "logic": "set",
-          "value": "Michael Jackson"
+            "type": "boolean",
+            "event": "Rooms.Music.RepeatSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.RepeatIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Rooms.Music.ShuffleIsSelected",
+                    "logic": "set",
+                    "value": false
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[0]",
-          "type": "s",
-          "logic": "set",
-          "value": "You are not alone"
+            "type": "boolean",
+            "event": "Room.Music.Radio.FavouritesSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Room.Music.Radio.FavouritesIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Room.Music.Radio.StationsListIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "n",
+                    "state": "Room.Music.Radio.StationListSize",
+                    "logic": "set",
+                    "value": 4
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[0]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "GoodDay FM"
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[1]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Just Rock It"
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[2]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Pop FM"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[1]",
-          "type": "s",
-          "logic": "set",
-          "value": "Jain"
+            "type": "boolean",
+            "event": "Room.Music.Radio.StationsListSetSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Room.Music.Radio.StationsListIsSelected",
+                    "logic": "toggle",
+                    "value": true
+                },
+                {
+                    "type": "b",
+                    "state": "Room.Music.Radio.FavouritesIsSelected",
+                    "logic": "set",
+                    "value": false
+                },
+                {
+                    "type": "n",
+                    "state": "Room.Music.Radio.StationListSize",
+                    "logic": "set",
+                    "value": 4
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[3]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "GoodDay FM"
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[2]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Just Rock It"
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[1]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Pop FM"
+                },
+                {
+                    "state": "Rooms.Music.Radio.StationName[0]",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Dance All Day FM"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[1]",
-          "type": "s",
-          "logic": "set",
-          "value": "Dynabeat"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[0].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[0].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Michael Jackson"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "You are not alone"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of MJ"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[2]",
-          "type": "s",
-          "logic": "set",
-          "value": "Coldplay"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[1].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[1].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Jain"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Dynabeat"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Jain"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[2]",
-          "type": "s",
-          "logic": "set",
-          "value": "Adventure of a lifetime"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[2].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[2].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Coldplay"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Adventure of a lifetime"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Coldplay"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[3]",
-          "type": "s",
-          "logic": "set",
-          "value": "Michael Kiwanuka"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[3].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[3].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Michael Kiwanuka"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Cold little heart"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Michael Kiwanuka"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[3]",
-          "type": "s",
-          "logic": "set",
-          "value": "Cold little heart"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[4].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[4].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Pharrell Williams"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Freedom"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Pharrell Williams"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[4]",
-          "type": "s",
-          "logic": "set",
-          "value": "Pharrell Williams"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[5].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[5].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Alice Merton"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "No roots"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Alice Merton"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[4]",
-          "type": "s",
-          "logic": "set",
-          "value": "Freedom"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[6].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[6].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Kaleo"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Save yourself"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Kaleo"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[5]",
-          "type": "s",
-          "logic": "set",
-          "value": "Alice Merton"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[7].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[7].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "One Republic"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Love runs out"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of One Republic"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[5]",
-          "type": "s",
-          "logic": "set",
-          "value": "No roots"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[8].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[6].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Duft Punk"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Get lucky"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Duft Punk"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[6]",
-          "type": "s",
-          "logic": "set",
-          "value": "Kaleo"
+            "type": "boolean",
+            "event": "Rooms.Music.AirPlay.Track[9].SetTrackSelected",
+            "trigger": true,
+            "actions": [{
+                    "type": "b",
+                    "state": "Rooms.Music.AirPlay.Track[9].TrackIsSelected",
+                    "logic": "set",
+                    "value": true
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedArtistName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Foster The People"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedSongName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "Pumped up kicks"
+                },
+                {
+                    "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+                    "type": "s",
+                    "logic": "set",
+                    "value": "The best of Foster The People"
+                }
+            ]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[6]",
-          "type": "s",
-          "logic": "set",
-          "value": "Save yourself"
+            "type": "boolean",
+            "event": "Music.RadioPlayer.MuteBtnToggle",
+            "trigger": true,
+            "actions": [{
+                "state": "Music.RadioPlayer.MuteBtnToggleState",
+                "type": "b",
+                "logic": "toggle"
+            }]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[7]",
-          "type": "s",
-          "logic": "set",
-          "value": "One Republic"
+            "type": "boolean",
+            "event": "Music.RadioPlayer.VolDownIsClicked",
+            "trigger": true,
+            "actions": [{
+                "state": "Music.RadioPlayer.VolSliderValue",
+                "type": "n",
+                "logic": "decrement",
+                "value": 10
+            }]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[7]",
-          "type": "s",
-          "logic": "set",
-          "value": "Love runs out"
+            "type": "boolean",
+            "event": "Music.RadioPlayer.VolUpIsClicked",
+            "trigger": true,
+            "actions": [{
+                "state": "Music.RadioPlayer.VolSliderValue",
+                "type": "n",
+                "logic": "increment",
+                "value": 10
+            }]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[8]",
-          "type": "s",
-          "logic": "set",
-          "value": "Duft Punk"
+            "type": "boolean",
+            "event": "Music.MusicPlayer.MuteBtnToggle",
+            "trigger": true,
+            "actions": [{
+                "state": "Music.MusicPlayer.MuteBtnToggleState",
+                "type": "b",
+                "logic": "toggle"
+            }]
         },
         {
-          "state": "Rooms.Music.SongList.SongName[8]",
-          "type": "s",
-          "logic": "set",
-          "value": "Get lucky"
+            "type": "boolean",
+            "event": "Music.MusicPlayer.VolDownIsClicked",
+            "trigger": true,
+            "actions": [{
+                "state": "Music.MusicPlayer.VolSliderValue",
+                "type": "n",
+                "logic": "decrement",
+                "value": 10
+            }]
         },
         {
-          "state": "Rooms.Music.SongList.ArtistName[9]",
-          "type": "s",
-          "logic": "set",
-          "value": "Foster The People"
-        },
-        {
-          "state": "Rooms.Music.SongList.SongName[9]",
-          "type": "s",
-          "logic": "set",
-          "value": "Pumped up kicks"
+            "type": "boolean",
+            "event": "Music.MusicPlayer.VolUpIsClicked",
+            "trigger": true,
+            "actions": [{
+                "state": "Music.MusicPlayer.VolSliderValue",
+                "type": "n",
+                "logic": "increment",
+                "value": 10
+            }]
         }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.Source[1].SetSourceSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Rooms.Music.SelectedSourceName",
-          "type": "s",
-          "value": "Radio",
-          "logic": "set"
+    ],
+    "onStart": [{
+            "state": "Rooms.Music.RadioPlayerIsShown",
+            "value": true,
+            "type": "b",
+            "logic": "set"
         },
         {
-          "state": "Rooms.Music.MusicPlayerIsShown",
-          "value": false,
-          "type": "b",
-          "logic": "set"
+            "state": "Rooms.Music.SelectedSourceName",
+            "type": "s",
+            "value": "Radio",
+            "logic": "set"
         },
         {
-          "type": "numeric",
-          "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
-          "logic": "set",
-          "value": 0
+            "type": "b",
+            "state": "Rooms.Music.Source[1].SourceIsSelected",
+            "logic": "set",
+            "value": true
         },
         {
-          "type": "numeric",
-          "state": "Rooms.Music.TriggerviewPlayerIsShown",
-          "logic": "set",
-          "value": 1
+            "state": "Rooms.Music.NumberOfSources",
+            "type": "n",
+            "value": 2,
+            "logic": "set"
         },
         {
-          "state": "Rooms.Music.RadioPlayerIsShown",
-          "value": true,
-          "type": "b",
-          "logic": "set"
+            "state": "Rooms.Music.SongList.ListSize",
+            "type": "n",
+            "logic": "set",
+            "value": 10
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[0].SourceIsSelected",
-          "logic": "set",
-          "value": false
+            "state": "Rooms.Music.SongList.ArtistName[0]",
+            "type": "s",
+            "logic": "set",
+            "value": "Michael Jackson"
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[1].SourceIsSelected",
-          "logic": "set",
-          "value": true
+            "state": "Rooms.Music.SongList.SongName[0]",
+            "type": "s",
+            "logic": "set",
+            "value": "You are not alone"
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[2].SourceIsSelected",
-          "logic": "set",
-          "value": false
+            "state": "Rooms.Music.SongList.ArtistName[1]",
+            "type": "s",
+            "logic": "set",
+            "value": "Jain"
         },
         {
-          "type": "b",
-          "state": "Rooms.Music.Source[3].SourceIsSelected",
-          "logic": "set",
-          "value": false
+            "state": "Rooms.Music.SongList.SongName[1]",
+            "type": "s",
+            "logic": "set",
+            "value": "Dynabeat"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[2]",
+            "type": "s",
+            "logic": "set",
+            "value": "Coldplay"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[2]",
+            "type": "s",
+            "logic": "set",
+            "value": "Adventure of a lifetime"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[3]",
+            "type": "s",
+            "logic": "set",
+            "value": "Michael Kiwanuka"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[3]",
+            "type": "s",
+            "logic": "set",
+            "value": "Cold little heart"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[4]",
+            "type": "s",
+            "logic": "set",
+            "value": "Pharrell Williams"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[4]",
+            "type": "s",
+            "logic": "set",
+            "value": "Freedom"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[5]",
+            "type": "s",
+            "logic": "set",
+            "value": "Alice Merton"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[5]",
+            "type": "s",
+            "logic": "set",
+            "value": "No roots"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[6]",
+            "type": "s",
+            "logic": "set",
+            "value": "Kaleo"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[6]",
+            "type": "s",
+            "logic": "set",
+            "value": "Save yourself"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[7]",
+            "type": "s",
+            "logic": "set",
+            "value": "One Republic"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[7]",
+            "type": "s",
+            "logic": "set",
+            "value": "Love runs out"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[8]",
+            "type": "s",
+            "logic": "set",
+            "value": "Duft Punk"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[8]",
+            "type": "s",
+            "logic": "set",
+            "value": "Get lucky"
+        },
+        {
+            "state": "Rooms.Music.SongList.ArtistName[9]",
+            "type": "s",
+            "logic": "set",
+            "value": "Foster The People"
+        },
+        {
+            "state": "Rooms.Music.SongList.SongName[9]",
+            "type": "s",
+            "logic": "set",
+            "value": "Pumped up kicks"
+        },
+        {
+            "type": "b",
+            "state": "Rooms.Music.AirPlay.Track[0].TrackIsSelected",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "Rooms.Music.AirPlay.SelectedArtistName",
+            "type": "s",
+            "logic": "set",
+            "value": "Michael Jackson"
+        },
+        {
+            "state": "Rooms.Music.AirPlay.SelectedSongName",
+            "type": "s",
+            "logic": "set",
+            "value": "You are not alone"
+        },
+        {
+            "state": "Rooms.Music.AirPlay.SelectedAlbumName",
+            "type": "s",
+            "logic": "set",
+            "value": "The best of MJ"
+        },
+        {
+            "state": "Rooms.Music.Source[0].SourceName",
+            "type": "s",
+            "value": "AirPlay"
+        },
+        {
+            "state": "Rooms.Music.Source[1].SourceName",
+            "type": "s",
+            "value": "Radio"
+        },
+        {
+            "state": "Rooms.Music.Source[2].SourceName",
+            "type": "s",
+            "value": "AirMedia"
+        },
+        {
+            "state": "Rooms.Music.Source[3].SourceName",
+            "type": "s",
+            "value": "AirBoard"
+        },
+        {
+            "type": "b",
+            "state": "Room.Music.Radio.FavouritesIsSelected",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "type": "n",
+            "state": "Room.Music.Radio.StationListSize",
+            "logic": "set",
+            "value": 4
+        },
+        {
+            "state": "Rooms.Music.Radio.StationName[0]",
+            "type": "s",
+            "logic": "set",
+            "value": "GoodDay FM"
+        },
+        {
+            "state": "Rooms.Music.Radio.StationName[1]",
+            "type": "s",
+            "logic": "set",
+            "value": "Just Rock It"
+        },
+        {
+            "state": "Rooms.Music.Radio.StationName[2]",
+            "type": "s",
+            "logic": "set",
+            "value": "Pop FM"
+        },
+        {
+            "state": "Rooms.Music.Radio.StationName[3]",
+            "type": "s",
+            "logic": "set",
+            "value": "Dance All Day FM"
+        },
+        {
+            "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
+            "type": "numeric",
+            "value": 0
+        },
+        {
+            "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
+            "type": "numeric",
+            "value": 0
+        },
+        {
+            "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
+            "type": "numeric",
+            "value": 0
+        },
+        {
+            "state": "Rooms.Music.TriggerviewPlayerIsShown",
+            "type": "numeric",
+            "value": 1
+        },
+        {
+            "state": "Music.RadioPlayer.VolSliderValue",
+            "type": "numeric",
+            "value": 20
+        },
+        {
+            "state": "Music.MusicPlayer.VolSliderValue",
+            "type": "numeric",
+            "value": 20
         }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.MusicPlayer.SetPauseBtnActive",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "numeric",
-          "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
-          "logic": "set",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.MusicPlayer.SetPlayBtnActive",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "numeric",
-          "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
-          "logic": "set",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.RadioPlayer.SetPauseBtnActive",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "numeric",
-          "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
-          "logic": "set",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.RadioPlayer.SetPlayBtnActive",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "numeric",
-          "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
-          "logic": "set",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.Radio.SetFavouriteBtnActive",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "numeric",
-          "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
-          "logic": "set",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.Radio.SetFavouriteBtnInactive",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "numeric",
-          "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
-          "logic": "set",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Radio.FavouriteBtnToggle",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Radio.FavouriteBtnState",
-          "logic": "toggle"
-        },
-        {
-          "type": "b",
-          "state": "Radio.FavouriteBtnShow",
-          "logic": "toggle"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.ShuffleSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.ShuffleIsSelected",
-          "logic": "toggle",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.RepeatIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.RepeatSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.RepeatIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Rooms.Music.ShuffleIsSelected",
-          "logic": "set",
-          "value": false
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Room.Music.Radio.FavouritesSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Room.Music.Radio.FavouritesIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Room.Music.Radio.StationsListIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "n",
-          "state": "Room.Music.Radio.StationListSize",
-          "logic": "set",
-          "value": 4
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[0]",
-          "type": "s",
-          "logic": "set",
-          "value": "GoodDay FM"
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[1]",
-          "type": "s",
-          "logic": "set",
-          "value": "Just Rock It"
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[2]",
-          "type": "s",
-          "logic": "set",
-          "value": "Pop FM"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Room.Music.Radio.StationsListSetSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Room.Music.Radio.StationsListIsSelected",
-          "logic": "toggle",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Room.Music.Radio.FavouritesIsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "n",
-          "state": "Room.Music.Radio.StationListSize",
-          "logic": "set",
-          "value": 4
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[3]",
-          "type": "s",
-          "logic": "set",
-          "value": "GoodDay FM"
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[2]",
-          "type": "s",
-          "logic": "set",
-          "value": "Just Rock It"
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[1]",
-          "type": "s",
-          "logic": "set",
-          "value": "Pop FM"
-        },
-        {
-          "state": "Rooms.Music.Radio.StationName[0]",
-          "type": "s",
-          "logic": "set",
-          "value": "Dance All Day FM"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[0].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[0].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Michael Jackson"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "You are not alone"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of MJ"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[1].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[1].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Jain"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Dynabeat"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Jain"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[2].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[2].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Coldplay"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Adventure of a lifetime"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Coldplay"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[3].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[3].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Michael Kiwanuka"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Cold little heart"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Michael Kiwanuka"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[4].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[4].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Pharrell Williams"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Freedom"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Pharrell Williams"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[5].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[5].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Alice Merton"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "No roots"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Alice Merton"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[6].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[6].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Kaleo"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Save yourself"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Kaleo"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[7].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[7].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "One Republic"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Love runs out"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of One Republic"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[8].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[6].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Duft Punk"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Get lucky"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Duft Punk"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Rooms.Music.AirPlay.Track[9].SetTrackSelected",
-      "trigger": true,
-      "actions": [
-        {
-          "type": "b",
-          "state": "Rooms.Music.AirPlay.Track[9].TrackIsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedArtistName",
-          "type": "s",
-          "logic": "set",
-          "value": "Foster The People"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedSongName",
-          "type": "s",
-          "logic": "set",
-          "value": "Pumped up kicks"
-        },
-        {
-          "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-          "type": "s",
-          "logic": "set",
-          "value": "The best of Foster The People"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Music.RadioPlayer.MuteBtnToggle",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Music.RadioPlayer.MuteBtnToggleState",
-          "type": "b",
-          "logic": "toggle"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Music.RadioPlayer.VolDownIsClicked",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Music.RadioPlayer.VolSliderValue",
-          "type": "n",
-          "logic": "decrement",
-          "value": 10
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Music.RadioPlayer.VolUpIsClicked",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Music.RadioPlayer.VolSliderValue",
-          "type": "n",
-          "logic": "increment",
-          "value": 10
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Music.MusicPlayer.MuteBtnToggle",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Music.MusicPlayer.MuteBtnToggleState",
-          "type": "b",
-          "logic": "toggle"
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Music.MusicPlayer.VolDownIsClicked",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Music.MusicPlayer.VolSliderValue",
-          "type": "n",
-          "logic": "decrement",
-          "value": 10
-        }
-      ]
-    },
-    {
-      "type": "boolean",
-      "event": "Music.MusicPlayer.VolUpIsClicked",
-      "trigger": true,
-      "actions": [
-        {
-          "state": "Music.MusicPlayer.VolSliderValue",
-          "type": "n",
-          "logic": "increment",
-          "value": 10
-        }
-      ]
-    }
-  ],
-  "onStart": [
-    {
-      "state": "Rooms.Music.RadioPlayerIsShown",
-      "value": true,
-      "type": "b",
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Music.SelectedSourceName",
-      "type": "s",
-      "value": "Radio",
-      "logic": "set"
-    },
-    {
-      "type": "b",
-      "state": "Rooms.Music.Source[1].SourceIsSelected",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Rooms.Music.NumberOfSources",
-      "type": "n",
-      "value": 2,
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Music.SongList.ListSize",
-      "type": "n",
-      "logic": "set",
-      "value": 10
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[0]",
-      "type": "s",
-      "logic": "set",
-      "value": "Michael Jackson"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[0]",
-      "type": "s",
-      "logic": "set",
-      "value": "You are not alone"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[1]",
-      "type": "s",
-      "logic": "set",
-      "value": "Jain"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[1]",
-      "type": "s",
-      "logic": "set",
-      "value": "Dynabeat"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[2]",
-      "type": "s",
-      "logic": "set",
-      "value": "Coldplay"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[2]",
-      "type": "s",
-      "logic": "set",
-      "value": "Adventure of a lifetime"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[3]",
-      "type": "s",
-      "logic": "set",
-      "value": "Michael Kiwanuka"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[3]",
-      "type": "s",
-      "logic": "set",
-      "value": "Cold little heart"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[4]",
-      "type": "s",
-      "logic": "set",
-      "value": "Pharrell Williams"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[4]",
-      "type": "s",
-      "logic": "set",
-      "value": "Freedom"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[5]",
-      "type": "s",
-      "logic": "set",
-      "value": "Alice Merton"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[5]",
-      "type": "s",
-      "logic": "set",
-      "value": "No roots"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[6]",
-      "type": "s",
-      "logic": "set",
-      "value": "Kaleo"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[6]",
-      "type": "s",
-      "logic": "set",
-      "value": "Save yourself"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[7]",
-      "type": "s",
-      "logic": "set",
-      "value": "One Republic"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[7]",
-      "type": "s",
-      "logic": "set",
-      "value": "Love runs out"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[8]",
-      "type": "s",
-      "logic": "set",
-      "value": "Duft Punk"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[8]",
-      "type": "s",
-      "logic": "set",
-      "value": "Get lucky"
-    },
-    {
-      "state": "Rooms.Music.SongList.ArtistName[9]",
-      "type": "s",
-      "logic": "set",
-      "value": "Foster The People"
-    },
-    {
-      "state": "Rooms.Music.SongList.SongName[9]",
-      "type": "s",
-      "logic": "set",
-      "value": "Pumped up kicks"
-    },
-    {
-      "type": "b",
-      "state": "Rooms.Music.AirPlay.Track[0].TrackIsSelected",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Rooms.Music.AirPlay.SelectedArtistName",
-      "type": "s",
-      "logic": "set",
-      "value": "Michael Jackson"
-    },
-    {
-      "state": "Rooms.Music.AirPlay.SelectedSongName",
-      "type": "s",
-      "logic": "set",
-      "value": "You are not alone"
-    },
-    {
-      "state": "Rooms.Music.AirPlay.SelectedAlbumName",
-      "type": "s",
-      "logic": "set",
-      "value": "The best of MJ"
-    },
-    {
-      "state": "Rooms.Music.Source[0].SourceName",
-      "type": "s",
-      "value": "AirPlay"
-    },
-    {
-      "state": "Rooms.Music.Source[1].SourceName",
-      "type": "s",
-      "value": "Radio"
-    },
-    {
-      "state": "Rooms.Music.Source[2].SourceName",
-      "type": "s",
-      "value": "AirMedia"
-    },
-    {
-      "state": "Rooms.Music.Source[3].SourceName",
-      "type": "s",
-      "value": "AirBoard"
-    },
-    {
-      "type": "b",
-      "state": "Room.Music.Radio.FavouritesIsSelected",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "type": "n",
-      "state": "Room.Music.Radio.StationListSize",
-      "logic": "set",
-      "value": 4
-    },
-    {
-      "state": "Rooms.Music.Radio.StationName[0]",
-      "type": "s",
-      "logic": "set",
-      "value": "GoodDay FM"
-    },
-    {
-      "state": "Rooms.Music.Radio.StationName[1]",
-      "type": "s",
-      "logic": "set",
-      "value": "Just Rock It"
-    },
-    {
-      "state": "Rooms.Music.Radio.StationName[2]",
-      "type": "s",
-      "logic": "set",
-      "value": "Pop FM"
-    },
-    {
-      "state": "Rooms.Music.Radio.StationName[3]",
-      "type": "s",
-      "logic": "set",
-      "value": "Dance All Day FM"
-    },
-    {
-      "state": "Rooms.MusicPlayer.PlayPauseBtnTriggerview",
-      "type": "numeric",
-      "value": 0
-    },
-    {
-      "state": "Rooms.RadioPlayer.PlayPauseBtnTriggerview",
-      "type": "numeric",
-      "value": 0
-    },
-    {
-      "state": "Rooms.Music.Radio.FavouriteBtnTriggerview",
-      "type": "numeric",
-      "value": 0
-    },
-    {
-      "state": "Rooms.Music.TriggerviewPlayerIsShown",
-      "type": "numeric",
-      "value": 1
-    },
-    {
-      "state": "Music.RadioPlayer.VolSliderValue",
-      "type": "numeric",
-      "value": 20
-    },
-    {
-      "state": "Music.MusicPlayer.VolSliderValue",
-      "type": "numeric",
-      "value": 20
-    }
-  ]
+    ]
 }

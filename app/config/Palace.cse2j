@@ -1,6 +1,6 @@
 {
 	"name": "Palace",
-	"timestamp": "2020-09-22 10:29:27.787",
+	"timestamp": "2020-10-06 11:25:50.117",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Palace",
@@ -13,252 +13,288 @@
 					"4": "Room.Blinds.OpenBlackoutFb",
 					"6": "Room.Blinds.CloseBlackoutFb"
 				},
-				"21": {
-					"1": "Room.Radio.FavouritesIsSelected",
-					"2": "Room.Radio.StationsListIsSelected",
-					"3": "Room.Radio.FavouritesTogglePressedFb"
-				},
-				"59": {
-					"1": "Room.Radio.StationTrack[0].SelectStationSelected"
-				},
-				"60": {
-					"1": "Room.Radio.StationTrack[1].SelectStationSelected"
-				},
-				"61": {
-					"1": "Room.Radio.StationTrack[2].SelectStationSelected"
-				},
-				"62": {
-					"1": "Room.Radio.StationTrack[3].SelectStationSelected"
-				},
-				"63": {
-					"1": "Room.Radio.StationTrack[4].SelectStationSelected"
-				},
-				"64": {
-					"1": "Room.Radio.StationTrack[5].SelectStationSelected"
-				},
-				"65": {
-					"1": "Room.Radio.StationTrack[6].SelectStationSelected"
-				},
-				"66": {
-					"1": "Room.Radio.StationTrack[7].SelectStationSelected"
-				},
-				"67": {
-					"1": "Room.Radio.StationTrack[8].SelectStationSelected"
-				},
-				"68": {
-					"1": "Room.Radio.StationTrack[9].SelectStationSelected"
-				},
-				"69": {
-					"1": "Room.Radio.StationTrack[10].SelectStationSelected"
-				},
-				"70": {
-					"1": "Room.Radio.StationTrack[11].SelectStationSelected"
-				},
-				"71": {
-					"1": "Room.Radio.StationTrack[12].SelectStationSelected"
-				},
-				"72": {
-					"1": "Room.Radio.StationTrack[13].SelectStationSelected"
-				},
-				"73": {
-					"1": "Room.Radio.StationTrack[14].SelectStationSelected"
-				},
-				"74": {
-					"1": "Room.Radio.StationTrack[15].SelectStationSelected"
-				},
-				"75": {
-					"1": "Room.Radio.StationTrack[16].SelectStationSelected"
-				},
-				"76": {
-					"1": "Room.Radio.StationTrack[17].SelectStationSelected"
-				},
-				"77": {
-					"1": "Room.Radio.StationTrack[18].SelectStationSelected"
-				},
-				"78": {
-					"1": "Room.Radio.StationTrack[19].SelectStationSelected"
-				},
-				"79": {
-					"1": "Room.Radio.StationTrack[20].SelectStationSelected"
-				},
-				"80": {
-					"1": "Room.Radio.StationTrack[21].SelectStationSelected"
-				},
-				"81": {
-					"1": "Room.Radio.StationTrack[22].SelectStationSelected"
-				},
-				"82": {
-					"1": "Room.Radio.StationTrack[23].SelectStationSelected"
-				},
-				"83": {
-					"1": "Room.Radio.StationTrack[24].SelectStationSelected"
-				},
-				"84": {
-					"1": "Room.Radio.StationTrack[25].SelectStationSelected"
-				},
-				"85": {
-					"1": "Room.Radio.StationTrack[26].SelectStationSelected"
-				},
-				"86": {
-					"1": "Room.Radio.StationTrack[27].SelectStationSelected"
-				},
-				"87": {
-					"1": "Room.Radio.StationTrack[28].SelectStationSelected"
-				},
-				"88": {
-					"1": "Room.Radio.StationTrack[29].SelectStationSelected"
-				},
-				"89": {
-					"1": "Room.Radio.StationTrack[30].SelectStationSelected"
-				},
-				"90": {
-					"1": "Room.Radio.StationTrack[31].SelectStationSelected"
-				},
-				"91": {
-					"1": "Room.Radio.StationTrack[32].SelectStationSelected"
-				},
-				"92": {
-					"1": "Room.Radio.StationTrack[33].SelectStationSelected"
-				},
-				"93": {
-					"1": "Room.Radio.StationTrack[34].SelectStationSelected"
-				},
-				"94": {
-					"1": "Room.Radio.StationTrack[35].SelectStationSelected"
-				},
-				"95": {
-					"1": "Room.Radio.StationTrack[36].SelectStationSelected"
-				},
-				"96": {
-					"1": "Room.Radio.Favourite[0].SetStationFavouriteSelected"
-				},
-				"97": {
-					"1": "Room.Radio.Favourite[1].SetStationFavouriteSelected"
-				},
-				"98": {
-					"1": "Room.Radio.Favourite[2].SetStationFavouriteSelected"
-				},
-				"99": {
-					"1": "Room.Radio.Favourite[3].SetStationFavouriteSelected"
-				},
-				"100": {
-					"1": "Room.Radio.Favourite[4].SetStationFavouriteSelected"
-				},
-				"101": {
-					"1": "Room.Radio.Favourite[5].SetStationFavouriteSelected"
-				},
-				"102": {
-					"1": "Room.Radio.Favourite[6].SetStationFavouriteSelected"
-				},
-				"103": {
-					"1": "Room.Radio.Favourite[7].SetStationFavouriteSelected"
-				},
-				"104": {
-					"1": "Room.Radio.Favourite[8].SetStationFavouriteSelected"
-				},
-				"105": {
-					"1": "Room.Radio.Favourite[9].SetStationFavouriteSelected"
-				},
-				"106": {
-					"1": "Room.Radio.Favourite[10].SetStationFavouriteSelected"
-				},
-				"107": {
-					"1": "Room.Radio.Favourite[11].SetStationFavouriteSelected"
-				},
-				"108": {
-					"1": "Room.Radio.Favourite[12].SetStationFavouriteSelected"
-				},
-				"109": {
-					"1": "Room.Radio.Favourite[13].SetStationFavouriteSelected"
-				},
-				"110": {
-					"1": "Room.Radio.Favourite[14].SetStationFavouriteSelected"
-				},
-				"111": {
-					"1": "Room.Radio.Favourite[15].SetStationFavouriteSelected"
-				},
-				"112": {
-					"1": "Room.Radio.Favourite[16].SetStationFavouriteSelected"
-				},
-				"113": {
-					"1": "Room.Radio.Favourite[17].SetStationFavouriteSelected"
-				},
-				"114": {
-					"1": "Room.Radio.Favourite[18].SetStationFavouriteSelected"
-				},
-				"115": {
-					"1": "Room.Radio.Favourite[19].SetStationFavouriteSelected"
-				},
-				"116": {
-					"1": "Room.Radio.Favourite[20].SetStationFavouriteSelected"
-				},
-				"117": {
-					"1": "Room.Radio.Favourite[21].SetStationFavouriteSelected"
-				},
-				"118": {
-					"1": "Room.Radio.Favourite[22].SetStationFavouriteSelected"
-				},
-				"119": {
-					"1": "Room.Radio.Favourite[23].SetStationFavouriteSelected"
-				},
-				"120": {
-					"1": "Room.Radio.Favourite[24].SetStationFavouriteSelected"
-				},
-				"121": {
-					"1": "Room.Radio.Favourite[25].SetStationFavouriteSelected"
-				},
-				"122": {
-					"1": "Room.Radio.Favourite[26].SetStationFavouriteSelected"
-				},
-				"123": {
-					"1": "Room.Radio.Favourite[27].SetStationFavouriteSelected"
-				},
-				"124": {
-					"1": "Room.Radio.Favourite[28].SetStationFavouriteSelected"
-				},
-				"125": {
-					"1": "Room.Radio.Favourite[29].SetStationFavouriteSelected"
-				},
-				"126": {
-					"1": "Room.Radio.Favourite[30].SetStationFavouriteSelected"
-				},
-				"127": {
-					"1": "Room.Radio.Favourite[31].SetStationFavouriteSelected"
-				},
-				"128": {
-					"1": "Room.Radio.Favourite[32].SetStationFavouriteSelected"
-				},
-				"129": {
-					"1": "Room.Radio.Favourite[33].SetStationFavouriteSelected"
-				},
-				"130": {
-					"1": "Room.Radio.Favourite[34].SetStationFavouriteSelected"
-				},
-				"131": {
-					"1": "Room.Radio.Favourite[35].SetStationFavouriteSelected"
-				},
-				"132": {
-					"1": "Room.Radio.Favourite[36].SetStationFavouriteSelected"
-				},
-				"139": {
+				"27": {
 					"1": "Climate.GuestRoom.Room[0].Mode.FanIsSelected",
 					"2": "Climate.GuestRoom.Room[0].Mode.CoolIsSelected",
 					"3": "Climate.GuestRoom.Room[0].Mode.OffIsSelected"
 				},
-				"140": {
+				"28": {
 					"1": "Climate.GuestRoom.Room[1].Mode.FanIsSelected",
 					"2": "Climate.GuestRoom.Room[1].Mode.CoolIsSelected",
 					"3": "Climate.GuestRoom.Room[1].Mode.OffIsSelected"
 				},
-				"141": {
+				"29": {
 					"1": "Climate.GuestRoom.Room[2].Mode.FanIsSelected",
 					"2": "Climate.GuestRoom.Room[2].Mode.CoolIsSelected",
 					"3": "Climate.GuestRoom.Room[2].Mode.OffIsSelected"
 				},
-				"142": {
+				"30": {
 					"1": "Climate.GuestRoom.Room[3].Mode.FanIsSelected",
 					"2": "Climate.GuestRoom.Room[3].Mode.CoolIsSelected",
 					"3": "Climate.GuestRoom.Room[3].Mode.OffIsSelected"
+				},
+				"31": {
+					"3": "Radio.FavouriteBtnState",
+					"4": "Radio.StationsListIsSelected",
+					"5": "Radio.FavouritesIsSelected"
+				},
+				"32": {
+					"1": "Radio.StationTrack[0].SelectStationSelected",
+					"2": "Radio.StationTrack[0].FavouriteBtnShow"
+				},
+				"33": {
+					"1": "Radio.StationTrack[1].SelectStationSelected",
+					"2": "Radio.StationTrack[1].FavouriteBtnShow"
+				},
+				"34": {
+					"1": "Radio.StationTrack[2].SelectStationSelected",
+					"2": "Radio.StationTrack[2].FavouriteBtnShow"
+				},
+				"35": {
+					"1": "Radio.StationTrack[3].SelectStationSelected",
+					"2": "Radio.StationTrack[3].FavouriteBtnShow"
+				},
+				"36": {
+					"1": "Radio.StationTrack[4].SelectStationSelected",
+					"2": "Radio.StationTrack[4].FavouriteBtnShow"
+				},
+				"37": {
+					"1": "Radio.StationTrack[5].SelectStationSelected",
+					"2": "Radio.StationTrack[5].FavouriteBtnShow"
+				},
+				"38": {
+					"1": "Radio.StationTrack[6].SelectStationSelected",
+					"2": "Radio.StationTrack[6].FavouriteBtnShow"
+				},
+				"39": {
+					"1": "Radio.StationTrack[7].SelectStationSelected",
+					"2": "Radio.StationTrack[7].FavouriteBtnShow"
+				},
+				"40": {
+					"1": "Radio.StationTrack[8].SelectStationSelected",
+					"2": "Radio.StationTrack[8].FavouriteBtnShow"
+				},
+				"41": {
+					"1": "Radio.StationTrack[9].SelectStationSelected",
+					"2": "Radio.StationTrack[9].FavouriteBtnShow"
+				},
+				"42": {
+					"1": "Radio.StationTrack[10].SelectStationSelected",
+					"2": "Radio.StationTrack[10].FavouriteBtnShow"
+				},
+				"43": {
+					"1": "Radio.StationTrack[11].SelectStationSelected",
+					"2": "Radio.StationTrack[11].FavouriteBtnShow"
+				},
+				"44": {
+					"1": "Radio.StationTrack[12].SelectStationSelected",
+					"2": "Radio.StationTrack[12].FavouriteBtnShow"
+				},
+				"45": {
+					"1": "Radio.StationTrack[13].SelectStationSelected",
+					"2": "Radio.StationTrack[13].FavouriteBtnShow"
+				},
+				"46": {
+					"1": "Radio.StationTrack[14].SelectStationSelected",
+					"2": "Radio.StationTrack[14].FavouriteBtnShow"
+				},
+				"47": {
+					"1": "Radio.StationTrack[15].SelectStationSelected",
+					"2": "Radio.StationTrack[15].FavouriteBtnShow"
+				},
+				"48": {
+					"1": "Radio.StationTrack[16].SelectStationSelected",
+					"2": "Radio.StationTrack[16].FavouriteBtnShow"
+				},
+				"49": {
+					"1": "Radio.StationTrack[17].SelectStationSelected",
+					"2": "Radio.StationTrack[17].FavouriteBtnShow"
+				},
+				"50": {
+					"1": "Radio.StationTrack[18].SelectStationSelected",
+					"2": "Radio.StationTrack[18].FavouriteBtnShow"
+				},
+				"51": {
+					"1": "Radio.StationTrack[19].SelectStationSelected",
+					"2": "Radio.StationTrack[19].FavouriteBtnShow"
+				},
+				"52": {
+					"1": "Radio.StationTrack[20].SelectStationSelected",
+					"2": "Radio.StationTrack[20].FavouriteBtnShow"
+				},
+				"53": {
+					"1": "Radio.StationTrack[21].SelectStationSelected",
+					"2": "Radio.StationTrack[21].FavouriteBtnShow"
+				},
+				"54": {
+					"1": "Radio.StationTrack[22].SelectStationSelected",
+					"2": "Radio.StationTrack[22].FavouriteBtnShow"
+				},
+				"55": {
+					"1": "Radio.StationTrack[23].SelectStationSelected",
+					"2": "Radio.StationTrack[23].FavouriteBtnShow"
+				},
+				"56": {
+					"1": "Radio.StationTrack[24].SelectStationSelected",
+					"2": "Radio.StationTrack[24].FavouriteBtnShow"
+				},
+				"57": {
+					"1": "Radio.StationTrack[25].SelectStationSelected",
+					"2": "Radio.StationTrack[25].FavouriteBtnShow"
+				},
+				"58": {
+					"1": "Radio.StationTrack[26].SelectStationSelected",
+					"2": "Radio.StationTrack[26].FavouriteBtnShow"
+				},
+				"59": {
+					"1": "Radio.StationTrack[27].SelectStationSelected",
+					"2": "Radio.StationTrack[27].FavouriteBtnShow"
+				},
+				"60": {
+					"1": "Radio.StationTrack[28].SelectStationSelected",
+					"2": "Radio.StationTrack[28].FavouriteBtnShow"
+				},
+				"61": {
+					"1": "Radio.StationTrack[29].SelectStationSelected",
+					"2": "Radio.StationTrack[29].FavouriteBtnShow"
+				},
+				"62": {
+					"1": "Radio.StationTrack[30].SelectStationSelected",
+					"2": "Radio.StationTrack[30].FavouriteBtnShow"
+				},
+				"63": {
+					"1": "Radio.StationTrack[31].SelectStationSelected",
+					"2": "Radio.StationTrack[31].FavouriteBtnShow"
+				},
+				"64": {
+					"1": "Radio.StationTrack[32].SelectStationSelected",
+					"2": "Radio.StationTrack[32].FavouriteBtnShow"
+				},
+				"65": {
+					"1": "Radio.StationTrack[33].SelectStationSelected",
+					"2": "Radio.StationTrack[33].FavouriteBtnShow"
+				},
+				"66": {
+					"1": "Radio.StationTrack[34].SelectStationSelected",
+					"2": "Radio.StationTrack[34].FavouriteBtnShow"
+				},
+				"67": {
+					"1": "Radio.StationTrack[35].SelectStationSelected",
+					"2": "Radio.StationTrack[35].FavouriteBtnShow"
+				},
+				"68": {
+					"1": "Radio.StationTrack[36].SelectStationSelected",
+					"2": "Radio.StationTrack[36].FavouriteBtnShow"
+				},
+				"69": {
+					"1": "Radio.StationTrack[37].SelectStationSelected",
+					"2": "Radio.StationTrack[37].FavouriteBtnShow"
+				},
+				"70": {
+					"1": "Radio.StationTrack[38].SelectStationSelected",
+					"2": "Radio.StationTrack[38].FavouriteBtnShow"
+				},
+				"71": {
+					"1": "Radio.StationTrack[39].SelectStationSelected",
+					"2": "Radio.StationTrack[39].FavouriteBtnShow"
+				},
+				"72": {
+					"1": "Radio.StationTrack[40].SelectStationSelected",
+					"2": "Radio.StationTrack[40].FavouriteBtnShow"
+				},
+				"73": {
+					"1": "Radio.StationTrack[41].SelectStationSelected",
+					"2": "Radio.StationTrack[41].FavouriteBtnShow"
+				},
+				"74": {
+					"1": "Radio.StationTrack[42].SelectStationSelected",
+					"2": "Radio.StationTrack[42].FavouriteBtnShow"
+				},
+				"75": {
+					"1": "Radio.StationTrack[43].SelectStationSelected",
+					"2": "Radio.StationTrack[43].FavouriteBtnShow"
+				},
+				"76": {
+					"1": "Radio.StationTrack[44].SelectStationSelected",
+					"2": "Radio.StationTrack[44].FavouriteBtnShow"
+				},
+				"77": {
+					"1": "Radio.StationTrack[45].SelectStationSelected",
+					"2": "Radio.StationTrack[45].FavouriteBtnShow"
+				},
+				"78": {
+					"1": "Radio.StationTrack[46].SelectStationSelected",
+					"2": "Radio.StationTrack[46].FavouriteBtnShow"
+				},
+				"79": {
+					"1": "Radio.StationTrack[47].SelectStationSelected",
+					"2": "Radio.StationTrack[47].FavouriteBtnShow"
+				},
+				"80": {
+					"1": "Radio.StationTrack[48].SelectStationSelected",
+					"2": "Radio.StationTrack[48].FavouriteBtnShow"
+				},
+				"81": {
+					"1": "Radio.StationTrack[49].SelectStationSelected",
+					"2": "Radio.StationTrack[49].FavouriteBtnShow"
+				},
+				"82": {
+					"1": "Radio.StationTrack[50].SelectStationSelected",
+					"2": "Radio.StationTrack[50].FavouriteBtnShow"
+				},
+				"83": {
+					"1": "Radio.StationTrack[51].SelectStationSelected",
+					"2": "Radio.StationTrack[51].FavouriteBtnShow"
+				},
+				"84": {
+					"1": "Radio.StationTrack[52].SelectStationSelected",
+					"2": "Radio.StationTrack[52].FavouriteBtnShow"
+				},
+				"85": {
+					"1": "Radio.StationTrack[53].SelectStationSelected",
+					"2": "Radio.StationTrack[53].FavouriteBtnShow"
+				},
+				"86": {
+					"1": "Radio.StationTrack[54].SelectStationSelected",
+					"2": "Radio.StationTrack[54].FavouriteBtnShow"
+				},
+				"87": {
+					"1": "Radio.StationTrack[55].SelectStationSelected",
+					"2": "Radio.StationTrack[55].FavouriteBtnShow"
+				},
+				"88": {
+					"1": "Radio.StationTrack[56].SelectStationSelected",
+					"2": "Radio.StationTrack[56].FavouriteBtnShow"
+				},
+				"89": {
+					"1": "Radio.StationTrack[57].SelectStationSelected",
+					"2": "Radio.StationTrack[57].FavouriteBtnShow"
+				},
+				"90": {
+					"1": "Radio.StationTrack[58].SelectStationSelected",
+					"2": "Radio.StationTrack[58].FavouriteBtnShow"
+				},
+				"91": {
+					"1": "Radio.StationTrack[59].SelectStationSelected",
+					"2": "Radio.StationTrack[59].FavouriteBtnShow"
+				},
+				"153": {
+					"1": "Music.RadioPlayer.MuteBtnToggleState"
+				},
+				"154": {
+					"1": "Music.Source[0].SourceIsSelected"
+				},
+				"155": {
+					"1": "Music.Source[1].SourceIsSelected"
+				},
+				"156": {
+					"1": "Music.Source[2].SourceIsSelected"
+				},
+				"157": {
+					"1": "Music.Source[3].SourceIsSelected"
+				},
+				"158": {
+					"1": "Music.Source[4].SourceIsSelected"
 				}
 			},
 			"numeric": {
@@ -300,11 +336,196 @@
 					"1": "Room.Blinds.LeftShadeValue",
 					"2": "Room.Blinds.RightShadeValue",
 					"3": "Room.Blinds.LeftBlackoutValue",
-					"4": "Room.Blinds.RightBlackoutValue"
+					"4": "Room.Blinds.RightBlackoutValue",
+					"5": "Room.Blinds.ShadesListSize",
+					"6": "Room.Blinds.BlackOutListSize"
 				},
-				"21": {
-					"1": "Room.Radio.StationListSize",
-					"2": "Room.Radio.SelectedListItemFb"
+				"31": {
+					"1": "Radio.StationListSize",
+					"2": "Radio.CurrentChannelFrequency"
+				},
+				"32": {
+					"1": "Radio.StationTrack[0].ChannelFrequencyFb"
+				},
+				"33": {
+					"1": "Radio.StationTrack[1].ChannelFrequencyFb"
+				},
+				"34": {
+					"1": "Radio.StationTrack[2].ChannelFrequencyFb"
+				},
+				"35": {
+					"1": "Radio.StationTrack[3].ChannelFrequencyFb"
+				},
+				"36": {
+					"1": "Radio.StationTrack[4].ChannelFrequencyFb"
+				},
+				"37": {
+					"1": "Radio.StationTrack[5].ChannelFrequencyFb"
+				},
+				"38": {
+					"1": "Radio.StationTrack[6].ChannelFrequencyFb"
+				},
+				"39": {
+					"1": "Radio.StationTrack[7].ChannelFrequencyFb"
+				},
+				"40": {
+					"1": "Radio.StationTrack[8].ChannelFrequencyFb"
+				},
+				"41": {
+					"1": "Radio.StationTrack[9].ChannelFrequencyFb"
+				},
+				"42": {
+					"1": "Radio.StationTrack[10].ChannelFrequencyFb"
+				},
+				"43": {
+					"1": "Radio.StationTrack[11].ChannelFrequencyFb"
+				},
+				"44": {
+					"1": "Radio.StationTrack[12].ChannelFrequencyFb"
+				},
+				"45": {
+					"1": "Radio.StationTrack[13].ChannelFrequencyFb"
+				},
+				"46": {
+					"1": "Radio.StationTrack[14].ChannelFrequencyFb"
+				},
+				"47": {
+					"1": "Radio.StationTrack[15].ChannelFrequencyFb"
+				},
+				"48": {
+					"1": "Radio.StationTrack[16].ChannelFrequencyFb"
+				},
+				"49": {
+					"1": "Radio.StationTrack[17].ChannelFrequencyFb"
+				},
+				"50": {
+					"1": "Radio.StationTrack[18].ChannelFrequencyFb"
+				},
+				"51": {
+					"1": "Radio.StationTrack[19].ChannelFrequencyFb"
+				},
+				"52": {
+					"1": "Radio.StationTrack[20].ChannelFrequencyFb"
+				},
+				"53": {
+					"1": "Radio.StationTrack[21].ChannelFrequencyFb"
+				},
+				"54": {
+					"1": "Radio.StationTrack[22].ChannelFrequencyFb"
+				},
+				"55": {
+					"1": "Radio.StationTrack[23].ChannelFrequencyFb"
+				},
+				"56": {
+					"1": "Radio.StationTrack[24].ChannelFrequencyFb"
+				},
+				"57": {
+					"1": "Radio.StationTrack[25].ChannelFrequencyFb"
+				},
+				"58": {
+					"1": "Radio.StationTrack[26].ChannelFrequencyFb"
+				},
+				"59": {
+					"1": "Radio.StationTrack[27].ChannelFrequencyFb"
+				},
+				"60": {
+					"1": "Radio.StationTrack[28].ChannelFrequencyFb"
+				},
+				"61": {
+					"1": "Radio.StationTrack[29].ChannelFrequencyFb"
+				},
+				"62": {
+					"1": "Radio.StationTrack[30].ChannelFrequencyFb"
+				},
+				"63": {
+					"1": "Radio.StationTrack[31].ChannelFrequencyFb"
+				},
+				"64": {
+					"1": "Radio.StationTrack[32].ChannelFrequencyFb"
+				},
+				"65": {
+					"1": "Radio.StationTrack[33].ChannelFrequencyFb"
+				},
+				"66": {
+					"1": "Radio.StationTrack[34].ChannelFrequencyFb"
+				},
+				"67": {
+					"1": "Radio.StationTrack[35].ChannelFrequencyFb"
+				},
+				"68": {
+					"1": "Radio.StationTrack[36].ChannelFrequencyFb"
+				},
+				"69": {
+					"1": "Radio.StationTrack[37].ChannelFrequencyFb"
+				},
+				"70": {
+					"1": "Radio.StationTrack[38].ChannelFrequencyFb"
+				},
+				"71": {
+					"1": "Radio.StationTrack[39].ChannelFrequencyFb"
+				},
+				"72": {
+					"1": "Radio.StationTrack[40].ChannelFrequencyFb"
+				},
+				"73": {
+					"1": "Radio.StationTrack[41].ChannelFrequencyFb"
+				},
+				"74": {
+					"1": "Radio.StationTrack[42].ChannelFrequencyFb"
+				},
+				"75": {
+					"1": "Radio.StationTrack[43].ChannelFrequencyFb"
+				},
+				"76": {
+					"1": "Radio.StationTrack[44].ChannelFrequencyFb"
+				},
+				"77": {
+					"1": "Radio.StationTrack[45].ChannelFrequencyFb"
+				},
+				"78": {
+					"1": "Radio.StationTrack[46].ChannelFrequencyFb"
+				},
+				"79": {
+					"1": "Radio.StationTrack[47].ChannelFrequencyFb"
+				},
+				"80": {
+					"1": "Radio.StationTrack[48].ChannelFrequencyFb"
+				},
+				"81": {
+					"1": "Radio.StationTrack[49].ChannelFrequencyFb"
+				},
+				"82": {
+					"1": "Radio.StationTrack[50].ChannelFrequencyFb"
+				},
+				"83": {
+					"1": "Radio.StationTrack[51].ChannelFrequencyFb"
+				},
+				"84": {
+					"1": "Radio.StationTrack[52].ChannelFrequencyFb"
+				},
+				"85": {
+					"1": "Radio.StationTrack[53].ChannelFrequencyFb"
+				},
+				"86": {
+					"1": "Radio.StationTrack[54].ChannelFrequencyFb"
+				},
+				"87": {
+					"1": "Radio.StationTrack[55].ChannelFrequencyFb"
+				},
+				"88": {
+					"1": "Radio.StationTrack[56].ChannelFrequencyFb"
+				},
+				"89": {
+					"1": "Radio.StationTrack[57].ChannelFrequencyFb"
+				},
+				"90": {
+					"1": "Radio.StationTrack[58].ChannelFrequencyFb"
+				},
+				"91": {
+					"1": "Radio.StationTrack[59].ChannelFrequencyFb"
+				},
+				"153": {
+					"1": "Music.RadioPlayer.VolSliderValue"
 				}
 			},
 			"string": {
@@ -362,187 +583,387 @@
 				"19": {
 					"1": "Room.Scenes[6].NameOfScene"
 				},
-				"21": {
-					"1": "Room.Radio.CurrentStationName",
-					"2": "Room.Radio.CurrentStationText",
-					"3": "Room.Radio.ChannelFrequencyString"
-				},
-				"22": {
-					"1": "Room.Radio.StationName[0].StationName",
-					"2": "Room.Radio.StationName[0].RadioText"
-				},
 				"23": {
-					"1": "Room.Radio.StationName[1].StationName",
-					"2": "Room.Radio.StationName[1].RadioText"
-				},
-				"24": {
-					"1": "Room.Radio.StationName[2].StationName",
-					"2": "Room.Radio.StationName[2].RadioText"
-				},
-				"25": {
-					"1": "Room.Radio.StationName[3].StationName",
-					"2": "Room.Radio.StationName[3].RadioText"
-				},
-				"26": {
-					"1": "Room.Radio.StationName[4].StationName",
-					"2": "Room.Radio.StationName[4].RadioText"
-				},
-				"27": {
-					"1": "Room.Radio.StationName[5].StationName",
-					"2": "Room.Radio.StationName[5].RadioText"
-				},
-				"28": {
-					"1": "Room.Radio.StationName[6].StationName",
-					"2": "Room.Radio.StationName[6].RadioText"
-				},
-				"29": {
-					"1": "Room.Radio.StationName[7].StationName",
-					"2": "Room.Radio.StationName[7].RadioText"
-				},
-				"30": {
-					"1": "Room.Radio.StationName[8].StationName",
-					"2": "Room.Radio.StationName[8].RadioText"
-				},
-				"31": {
-					"1": "Room.Radio.StationName[9].StationName",
-					"2": "Room.Radio.StationName[9].RadioText"
-				},
-				"32": {
-					"1": "Room.Radio.StationName[10].StationName",
-					"2": "Room.Radio.StationName[10].RadioText"
-				},
-				"33": {
-					"1": "Room.Radio.StationName[11].StationName",
-					"2": "Room.Radio.StationName[11].RadioText"
-				},
-				"34": {
-					"1": "Room.Radio.StationName[12].StationName",
-					"2": "Room.Radio.StationName[12].RadioText"
-				},
-				"35": {
-					"1": "Room.Radio.StationName[13].StationName",
-					"2": "Room.Radio.StationName[13].RadioText"
-				},
-				"36": {
-					"1": "Room.Radio.StationName[14].StationName",
-					"2": "Room.Radio.StationName[14].RadioText"
-				},
-				"37": {
-					"1": "Room.Radio.StationName[15].StationName",
-					"2": "Room.Radio.StationName[15].RadioText"
-				},
-				"38": {
-					"1": "Room.Radio.StationName[16].StationName",
-					"2": "Room.Radio.StationName[16].RadioText"
-				},
-				"39": {
-					"1": "Room.Radio.StationName[17].StationName",
-					"2": "Room.Radio.StationName[17].RadioText"
-				},
-				"40": {
-					"1": "Room.Radio.StationName[18].StationName",
-					"2": "Room.Radio.StationName[18].RadioText"
-				},
-				"41": {
-					"1": "Room.Radio.StationName[19].StationName",
-					"2": "Room.Radio.StationName[19].RadioText"
-				},
-				"42": {
-					"1": "Room.Radio.StationName[20].StationName",
-					"2": "Room.Radio.StationName[20].RadioText"
-				},
-				"43": {
-					"1": "Room.Radio.StationName[21].StationName",
-					"2": "Room.Radio.StationName[21].RadioText"
-				},
-				"44": {
-					"1": "Room.Radio.StationName[22].StationName",
-					"2": "Room.Radio.StationName[22].RadioText"
-				},
-				"45": {
-					"1": "Room.Radio.StationName[23].StationName",
-					"2": "Room.Radio.StationName[23].RadioText"
-				},
-				"46": {
-					"1": "Room.Radio.StationName[24].StationName",
-					"2": "Room.Radio.StationName[24].RadioText"
-				},
-				"47": {
-					"1": "Room.Radio.StationName[25].StationName",
-					"2": "Room.Radio.StationName[25].RadioText"
-				},
-				"48": {
-					"1": "Room.Radio.StationName[26].StationName",
-					"2": "Room.Radio.StationName[26].RadioText"
-				},
-				"49": {
-					"1": "Room.Radio.StationName[27].StationName",
-					"2": "Room.Radio.StationName[27].RadioText"
-				},
-				"50": {
-					"1": "Room.Radio.StationName[28].StationName",
-					"2": "Room.Radio.StationName[28].RadioText"
-				},
-				"51": {
-					"1": "Room.Radio.StationName[29].StationName",
-					"2": "Room.Radio.StationName[29].RadioText"
-				},
-				"52": {
-					"1": "Room.Radio.StationName[30].StationName",
-					"2": "Room.Radio.StationName[30].RadioText"
-				},
-				"53": {
-					"1": "Room.Radio.StationName[31].StationName",
-					"2": "Room.Radio.StationName[31].RadioText"
-				},
-				"54": {
-					"1": "Room.Radio.StationName[32].StationName",
-					"2": "Room.Radio.StationName[32].RadioText"
-				},
-				"55": {
-					"1": "Room.Radio.StationName[33].StationName",
-					"2": "Room.Radio.StationName[33].RadioText"
-				},
-				"56": {
-					"1": "Room.Radio.StationName[34].StationName",
-					"2": "Room.Radio.StationName[34].RadioText"
-				},
-				"57": {
-					"1": "Room.Radio.StationName[35].StationName",
-					"2": "Room.Radio.StationName[35].RadioText"
-				},
-				"58": {
-					"1": "Room.Radio.StationName[36].StationName",
-					"2": "Room.Radio.StationName[36].RadioText"
-				},
-				"135": {
 					"1": "Climate.GuestRoom.Room[0].RoomName",
 					"2": "Climate.GuestRoom.Room[0].TempString",
 					"3": "Climate.GuestRoom.Room[0].RoomTempString",
 					"4": "Climate.GuestRoom.Room[0].HumidityString"
 				},
-				"136": {
+				"24": {
 					"1": "Climate.GuestRoom.Room[1].RoomName",
 					"2": "Climate.GuestRoom.Room[1].TempString",
 					"3": "Climate.GuestRoom.Room[1].RoomTempString",
 					"4": "Climate.GuestRoom.Room[1].HumidityString"
 				},
-				"137": {
+				"25": {
 					"1": "Climate.GuestRoom.Room[2].RoomName",
 					"2": "Climate.GuestRoom.Room[2].TempString",
 					"3": "Climate.GuestRoom.Room[2].RoomTempString",
 					"4": "Climate.GuestRoom.Room[2].HumidityString"
 				},
-				"138": {
+				"26": {
 					"1": "Climate.GuestRoom.Room[3].RoomName",
 					"2": "Climate.GuestRoom.Room[3].TempString",
 					"3": "Climate.GuestRoom.Room[3].RoomTempString",
 					"4": "Climate.GuestRoom.Room[3].HumidityString"
+				},
+				"31": {
+					"1": "Radio.CurrentStationName",
+					"2": "Radio.CurrentStationText",
+					"3": "Radio.CurrentChannelFrequencyText"
+				},
+				"92": {
+					"1": "Radio.StationName[0].StationName",
+					"2": "Radio.StationName[0].RadioText",
+					"3": "Radio.StationName[0].StationChannelFrequencyText"
+				},
+				"93": {
+					"1": "Radio.StationName[1].StationName",
+					"2": "Radio.StationName[1].RadioText",
+					"3": "Radio.StationName[1].StationChannelFrequencyText"
+				},
+				"94": {
+					"1": "Radio.StationName[2].StationName",
+					"2": "Radio.StationName[2].RadioText",
+					"3": "Radio.StationName[2].StationChannelFrequencyText"
+				},
+				"95": {
+					"1": "Radio.StationName[3].StationName",
+					"2": "Radio.StationName[3].RadioText",
+					"3": "Radio.StationName[3].StationChannelFrequencyText"
+				},
+				"96": {
+					"1": "Radio.StationName[4].StationName",
+					"2": "Radio.StationName[4].RadioText",
+					"3": "Radio.StationName[4].StationChannelFrequencyText"
+				},
+				"97": {
+					"1": "Radio.StationName[5].StationName",
+					"2": "Radio.StationName[5].RadioText",
+					"3": "Radio.StationName[5].StationChannelFrequencyText"
+				},
+				"98": {
+					"1": "Radio.StationName[6].StationName",
+					"2": "Radio.StationName[6].RadioText",
+					"3": "Radio.StationName[6].StationChannelFrequencyText"
+				},
+				"99": {
+					"1": "Radio.StationName[7].StationName",
+					"2": "Radio.StationName[7].RadioText",
+					"3": "Radio.StationName[7].StationChannelFrequencyText"
+				},
+				"100": {
+					"1": "Radio.StationName[8].StationName",
+					"2": "Radio.StationName[8].RadioText",
+					"3": "Radio.StationName[8].StationChannelFrequencyText"
+				},
+				"101": {
+					"1": "Radio.StationName[9].StationName",
+					"2": "Radio.StationName[9].RadioText",
+					"3": "Radio.StationName[9].StationChannelFrequencyText"
+				},
+				"102": {
+					"1": "Radio.StationName[10].StationName",
+					"2": "Radio.StationName[10].RadioText",
+					"3": "Radio.StationName[10].StationChannelFrequencyText"
+				},
+				"103": {
+					"1": "Radio.StationName[11].StationName",
+					"2": "Radio.StationName[11].RadioText",
+					"3": "Radio.StationName[11].StationChannelFrequencyText"
+				},
+				"104": {
+					"1": "Radio.StationName[12].StationName",
+					"2": "Radio.StationName[12].RadioText",
+					"3": "Radio.StationName[12].StationChannelFrequencyText"
+				},
+				"105": {
+					"1": "Radio.StationName[13].StationName",
+					"2": "Radio.StationName[13].RadioText",
+					"3": "Radio.StationName[13].StationChannelFrequencyText"
+				},
+				"106": {
+					"1": "Radio.StationName[14].StationName",
+					"2": "Radio.StationName[14].RadioText",
+					"3": "Radio.StationName[14].StationChannelFrequencyText"
+				},
+				"107": {
+					"1": "Radio.StationName[15].StationName",
+					"2": "Radio.StationName[15].RadioText",
+					"3": "Radio.StationName[15].StationChannelFrequencyText"
+				},
+				"108": {
+					"1": "Radio.StationName[16].StationName",
+					"2": "Radio.StationName[16].RadioText",
+					"3": "Radio.StationName[16].StationChannelFrequencyText"
+				},
+				"109": {
+					"1": "Radio.StationName[17].StationName",
+					"2": "Radio.StationName[17].RadioText",
+					"3": "Radio.StationName[17].StationChannelFrequencyText"
+				},
+				"110": {
+					"1": "Radio.StationName[18].StationName",
+					"2": "Radio.StationName[18].RadioText",
+					"3": "Radio.StationName[18].StationChannelFrequencyText"
+				},
+				"111": {
+					"1": "Radio.StationName[19].StationName",
+					"2": "Radio.StationName[19].RadioText",
+					"3": "Radio.StationName[19].StationChannelFrequencyText"
+				},
+				"112": {
+					"1": "Radio.StationName[20].StationName",
+					"2": "Radio.StationName[20].RadioText",
+					"3": "Radio.StationName[20].StationChannelFrequencyText"
+				},
+				"113": {
+					"1": "Radio.StationName[21].StationName",
+					"2": "Radio.StationName[21].RadioText",
+					"3": "Radio.StationName[21].StationChannelFrequencyText"
+				},
+				"114": {
+					"1": "Radio.StationName[22].StationName",
+					"2": "Radio.StationName[22].RadioText",
+					"3": "Radio.StationName[22].StationChannelFrequencyText"
+				},
+				"115": {
+					"1": "Radio.StationName[23].StationName",
+					"2": "Radio.StationName[23].RadioText",
+					"3": "Radio.StationName[23].StationChannelFrequencyText"
+				},
+				"116": {
+					"1": "Radio.StationName[24].StationName",
+					"2": "Radio.StationName[24].RadioText",
+					"3": "Radio.StationName[24].StationChannelFrequencyText"
+				},
+				"117": {
+					"1": "Radio.StationName[25].StationName",
+					"2": "Radio.StationName[25].RadioText",
+					"3": "Radio.StationName[25].StationChannelFrequencyText"
+				},
+				"118": {
+					"1": "Radio.StationName[26].StationName",
+					"2": "Radio.StationName[26].RadioText",
+					"3": "Radio.StationName[26].StationChannelFrequencyText"
+				},
+				"119": {
+					"1": "Radio.StationName[27].StationName",
+					"2": "Radio.StationName[27].RadioText",
+					"3": "Radio.StationName[27].StationChannelFrequencyText"
+				},
+				"120": {
+					"1": "Radio.StationName[28].StationName",
+					"2": "Radio.StationName[28].RadioText",
+					"3": "Radio.StationName[28].StationChannelFrequencyText"
+				},
+				"121": {
+					"1": "Radio.StationName[29].StationName",
+					"2": "Radio.StationName[29].RadioText",
+					"3": "Radio.StationName[29].StationChannelFrequencyText"
+				},
+				"122": {
+					"1": "Radio.StationName[30].StationName",
+					"2": "Radio.StationName[30].RadioText",
+					"3": "Radio.StationName[30].StationChannelFrequencyText"
+				},
+				"123": {
+					"1": "Radio.StationName[31].StationName",
+					"2": "Radio.StationName[31].RadioText",
+					"3": "Radio.StationName[31].StationChannelFrequencyText"
+				},
+				"124": {
+					"1": "Radio.StationName[32].StationName",
+					"2": "Radio.StationName[32].RadioText",
+					"3": "Radio.StationName[32].StationChannelFrequencyText"
+				},
+				"125": {
+					"1": "Radio.StationName[33].StationName",
+					"2": "Radio.StationName[33].RadioText",
+					"3": "Radio.StationName[33].StationChannelFrequencyText"
+				},
+				"126": {
+					"1": "Radio.StationName[34].StationName",
+					"2": "Radio.StationName[34].RadioText",
+					"3": "Radio.StationName[34].StationChannelFrequencyText"
+				},
+				"127": {
+					"1": "Radio.StationName[35].StationName",
+					"2": "Radio.StationName[35].RadioText",
+					"3": "Radio.StationName[35].StationChannelFrequencyText"
+				},
+				"128": {
+					"1": "Radio.StationName[36].StationName",
+					"2": "Radio.StationName[36].RadioText",
+					"3": "Radio.StationName[36].StationChannelFrequencyText"
+				},
+				"129": {
+					"1": "Radio.StationName[37].StationName",
+					"2": "Radio.StationName[37].RadioText",
+					"3": "Radio.StationName[37].StationChannelFrequencyText"
+				},
+				"130": {
+					"1": "Radio.StationName[38].StationName",
+					"2": "Radio.StationName[38].RadioText",
+					"3": "Radio.StationName[38].StationChannelFrequencyText"
+				},
+				"131": {
+					"1": "Radio.StationName[39].StationName",
+					"2": "Radio.StationName[39].RadioText",
+					"3": "Radio.StationName[39].StationChannelFrequencyText"
+				},
+				"132": {
+					"1": "Radio.StationName[40].StationName",
+					"2": "Radio.StationName[40].RadioText",
+					"3": "Radio.StationName[40].StationChannelFrequencyText"
+				},
+				"133": {
+					"1": "Radio.StationName[41].StationName",
+					"2": "Radio.StationName[41].RadioText",
+					"3": "Radio.StationName[41].StationChannelFrequencyText"
+				},
+				"134": {
+					"1": "Radio.StationName[42].StationName",
+					"2": "Radio.StationName[42].RadioText",
+					"3": "Radio.StationName[42].StationChannelFrequencyText"
+				},
+				"135": {
+					"1": "Radio.StationName[43].StationName",
+					"2": "Radio.StationName[43].RadioText",
+					"3": "Radio.StationName[43].StationChannelFrequencyText"
+				},
+				"136": {
+					"1": "Radio.StationName[44].StationName",
+					"2": "Radio.StationName[44].RadioText",
+					"3": "Radio.StationName[44].StationChannelFrequencyText"
+				},
+				"137": {
+					"1": "Radio.StationName[45].StationName",
+					"2": "Radio.StationName[45].RadioText",
+					"3": "Radio.StationName[45].StationChannelFrequencyText"
+				},
+				"138": {
+					"1": "Radio.StationName[46].StationName",
+					"2": "Radio.StationName[46].RadioText",
+					"3": "Radio.StationName[46].StationChannelFrequencyText"
+				},
+				"139": {
+					"1": "Radio.StationName[47].StationName",
+					"2": "Radio.StationName[47].RadioText",
+					"3": "Radio.StationName[47].StationChannelFrequencyText"
+				},
+				"140": {
+					"1": "Radio.StationName[48].StationName",
+					"2": "Radio.StationName[48].RadioText",
+					"3": "Radio.StationName[48].StationChannelFrequencyText"
+				},
+				"141": {
+					"1": "Radio.StationName[49].StationName",
+					"2": "Radio.StationName[49].RadioText",
+					"3": "Radio.StationName[49].StationChannelFrequencyText"
+				},
+				"142": {
+					"1": "Radio.StationName[50].StationName",
+					"2": "Radio.StationName[50].RadioText",
+					"3": "Radio.StationName[50].StationChannelFrequencyText"
+				},
+				"143": {
+					"1": "Radio.StationName[51].StationName",
+					"2": "Radio.StationName[51].RadioText",
+					"3": "Radio.StationName[51].StationChannelFrequencyText"
+				},
+				"144": {
+					"1": "Radio.StationName[52].StationName",
+					"2": "Radio.StationName[52].RadioText",
+					"3": "Radio.StationName[52].StationChannelFrequencyText"
+				},
+				"145": {
+					"1": "Radio.StationName[53].StationName",
+					"2": "Radio.StationName[53].RadioText",
+					"3": "Radio.StationName[53].StationChannelFrequencyText"
+				},
+				"146": {
+					"1": "Radio.StationName[54].StationName",
+					"2": "Radio.StationName[54].RadioText",
+					"3": "Radio.StationName[54].StationChannelFrequencyText"
+				},
+				"147": {
+					"1": "Radio.StationName[55].StationName",
+					"2": "Radio.StationName[55].RadioText",
+					"3": "Radio.StationName[55].StationChannelFrequencyText"
+				},
+				"148": {
+					"1": "Radio.StationName[56].StationName",
+					"2": "Radio.StationName[56].RadioText",
+					"3": "Radio.StationName[56].StationChannelFrequencyText"
+				},
+				"149": {
+					"1": "Radio.StationName[57].StationName",
+					"2": "Radio.StationName[57].RadioText",
+					"3": "Radio.StationName[57].StationChannelFrequencyText"
+				},
+				"150": {
+					"1": "Radio.StationName[58].StationName",
+					"2": "Radio.StationName[58].RadioText",
+					"3": "Radio.StationName[58].StationChannelFrequencyText"
+				},
+				"151": {
+					"1": "Radio.StationName[59].StationName",
+					"2": "Radio.StationName[59].RadioText",
+					"3": "Radio.StationName[59].StationChannelFrequencyText"
+				},
+				"154": {
+					"1": "Music.Source[0].SourceName",
+					"2": "Music.Source[0].SelectedSourceName"
+				},
+				"155": {
+					"1": "Music.Source[1].SourceName",
+					"2": "Music.Source[1].SelectedSourceName"
+				},
+				"156": {
+					"1": "Music.Source[2].SourceName",
+					"2": "Music.Source[2].SelectedSourceName"
+				},
+				"157": {
+					"1": "Music.Source[3].SourceName",
+					"2": "Music.Source[3].SelectedSourceName"
+				},
+				"158": {
+					"1": "Music.Source[4].SourceName",
+					"2": "Music.Source[4].SelectedSourceName"
 				}
 			}
 		},
 		"events": {
 			"boolean": {
+				"Radio.ClearChannels": {
+					"joinId": 1,
+					"smartObjectId": 31
+				},
+				"Radio.LearnChannels": {
+					"joinId": 2,
+					"smartObjectId": 31
+				},
+				"Radio.FavouriteBtnToggle": {
+					"joinId": 3,
+					"smartObjectId": 31
+				},
+				"Radio.ViewAll": {
+					"joinId": 4,
+					"smartObjectId": 31
+				},
+				"Radio.ViewFavourites": {
+					"joinId": 5,
+					"smartObjectId": 31
+				},
+				"Radio.SetPauseBtnActive": {
+					"joinId": 6,
+					"smartObjectId": 31
+				},
+				"Radio.SetPlayBtnActive": {
+					"joinId": 7,
+					"smartObjectId": 31
+				},
 				"Room.DimmableLights[0].TurnLightOn": {
 					"joinId": 1,
 					"smartObjectId": 2
@@ -675,393 +1096,361 @@
 					"joinId": 6,
 					"smartObjectId": 20
 				},
-				"Room.Radio.ViewFavourites": {
+				"Radio.StationTrack[0].SelectStation": {
 					"joinId": 1,
-					"smartObjectId": 21
+					"smartObjectId": 32
 				},
-				"Room.Radio.ViewAll": {
-					"joinId": 2,
-					"smartObjectId": 21
+				"Radio.StationTrack[1].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 33
 				},
-				"Room.Radio.FavouritesTogglePressed": {
-					"joinId": 3,
-					"smartObjectId": 21
+				"Radio.StationTrack[2].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 34
 				},
-				"Room.Radio.StationTrack[0].SelectStation": {
+				"Radio.StationTrack[3].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 35
+				},
+				"Radio.StationTrack[4].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 36
+				},
+				"Radio.StationTrack[5].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 37
+				},
+				"Radio.StationTrack[6].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 38
+				},
+				"Radio.StationTrack[7].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 39
+				},
+				"Radio.StationTrack[8].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 40
+				},
+				"Radio.StationTrack[9].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 41
+				},
+				"Radio.StationTrack[10].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 42
+				},
+				"Radio.StationTrack[11].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 43
+				},
+				"Radio.StationTrack[12].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 44
+				},
+				"Radio.StationTrack[13].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 45
+				},
+				"Radio.StationTrack[14].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 46
+				},
+				"Radio.StationTrack[15].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 47
+				},
+				"Radio.StationTrack[16].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 48
+				},
+				"Radio.StationTrack[17].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 49
+				},
+				"Radio.StationTrack[18].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 50
+				},
+				"Radio.StationTrack[19].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 51
+				},
+				"Radio.StationTrack[20].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 52
+				},
+				"Radio.StationTrack[21].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 53
+				},
+				"Radio.StationTrack[22].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 54
+				},
+				"Radio.StationTrack[23].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 55
+				},
+				"Radio.StationTrack[24].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 56
+				},
+				"Radio.StationTrack[25].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 57
+				},
+				"Radio.StationTrack[26].SelectStation": {
+					"joinId": 1,
+					"smartObjectId": 58
+				},
+				"Radio.StationTrack[27].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 59
 				},
-				"Room.Radio.StationTrack[1].SelectStation": {
+				"Radio.StationTrack[28].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 60
 				},
-				"Room.Radio.StationTrack[2].SelectStation": {
+				"Radio.StationTrack[29].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 61
 				},
-				"Room.Radio.StationTrack[3].SelectStation": {
+				"Radio.StationTrack[30].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 62
 				},
-				"Room.Radio.StationTrack[4].SelectStation": {
+				"Radio.StationTrack[31].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 63
 				},
-				"Room.Radio.StationTrack[5].SelectStation": {
+				"Radio.StationTrack[32].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 64
 				},
-				"Room.Radio.StationTrack[6].SelectStation": {
+				"Radio.StationTrack[33].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 65
 				},
-				"Room.Radio.StationTrack[7].SelectStation": {
+				"Radio.StationTrack[34].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 66
 				},
-				"Room.Radio.StationTrack[8].SelectStation": {
+				"Radio.StationTrack[35].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 67
 				},
-				"Room.Radio.StationTrack[9].SelectStation": {
+				"Radio.StationTrack[36].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 68
 				},
-				"Room.Radio.StationTrack[10].SelectStation": {
+				"Radio.StationTrack[37].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 69
 				},
-				"Room.Radio.StationTrack[11].SelectStation": {
+				"Radio.StationTrack[38].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 70
 				},
-				"Room.Radio.StationTrack[12].SelectStation": {
+				"Radio.StationTrack[39].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 71
 				},
-				"Room.Radio.StationTrack[13].SelectStation": {
+				"Radio.StationTrack[40].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 72
 				},
-				"Room.Radio.StationTrack[14].SelectStation": {
+				"Radio.StationTrack[41].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 73
 				},
-				"Room.Radio.StationTrack[15].SelectStation": {
+				"Radio.StationTrack[42].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 74
 				},
-				"Room.Radio.StationTrack[16].SelectStation": {
+				"Radio.StationTrack[43].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 75
 				},
-				"Room.Radio.StationTrack[17].SelectStation": {
+				"Radio.StationTrack[44].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 76
 				},
-				"Room.Radio.StationTrack[18].SelectStation": {
+				"Radio.StationTrack[45].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 77
 				},
-				"Room.Radio.StationTrack[19].SelectStation": {
+				"Radio.StationTrack[46].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 78
 				},
-				"Room.Radio.StationTrack[20].SelectStation": {
+				"Radio.StationTrack[47].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 79
 				},
-				"Room.Radio.StationTrack[21].SelectStation": {
+				"Radio.StationTrack[48].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 80
 				},
-				"Room.Radio.StationTrack[22].SelectStation": {
+				"Radio.StationTrack[49].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 81
 				},
-				"Room.Radio.StationTrack[23].SelectStation": {
+				"Radio.StationTrack[50].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 82
 				},
-				"Room.Radio.StationTrack[24].SelectStation": {
+				"Radio.StationTrack[51].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 83
 				},
-				"Room.Radio.StationTrack[25].SelectStation": {
+				"Radio.StationTrack[52].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 84
 				},
-				"Room.Radio.StationTrack[26].SelectStation": {
+				"Radio.StationTrack[53].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 85
 				},
-				"Room.Radio.StationTrack[27].SelectStation": {
+				"Radio.StationTrack[54].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 86
 				},
-				"Room.Radio.StationTrack[28].SelectStation": {
+				"Radio.StationTrack[55].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 87
 				},
-				"Room.Radio.StationTrack[29].SelectStation": {
+				"Radio.StationTrack[56].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 88
 				},
-				"Room.Radio.StationTrack[30].SelectStation": {
+				"Radio.StationTrack[57].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 89
 				},
-				"Room.Radio.StationTrack[31].SelectStation": {
+				"Radio.StationTrack[58].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 90
 				},
-				"Room.Radio.StationTrack[32].SelectStation": {
+				"Radio.StationTrack[59].SelectStation": {
 					"joinId": 1,
 					"smartObjectId": 91
 				},
-				"Room.Radio.StationTrack[33].SelectStation": {
+				"Music.RadioPlayer.MuteBtnToggle": {
 					"joinId": 1,
-					"smartObjectId": 92
+					"smartObjectId": 153
 				},
-				"Room.Radio.StationTrack[34].SelectStation": {
-					"joinId": 1,
-					"smartObjectId": 93
+				"Music.RadioPlayer.VolDownIsClicked": {
+					"joinId": 2,
+					"smartObjectId": 153
 				},
-				"Room.Radio.StationTrack[35].SelectStation": {
-					"joinId": 1,
-					"smartObjectId": 94
+				"Music.RadioPlayer.VolUpIsClicked": {
+					"joinId": 3,
+					"smartObjectId": 153
 				},
-				"Room.Radio.StationTrack[36].SelectStation": {
-					"joinId": 1,
-					"smartObjectId": 95
+				"Music.RadioPlayer.SetPauseBtnActive": {
+					"joinId": 4,
+					"smartObjectId": 153
 				},
-				"Room.Radio.Favourite[0].SetStationFavourite": {
+				"Music.Source[0].SetSourceSelected": {
 					"joinId": 1,
-					"smartObjectId": 96
+					"smartObjectId": 154
 				},
-				"Room.Radio.Favourite[1].SetStationFavourite": {
+				"Music.Source[1].SetSourceSelected": {
 					"joinId": 1,
-					"smartObjectId": 97
+					"smartObjectId": 155
 				},
-				"Room.Radio.Favourite[2].SetStationFavourite": {
+				"Music.Source[2].SetSourceSelected": {
 					"joinId": 1,
-					"smartObjectId": 98
+					"smartObjectId": 156
 				},
-				"Room.Radio.Favourite[3].SetStationFavourite": {
+				"Music.Source[3].SetSourceSelected": {
 					"joinId": 1,
-					"smartObjectId": 99
+					"smartObjectId": 157
 				},
-				"Room.Radio.Favourite[4].SetStationFavourite": {
+				"Music.Source[4].SetSourceSelected": {
 					"joinId": 1,
-					"smartObjectId": 100
-				},
-				"Room.Radio.Favourite[5].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 101
-				},
-				"Room.Radio.Favourite[6].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 102
-				},
-				"Room.Radio.Favourite[7].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 103
-				},
-				"Room.Radio.Favourite[8].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 104
-				},
-				"Room.Radio.Favourite[9].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 105
-				},
-				"Room.Radio.Favourite[10].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 106
-				},
-				"Room.Radio.Favourite[11].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 107
-				},
-				"Room.Radio.Favourite[12].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 108
-				},
-				"Room.Radio.Favourite[13].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 109
-				},
-				"Room.Radio.Favourite[14].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 110
-				},
-				"Room.Radio.Favourite[15].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 111
-				},
-				"Room.Radio.Favourite[16].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 112
-				},
-				"Room.Radio.Favourite[17].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 113
-				},
-				"Room.Radio.Favourite[18].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 114
-				},
-				"Room.Radio.Favourite[19].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 115
-				},
-				"Room.Radio.Favourite[20].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 116
-				},
-				"Room.Radio.Favourite[21].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 117
-				},
-				"Room.Radio.Favourite[22].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 118
-				},
-				"Room.Radio.Favourite[23].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 119
-				},
-				"Room.Radio.Favourite[24].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 120
-				},
-				"Room.Radio.Favourite[25].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 121
-				},
-				"Room.Radio.Favourite[26].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 122
-				},
-				"Room.Radio.Favourite[27].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 123
-				},
-				"Room.Radio.Favourite[28].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 124
-				},
-				"Room.Radio.Favourite[29].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 125
-				},
-				"Room.Radio.Favourite[30].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 126
-				},
-				"Room.Radio.Favourite[31].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 127
-				},
-				"Room.Radio.Favourite[32].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 128
-				},
-				"Room.Radio.Favourite[33].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 129
-				},
-				"Room.Radio.Favourite[34].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 130
-				},
-				"Room.Radio.Favourite[35].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 131
-				},
-				"Room.Radio.Favourite[36].SetStationFavourite": {
-					"joinId": 1,
-					"smartObjectId": 132
+					"smartObjectId": 158
 				},
 				"Climate.GuestRoom.Room[0].IncrementTemp": {
 					"joinId": 1,
-					"smartObjectId": 135
+					"smartObjectId": 23
 				},
 				"Climate.GuestRoom.Room[0].DecrementTemp": {
 					"joinId": 2,
-					"smartObjectId": 135
+					"smartObjectId": 23
 				},
 				"Climate.GuestRoom.Room[1].IncrementTemp": {
 					"joinId": 1,
-					"smartObjectId": 136
+					"smartObjectId": 24
 				},
 				"Climate.GuestRoom.Room[1].DecrementTemp": {
 					"joinId": 2,
-					"smartObjectId": 136
+					"smartObjectId": 24
 				},
 				"Climate.GuestRoom.Room[2].IncrementTemp": {
 					"joinId": 1,
-					"smartObjectId": 137
+					"smartObjectId": 25
 				},
 				"Climate.GuestRoom.Room[2].DecrementTemp": {
 					"joinId": 2,
-					"smartObjectId": 137
+					"smartObjectId": 25
 				},
 				"Climate.GuestRoom.Room[3].IncrementTemp": {
 					"joinId": 1,
-					"smartObjectId": 138
+					"smartObjectId": 26
 				},
 				"Climate.GuestRoom.Room[3].DecrementTemp": {
 					"joinId": 2,
-					"smartObjectId": 138
+					"smartObjectId": 26
 				},
 				"Climate.GuestRoom.Room[0].Mode.FanSetSelected": {
 					"joinId": 1,
-					"smartObjectId": 139
+					"smartObjectId": 27
 				},
 				"Climate.GuestRoom.Room[0].Mode.CoolSetSelected": {
 					"joinId": 2,
-					"smartObjectId": 139
+					"smartObjectId": 27
 				},
 				"Climate.GuestRoom.Room[0].Mode.OffSetSelected": {
 					"joinId": 3,
-					"smartObjectId": 139
+					"smartObjectId": 27
 				},
 				"Climate.GuestRoom.Room[1].Mode.FanSetSelected": {
 					"joinId": 1,
-					"smartObjectId": 140
+					"smartObjectId": 28
 				},
 				"Climate.GuestRoom.Room[1].Mode.CoolSetSelected": {
 					"joinId": 2,
-					"smartObjectId": 140
+					"smartObjectId": 28
 				},
 				"Climate.GuestRoom.Room[1].Mode.OffSetSelected": {
 					"joinId": 3,
-					"smartObjectId": 140
+					"smartObjectId": 28
 				},
 				"Climate.GuestRoom.Room[2].Mode.FanSetSelected": {
 					"joinId": 1,
-					"smartObjectId": 141
+					"smartObjectId": 29
 				},
 				"Climate.GuestRoom.Room[2].Mode.CoolSetSelected": {
 					"joinId": 2,
-					"smartObjectId": 141
+					"smartObjectId": 29
 				},
 				"Climate.GuestRoom.Room[2].Mode.OffSetSelected": {
 					"joinId": 3,
-					"smartObjectId": 141
+					"smartObjectId": 29
 				},
 				"Climate.GuestRoom.Room[3].Mode.FanSetSelected": {
 					"joinId": 1,
-					"smartObjectId": 142
+					"smartObjectId": 30
 				},
 				"Climate.GuestRoom.Room[3].Mode.CoolSetSelected": {
 					"joinId": 2,
-					"smartObjectId": 142
+					"smartObjectId": 30
 				},
 				"Climate.GuestRoom.Room[3].Mode.OffSetSelected": {
 					"joinId": 3,
-					"smartObjectId": 142
+					"smartObjectId": 30
 				}
 			},
 			"numeric": {
@@ -1105,25 +1494,25 @@
 					"joinId": 1,
 					"smartObjectId": 11
 				},
-				"Room.Radio.SelectedListItem": {
-					"joinId": 2,
-					"smartObjectId": 21
+				"Music.RadioPlayer.SetVolumeSlider": {
+					"joinId": 1,
+					"smartObjectId": 153
 				},
 				"Climate.GuestRoom.Room[0].TempIsSet": {
 					"joinId": 1,
-					"smartObjectId": 135
+					"smartObjectId": 23
 				},
 				"Climate.GuestRoom.Room[1].TempIsSet": {
 					"joinId": 1,
-					"smartObjectId": 136
+					"smartObjectId": 24
 				},
 				"Climate.GuestRoom.Room[2].TempIsSet": {
 					"joinId": 1,
-					"smartObjectId": 137
+					"smartObjectId": 25
 				},
 				"Climate.GuestRoom.Room[3].TempIsSet": {
 					"joinId": 1,
-					"smartObjectId": 138
+					"smartObjectId": 26
 				}
 			}
 		}

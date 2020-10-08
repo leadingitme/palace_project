@@ -2231,7 +2231,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
 // Weather Station Page
 
-.weather-station-page {
+.weather-page {
   hr {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -2297,6 +2297,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         width: 100%;
       }
     }
+  }
+  .historic-average-btn {
+    margin-top: 2rem;
   }
 }
 

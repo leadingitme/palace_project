@@ -29,10 +29,24 @@ var weatherPageModule = (function () {
     ".historical-average-component"
   );
   let weatherStationButton = document.getElementById("weatherStationBtn");
-  let historicalAverageButton = document.getElementById("historicalAverageBt");
+  let historicalAverageButton = document.getElementById("historicalAverageBtn");
 
-  weatherStationButton.addEventListener("click", pageSwitch());
-  historicalAverageButton.addEventListener("click", pageSwitch());
+  weatherStationButton.addEventListener("click", function () {
+    if (
+      weatherStationComponent.classList &&
+      historicalAverageComponent.classList
+    ) {
+      pageSwitch();
+    }
+  });
+  historicalAverageButton.addEventListener("click", function () {
+    if (
+      weatherStationComponent.classList &&
+      historicalAverageComponent.classList
+    ) {
+      pageSwitch();
+    }
+  });
 
   function pageSwitch() {
     console.log("page switch was clicked");

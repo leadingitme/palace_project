@@ -2300,6 +2300,25 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   }
   .historic-average-btn {
     margin-top: 2rem;
+    background-color: transparent;
+    span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+  .historical-average {
+    .weather-st-btn-container {
+      position: absolute;
+      right: 10px;
+      top: 13px;
+      .weather-station-btn {
+        background-color: transparent;
+        span {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 

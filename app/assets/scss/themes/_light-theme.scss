@@ -768,7 +768,7 @@ $weather-value-light: #0d2335;
   }
   // Weather Station Page
 
-  .weather-station-page {
+  .weather-page {
     .temp-container,
     .wind-container {
       background-color: $ch5-light-navbar-bg;
@@ -792,6 +792,24 @@ $weather-value-light: #0d2335;
       h3,
       h4 {
         color: $weather-text-light;
+      }
+    }
+    .historical-average {
+      .average-switch-btn {
+        .ch5-button {
+          background-color: transparent;
+          border: none;
+          color: rgba(59, 59, 59, 0.966);
+          box-shadow: 3px 3px 7px rgb(48, 48, 48);
+        }
+        .ch5-button.ch5-button--pressed {
+          background: $gradient-btn-light;
+          // background-color: $ch5-lighting-btn-light;
+          border: none;
+          color: rgb(255, 255, 255);
+          box-shadow: 1px 1px 3px rgb(58, 57, 57);
+          transform: translateY(2px);
+        }
       }
     }
   }

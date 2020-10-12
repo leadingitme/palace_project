@@ -33,23 +33,29 @@ var weatherPageModule = (function () {
 
   weatherStationButton.addEventListener("click", function () {
     if (
-      weatherStationComponent.classList &&
-      historicalAverageComponent.classList
+      historicalAverageComponent.classList &&
+      weatherStationButton.classList
     ) {
       pageSwitch();
-    }
-  });
-  historicalAverageButton.addEventListener("click", function () {
-    if (
-      weatherStationComponent.classList &&
-      historicalAverageComponent.classList
-    ) {
-      pageSwitch();
+      //   historicalAverageComponent.classList.remove(".transform-down");
+      //   historicalAverageComponent.classList.add(".transform-up");
     }
   });
 
+  historicalAverageButton.addEventListener("click", function () {
+    if (
+      historicalAverageComponent.classList &&
+      weatherStationButton.classList
+    ) {
+      pageSwitch();
+      //   historicalAverageComponent.classList.remove(".transform-up");
+      //   historicalAverageComponent.classList.add(".transform-down");
+    }
+  });
+
+  function hide() {}
+  function show() {}
   function pageSwitch() {
-    console.log("page switch was clicked");
     historicalAverageComponent.classList.toggle("d-none");
     weatherStationComponent.classList.toggle("d-none");
   }

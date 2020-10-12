@@ -1033,7 +1033,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     background: $window_bg_image;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding: 0 0 0 0;
+    padding: 0;
     height: 18rem;
     width: 25rem;
     @include media-breakpoint-up(sm) {
@@ -1077,7 +1077,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
     // ........
 
-    // styles for blinds as slider
+    // styles for blinds as slider (currently using)
     .ch5-slider {
       display: inline-block !important;
       // transform-origin: center center;
@@ -2298,24 +2298,77 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
     }
   }
-  .historic-average-btn {
-    margin-top: 2rem;
-    background-color: transparent;
-    span {
-      font-size: 1.2rem;
-      font-weight: bold;
+  .transform-down {
+    transform: translateY(100%) !important;
+    transition: 2s ease-in-out;
+  }
+  .transform-up {
+    transform: translateY(-100%) !important;
+    transition: 2s ease-in-out;
+  }
+
+  // .historical-average {
+  //   position: absolute;
+  //   transform: translateY(-100%);
+  //   transition: 1s ease-in-out;
+  //   z-index: 1000;
+  // }
+
+  .weather-st-btn-container {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    .weather-station-btn,
+    .historic-average-btn {
+      background-color: transparent;
+      span {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
     }
   }
   .historical-average {
-    .weather-st-btn-container {
-      position: absolute;
-      right: 10px;
-      top: 13px;
-      .weather-station-btn {
+    .main-container {
+      height: auto;
+      padding: 0.5rem;
+    }
+    .average-switch-btn {
+      margin-top: 0.5rem;
+      .ch5-button {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+.average-templ {
+  .average-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 1rem;
+    .avg-slider-container {
+      height: 18rem;
+    }
+    ch5-list {
+      .list-item {
         background-color: transparent;
-        span {
-          font-size: 1.2rem;
-          font-weight: bold;
+        padding: 0;
+        border: none;
+      }
+      .ch5-slider {
+        max-width: 20px;
+        // min-width:
+        padding-top: 0 !important;
+        background-color: transparent;
+        .noUi-target {
+          background: transparent;
+          border: none;
+          height: 90% !important;
+        }
+        .noUi-tooltip {
+          top: -60%;
+          right: -20%;
+          border: none;
         }
       }
     }

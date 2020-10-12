@@ -2342,9 +2342,10 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 }
 .average-templ {
   .average-list-container {
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+
     // margin-bottom: 1rem;
     .avg-slider-container {
       height: 18rem;

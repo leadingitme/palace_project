@@ -1,0 +1,1000 @@
+{
+  "cues": [
+    {
+      "type": "b",
+      "event": "HistAverage.Triggerview.ShowHourly",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "HistAverage.Triggerview.HourlyIsShown",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.DailyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.WeeklyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.MonthlyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.ListSize",
+          "value": 30,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[0]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[1]",
+          "value": 30,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[2]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[3]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[4]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[5]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[6]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[7]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[8]",
+          "value": 38,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[9]",
+          "value": 39,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[10]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[11]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[12]",
+          "value": 42,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[13]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[14]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[15]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[16]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[17]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[18]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[19]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[20]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[21]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[22]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[23]",
+          "value": 34,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[24]",
+          "value": 34,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[25]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[26]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[27]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[28]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[29]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[30]",
+          "value": 39,
+          "type": "n",
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "HistAverage.Triggerview.ShowDaily",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "HistAverage.Triggerview.HourlyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.DailyIsShown",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.WeeklyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.MonthlyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.ListSize",
+          "value": 22,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[0]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[1]",
+          "value": 30,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[2]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[3]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[4]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[5]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[6]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[7]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[8]",
+          "value": 38,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[9]",
+          "value": 39,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[10]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[11]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[12]",
+          "value": 42,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[13]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[14]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[15]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[16]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[17]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[18]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[19]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[20]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[21]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[22]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "HistAverage.Triggerview.ShowWeekly",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "HistAverage.Triggerview.HourlyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.DailyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.WeeklyIsShown",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.MonthlyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.ListSize",
+          "value": 18,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[0]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[1]",
+          "value": 30,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[2]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[3]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[4]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[5]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[6]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[7]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[8]",
+          "value": 38,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[9]",
+          "value": 39,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[10]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[11]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[12]",
+          "value": 42,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[13]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[14]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[15]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[16]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[17]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[18]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[19]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[20]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[21]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[22]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "HistAverage.Triggerview.ShowMonthly",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "HistAverage.Triggerview.HourlyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.DailyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.WeeklyIsShown",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.Triggerview.MonthlyIsShown",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.ListSize",
+          "value": 11,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[0]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[1]",
+          "value": 30,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[2]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[3]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[4]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[5]",
+          "value": 31,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[6]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[7]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[8]",
+          "value": 38,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[9]",
+          "value": 39,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[10]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[11]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[12]",
+          "value": 42,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[13]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[14]",
+          "value": 43,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[15]",
+          "value": 41,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[16]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[17]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[18]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[19]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[20]",
+          "value": 37,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[21]",
+          "value": 35,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[22]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[23]",
+          "value": 34,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[24]",
+          "value": 34,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[25]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[26]",
+          "value": 33,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[27]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[28]",
+          "value": 36,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[29]",
+          "value": 40,
+          "type": "n",
+          "logic": "set"
+        },
+        {
+          "state": "HistAverage.AverageData[30]",
+          "value": 39,
+          "type": "n",
+          "logic": "set"
+        }
+      ]
+    }
+  ],
+  "onStart": [
+    {
+      "state": "HistAverage.Triggerview.HourlyIsShown",
+      "value": true,
+      "type": "b",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.ListSize",
+      "value": 30,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[0]",
+      "value": 31,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[1]",
+      "value": 30,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[2]",
+      "value": 33,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[3]",
+      "value": 37,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[4]",
+      "value": 35,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[5]",
+      "value": 31,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[6]",
+      "value": 36,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[7]",
+      "value": 37,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[8]",
+      "value": 38,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[9]",
+      "value": 39,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[10]",
+      "value": 40,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[11]",
+      "value": 41,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[12]",
+      "value": 42,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[13]",
+      "value": 43,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[14]",
+      "value": 43,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[15]",
+      "value": 41,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[16]",
+      "value": 40,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[17]",
+      "value": 40,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[18]",
+      "value": 40,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[19]",
+      "value": 37,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[20]",
+      "value": 37,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[21]",
+      "value": 35,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[22]",
+      "value": 33,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[23]",
+      "value": 34,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[24]",
+      "value": 34,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[25]",
+      "value": 33,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[26]",
+      "value": 33,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[27]",
+      "value": 36,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[28]",
+      "value": 36,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[29]",
+      "value": 40,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "HistAverage.AverageData[30]",
+      "value": 39,
+      "type": "n",
+      "logic": "set"
+    }
+  ]
+}

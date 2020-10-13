@@ -52,11 +52,11 @@ var musicPageModule = (function () {
   //   showPlayerSnippet(idx);
   // }
 
-  window.onload = function () {
-    setTimeout(() => {
-      airplayPlayerSnippet.classList.add("d-none");
-    }, 5000);
-  };
+  // window.onload = function () {
+  //   setTimeout(() => {
+  //     airplayPlayerSnippet.classList.add("d-none");
+  //   }, 5000);
+  // };
 
   function showPlayerSnippet(idx) {
     let sourceBtnBtn = document.querySelector(".music-source-btn-" + idx);

@@ -1,22 +1,27 @@
 <section id="average-templ-page" class="average-templ">
   <div class="average-list-container">
-    <ch5-list size="10" orientation="horizontal" indexid="idx">
+    <ch5-list
+      size="30"
+      orientation="horizontal"
+      indexid="idx"
+      receivestatesize="HistAverage.ListSize"
+    >
       <template>
         <div class="avg-slider-container">
           <ch5-slider
             orientation="vertical"
             size="small"
-            value="25"
             toolTipShowType="on"
-            nohandle="true"
+            toolTipDisplayType="value"
             min="0"
             max="60"
             sendeventonchange=""
-            receivestatevalue=""
+            receivestatevalue="HistAverage.AverageData[{{idx}}]"
           >
           </ch5-slider>
+
+          <span>{{idx}}</span>
         </div>
-        <span>Hour {{idx}}</span>
       </template>
     </ch5-list>
   </div>

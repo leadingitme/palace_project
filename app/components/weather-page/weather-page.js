@@ -31,6 +31,12 @@ var weatherPageModule = (function () {
   let weatherStationButton = document.getElementById("weatherStationBtn");
   let historicalAverageButton = document.getElementById("historicalAverageBtn");
 
+  // window.onload = function () {
+  //   setTimeout(() => {
+  //     historicalAverageComponent.classList.add("d-none");
+  //   }, 5000);
+  // };
+
   weatherStationButton.addEventListener("click", function () {
     if (
       historicalAverageComponent.classList &&
@@ -53,14 +59,10 @@ var weatherPageModule = (function () {
     }
   });
 
-  function hide() {}
-  function show() {}
   function pageSwitch() {
     historicalAverageComponent.classList.toggle("d-none");
     weatherStationComponent.classList.toggle("d-none");
   }
-  function triggerHistoricAverage() {}
-  function triggerWeatherStation() {}
 
   /**
    * All public or private methods which need to call onInit

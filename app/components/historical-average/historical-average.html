@@ -64,41 +64,139 @@
       <ch5-triggerview-child
         receivestateshow="HistAverage.Triggerview.HourlyIsShown"
       >
-        <ch5-import-htmlsnippet
+      <section id="average-templ-page" class="average-templ">
+        <div class="average-list-container">
+          <ch5-list
+            size="30"
+            orientation="horizontal"
+            indexid="idx"
+            receivestatesize="HistAverage.HourlyListSize"
+          >
+            <template>
+              <div class="avg-slider-container">
+                <ch5-slider
+                  orientation="vertical"
+                  size="small"
+                  toolTipShowType="on"
+                  toolTipDisplayType="value"
+                  min="0"
+                  max="60"
+                  sendeventonchange=""
+                  receivestatevalue="HistAverage.Hourly[{{idx}}]"
+                >
+                </ch5-slider>
+      
+                <span>{{idx}}</span>
+              </div>
+            </template>
+          </ch5-list>
+        </div>
+      </section>
+        <!-- <ch5-import-htmlsnippet
           url="./components/average-templ/average-templ.html"
           class="avg-templ"
         >
-        </ch5-import-htmlsnippet>
+        </ch5-import-htmlsnippet> -->
       </ch5-triggerview-child>
 
       <ch5-triggerview-child
         receivestateshow="HistAverage.Triggerview.DailyIsShown"
       >
-        <ch5-import-htmlsnippet
-          url="./components/average-templ/average-templ.html"
-          class="avg-templ"
-        >
-        </ch5-import-htmlsnippet>
+      <section id="average-templ-page" class="average-templ">
+        <div class="average-list-container">
+          <ch5-list
+            size="30"
+            orientation="horizontal"
+            indexid="idx"
+            receivestatesize="HistAverage.DailyListSize"
+          >
+            <template>
+              <div class="avg-slider-container">
+                <ch5-slider
+                  orientation="vertical"
+                  size="small"
+                  toolTipShowType="on"
+                  toolTipDisplayType="value"
+                  min="0"
+                  max="60"
+                  sendeventonchange=""
+                  receivestatevalue="HistAverage.Daily[{{idx}}]"
+                >
+                </ch5-slider>
+      
+                <span>{{idx}}</span>
+              </div>
+            </template>
+          </ch5-list>
+        </div>
+      </section>
+      
       </ch5-triggerview-child>
 
       <ch5-triggerview-child
         receivestateshow="HistAverage.Triggerview.WeeklyIsShown"
       >
-        <ch5-import-htmlsnippet
-          url="./components/average-templ/average-templ.html"
-          class="avg-templ"
-        >
-        </ch5-import-htmlsnippet>
+      <section id="average-templ-page" class="average-templ">
+        <div class="average-list-container">
+          <ch5-list
+            size="30"
+            orientation="horizontal"
+            indexid="idx"
+            receivestatesize="HistAverage.WeeklyListSize"
+          >
+            <template>
+              <div class="avg-slider-container">
+                <ch5-slider
+                  orientation="vertical"
+                  size="small"
+                  toolTipShowType="on"
+                  toolTipDisplayType="value"
+                  min="0"
+                  max="60"
+                  sendeventonchange=""
+                  receivestatevalue="HistAverage.Weekly[{{idx}}]"
+                >
+                </ch5-slider>
+      
+                <span>{{idx}}</span>
+              </div>
+            </template>
+          </ch5-list>
+        </div>
+      </section>
       </ch5-triggerview-child>
 
       <ch5-triggerview-child
         receivestateshow="HistAverage.Triggerview.MonthlyIsShown"
       >
-        <ch5-import-htmlsnippet
-          url="./components/average-templ/average-templ.html"
-          class="avg-templ"
-        >
-        </ch5-import-htmlsnippet>
+      <section id="average-templ-page" class="average-templ">
+        <div class="average-list-container">
+          <ch5-list
+            size="30"
+            orientation="horizontal"
+            indexid="idx"
+            receivestatesize="HistAverage.MonthlyListSize"
+          >
+            <template>
+              <div class="avg-slider-container">
+                <ch5-slider
+                  orientation="vertical"
+                  size="small"
+                  toolTipShowType="on"
+                  toolTipDisplayType="value"
+                  min="0"
+                  max="60"
+                  sendeventonchange=""
+                  receivestatevalue="HistAverage.Monthly[{{idx}}]"
+                >
+                </ch5-slider>
+      
+                <span>{{idx}}</span>
+              </div>
+            </template>
+          </ch5-list>
+        </div>
+      </section>
       </ch5-triggerview-child>
     </ch5-triggerview>
   </div>

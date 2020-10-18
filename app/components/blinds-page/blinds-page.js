@@ -22,9 +22,9 @@ var blindsPageModule = (function () {
   // Method to hide blinds triggerview when list of windows has less then 2 windows
 
   // !!!! if this method crashes check in chtome developer if currrent "cr-id-.." for shades and blackout is correct
-  var shadesListLengthHoriz = document.getElementById("cr-id-23").childNodes
+  var shadesListLengthHoriz = document.getElementById("cr-id-22").childNodes
     .length;
-  var blackoutListLengthHoriz = document.getElementById("cr-id-27").childNodes
+  var blackoutListLengthHoriz = document.getElementById("cr-id-25").childNodes
     .length;
 
   function hideTriggerview() {

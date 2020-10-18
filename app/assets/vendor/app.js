@@ -355,6 +355,13 @@ var appModule = (function () {
         serviceModule.initEmulator(JSON.parse(response));
       }
     );
+    // Weather Emulator
+    serviceModule.loadJSON(
+      "./assets/data/weather-page-emulator.json",
+      function (response) {
+        serviceModule.initEmulator(JSON.parse(response));
+      }
+    );
   }
 
   /**
@@ -375,6 +382,21 @@ var appModule = (function () {
   });
 
   /**
+   * Airplay snippet (at music page), historical average snippet (at weather page)
+   * to add d-none onload
+   */
+
+  // window.onload = function () {
+  //   setTimeout(() => {
+  //     airplayPlayerSnippet.classList.add("d-none");
+  //   }, 5000);
+  // };
+  let airplayPlayerSnippet = document.querySelector(".airplay-player-templ");
+  let historicalAverageComponent = document.querySelector(
+    ".historical-average-component"
+  );
+
+  /**
    * Load the emulator, theme, default language and listeners
    */
   function onLoadInit() {
@@ -388,7 +410,18 @@ var appModule = (function () {
       for (let idx = 0; idx < NAV_PAGE_COUNT; idx++) {
         addNavItemClickListener(idx);
       }
+      airplayPlayerSnippet.classList.add("d-none");
+      historicalAverageComponent.classList.add("d-none");
     }, 5000);
+    // setTimeout(function () {
+    //   airplayPlayerSnippet.classList.add("d-none");
+    //   historicalAverageComponent.classList.add("d-none");
+    // }, 5000);
+
+    // setTimeout(() => {
+    //   airplayPlayerSnippet.classList.add("d-none");
+    // }, 5000);
+
     triggerview.addEventListener("select", function (event) {
       setTimeout(() => {
         activeIndex = event.detail;

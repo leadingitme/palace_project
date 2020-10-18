@@ -2348,14 +2348,17 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   .average-list-container {
     justify-content: center;
     align-items: center;
-    display: flex !important;
+    display: flex;
 
     // margin-bottom: 1rem;
     ch5-list {
+      display: flex;
+      justify-content: center;
       .list-item {
         background-color: transparent;
         padding: 0;
         border: none;
+        margin: auto;
       }
       .avg-slider-container {
         display: flex;

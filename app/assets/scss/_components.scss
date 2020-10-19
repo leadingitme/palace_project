@@ -2328,6 +2328,10 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
   }
   .historical-average {
+    .hist-avg-triggerview {
+      margin-top: 0.8rem;
+      overflow: hidden;
+    }
     .main-container {
       height: auto;
       padding: 0.5rem;
@@ -2347,29 +2351,47 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     display: flex;
 
     // margin-bottom: 1rem;
-    .avg-slider-container {
-      height: 18rem;
-    }
     ch5-list {
+      // display: flex;s
+      // justify-content: center;
       .list-item {
         background-color: transparent;
         padding: 0;
         border: none;
+        margin: auto;
       }
-      .ch5-slider {
-        max-width: 20px;
-        // min-width:
-        padding-top: 0 !important;
-        background-color: transparent;
-        .noUi-target {
-          background: transparent;
-          border: none;
-          height: 90% !important;
+      .avg-slider-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 16rem;
+        .ch5-slider {
+          max-width: 20px;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          background-color: transparent;
+          overflow: hidden;
+          .noUi-target {
+            background: transparent;
+            border: none;
+            height: 90% !important;
+          }
+          .noUi-handle {
+            border: none;
+            background: transparent;
+            pointer-events: none;
+          }
+          .noUi-tooltip {
+            font-size: 1rem;
+            top: 0%;
+            right: 10%;
+            border: none;
+            background: transparent;
+          }
         }
-        .noUi-tooltip {
-          top: -60%;
-          right: -20%;
-          border: none;
+        span {
+          font-weight: bold;
+          margin: auto;
         }
       }
     }

@@ -47,7 +47,7 @@
                             <div class="controllers-btn">
                                 <ch5-button stretch="both" iconclass="fas fa-backward fa-2x" sendeventonclick="351">
                                 </ch5-button>
-                                <ch5-triggerview class="triggerview-container" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.RadioPlayer.PlayPauseBtnTriggerview">
+                                <!-- <ch5-triggerview class="triggerview-container" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.RadioPlayer.PlayPauseBtnTriggerview">
                                     <ch5-triggerview-child noshowtype="display">
                                         <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-play fa-2x" sendeventonclick="Radio.SetPauseBtnActive"></ch5-button>
                                     </ch5-triggerview-child>
@@ -55,7 +55,16 @@
                                     <ch5-triggerview-child noshowtype="display">
                                         <ch5-button stretch="both" type="success" shape="rectangle" iconclass="fa fa-pause fa-2x" sendeventonclick="Radio.SetPlayBtnActive"></ch5-button>
                                     </ch5-triggerview-child>
-                                </ch5-triggerview>
+                                </ch5-triggerview> -->
+                                <ch5-button
+                                stretch="both"
+                                iconclass="fas fa-power-off fa-2x"
+                                sendeventonclick="Room.Radio.SetPowerActive"
+                                receivestateselected="Room.Radio.PowerIsActive"
+                              >
+                              </ch5-button>
+                
+                
                                 <ch5-button stretch="both" iconclass="fas fa-forward fa-2x" sendeventonclick="350">
                                 </ch5-button>
                             </div>

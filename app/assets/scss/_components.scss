@@ -1033,7 +1033,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     background: $window_bg_image;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding: 0 0 0 0;
+    padding: 0;
     height: 18rem;
     width: 25rem;
     @include media-breakpoint-up(sm) {
@@ -1077,7 +1077,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
     // ........
 
-    // styles for blinds as slider
+    // styles for blinds as slider (currently using)
     .ch5-slider {
       display: inline-block !important;
       // transform-origin: center center;
@@ -1319,18 +1319,18 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       padding-left: 10px;
       font-weight: bold;
       @include media-breakpoint-up(sm) {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-bottom: 0.1rem;
       }
     }
     h4 {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
     h3 {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
     h2 {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
     h4,
     h3,
@@ -1339,8 +1339,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
   }
   .navbar-text {
-    margin-top: 0.3rem;
-    padding-top: 0.2rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
     padding-bottom: 0.2 rem;
   }
 
@@ -2231,7 +2231,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
 // Weather Station Page
 
-.weather-station-page {
+.weather-page {
   hr {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -2295,6 +2295,104 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       div {
         // height: 35px;
         width: 100%;
+      }
+    }
+  }
+  .transform-down {
+    transform: translateY(100%) !important;
+    transition: 2s ease-in-out;
+  }
+  .transform-up {
+    transform: translateY(-100%) !important;
+    transition: 2s ease-in-out;
+  }
+
+  // .historical-average {
+  //   position: absolute;
+  //   transform: translateY(-100%);
+  //   transition: 1s ease-in-out;
+  //   z-index: 1000;
+  // }
+
+  .weather-st-btn-container {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    .weather-station-btn,
+    .historic-average-btn {
+      background-color: transparent;
+      span {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .historical-average {
+    .hist-avg-triggerview {
+      margin-top: 0.8rem;
+      overflow: hidden;
+    }
+    .main-container {
+      height: auto;
+      padding: 0.5rem;
+    }
+    .average-switch-btn {
+      margin-top: 0.5rem;
+      .ch5-button {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+.average-templ {
+  .average-list-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    // margin-bottom: 1rem;
+    ch5-list {
+      // display: flex;s
+      // justify-content: center;
+      .list-item {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        margin: auto;
+      }
+      .avg-slider-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 16rem;
+        .ch5-slider {
+          max-width: 20px;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          background-color: transparent;
+          overflow: hidden;
+          .noUi-target {
+            background: transparent;
+            border: none;
+            height: 90% !important;
+          }
+          .noUi-handle {
+            border: none;
+            background: transparent;
+            pointer-events: none;
+          }
+          .noUi-tooltip {
+            font-size: 1rem;
+            top: 0%;
+            right: 10%;
+            border: none;
+            background: transparent;
+          }
+        }
+        span {
+          font-weight: bold;
+          margin: auto;
+        }
       }
     }
   }

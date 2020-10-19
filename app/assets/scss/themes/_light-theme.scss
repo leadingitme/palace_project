@@ -686,6 +686,12 @@ $weather-value-light: #0d2335;
         }
       }
     }
+    .ch5-button--selected {
+      .fa-power-off {
+        color: #356973;
+      }
+    }
+
     .volume-slider-container {
       i {
         color: $music-icon-bg-light;

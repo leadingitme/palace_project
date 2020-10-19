@@ -250,6 +250,18 @@
     },
     {
       "type": "boolean",
+      "event": "Room.Radio.SetPowerActive",
+      "trigger": true,
+      "actions": [
+        {
+          "type": "b",
+          "state": "Room.Radio.PowerIsActive",
+          "logic": "toggle"
+        }
+      ]
+    },
+    {
+      "type": "boolean",
       "event": "Rooms.MusicPlayer.SetPauseBtnActive",
       "trigger": true,
       "actions": [

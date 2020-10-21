@@ -1,6 +1,6 @@
 {
 	"name": "Palace",
-	"timestamp": "2020-10-06 11:25:50.117",
+	"timestamp": "2020-10-20 21:00:16.363",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Palace",
@@ -34,9 +34,9 @@
 					"3": "Climate.GuestRoom.Room[3].Mode.OffIsSelected"
 				},
 				"31": {
-					"3": "Radio.FavouriteBtnState",
 					"4": "Radio.StationsListIsSelected",
-					"5": "Radio.FavouritesIsSelected"
+					"5": "Radio.FavouritesIsSelected",
+					"8": "Radio.FavouriteBtnState"
 				},
 				"32": {
 					"1": "Radio.StationTrack[0].SelectStationSelected",
@@ -295,6 +295,11 @@
 				},
 				"158": {
 					"1": "Music.Source[4].SourceIsSelected"
+				},
+				"159": {
+					"1": "WeatherStation.StartWeatherStation_fb",
+					"2": "WeatherStation.ResetRainFall_fb",
+					"3": "WeatherStation.ResetHiLoTempWindSpeed_fb"
 				}
 			},
 			"numeric": {
@@ -931,6 +936,21 @@
 				"158": {
 					"1": "Music.Source[4].SourceName",
 					"2": "Music.Source[4].SelectedSourceName"
+				},
+				"159": {
+					"1": "WeatherStation.AirTemp_C",
+					"2": "WeatherStation.HighTemp",
+					"3": "WeatherStation.LowTemp",
+					"4": "WeatherStation.WindSpeed",
+					"5": "WeatherStation.HighWindSpeed",
+					"6": "WeatherStation.WindDirection",
+					"7": "WeatherStation.WindGust",
+					"8": "WeatherStation.DewPoint",
+					"9": "WeatherStation.Humidity",
+					"10": "WeatherStation.WindChill",
+					"11": "WeatherStation.Pressure",
+					"12": "WeatherStation.EvepoTrans",
+					"13": "WeatherStation.Rainfall"
 				}
 			}
 		},
@@ -963,6 +983,18 @@
 				"Radio.SetPlayBtnActive": {
 					"joinId": 7,
 					"smartObjectId": 31
+				},
+				"WeatherStation.ResetRainFall": {
+					"joinId": 1,
+					"smartObjectId": 159
+				},
+				"WeatherStation.ResetHiLoTempWindSpeed": {
+					"joinId": 2,
+					"smartObjectId": 159
+				},
+				"WeatherStation.StartWeatherStation": {
+					"joinId": 3,
+					"smartObjectId": 159
 				},
 				"Room.DimmableLights[0].TurnLightOn": {
 					"joinId": 1,

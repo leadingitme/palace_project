@@ -1274,6 +1274,11 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
     }
   }
+  ch5-list {
+    .list-item {
+      border-bottom: 0.1rem solid #8a8888;
+    }
+  }
 
   .lighting-slider {
     text-align: center;

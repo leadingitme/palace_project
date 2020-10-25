@@ -1,6 +1,99 @@
 {
   "cues": [
     {
+      "type": "boolean",
+      "event": "Room.Area[0].AreaSetSelected",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Room.SelectedAreaName",
+          "type": "s",
+          "value": "BEDROOM",
+          "logic": "set"
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[0].AreaIsSelected",
+          "logic": "set",
+          "value": true
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[1].AreaIsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[2].AreaIsSelected",
+          "logic": "set",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Room.Area[1].AreaSetSelected",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Room.SelectedAreaName",
+          "type": "s",
+          "value": "SITTING ROOM",
+          "logic": "set"
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[0].AreaIsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[1].AreaIsSelected",
+          "logic": "set",
+          "value": true
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[2].AreaIsSelected",
+          "logic": "set",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Room.Area[2].AreaSetSelected",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Room.SelectedAreaName",
+          "type": "s",
+          "value": "WASHROOM",
+          "logic": "set"
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[0].AreaIsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[1].AreaIsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Room.Area[2].AreaIsSelected",
+          "logic": "set",
+          "value": true
+        }
+      ]
+    },
+    {
       "type": "n",
       "event": "Room.DimmableLights[0].SetLightLevel",
       "trigger": "&change",
@@ -664,6 +757,58 @@
       "state": "Room.NumberOfLights",
       "type": "n",
       "value": 5
+    },
+    {
+      "state": "Room.NumberOfAreas",
+      "type": "n",
+      "value": 5
+    },
+    {
+      "type": "b",
+      "state": "Room.Area[0].AreaIsSelected",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Room.SelectedAreaName",
+      "type": "s",
+      "value": "BEDROOM",
+      "logic": "set"
+    },
+    {
+      "state": "Room.AreaName[0]",
+      "type": "s",
+      "value": "BEDROOM"
+    },
+    {
+      "state": "Room.AreaName[1]",
+      "type": "s",
+      "value": "SITTING ROOM"
+    },
+    {
+      "state": "Room.AreaName[2]",
+      "type": "s",
+      "value": "WASHROOM"
+    },
+    {
+      "state": "Room.AreaName[3]",
+      "type": "s",
+      "value": "WASHROOM2"
+    },
+    {
+      "state": "Room.AreaName[4]",
+      "type": "s",
+      "value": "WASHROOM3"
+    },
+    {
+      "state": "Room.AreaName[5]",
+      "type": "s",
+      "value": "WASHROOM4"
+    },
+    {
+      "state": "Room.AreaName[6]",
+      "type": "s",
+      "value": "WASHROOM5"
     },
     {
       "state": "Room.Scenes[0].NameOfScene",

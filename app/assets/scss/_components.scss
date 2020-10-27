@@ -1227,7 +1227,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           min-width: 40rem;
         }
         .list-item {
-          padding: 0.6rem 0rem 0rem;
+          padding: 0rem 0rem 0rem;
           height: 5rem;
           width: 100%;
           background-color: transparent !important;
@@ -1238,6 +1238,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           background-color: transparent;
           box-shadow: none;
           height: 100%;
+          .cb-btn {
+            height: 50px;
+          }
           span {
             font-size: 1.2rem;
             font-weight: bold;

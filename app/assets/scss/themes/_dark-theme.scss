@@ -490,6 +490,26 @@ $weather-value-dark: #c0d0dd;
 
   .lighting-page {
     .examples-container {
+      .area-dropdown-btn {
+        color: $ch5-headings-color-dark;
+        .ch5-button {
+          color: $ch5-headings-color-dark;
+        }
+      }
+      .area-list-container {
+        .ch5-button {
+          color: $ch5-headings-color-dark;
+        }
+        &.dropdown-menu {
+          background-color: #151617;
+          .ch5-button {
+            &.ch5-button--selected {
+              background-color: #374044;
+            }
+          }
+        }
+      }
+
       span {
         &.light-name-label {
           color: rgba(139, 139, 139, 0.938);
@@ -629,9 +649,9 @@ $weather-value-dark: #c0d0dd;
         // color: rgb(212, 212, 212);
         color: $ch5-headings-color-dark;
       }
-      .ch5-button {
-        color: $ch5-lighting-btn-light;
-      }
+      // .ch5-button {
+      //   color: $ch5-lighting-btn-light;
+      // }
       .dropdown-menu {
         background-color: #151617;
         .ch5-button--selected {

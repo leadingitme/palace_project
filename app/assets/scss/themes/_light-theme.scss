@@ -469,6 +469,25 @@ $weather-value-light: #0d2335;
   // ch5 list
   .lighting-page {
     .examples-container {
+      .area-dropdown-btn {
+        color: $ch5-headings-color-light;
+        .ch5-button {
+          color: $ch5-headings-color-light;
+        }
+      }
+      .area-list-container {
+        .ch5-button {
+          color: $ch5-headings-color-light;
+        }
+        &.dropdown-menu {
+          .ch5-button {
+            &.ch5-button--selected {
+              background-color: #6e6e6e;
+            }
+          }
+        }
+      }
+
       span {
         &.light-name-label {
           // color: rgb(53, 53, 53);
@@ -626,14 +645,11 @@ $weather-value-light: #0d2335;
   .music-page {
     .dropdown-btn-container {
       button {
-        // background-color: $ch5-lighting-btn-light;
-        // box-shadow: 2px 2px 6px rgb(70, 70, 70);
-        // color: rgb(212, 212, 212);
         color: $ch5-headings-color-light;
       }
-      .ch5-button {
-        color: $ch5-lighting-btn-light;
-      }
+      // .ch5-button {
+      //   color: $ch5-lighting-btn-light;
+      // }
       .dropdown-menu {
         .ch5-button--selected {
           background-color: #6e6e6e;

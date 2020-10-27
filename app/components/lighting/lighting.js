@@ -3,11 +3,36 @@
 var lightingModule = (function () {
   "use strict";
 
-  let lightingSidebar = document.getElementById("lightingSidebar");
+  // Method for toggle area dropdown menu 
+
+  let dropdown = document.getElementById("lighting-area-dropdown");
+
+  function openAreaDropdown() {
+    dropdown.classList.toggle("show");
+    event.stopPropagation();
+  }
+
+  function closeAreaDropdown() {
+    setTimeout(() => {
+      dropdown.classList.remove("show");
+    }, 200);
+    
+  }
+
+  document.body.addEventListener("click", function () {
+    if (!!dropdown && dropdown.classList) {
+      closeAreaDropdown() ;
+    }
+  });
+
+
 
   /**
    * This method is for toggle sidebar in smaller divice
    */
+  let lightingSidebar = document.getElementById("lightingSidebar");
+
+
   function lightingSidebarToggle() {
     lightingSidebar.classList.toggle("open");
     if (lightingSidebar.classList.contains("open")) {
@@ -55,5 +80,7 @@ var lightingModule = (function () {
    */
   return {
     lightingSidebarToggle: lightingSidebarToggle,
+    openAreaDropdown:openAreaDropdown,
+    closeAreaDropdown:closeAreaDropdown
   };
 })();

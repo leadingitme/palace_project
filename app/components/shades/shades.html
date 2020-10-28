@@ -72,7 +72,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Room.Blinds.ShadeSliderValue"
+            receivestatevalue="Curtains.Blind[{{idx}}].LeftShadeValue"
           >
           </ch5-slider>
           <ch5-slider
@@ -80,7 +80,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Room.Blinds.ShadeSliderValue"
+            receivestatevalue="Curtains.Blind[{{idx}}].RightShadeValue"
           >
           </ch5-slider>
 
@@ -124,8 +124,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.OpenShades"
-              receivestateselected="Blinds.OpenShadesIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].OpenShades"
+              receivestateselected="Curtains.Blind[{{idx}}].OpenShadesFb"
             >
             </ch5-button>
             <ch5-button
@@ -134,8 +134,8 @@
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.StopShades"
-              receivestateselected="Blinds.StopShadesIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].StopShades"
+              receivestateselected=""
             >
             </ch5-button>
             <ch5-button
@@ -145,8 +145,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.CloseShades"
-              receivestateselected="Blinds.CloseShadesIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].CloseShades"
+              receivestateselected="Curtains.Blind[[[idx]]].CloseShadesFb"
             >
             </ch5-button>
           </div>

@@ -75,7 +75,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Room.Blinds.BlackoutSliderValue"
+            receivestatevalue="Curtains.Blind[{{idx}}].LeftBlackoutValue"
           >
           </ch5-slider>
           <ch5-slider
@@ -83,7 +83,7 @@
             nohandle="true"
             min="0"
             max="50"
-            receivestatevalue="Room.Blinds.BlackoutSliderValue"
+            receivestatevalue="Curtains.Blind[{{idx}}].RightBlackoutValue"
           >
           </ch5-slider>
 
@@ -120,8 +120,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.OpenBlackout"
-              receivestateselected="Blinds.OpenBlackoutIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].OpenBlackout"
+              receivestateselected="Curtains.Blind[{idx}].OpenBlackoutFb"
             >
             </ch5-button>
             <ch5-button
@@ -130,8 +130,8 @@
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.StopBlackout"
-              receivestateselected="Blinds.StopBlackoutIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].StopBlackout"
+              receivestateselected=""
             >
             </ch5-button>
             <ch5-button
@@ -141,8 +141,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.CloseBlackout"
-              receivestateselected="Blinds.CloseBlackoutIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].CloseBlackout"
+              receivestateselected="Curtains.Blind[{{idx}}].CloseBlackoutFb"
             >
             </ch5-button>
           </div>

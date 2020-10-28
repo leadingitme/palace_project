@@ -1,6 +1,6 @@
 {
 	"name": "Palace_Suites",
-	"timestamp": "2020-10-27 18:57:37.831",
+	"timestamp": "2020-10-28 13:31:25.941",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Using Wing -> Suite -> Area",
@@ -524,6 +524,9 @@
 				"51": {
 					"1": "Areas.NumberOfAreas"
 				},
+				"64": {
+					"1": "Sources.NumberOfSources"
+				},
 				"65": {
 					"1": "Sources.Player.VolSliderValue"
 				},
@@ -839,6 +842,9 @@
 					"12": "WeatherStation.EvepoTrans",
 					"13": "WeatherStation.Rainfall"
 				},
+				"51": {
+					"1": "Areas.SelectedAreaName"
+				},
 				"52": {
 					"1": "Areas.Area[0].Name"
 				},
@@ -875,25 +881,23 @@
 				"63": {
 					"1": "Areas.Area[11].Name"
 				},
+				"64": {
+					"1": "Sources.SelectedSourceName"
+				},
 				"66": {
-					"1": "Sources.Source[0].SourceName",
-					"2": "Sources.Source[0].SelectedSourceName"
+					"1": "Sources.Source[0].SourceName"
 				},
 				"67": {
-					"1": "Sources.Source[1].SourceName",
-					"2": "Sources.Source[1].SelectedSourceName"
+					"1": "Sources.Source[1].SourceName"
 				},
 				"68": {
-					"1": "Sources.Source[2].SourceName",
-					"2": "Sources.Source[2].SelectedSourceName"
+					"1": "Sources.Source[2].SourceName"
 				},
 				"69": {
-					"1": "Sources.Source[3].SourceName",
-					"2": "Sources.Source[3].SelectedSourceName"
+					"1": "Sources.Source[3].SourceName"
 				},
 				"70": {
-					"1": "Sources.Source[4].SourceName",
-					"2": "Sources.Source[4].SelectedSourceName"
+					"1": "Sources.Source[4].SourceName"
 				},
 				"71": {
 					"1": "Sources.Radio.CurrentStationName",
@@ -1292,7 +1296,7 @@
 					"joinId": 2,
 					"smartObjectId": 40
 				},
-				"ClimateMode[0].OffSelected": {
+				"ClimateMode[0].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 40
 				},
@@ -1304,7 +1308,7 @@
 					"joinId": 2,
 					"smartObjectId": 41
 				},
-				"ClimateMode[1].OffSelected": {
+				"ClimateMode[1].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 41
 				},
@@ -1316,7 +1320,7 @@
 					"joinId": 2,
 					"smartObjectId": 42
 				},
-				"ClimateMode[2].OffSelected": {
+				"ClimateMode[2].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 42
 				},
@@ -1328,7 +1332,7 @@
 					"joinId": 2,
 					"smartObjectId": 43
 				},
-				"ClimateMode[3].OffSelected": {
+				"ClimateMode[3].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 43
 				},
@@ -1340,7 +1344,7 @@
 					"joinId": 2,
 					"smartObjectId": 44
 				},
-				"ClimateMode[4].OffSelected": {
+				"ClimateMode[4].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 44
 				},
@@ -1352,7 +1356,7 @@
 					"joinId": 2,
 					"smartObjectId": 45
 				},
-				"ClimateMode[5].OffSelected": {
+				"ClimateMode[5].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 45
 				},
@@ -1364,7 +1368,7 @@
 					"joinId": 2,
 					"smartObjectId": 46
 				},
-				"ClimateMode[6].OffSelected": {
+				"ClimateMode[6].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 46
 				},
@@ -1376,7 +1380,7 @@
 					"joinId": 2,
 					"smartObjectId": 47
 				},
-				"ClimateMode[7].OffSelected": {
+				"ClimateMode[7].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 47
 				},
@@ -1388,7 +1392,7 @@
 					"joinId": 2,
 					"smartObjectId": 48
 				},
-				"ClimateMode[8].OffSelected": {
+				"ClimateMode[8].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 48
 				},
@@ -1400,7 +1404,7 @@
 					"joinId": 2,
 					"smartObjectId": 49
 				},
-				"ClimateMode[9].OffSelected": {
+				"ClimateMode[9].OffSelect": {
 					"joinId": 3,
 					"smartObjectId": 49
 				},

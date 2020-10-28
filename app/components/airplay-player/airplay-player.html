@@ -25,11 +25,11 @@
                   receivestatevalue="Music.MuteBtnToggleState"
                 >
                 </ch5-toggle> -->
-                            <ch5-button class="mute-btn mr-4" size="x-small" iconclass="fas fa-volume-mute" sendeventonclick="Music.RadioPlayer.MuteBtnToggle" receivestateselected="Music.RadioPlayer.MuteBtnToggleState"></ch5-button>
-                            <ch5-button size="x-small" iconclass="fas fa-volume-down" sendeventonclick="Music.RadioPlayer.VolDownIsClicked"></ch5-button>
-                            <ch5-slider min="0" max="100" stretch="width" handleShape="circle" orientation="horizontal" showtickvalues="true" handlesize="x-small" receivestatevalue="Music.RadioPlayer.VolSliderValue">
+                            <ch5-button class="mute-btn mr-4" size="x-small" iconclass="fas fa-volume-mute" sendeventonclick="Sources.Player.MuteBtnToggle" receivestateselected="Sources.Player.MuteBtnToggleState"></ch5-button>
+                            <ch5-button size="x-small" iconclass="fas fa-volume-down" sendeventonclick="Sources.Player.VolDownIsClicked"></ch5-button>
+                            <ch5-slider min="0" max="100" stretch="width" handleShape="circle" orientation="horizontal" showtickvalues="true" handlesize="x-small" sendeventonchange="Sources.Player.SetVolumeSlider" receivestatevalue="Sources.Player.VolSliderValue">
                             </ch5-slider>
-                            <ch5-button size="x-small" iconclass="fas fa-volume-up" sendeventonclick="Music.RadioPlayer.VolUpIsClicked"></ch5-button>
+                            <ch5-button size="x-small" iconclass="fas fa-volume-up" sendeventonclick="Sources.Player.VolUpIsClicked"></ch5-button>
                         </div>
                     </div>
                     <div class="col-2"></div>

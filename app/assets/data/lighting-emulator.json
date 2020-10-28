@@ -749,6 +749,27 @@
   ],
   "onStart": [
     {
+      "state": "Area[0].HideArea",
+      "type": "b",
+      "logic":"set",
+      "value": true
+
+    },
+    {
+      "state": "Area[1].HideArea",
+      "type": "b",
+      "logic":"set",
+      "value": false
+
+    },
+    {
+      "state": "Area[2].HideArea",
+      "type": "b",
+      "logic":"set",
+      "value": true
+
+    },
+    {
       "state": "Room.NameOfRoom",
       "type": "s",
       "value": "Great Room"

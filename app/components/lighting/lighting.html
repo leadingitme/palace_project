@@ -31,7 +31,8 @@
             maxHeight="250px"
             minwidth="200px"
             scrollbar="true"
-          >
+
+            >
             <template>
               <div class="vertical-list-item">
                 <ch5-button
@@ -44,6 +45,9 @@
                   sendeventonclick="Room.Area[{{idx}}].AreaSetSelected"
                   receivestatelabel="Room.AreaName[{{idx}}]"
                   receivestateselected="Room.Area[{{idx}}].AreaIsSelected"
+                  receivestateshow="Area[{{idx}}].HideArea"
+                  noshowType="display"
+      
                 >
                 </ch5-button>
               </div>

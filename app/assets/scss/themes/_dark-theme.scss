@@ -458,10 +458,15 @@ $weather-value-dark: #c0d0dd;
       }
       .ch5-button--selected {
         background: $gradient-btn-pressed-dark;
-        // background: linear-gradient(-45deg, #8492a5, #2a2e33);
         box-shadow: 0px 0px 15px rgb(156, 156, 156);
-        // border: none;
         transform: translateY(1px);
+      }
+      .stop-horiz-shades-button {
+        .ch5-button--pressed {
+          background: $gradient-btn-pressed-dark;
+          box-shadow: 0px 0px 15px rgb(156, 156, 156);
+          transform: translateY(1px);
+        }
       }
     }
 

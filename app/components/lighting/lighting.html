@@ -41,7 +41,7 @@
                   label="Area"
                   onclick="lightingModule.closeAreaDropdown()"
                   shape="rectangle"
-                  sendeventonclick="Room.Area[{{idx}}].AreaSetSelected"
+                  sendeventonclick="Areas.Area[{{idx}}].Select"
                   receivestatelabel="Areas.Area[{{idx}}].Name"
                   receivestateselected="Areas.Area[{{idx}}].IsSelected"
                 >
@@ -105,7 +105,7 @@
           <div class="vertical-list-item">
             <span
               class="light-name-label"
-              data-ch5-textcontent="Room.DimmableLights[{{idx}}].NameOfLight"
+              data-ch5-textcontent="Lights.DimmableLight[{{idx}}].NameOfLight"
               >Label</span
             >
             <div class="d-flex align-items-center">

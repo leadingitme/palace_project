@@ -2,8 +2,8 @@
     <div class="navbar-text">
         <div class="room-info pt-2 text-uppercase text-white">
             <span class="d-sm-block">Blinds</span>
-            <h2 class="mb-0" data-ch5-textcontent="Room.RoomNames">
-                Room Name
+            <h2 class="mb-0" data-ch5-textcontent="Areas.SuiteName">
+                Room (Suite) Name
             </h2>
         </div>
     </div>
@@ -38,18 +38,18 @@
             <span class="window-label">Shades </span>
 
             <div class="slider-container shades-container container">
-                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Room.Blinds.ShadeSliderValue">
+                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].LeftShadeValue">
                 </ch5-slider>
-                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Room.Blinds.ShadeSliderValue">
+                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].RightShadeValue">
                 </ch5-slider>
             </div>
             <div class="open-close-btn-container mt-4">
                 <div class="open-close-btn" id="horizontal-buttons">
-                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Room.Blinds.OpenShades" receivestateselected="Blinds.OpenShadesIsSelected">
+                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].OpenShades" receivestateselected="Curtains.Blind[0].OpenShadesFb">
                     </ch5-button>
-                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Room.Blinds.StopShades" receivestateselected="Blinds.StopShadesIsSelected">
+                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].StopShades" receivestateselected="">
                     </ch5-button>
-                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Room.Blinds.CloseShades" receivestateselected="Blinds.CloseShadesIsSelected">
+                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].CloseShades" receivestateselected="Curtains.Blind[0].CloseShadesFb">
                     </ch5-button>
                 </div>
             </div>
@@ -62,18 +62,18 @@
 
 
             <div class="slider-container blackout-container container">
-                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Room.Blinds.BlackoutSliderValue">
+                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].LeftBlackoutValue">
                 </ch5-slider>
-                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Room.Blinds.BlackoutSliderValue">
+                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].RightBlackoutValue">
                 </ch5-slider>
             </div>
             <div class="open-close-btn-container mt-4">
                 <div class="open-close-btn" id="horizontal-buttons">
-                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Room.Blinds.OpenBlackout" receivestateselected="Blinds.OpenBlackoutIsSelected">
+                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].OpenBlackout" receivestateselected="Curtains.Blind[0].OpenBlackoutFb">
                     </ch5-button>
-                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Room.Blinds.StopBlackout" receivestateselected="Blinds.StopBlackoutIsSelected">
+                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].StopBlackout" receivestateselected="">
                     </ch5-button>
-                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Room.Blinds.CloseBlackout" receivestateselected="Blinds.CloseBlackoutIsSelected">
+                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].CloseBlackout" receivestateselected="Curtains.Blind[0].CloseBlackoutFb">
                     </ch5-button>
                 </div>
             </div>

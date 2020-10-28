@@ -445,6 +445,14 @@ $weather-value-light: #0d2335;
         box-shadow: 1px 1px 3px rgb(58, 57, 57);
         transform: translateY(1px);
       }
+      .stop-horiz-shades-button {
+        .ch5-button--pressed {
+          background: $gradient-btn-pressed-light;
+
+          box-shadow: 1px 1px 3px rgb(58, 57, 57);
+          transform: translateY(1px);
+        }
+      }
     }
 
     .blackout-shades-btn {

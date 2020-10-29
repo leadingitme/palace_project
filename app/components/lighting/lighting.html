@@ -134,11 +134,27 @@
             </div>
           </div>
         </template>
-            </ch5-list>
-        </div>
-        <aside class="col-md-3 lighting-sidebar" id="lightingSidebar" onclick="dropDownStopPropagation()">
-            <ch5-select class="sidebar ch5-custom-select lighting-sidebar-select" mode="panel" maxWidth="none" indexId="idx" receiveStateSize="Lights.NumberOfScenes" receiveStateValue="NotDefinedOnPurpose" signalValueSyncTimeout="3000" panelScrollHeight="300">
-                <template>
+      </ch5-list>
+    </div>
+    <aside
+      class="col-md-3 lighting-sidebar"
+      id="lightingSidebar"
+      onclick="dropDownStopPropagation()"
+    >
+      <ch5-select
+        class="sidebar ch5-custom-select lighting-sidebar-select"
+        mode="panel"
+        maxWidth="none"
+        indexId="idx"
+        maxheight="252px"
+        minwidth="80px"
+        maxwidth="90px"
+        receiveStateSize="Room.NumberOfScenes"
+        receiveStateValue="NotDefinedOnPurpose"
+        signalValueSyncTimeout="3000"
+        panelScrollHeight="300"
+      >
+        <template>
           <ch5-select-option
             sendEventOnClick="Lights.Scene[{{idx}}].TriggerStartScene"
           >

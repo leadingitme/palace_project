@@ -1278,6 +1278,11 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         }
       }
     }
+    .ch5-select {
+      .ch5-select__panel__item {
+        padding: 0.67rem 1rem;
+      }
+    }
 
     @include media-breakpoint-down(xs) {
       & > .row {

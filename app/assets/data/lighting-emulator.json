@@ -836,6 +836,16 @@
       "value": "LOW"
     },
     {
+      "state": "Room.Scenes[5].NameOfScene",
+      "type": "s",
+      "value": "SCENE6"
+    },
+    {
+      "state": "Room.Scenes[6].NameOfScene",
+      "type": "s",
+      "value": "SCENE7"
+    },
+    {
       "state": "Room.DimmableLights[0].NameOfLight",
       "type": "s",
       "value": "Cove Light"
@@ -898,7 +908,7 @@
     {
       "state": "Room.NumberOfScenes",
       "type": "n",
-      "value": 5
+      "value": 7
     }
   ]
 }

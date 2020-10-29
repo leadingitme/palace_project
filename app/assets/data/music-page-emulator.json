@@ -6,6 +6,18 @@
       "trigger": true,
       "actions": [
         {
+          "state": "Music.ShowAirplay",
+          "type": "boolean",
+          "logic": "set",
+          "value": true
+        },
+        {
+          "state": "Music.ShowRadio",
+          "type": "boolean",
+          "logic": "set",
+          "value": false
+        },
+        {
           "state": "Rooms.Music.MusicPlayerIsShown",
           "value": true,
           "type": "b",
@@ -23,6 +35,7 @@
           "type": "b",
           "logic": "set"
         },
+
         {
           "type": "numeric",
           "state": "Rooms.Music.TriggerviewPlayerIsShown",
@@ -192,6 +205,18 @@
       "event": "Rooms.Music.Source[1].SetSourceSelected",
       "trigger": true,
       "actions": [
+        {
+          "state": "Music.ShowAirplay",
+          "type": "boolean",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "state": "Music.ShowRadio",
+          "type": "boolean",
+          "logic": "set",
+          "value": true
+        },
         {
           "state": "Rooms.Music.SelectedSourceName",
           "type": "s",
@@ -874,20 +899,27 @@
   ],
   "onStart": [
     {
-      "state": "Rooms.Music.RadioPlayerIsShown",
-      "value": true,
-      "type": "b",
-      "logic": "set"
+      "state": "Music.ShowAirplay",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
     },
+    {
+      "state": "Music.ShowRadio",
+      "type": "boolean",
+      "logic": "set",
+      "value": false
+    },
+   
     {
       "state": "Rooms.Music.SelectedSourceName",
       "type": "s",
-      "value": "Radio",
+      "value": "Airplay",
       "logic": "set"
     },
     {
       "type": "b",
-      "state": "Rooms.Music.Source[1].SourceIsSelected",
+      "state": "Rooms.Music.Source[0].SourceIsSelected",
       "logic": "set",
       "value": true
     },

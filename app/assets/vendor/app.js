@@ -410,7 +410,7 @@ var appModule = (function () {
       for (let idx = 0; idx < NAV_PAGE_COUNT; idx++) {
         addNavItemClickListener(idx);
       }
-      airplayPlayerSnippet.classList.add("d-none");
+     
       historicalAverageComponent.classList.add("d-none");
     }, 5000);
     // setTimeout(function () {

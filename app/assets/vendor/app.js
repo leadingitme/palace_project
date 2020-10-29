@@ -386,11 +386,6 @@ var appModule = (function () {
    * to add d-none onload
    */
 
-  // window.onload = function () {
-  //   setTimeout(() => {
-  //     airplayPlayerSnippet.classList.add("d-none");
-  //   }, 5000);
-  // };
   let airplayPlayerSnippet = document.querySelector(".airplay-player-templ");
   let historicalAverageComponent = document.querySelector(
     ".historical-average-component"

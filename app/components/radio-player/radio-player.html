@@ -5,9 +5,9 @@
                 <div class="row">
                     <div class="col-12 col-md-7 mt-2 artist-album-name">
                         <div class="radio-station-name d-flex">
-                            <h2 data-ch5-textcontent="Sources.Radio.CurrentStationName" class="">Rock Wave</h2>
+                            <h2 data-ch5-textcontent="Players.Radio.Radio.CurrentStationName" class="">Rock Wave</h2>
                             <div class="favourite-btn-container">
-                                <ch5-button type="success" stretch="both" shape="rectangle" iconclass="fas fa-heart" sendeventonclick="Radio.FavouriteBtnToggle" receivestateselected="Radio.FavouriteBtnState">
+                                <ch5-button type="success" stretch="both" shape="rectangle" iconclass="fas fa-heart" sendeventonclick="Players.Radio.Radio.FavouriteBtnToggle" receivestateselected="Players.Radio.Radio.FavouriteBtnState">
                                 </ch5-button>
                                 <!-- <ch5-triggerview
                   class=""
@@ -39,13 +39,13 @@
                 </ch5-triggerview> -->
                             </div>
                         </div>
-                        <h3 data-ch5-textcontent="Sources.Radio.CurrentStationText" class="album-name">106.6 FM</h3>
+                        <h3 data-ch5-textcontent="Players.Radio.Radio.CurrentChannelFrequencyText" class="album-name">106.6 FM</h3>
                     </div>
 
                     <div class="col-12 track-slider-container">
                         <div class="controllers-btn-container">
                             <div class="controllers-btn">
-                                <ch5-button stretch="both" iconclass="fas fa-backward fa-2x" sendeventonclick="351">
+                                <ch5-button stretch="both" iconclass="fas fa-backward fa-2x" sendeventonclick="Players.Radio.PrevStation">
                                 </ch5-button>
                                 <!-- <ch5-triggerview class="triggerview-container" gestureable="false" noshowtype="display" disableanimation="true" receivestateshowchildindex="Rooms.RadioPlayer.PlayPauseBtnTriggerview">
                                     <ch5-triggerview-child noshowtype="display">
@@ -59,13 +59,13 @@
                                 <ch5-button
                                 stretch="both"
                                 iconclass="fas fa-power-off fa-2x"
-                                sendeventonclick="Room.Radio.SetPowerActive"
-                                receivestateselected="Room.Radio.PowerIsActive"
+                                sendeventonclick="Players.Radio.PowerToggle"
+                                receivestateselected="Players.Radio.PowerFb"
                               >
                               </ch5-button>
                 
                 
-                                <ch5-button stretch="both" iconclass="fas fa-forward fa-2x" sendeventonclick="350">
+                                <ch5-button stretch="both" iconclass="fas fa-forward fa-2x" sendeventonclick="Players.Radio.NextStation">
                                 </ch5-button>
                             </div>
                         </div>
@@ -77,22 +77,22 @@
                 receivestatevalue="Music.MuteBtnToggleState"
               >
               </ch5-toggle> -->
-                            <ch5-button class="mute-btn mr-4" size="x-small" iconclass="fas fa-volume-mute" sendeventonclick="Sources.Player.MuteBtnToggle" receivestateselected="Sources.Player.MuteBtnToggleState"></ch5-button>
-                            <ch5-button class="mr-1" size="x-small" iconclass="fas fa-volume-down" sendeventonclick="Sources.Player.VolDownIsClicked"></ch5-button>
-                            <ch5-slider min="0" max="65535" stretch="width" handleShape="circle" orientation="horizontal" handlesize="x-small" sendeventonchange="Sources.Player.SetVolumeSlider" receivestatevalue="Sources.Player.VolSliderValue">
+                            <ch5-button class="mute-btn mr-4" size="x-small" iconclass="fas fa-volume-mute" sendeventonclick="Players.Radio.MuteToggle" receivestateselected="Players.Radio.MuteFb"></ch5-button>
+                            <ch5-button class="mr-1" size="x-small" iconclass="fas fa-volume-down" sendeventonclick="Players.Radio.VolDownIsClicked"></ch5-button>
+                            <ch5-slider min="0" max="65535" stretch="width" handleShape="circle" orientation="horizontal" handlesize="x-small" sendeventonchange="Players.Radio.SetVolume" receivestatevalue="Players.Radio.VolumeFB">
                             </ch5-slider>
-                            <ch5-button class="ml-1" size="x-small" iconclass="fas fa-volume-up" sendeventonclick="Sources.Player.VolUpIsClicked"></ch5-button>
+                            <ch5-button class="ml-1" size="x-small" iconclass="fas fa-volume-up" sendeventonclick="Players.Radio.VolUpIsClicked"></ch5-button>
                         </div>
                     </div>
                 </div>
             </div>
             <aside class="col-sm-5 d-none d-sm-block song-list-sidebar animate__animated" id="songListSidebar">
-                <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Sources.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
+                <ch5-select class="sidebar song-select ch5-custom-select" mode="panel" maxWidth="none" indexId="idx" selectedvalue="" receiveStateSize="Players.Radio.Radio.StationListSize" receiveStateValue="NotDefinedOnPurpose">
                     <div class="song-select-features">
                         <div class="features-btn-container">
                             <div class="features-btn station-selection">
-                                <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Sources.Radio.FavouritesIsSelected" sendeventonclick="Sources.Radio.ViewFavourites"></ch5-button>
-                                <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Sources.Radio.StationsListIsSelected" sendeventonclick="Sources.Radio.ViewAll">
+                                <ch5-button stretch="both" type="success" shape="rectangle" iconclass="far fa-heart" receivestateselected="Players.Radio.Radio.FavouritesIsSelected" sendeventonclick="Players.Radio.Radio.ViewFavourites"></ch5-button>
+                                <ch5-button stretch="both" class="station-list-btn" type="success" shape="rectangle" iconclass="fas fa-list" receivestateselected="Players.Radio.Radio.StationsListIsSelected" sendeventonclick="Players.Radio.Radio.ViewAll">
                                 </ch5-button>
                             </div>
                         </div>
@@ -100,16 +100,16 @@
 
                     <template>
             <ch5-select-option
-              sendEventOnClick="Sources.Radio.Station[{{idx}}].SelectStation"
-              receivestateselected="Sources.Radio.Station[{{idx}}].StationIsSelected"
+              sendEventOnClick="Players.Radio.Radio.Station[{{idx}}].SelectStation"
+              receivestateselected="Players.Radio.Station[{{idx}}].StationIsSelected"
             >
               <!-- <div class="row">
               <div class="col-8"> -->
-              <h4 class="" data-ch5-textContent="Sources.Radio.Station[{{idx}}].StationText">Song Name</h4>
+              <h4 class="" data-ch5-textContent="Players.Radio.Station[{{idx}}].StationText">Song Name</h4>
               <div class="artist-name d-flex">
                 <h5
                   class="mr-auto"
-                  data-ch5-textContent="Sources.Radio.Station[{{idx}}].StationName"
+                  data-ch5-textContent="Players.Radio.Station[{{idx}}].StationName"
                 >
                   Artist Name
                 </h5>
@@ -121,7 +121,7 @@
                   shape="rectangle"
                   iconclass="fas fa-heart"
                   sendeventonclick=""
-                  receivestateshow="Sources.Radio.Station[{{idx}}].FavouriteBtnShow"
+                  receivestateshow="Players.Radio.Radio.Station[{{idx}}].FavouriteBtnShow"
                 
                 >
                 </ch5-button>

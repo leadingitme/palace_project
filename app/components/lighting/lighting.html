@@ -38,7 +38,7 @@
                   customClass=""
                   type="text"
                   stretch="width"
-                  label="Area"
+                  label="Area-{{idx}}"
                   onclick="lightingModule.closeAreaDropdown()"
                   shape="rectangle"
                   sendeventonclick="Areas.Area[{{idx}}].Select"
@@ -105,8 +105,8 @@
           <div class="vertical-list-item">
             <span
               class="light-name-label"
-              data-ch5-textcontent="Lights.DimmableLight[{{idx}}].NameOfLight"
-              >Label</span
+              data-ch5-textcontent=""
+              >Light Label</span
             >
             <div class="d-flex align-items-center">
               <ch5-button

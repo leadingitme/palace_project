@@ -681,7 +681,7 @@
         {
             "state": "Room.NumberOfLights",
             "type": "n",
-            "value": 4
+            "value": 5
         },
         {
             "state": "Room.Scenes[0].NameOfScene",
@@ -779,11 +779,7 @@
           "type": "s",
           "value": "Great Room"
         },
-        {
-          "state": "Room.NumberOfLights",
-          "type": "n",
-          "value": 5
-        },
+        
         {
           "state": "Room.NumberOfAreas",
           "type": "n",
@@ -934,8 +930,6 @@
        
       ]
     }
-  ],
-  "onStart": [
-    
   ]
+ 
 }

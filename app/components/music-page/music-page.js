@@ -137,7 +137,9 @@ var musicPageModule = (function () {
   }
 
   function closeMusicSourceDropdown() {
-    dropdown.classList.remove("show");
+    setTimeout(function () {
+      dropdown.classList.remove("show");
+      }, 250);
   }
 
   document.body.addEventListener("click", function () {

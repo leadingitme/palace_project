@@ -295,6 +295,11 @@
   ],
   "onStart": [
     {
+      "state": "Areas.SuiteName",
+      "type": "s",
+      "value": "Greatest Room"
+  },
+    {
       "state": "Rooms.Blinds.ShadesAreShown",
       "value": true,
       "type": "b",

@@ -673,7 +673,8 @@
         }
 
     ],
-    "onStart": [{
+    "onStart": [
+        {
             "state": "Room.NameOfRoom",
             "type": "s",
             "value": "Great Room"

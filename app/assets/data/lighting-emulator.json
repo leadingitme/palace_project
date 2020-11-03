@@ -2,30 +2,30 @@
   "cues": [
     {
       "type": "boolean",
-      "event": "Room.Area[0].AreaSetSelected",
+      "event": "Areas.Area[0].Select",
       "trigger": true,
       "actions": [
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "BEDROOM",
+          "value": "EMULATOR NAME1",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": true
         },
         {
           "type": "b",
-          "state": "Room.Area[1].AreaIsSelected",
+          "state": "Areas.Area[1].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[2].AreaIsSelected",
+          "state": "Areas.Area[2].IsSelected",
           "logic": "set",
           "value": false
         }
@@ -675,12 +675,6 @@
     ],
     "onStart": [
         {
-          "state": "Areas.SelectedAreaName",
-          "type": "s",
-          "value": "Emulator Name",
-          "logic":"set"
-        },
-        {
             "state": "Room.NameOfRoom",
             "type": "s",
             "value": "Great Room"
@@ -786,26 +780,27 @@
           "value": "Great Room"
         },
         {
-          "state": "Room.NumberOfAreas",
+          "state": "Areas.NumberOfAreas",
           "type": "n",
-          "value": 5
+          "value": 3,
+          "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": true
         },
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "BEDROOM",
-          "logic": "set"
+          "value": "EMULATOR NAME1",
+          "logic":"set"
         },
         {
-          "state": "Room.AreaName[0]",
+          "state": "Areas.Area[0].Name",
           "type": "s",
-          "value": "BEDROOM"
+          "value": "EMULATOR NAME1"
         },
         {
           "state": "Room.AreaName[1]",

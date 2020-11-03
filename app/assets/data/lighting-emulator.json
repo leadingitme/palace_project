@@ -675,6 +675,12 @@
     ],
     "onStart": [
         {
+          "state": "Areas.SelectedAreaName",
+          "type": "s",
+          "value": "Emulator Name",
+          "logic":"set"
+        },
+        {
             "state": "Room.NameOfRoom",
             "type": "s",
             "value": "Great Room"
@@ -774,13 +780,11 @@
             "type": "n",
             "value": 60000
         },
-       
         {
           "state": "Room.NameOfRoom",
           "type": "s",
           "value": "Great Room"
         },
-        
         {
           "state": "Room.NumberOfAreas",
           "type": "n",

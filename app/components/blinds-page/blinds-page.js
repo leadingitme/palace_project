@@ -43,7 +43,7 @@ var blindsPageModule = (function () {
       windowsContainer.classList.add("d-none");
     }
   }
-  hideTriggerview();
+  // hideTriggerview();
 
   // (HORIZONTAL SHADES AND BLACKOUT) Methods for opening, closing and stoping blinds
 

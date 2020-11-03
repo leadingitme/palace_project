@@ -12,10 +12,10 @@
           <ch5-button 
           id="lightingAreaDropdownBtn"
           class="dropdown-toggle area-dropdown-btn"
-          label="AREA NAME"
+          label="Area Name"
           onclick="lightingModule.openAreaDropdown()"
-          sendeventonclick=""
-          receivestatelabel="Areas.SelectedAreaName">
+          receivestatelabel="Areas.SelectedAreaName"
+          >
         </ch5-button>
           <div
           id="lighting-area-dropdown"
@@ -105,7 +105,7 @@
           <div class="vertical-list-item">
             <span
               class="light-name-label"
-              data-ch5-textcontent=""
+              data-ch5-textcontent="Lights.DimmableLight[{{idx}}].NameOfLight"
               >Light Label</span
             >
             <div class="d-flex align-items-center">
@@ -146,10 +146,11 @@
         mode="panel"
         maxWidth="none"
         indexId="idx"
-        maxheight="252px"
+        minheight="auto"
+        maxheight="255px"
         minwidth="80px"
         maxwidth="90px"
-        receiveStateSize="Room.NumberOfScenes"
+        receiveStateSize="Lights.NumberOfScenes"
         receiveStateValue="NotDefinedOnPurpose"
         signalValueSyncTimeout="3000"
         panelScrollHeight="300"
@@ -160,7 +161,7 @@
           >
             <span
               data-ch5-textContent="Lights.Scene[{{idx}}].NameOfScene"
-            ></span>
+            >Scene Label</span>
           </ch5-select-option>
         </template>
             </ch5-select>

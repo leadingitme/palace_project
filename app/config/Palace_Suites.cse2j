@@ -1,6 +1,6 @@
 {
 	"name": "Palace_Suites",
-	"timestamp": "2020-11-01 17:20:26.303",
+	"timestamp": "2020-11-04 14:56:46.148",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Using Wing -> Suite -> Area",
@@ -112,52 +112,82 @@
 				"54": {
 					"1": "ClimateMode[0].TurboIsSelected",
 					"2": "ClimateMode[0].CoolIsSelected",
-					"3": "ClimateMode[0].OffIsSelected"
+					"3": "ClimateMode[0].OffIsSelected",
+					"4": "ClimateMode[0].Mode1Selected",
+					"5": "ClimateMode[0].Mode2Selected",
+					"6": "ClimateMode[0].Mode3Selected"
 				},
 				"55": {
 					"1": "ClimateMode[1].TurboIsSelected",
 					"2": "ClimateMode[1].CoolIsSelected",
-					"3": "ClimateMode[1].OffIsSelected"
+					"3": "ClimateMode[1].OffIsSelected",
+					"4": "ClimateMode[1].Mode1Selected",
+					"5": "ClimateMode[1].Mode2Selected",
+					"6": "ClimateMode[1].Mode3Selected"
 				},
 				"56": {
 					"1": "ClimateMode[2].TurboIsSelected",
 					"2": "ClimateMode[2].CoolIsSelected",
-					"3": "ClimateMode[2].OffIsSelected"
+					"3": "ClimateMode[2].OffIsSelected",
+					"4": "ClimateMode[2].Mode1Selected",
+					"5": "ClimateMode[2].Mode2Selected",
+					"6": "ClimateMode[2].Mode3Selected"
 				},
 				"57": {
 					"1": "ClimateMode[3].TurboIsSelected",
 					"2": "ClimateMode[3].CoolIsSelected",
-					"3": "ClimateMode[3].OffIsSelected"
+					"3": "ClimateMode[3].OffIsSelected",
+					"4": "ClimateMode[3].Mode1Selected",
+					"5": "ClimateMode[3].Mode2Selected",
+					"6": "ClimateMode[3].Mode3Selected"
 				},
 				"58": {
 					"1": "ClimateMode[4].TurboIsSelected",
 					"2": "ClimateMode[4].CoolIsSelected",
-					"3": "ClimateMode[4].OffIsSelected"
+					"3": "ClimateMode[4].OffIsSelected",
+					"4": "ClimateMode[4].Mode1Selected",
+					"5": "ClimateMode[4].Mode2Selected",
+					"6": "ClimateMode[4].Mode3Selected"
 				},
 				"59": {
 					"1": "ClimateMode[5].TurboIsSelected",
 					"2": "ClimateMode[5].CoolIsSelected",
-					"3": "ClimateMode[5].OffIsSelected"
+					"3": "ClimateMode[5].OffIsSelected",
+					"4": "ClimateMode[5].Mode1Selected",
+					"5": "ClimateMode[5].Mode2Selected",
+					"6": "ClimateMode[5].Mode3Selected"
 				},
 				"60": {
 					"1": "ClimateMode[6].TurboIsSelected",
 					"2": "ClimateMode[6].CoolIsSelected",
-					"3": "ClimateMode[6].OffIsSelected"
+					"3": "ClimateMode[6].OffIsSelected",
+					"4": "ClimateMode[6].Mode1Selected",
+					"5": "ClimateMode[6].Mode2Selected",
+					"6": "ClimateMode[6].Mode3Selected"
 				},
 				"61": {
 					"1": "ClimateMode[7].TurboIsSelected",
 					"2": "ClimateMode[7].CoolIsSelected",
-					"3": "ClimateMode[7].OffIsSelected"
+					"3": "ClimateMode[7].OffIsSelected",
+					"4": "ClimateMode[7].Mode1Selected",
+					"5": "ClimateMode[7].Mode2Selected",
+					"6": "ClimateMode[7].Mode3Selected"
 				},
 				"62": {
 					"1": "ClimateMode[8].TurboIsSelected",
 					"2": "ClimateMode[8].CoolIsSelected",
-					"3": "ClimateMode[8].OffIsSelected"
+					"3": "ClimateMode[8].OffIsSelected",
+					"4": "ClimateMode[8].Mode1Selected",
+					"5": "ClimateMode[8].Mode2Selected",
+					"6": "ClimateMode[8].Mode3Selected"
 				},
 				"63": {
 					"1": "ClimateMode[9].TurboIsSelected",
 					"2": "ClimateMode[9].CoolIsSelected",
-					"3": "ClimateMode[9].OffIsSelected"
+					"3": "ClimateMode[9].OffIsSelected",
+					"4": "ClimateMode[9].Mode1Selected",
+					"5": "ClimateMode[9].Mode2Selected",
+					"6": "ClimateMode[9].Mode3Selected"
 				},
 				"65": {
 					"1": "Sources.Source[0].SourceIsSelected"
@@ -918,6 +948,56 @@
 					"3": "ClimateArea[9].RoomTempString",
 					"4": "ClimateArea[9].HumidityString"
 				},
+				"54": {
+					"1": "ClimateMode[0].Mode1Name",
+					"2": "ClimateMode[0].Mode2Name",
+					"3": "ClimateMode[0].Mode3Name"
+				},
+				"55": {
+					"1": "ClimateMode[1].Mode1Name",
+					"2": "ClimateMode[1].Mode2Name",
+					"3": "ClimateMode[1].Mode3Name"
+				},
+				"56": {
+					"1": "ClimateMode[2].Mode1Name",
+					"2": "ClimateMode[2].Mode2Name",
+					"3": "ClimateMode[2].Mode3Name"
+				},
+				"57": {
+					"1": "ClimateMode[3].Mode1Name",
+					"2": "ClimateMode[3].Mode2Name",
+					"3": "ClimateMode[3].Mode3Name"
+				},
+				"58": {
+					"1": "ClimateMode[4].Mode1Name",
+					"2": "ClimateMode[4].Mode2Name",
+					"3": "ClimateMode[4].Mode3Name"
+				},
+				"59": {
+					"1": "ClimateMode[5].Mode1Name",
+					"2": "ClimateMode[5].Mode2Name",
+					"3": "ClimateMode[5].Mode3Name"
+				},
+				"60": {
+					"1": "ClimateMode[6].Mode1Name",
+					"2": "ClimateMode[6].Mode2Name",
+					"3": "ClimateMode[6].Mode3Name"
+				},
+				"61": {
+					"1": "ClimateMode[7].Mode1Name",
+					"2": "ClimateMode[7].Mode2Name",
+					"3": "ClimateMode[7].Mode3Name"
+				},
+				"62": {
+					"1": "ClimateMode[8].Mode1Name",
+					"2": "ClimateMode[8].Mode2Name",
+					"3": "ClimateMode[8].Mode3Name"
+				},
+				"63": {
+					"1": "ClimateMode[9].Mode1Name",
+					"2": "ClimateMode[9].Mode2Name",
+					"3": "ClimateMode[9].Mode3Name"
+				},
 				"64": {
 					"1": "Sources.SelectedSourceName"
 				},
@@ -1352,6 +1432,18 @@
 					"joinId": 3,
 					"smartObjectId": 54
 				},
+				"ClimateMode[0].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 54
+				},
+				"ClimateMode[0].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 54
+				},
+				"ClimateMode[0].Mode3Select": {
+					"joinId": 6,
+					"smartObjectId": 54
+				},
 				"ClimateMode[1].TurboSelect": {
 					"joinId": 1,
 					"smartObjectId": 55
@@ -1362,6 +1454,18 @@
 				},
 				"ClimateMode[1].OffSelect": {
 					"joinId": 3,
+					"smartObjectId": 55
+				},
+				"ClimateMode[1].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 55
+				},
+				"ClimateMode[1].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 55
+				},
+				"ClimateMode[1].Mode3Select": {
+					"joinId": 6,
 					"smartObjectId": 55
 				},
 				"ClimateMode[2].TurboSelect": {
@@ -1376,6 +1480,18 @@
 					"joinId": 3,
 					"smartObjectId": 56
 				},
+				"ClimateMode[2].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 56
+				},
+				"ClimateMode[2].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 56
+				},
+				"ClimateMode[2].Mode3Select": {
+					"joinId": 6,
+					"smartObjectId": 56
+				},
 				"ClimateMode[3].TurboSelect": {
 					"joinId": 1,
 					"smartObjectId": 57
@@ -1386,6 +1502,18 @@
 				},
 				"ClimateMode[3].OffSelect": {
 					"joinId": 3,
+					"smartObjectId": 57
+				},
+				"ClimateMode[3].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 57
+				},
+				"ClimateMode[3].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 57
+				},
+				"ClimateMode[3].Mode3Select": {
+					"joinId": 6,
 					"smartObjectId": 57
 				},
 				"ClimateMode[4].TurboSelect": {
@@ -1400,6 +1528,18 @@
 					"joinId": 3,
 					"smartObjectId": 58
 				},
+				"ClimateMode[4].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 58
+				},
+				"ClimateMode[4].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 58
+				},
+				"ClimateMode[4].Mode3Select": {
+					"joinId": 6,
+					"smartObjectId": 58
+				},
 				"ClimateMode[5].TurboSelect": {
 					"joinId": 1,
 					"smartObjectId": 59
@@ -1410,6 +1550,18 @@
 				},
 				"ClimateMode[5].OffSelect": {
 					"joinId": 3,
+					"smartObjectId": 59
+				},
+				"ClimateMode[5].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 59
+				},
+				"ClimateMode[5].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 59
+				},
+				"ClimateMode[5].Mode3Select": {
+					"joinId": 6,
 					"smartObjectId": 59
 				},
 				"ClimateMode[6].TurboSelect": {
@@ -1424,6 +1576,18 @@
 					"joinId": 3,
 					"smartObjectId": 60
 				},
+				"ClimateMode[6].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 60
+				},
+				"ClimateMode[6].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 60
+				},
+				"ClimateMode[6].Mode3Select": {
+					"joinId": 6,
+					"smartObjectId": 60
+				},
 				"ClimateMode[7].TurboSelect": {
 					"joinId": 1,
 					"smartObjectId": 61
@@ -1434,6 +1598,18 @@
 				},
 				"ClimateMode[7].OffSelect": {
 					"joinId": 3,
+					"smartObjectId": 61
+				},
+				"ClimateMode[7].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 61
+				},
+				"ClimateMode[7].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 61
+				},
+				"ClimateMode[7].Mode3Select": {
+					"joinId": 6,
 					"smartObjectId": 61
 				},
 				"ClimateMode[8].TurboSelect": {
@@ -1448,6 +1624,18 @@
 					"joinId": 3,
 					"smartObjectId": 62
 				},
+				"ClimateMode[8].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 62
+				},
+				"ClimateMode[8].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 62
+				},
+				"ClimateMode[8].Mode3Select": {
+					"joinId": 6,
+					"smartObjectId": 62
+				},
 				"ClimateMode[9].TurboSelect": {
 					"joinId": 1,
 					"smartObjectId": 63
@@ -1458,6 +1646,18 @@
 				},
 				"ClimateMode[9].OffSelect": {
 					"joinId": 3,
+					"smartObjectId": 63
+				},
+				"ClimateMode[9].Mode1Select": {
+					"joinId": 4,
+					"smartObjectId": 63
+				},
+				"ClimateMode[9].Mode2Select": {
+					"joinId": 5,
+					"smartObjectId": 63
+				},
+				"ClimateMode[9].Mode3Select": {
+					"joinId": 6,
 					"smartObjectId": 63
 				},
 				"WeatherStation.ResetRainFall": {

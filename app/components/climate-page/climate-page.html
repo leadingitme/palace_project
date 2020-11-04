@@ -90,29 +90,32 @@
                 <ch5-button
                   class="shadow-pulse-button"
                   id="fan-btn"
-                  label="Turbo"
+                  label="Mode_1"
                   stretch="both"
                   shape="rectangle"
-                  sendeventonclick="ClimateMode[{{idx}}].TurboSelect"
-                  receivestateselected="ClimateMode[{{idx}}].TurboIsSelected"
+                  receivestatelabel="ClimateMode[{{idx}}].Mode1Name"
+                  sendeventonclick="ClimateMode[{{idx}}].Mode1Select"
+                  receivestateselected="ClimateMode[{{idx}}].Mode1Selected"
                 >
                 </ch5-button>
                 <ch5-button
                   id="auto-btn"
-                  label="Cool"
+                  label="Mode_2"
                   stretch="both"
                   shape="rectangle"
-                  sendeventonclick="ClimateMode[{{idx}}].CoolSelect"
-                  receivestateselected="ClimateMode[{{idx}}].CoolIsSelected"
+                  receivestatelabel="ClimateMode[{{idx}}].Mode2Name"
+                  sendeventonclick="ClimateMode[{{idx}}].Mode2Select"
+                  receivestateselected="ClimateMode[{{idx}}].Mode2Selected"
                 >
                 </ch5-button>
                 <ch5-button
                   id="auto-btn"
-                  label="Off"
+                  label="Mode_3"
                   stretch="both"
                   shape="rectangle"
-                  sendeventonclick="ClimateMode[{{idx}}].OffSelect"
-                  receivestateselected="ClimateMode[{{idx}}].OffIsSelected"
+                  receivestatelabel="ClimateMode[{{idx}}].Mode3Name"
+                  sendeventonclick="ClimateMode[{{idx}}].Mode3Select"
+                  receivestateselected="ClimateMode[{{idx}}].Mode3Selected"
                 >
                 </ch5-button>
               </div>

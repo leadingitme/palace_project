@@ -8,7 +8,7 @@
         {
           "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "EMULATOR NAME1",
+          "value": "EMU Bedroom",
           "logic": "set"
         },
         {
@@ -28,35 +28,47 @@
           "state": "Areas.Area[2].IsSelected",
           "logic": "set",
           "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
+          "logic": "set",
+          "value": false
         }
       ]
     },
     {
       "type": "boolean",
-      "event": "Room.Area[1].AreaSetSelected",
+      "event": "Areas.Area[1].Select",
       "trigger": true,
       "actions": [
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "SITTING ROOM",
+          "value": "EMU Sitting Room",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[1].AreaIsSelected",
+          "state": "Areas.Area[1].IsSelected",
           "logic": "set",
           "value": true
         },
         {
           "type": "b",
-          "state": "Room.Area[2].AreaIsSelected",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
           "logic": "set",
           "value": false
         }
@@ -64,30 +76,73 @@
     },
     {
       "type": "boolean",
-      "event": "Room.Area[2].AreaSetSelected",
+      "event": "Areas.Area[2].Select",
       "trigger": true,
       "actions": [
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "WASHROOM",
+          "value": "EMU Dressing",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[1].AreaIsSelected",
+          "state": "Areas.Area[1].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[2].AreaIsSelected",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": true
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
+          "logic": "set",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Areas.Area[3].Select",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Areas.SelectedAreaName",
+          "type": "s",
+          "value": "EMU Washroom",
+          "logic": "set"
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[0].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[1].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
           "logic": "set",
           "value": true
         }
@@ -775,14 +830,9 @@
             "value": 60000
         },
         {
-          "state": "Room.NameOfRoom",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "Great Room"
-        },
-        {
-          "state": "Areas.NumberOfAreas",
-          "type": "n",
-          "value": 3,
+          "value": "EMU Bedroom",
           "logic": "set"
         },
         {
@@ -792,45 +842,22 @@
           "value": true
         },
         {
-          "state": "Areas.SelectedAreaName",
-          "type": "s",
-          "value": "EMULATOR NAME1",
-          "logic":"set"
+          "type": "b",
+          "state": "Areas.Area[1].IsSelected",
+          "logic": "set",
+          "value": false
         },
         {
-          "state": "Areas.Area[0].Name",
-          "type": "s",
-          "value": "EMULATOR NAME1"
+          "type": "b",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": false
         },
         {
-          "state": "Room.AreaName[1]",
-          "type": "s",
-          "value": "SITTING ROOM"
-        },
-        {
-          "state": "Room.AreaName[2]",
-          "type": "s",
-          "value": "WASHROOM"
-        },
-        {
-          "state": "Room.AreaName[3]",
-          "type": "s",
-          "value": "WASHROOM2"
-        },
-        {
-          "state": "Room.AreaName[4]",
-          "type": "s",
-          "value": "WASHROOM3"
-        },
-        {
-          "state": "Room.AreaName[5]",
-          "type": "s",
-          "value": "WASHROOM4"
-        },
-        {
-          "state": "Room.AreaName[6]",
-          "type": "s",
-          "value": "WASHROOM5"
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
+          "logic": "set",
+          "value": false
         },
         {
           "state": "Room.Scenes[0].NameOfScene",

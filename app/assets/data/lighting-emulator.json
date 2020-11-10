@@ -2,7 +2,7 @@
   "cues": [
     {
       "type": "boolean",
-      "event": "Areas.Area[0].Select",
+      "event": "Area[0].Select",
       "trigger": true,
       "actions": [
         {
@@ -39,7 +39,7 @@
     },
     {
       "type": "boolean",
-      "event": "Areas.Area[1].Select",
+      "event": "Area[1].Select",
       "trigger": true,
       "actions": [
         {
@@ -76,7 +76,7 @@
     },
     {
       "type": "boolean",
-      "event": "Areas.Area[2].Select",
+      "event": "Area[2].Select",
       "trigger": true,
       "actions": [
         {
@@ -113,7 +113,7 @@
     },
     {
       "type": "boolean",
-      "event": "Areas.Area[3].Select",
+      "event": "Area[3].Select",
       "trigger": true,
       "actions": [
         {
@@ -828,36 +828,6 @@
             "state": "Room.DimmableLights[5].LightIsAtLevel",
             "type": "n",
             "value": 60000
-        },
-        {
-          "state": "Areas.SelectedAreaName",
-          "type": "s",
-          "value": "EMU Bedroom",
-          "logic": "set"
-        },
-        {
-          "type": "b",
-          "state": "Areas.Area[0].IsSelected",
-          "logic": "set",
-          "value": true
-        },
-        {
-          "type": "b",
-          "state": "Areas.Area[1].IsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Areas.Area[2].IsSelected",
-          "logic": "set",
-          "value": false
-        },
-        {
-          "type": "b",
-          "state": "Areas.Area[3].IsSelected",
-          "logic": "set",
-          "value": false
         },
         {
           "state": "Room.Scenes[0].NameOfScene",

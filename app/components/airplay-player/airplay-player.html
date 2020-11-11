@@ -9,7 +9,7 @@
                     </div>
 
                     <div class="col-7 mt-2 artist-album-name">
-                        <h2 data-ch5-textcontent="" class="">AIRPLAY is streaming</h2>
+                        <h2 data-ch5-textcontent="" class="">AIRPLAY</h2>
                         <h3 data-ch5-textcontent="" class="album-name mt-2">
                             Please use controls of your device
                         </h3>
@@ -25,11 +25,11 @@
                   receivestatevalue="Music.MuteBtnToggleState"
                 >
                 </ch5-toggle> -->
-                            <ch5-button class="mute-btn mr-4" size="x-small" iconclass="fas fa-volume-mute" sendeventonclick="Music.RadioPlayer.MuteBtnToggle" receivestateselected="Music.RadioPlayer.MuteBtnToggleState"></ch5-button>
-                            <ch5-button size="x-small" iconclass="fas fa-volume-down" sendeventonclick="Music.RadioPlayer.VolDownIsClicked"></ch5-button>
-                            <ch5-slider min="0" max="100" stretch="width" handleShape="circle" orientation="horizontal" showtickvalues="true" handlesize="x-small" receivestatevalue="Music.RadioPlayer.VolSliderValue">
+                            <ch5-button class="mute-btn mr-4" size="x-small" iconclass="fas fa-volume-mute" sendeventonclick="Players.Airplay.MuteToggle" receivestateselected="Players.Airplay.MuteFb"></ch5-button>
+                            <ch5-button size="x-small" iconclass="fas fa-volume-down" sendeventonclick="Players.Airplay.VolDownIsClicked"></ch5-button>
+                            <ch5-slider min="0" max="100" stretch="width" handleShape="circle" orientation="horizontal" showtickvalues="true" handlesize="x-small" sendeventonchange="Players.Airplay.SetVolume" receivestatevalue="Players.Airplay.VolumeFb">
                             </ch5-slider>
-                            <ch5-button size="x-small" iconclass="fas fa-volume-up" sendeventonclick="Music.RadioPlayer.VolUpIsClicked"></ch5-button>
+                            <ch5-button size="x-small" iconclass="fas fa-volume-up" sendeventonclick="Players.Airplay.VolUpIsClicked"></ch5-button>
                         </div>
                     </div>
                     <div class="col-2"></div>

@@ -64,9 +64,9 @@
     <!-- show horizontal list when large and above -->
 
     <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
-        <ch5-list id="blackout-horiz-list" receivestatesize="Room.Blinds.BlackOutListSize" orientation="horizontal" indexId="idx">
+        <ch5-list id="blackout-horiz-list"  receivestatesize="Curtains.BlackOutListSize" orientation="horizontal" indexId="idx">
             <template>
-        <span class="window-label">Window #{{idx}} </span>
+        <span class="window-label" data-ch5-textcontent="Curtains.Blind[{{idx}}].Name">Window Name</span>
 
         <div class="slider-container blackout-container container">
           <!-- Blackout done with ch5-slider -->
@@ -74,16 +74,16 @@
             class="left-slider"
             nohandle="true"
             min="0"
-            max="50"
-            receivestatevalue="Room.Blinds.BlackoutSliderValue"
+            max="65535"
+            receivestatevalue="Curtains.Blind[{{idx}}].LeftBlackoutValue"
           >
           </ch5-slider>
           <ch5-slider
             class="right-slider"
             nohandle="true"
             min="0"
-            max="50"
-            receivestatevalue="Room.Blinds.BlackoutSliderValue"
+            max="65535"
+            receivestatevalue="Curtains.Blind[{{idx}}].RightBlackoutValue"
           >
           </ch5-slider>
 
@@ -120,18 +120,18 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.OpenBlackout"
-              receivestateselected="Blinds.OpenBlackoutIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].OpenBlackout"
+              receivestateselected="Curtains.Blind[{{idx}}].OpenBlackoutFb"
             >
             </ch5-button>
             <ch5-button
-              class="stop-horiz-blackout-button"
+              class="stop-horiz-button"
               id="stop_blind"
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.StopBlackout"
-              receivestateselected="Blinds.StopBlackoutIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].StopBlackout"
+              receivestateselected=""
             >
             </ch5-button>
             <ch5-button
@@ -141,8 +141,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.CloseBlackout"
-              receivestateselected="Blinds.CloseBlackoutIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].CloseBlackout"
+              receivestateselected="Curtains.Blind[{{idx}}].CloseBlackoutFb"
             >
             </ch5-button>
           </div>

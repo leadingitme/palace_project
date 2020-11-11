@@ -61,9 +61,9 @@
     <!-- show horizontal list when large and above -->
 
     <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
-        <ch5-list receivestatesize="Room.Blinds.ShadesListSize" orientation="horizontal" indexId="idx" id="shades-horiz-list">
+        <ch5-list receivestatesize="Curtains.ShadesListSize" orientation="horizontal" indexId="idx" id="shades-horiz-list">
             <template>
-        <span class="window-label">Window #{{idx}} </span>
+        <span class="window-label" data-ch5-textcontent="Curtains.Blind[{{idx}}].Name">Window Name </span>
 
         <div class="slider-container shades-container container">
           <!-- Shades done with ch5-slider -->
@@ -71,16 +71,16 @@
             class="left-slider"
             nohandle="true"
             min="0"
-            max="50"
-            receivestatevalue="Room.Blinds.ShadeSliderValue"
+            max="65535"
+            receivestatevalue="Curtains.Blind[{{idx}}].LeftShadeValue"
           >
           </ch5-slider>
           <ch5-slider
             class="right-slider"
             nohandle="true"
             min="0"
-            max="50"
-            receivestatevalue="Room.Blinds.ShadeSliderValue"
+            max="65535"
+            receivestatevalue="Curtains.Blind[{{idx}}].RightShadeValue"
           >
           </ch5-slider>
 
@@ -124,18 +124,18 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.OpenShades"
-              receivestateselected="Blinds.OpenShadesIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].OpenShades"
+              receivestateselected="Curtains.Blind[{{idx}}].OpenShadesFb"
             >
             </ch5-button>
             <ch5-button
-              class="stop-horiz-shades-button"
+              class="stop-horiz-button"
               id="stop-shades-horizontal-{{idx}}"
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.StopShades"
-              receivestateselected="Blinds.StopShadesIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].StopShades"
+              receivestateselected=""
             >
             </ch5-button>
             <ch5-button
@@ -145,8 +145,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Room.Blinds.CloseShades"
-              receivestateselected="Blinds.CloseShadesIsSelected"
+              sendeventonclick="Curtains.Blind[{{idx}}].CloseShades"
+              receivestateselected="Curtains.Blind[{{idx}}].CloseShadesFb"
             >
             </ch5-button>
           </div>

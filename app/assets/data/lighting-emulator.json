@@ -2,30 +2,36 @@
   "cues": [
     {
       "type": "boolean",
-      "event": "Room.Area[0].AreaSetSelected",
+      "event": "Area[0].Select",
       "trigger": true,
       "actions": [
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "BEDROOM",
+          "value": "EMU Bedroom",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": true
         },
         {
           "type": "b",
-          "state": "Room.Area[1].AreaIsSelected",
+          "state": "Areas.Area[1].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[2].AreaIsSelected",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
           "logic": "set",
           "value": false
         }
@@ -33,30 +39,36 @@
     },
     {
       "type": "boolean",
-      "event": "Room.Area[1].AreaSetSelected",
+      "event": "Area[1].Select",
       "trigger": true,
       "actions": [
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "SITTING ROOM",
+          "value": "EMU Sitting Room",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[1].AreaIsSelected",
+          "state": "Areas.Area[1].IsSelected",
           "logic": "set",
           "value": true
         },
         {
           "type": "b",
-          "state": "Room.Area[2].AreaIsSelected",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
           "logic": "set",
           "value": false
         }
@@ -64,30 +76,73 @@
     },
     {
       "type": "boolean",
-      "event": "Room.Area[2].AreaSetSelected",
+      "event": "Area[2].Select",
       "trigger": true,
       "actions": [
         {
-          "state": "Room.SelectedAreaName",
+          "state": "Areas.SelectedAreaName",
           "type": "s",
-          "value": "WASHROOM",
+          "value": "EMU Dressing",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Room.Area[0].AreaIsSelected",
+          "state": "Areas.Area[0].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[1].AreaIsSelected",
+          "state": "Areas.Area[1].IsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Room.Area[2].AreaIsSelected",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": true
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
+          "logic": "set",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "boolean",
+      "event": "Area[3].Select",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "Areas.SelectedAreaName",
+          "type": "s",
+          "value": "EMU Washroom",
+          "logic": "set"
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[0].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[1].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[2].IsSelected",
+          "logic": "set",
+          "value": false
+        },
+        {
+          "type": "b",
+          "state": "Areas.Area[3].IsSelected",
           "logic": "set",
           "value": true
         }
@@ -673,7 +728,8 @@
         }
 
     ],
-    "onStart": [{
+    "onStart": [
+        {
             "state": "Room.NameOfRoom",
             "type": "s",
             "value": "Great Room"
@@ -681,7 +737,7 @@
         {
             "state": "Room.NumberOfLights",
             "type": "n",
-            "value": 4
+            "value": 5
         },
         {
             "state": "Room.Scenes[0].NameOfScene",
@@ -774,175 +830,103 @@
             "value": 60000
         },
         {
-            "state": "Room.NumberOfScenes",
-            "type": "n",
-            "value": 6
+          "state": "Room.Scenes[0].NameOfScene",
+          "type": "s",
+          "value": "ALL ON"
+        },
+        {
+          "state": "Room.Scenes[1].NameOfScene",
+          "type": "s",
+          "value": "ALL OFF"
+        },
+        {
+          "state": "Room.Scenes[2].NameOfScene",
+          "type": "s",
+          "value": "HIGH"
+        },
+        {
+          "state": "Room.Scenes[3].NameOfScene",
+          "type": "s",
+          "value": "MEDIUM"
+        },
+        {
+          "state": "Room.Scenes[4].NameOfScene",
+          "type": "s",
+          "value": "LOW"
+        },
+        {
+          "state": "Room.Scenes[5].NameOfScene",
+          "type": "s",
+          "value": "SCENE6"
+        },
+        {
+          "state": "Room.Scenes[6].NameOfScene",
+          "type": "s",
+          "value": "SCENE7"
+        },
+        {
+          "state": "Room.DimmableLights[0].NameOfLight",
+          "type": "s",
+          "value": "Cove Light"
+        },
+        {
+          "state": "Room.DimmableLights[0].LightIsAtLevel",
+          "type": "n",
+          "value": 20000
+        },
+        {
+          "state": "Room.DimmableLights[1].NameOfLight",
+          "type": "s",
+          "value": "Chandelier"
+        },
+        {
+          "state": "Room.DimmableLights[1].LightIsAtLevel",
+          "type": "n",
+          "value": 30000
+        },
+        {
+          "state": "Room.DimmableLights[2].NameOfLight",
+          "type": "s",
+          "value": "Spotlights"
+        },
+        {
+          "state": "Room.DimmableLights[2].LightIsAtLevel",
+          "type": "n",
+          "value": 12345
+        },
+        {
+          "state": "Room.DimmableLights[3].NameOfLight",
+          "type": "s",
+          "value": "Wall Lights"
+        },
+        {
+          "state": "Room.DimmableLights[3].LightIsAtLevel",
+          "type": "n",
+          "value": 54321
+        },
+        {
+          "state": "Room.DimmableLights[4].NameOfLight",
+          "type": "s",
+          "value": "Strip Lights"
+        },
+        {
+          "state": "Room.DimmableLights[4].LightIsAtLevel",
+          "type": "n",
+          "value": 234
+        },
+        {
+          "state": "Room.DimmableLights[5].NameOfLight",
+          "type": "s",
+          "value": "Pendants"
+        },
+        {
+          "state": "Room.DimmableLights[5].LightIsAtLevel",
+          "type": "n",
+          "value": 60000
         }
+       
       ]
     }
-  ],
-  "onStart": [
-    {
-      "state": "Room.NameOfRoom",
-      "type": "s",
-      "value": "Great Room"
-    },
-    {
-      "state": "Room.NumberOfLights",
-      "type": "n",
-      "value": 5
-    },
-    {
-      "state": "Room.NumberOfAreas",
-      "type": "n",
-      "value": 5
-    },
-    {
-      "type": "b",
-      "state": "Room.Area[0].AreaIsSelected",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Room.SelectedAreaName",
-      "type": "s",
-      "value": "BEDROOM",
-      "logic": "set"
-    },
-    {
-      "state": "Room.AreaName[0]",
-      "type": "s",
-      "value": "BEDROOM"
-    },
-    {
-      "state": "Room.AreaName[1]",
-      "type": "s",
-      "value": "SITTING ROOM"
-    },
-    {
-      "state": "Room.AreaName[2]",
-      "type": "s",
-      "value": "WASHROOM"
-    },
-    {
-      "state": "Room.AreaName[3]",
-      "type": "s",
-      "value": "WASHROOM2"
-    },
-    {
-      "state": "Room.AreaName[4]",
-      "type": "s",
-      "value": "WASHROOM3"
-    },
-    {
-      "state": "Room.AreaName[5]",
-      "type": "s",
-      "value": "WASHROOM4"
-    },
-    {
-      "state": "Room.AreaName[6]",
-      "type": "s",
-      "value": "WASHROOM5"
-    },
-    {
-      "state": "Room.Scenes[0].NameOfScene",
-      "type": "s",
-      "value": "ALL ON"
-    },
-    {
-      "state": "Room.Scenes[1].NameOfScene",
-      "type": "s",
-      "value": "ALL OFF"
-    },
-    {
-      "state": "Room.Scenes[2].NameOfScene",
-      "type": "s",
-      "value": "HIGH"
-    },
-    {
-      "state": "Room.Scenes[3].NameOfScene",
-      "type": "s",
-      "value": "MEDIUM"
-    },
-    {
-      "state": "Room.Scenes[4].NameOfScene",
-      "type": "s",
-      "value": "LOW"
-    },
-    {
-      "state": "Room.Scenes[5].NameOfScene",
-      "type": "s",
-      "value": "SCENE6"
-    },
-    {
-      "state": "Room.Scenes[6].NameOfScene",
-      "type": "s",
-      "value": "SCENE7"
-    },
-    {
-      "state": "Room.DimmableLights[0].NameOfLight",
-      "type": "s",
-      "value": "Cove Light"
-    },
-    {
-      "state": "Room.DimmableLights[0].LightIsAtLevel",
-      "type": "n",
-      "value": 20000
-    },
-    {
-      "state": "Room.DimmableLights[1].NameOfLight",
-      "type": "s",
-      "value": "Chandelier"
-    },
-    {
-      "state": "Room.DimmableLights[1].LightIsAtLevel",
-      "type": "n",
-      "value": 30000
-    },
-    {
-      "state": "Room.DimmableLights[2].NameOfLight",
-      "type": "s",
-      "value": "Spotlights"
-    },
-    {
-      "state": "Room.DimmableLights[2].LightIsAtLevel",
-      "type": "n",
-      "value": 12345
-    },
-    {
-      "state": "Room.DimmableLights[3].NameOfLight",
-      "type": "s",
-      "value": "Wall Lights"
-    },
-    {
-      "state": "Room.DimmableLights[3].LightIsAtLevel",
-      "type": "n",
-      "value": 54321
-    },
-    {
-      "state": "Room.DimmableLights[4].NameOfLight",
-      "type": "s",
-      "value": "Strip Lights"
-    },
-    {
-      "state": "Room.DimmableLights[4].LightIsAtLevel",
-      "type": "n",
-      "value": 234
-    },
-    {
-      "state": "Room.DimmableLights[5].NameOfLight",
-      "type": "s",
-      "value": "Pendants"
-    },
-    {
-      "state": "Room.DimmableLights[5].LightIsAtLevel",
-      "type": "n",
-      "value": 60000
-    },
-    {
-      "state": "Room.NumberOfScenes",
-      "type": "n",
-      "value": 7
-    }
   ]
+ 
 }

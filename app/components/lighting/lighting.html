@@ -12,10 +12,10 @@
           <ch5-button 
           id="lightingAreaDropdownBtn"
           class="dropdown-toggle area-dropdown-btn"
-          label="AREA NAME"
+          label="AREAS"
           onclick="lightingModule.openAreaDropdown()"
-          sendeventonclick=""
-          receivestatelabel="Room.SelectedAreaName">
+          receivestatelabel="Areas.SelectedAreaName"
+          >
         </ch5-button>
           <div
           id="lighting-area-dropdown"
@@ -26,7 +26,7 @@
             orientation="vertical"
             class="ch5-custom-list"
             indexid="idx"
-            receivestatesize="Room.NumberOfAreas"
+            receivestatesize="Areas.NumberOfAreas"
             minHeight="100px"
             maxHeight="250px"
             minwidth="200px"
@@ -41,9 +41,9 @@
                   label="Area"
                   onclick="lightingModule.closeAreaDropdown()"
                   shape="rectangle"
-                  sendeventonclick="Room.Area[{{idx}}].AreaSetSelected"
-                  receivestatelabel="Room.AreaName[{{idx}}]"
-                  receivestateselected="Room.Area[{{idx}}].AreaIsSelected"
+                  sendeventonclick="Areas.Area[{{idx}}].Select"
+                  receivestatelabel="Areas.Area[{{idx}}].Name"
+                  receivestateselected="Areas.Area[{{idx}}].IsSelected"
                 >
                 </ch5-button>
               </div>
@@ -99,20 +99,20 @@
         orientation="vertical"
         indexId="idx"
         scrollbar="true"
-        receiveStateSize="Room.NumberOfLights"
+        receiveStateSize="Lights.NumberOfLights"
       >
         <template>
           <div class="vertical-list-item">
             <span
               class="light-name-label"
-              data-ch5-textcontent="Room.DimmableLights[{{idx}}].NameOfLight"
-              >Label</span
+              data-ch5-textcontent="Lights.DimmableLight[{{idx}}].NameOfLight"
+              >Light Label</span
             >
             <div class="d-flex align-items-center">
               <ch5-button
                 class="lighting-button"
                 shape="circle"
-                sendeventonclick="Room.DimmableLights[{{idx}}].TurnLightOff"
+                sendeventonclick="Lights.DimmableLight[{{idx}}].TurnLightOff"
                 iconurl="./assets/img/lighting/fa-icon-lightbulb.svg"
               ></ch5-button>
               <ch5-slider
@@ -120,14 +120,14 @@
                 stretch="width"
                 handleShape="circle"
                 toolTipShowType="auto"
-                sendEventOnChange="Room.DimmableLights[{{idx}}].SetLightLevel"
-                receiveStateValue="Room.DimmableLights[{{idx}}].LightIsAtLevel"
+                sendEventOnChange="Lights.DimmableLight[{{idx}}].SetLightLevel"
+                receiveStateValue="Lights.DimmableLight[{{idx}}].LightLevel"
                 orientation="horizontal"
               ></ch5-slider>
               <ch5-button
                 class="lighting-button"
                 shape="circle"
-                sendEventOnClick="Room.DimmableLights[{{idx}}].TurnLightOn"
+                sendEventOnClick="Lights.DimmableLight[{{idx}}].TurnLightOn"
                 iconClass="fas fa-lightbulb"
               >
               </ch5-button>
@@ -146,21 +146,22 @@
         mode="panel"
         maxWidth="none"
         indexId="idx"
-        maxheight="252px"
+        minheight="auto"
+        maxheight="255px"
         minwidth="80px"
         maxwidth="90px"
-        receiveStateSize="Room.NumberOfScenes"
+        receiveStateSize="Lights.NumberOfScenes"
         receiveStateValue="NotDefinedOnPurpose"
         signalValueSyncTimeout="3000"
         panelScrollHeight="300"
       >
         <template>
           <ch5-select-option
-            sendEventOnClick="Room.Scenes[{{idx}}].TriggerStartScene"
+            sendEventOnClick="Lights.Scene[{{idx}}].TriggerStartScene"
           >
             <span
-              data-ch5-textContent="Room.Scenes[{{idx}}].NameOfScene"
-            ></span>
+              data-ch5-textContent="Lights.Scene[{{idx}}].NameOfScene"
+            >Scene Label</span>
           </ch5-select-option>
         </template>
             </ch5-select>

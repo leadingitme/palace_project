@@ -574,12 +574,11 @@ $weather-value-light: #0d2335;
       }
     }
 
-    .mode-buttons-container,
-    .fan-buttons-container {
-      // box-shadow: inset 3px -4px 10px rgba(68, 68, 68, 0.6);
-      background-color: $ch5-light-navbar-bg;
-      box-shadow: 0px 3px 9px 2px rgb(70, 70, 70);
-    }
+    // .mode-buttons-container,
+    // .fan-buttons-container {
+    //   background-color: $ch5-light-navbar-bg;
+    //   box-shadow: 0px 3px 9px 2px rgb(70, 70, 70);
+    // }
     .room-temp {
       h4 {
         color: $music-icon-bg-light;

@@ -92,34 +92,38 @@
             <div
               class="mode-buttons-container d-flex flex-column align-items-center"
             >
-              <div class="align-self-start"><h3 class="">Mode</h3></div>
+              <!-- <div class="align-self-start"><h3 class="">Mode</h3></div> -->
               <div class="mode-buttons horizontal">
                 <ch5-button
                   class="shadow-pulse-button"
                   id="fan-btn"
                   label="Turbo"
-                  stretch="both"
                   shape="rectangle"
                   sendeventonclick="Climate.GuestRoom.Room[{{idx}}].Mode.FanSetSelected"
                   receivestateselected="Climate.GuestRoom.Room[{{idx}}].Mode.FanIsSelected"
+                  receivestateshow="ClimateMode[{{idx}}].ShowMode1"
+                  noshowtype="display"
+
                 >
                 </ch5-button>
                 <ch5-button
                   id="auto-btn"
                   label="Cool"
-                  stretch="both"
                   shape="rectangle"
                   sendeventonclick="Climate.GuestRoom.Room[{{idx}}].Mode.CoolSetSelected"
                   receivestateselected="Climate.GuestRoom.Room[{{idx}}].Mode.CoolIsSelected"
+                  
+
                 >
                 </ch5-button>
                 <ch5-button
                   id="auto-btn"
                   label="Off"
-                  stretch="both"
                   shape="rectangle"
                   sendeventonclick="Climate.GuestRoom.Room[{{idx}}].Mode.OffSetSelected"
                   receivestateselected="Climate.GuestRoom.Room[{{idx}}].Mode.OffIsSelected"
+                  
+
                 >
                 </ch5-button>
               </div>

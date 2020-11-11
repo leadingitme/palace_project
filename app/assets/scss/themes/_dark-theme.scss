@@ -574,11 +574,11 @@ $weather-value-dark: #c0d0dd;
     span.room-label {
       color: rgba(247, 247, 247, 0.699);
     }
-    .mode-buttons-container,
-    .fan-buttons-container {
-      background-color: $ch5-dark-navbar-bg;
-      box-shadow: 0px 2px 7px rgb(124, 124, 124);
-    }
+    // .mode-buttons-container,
+    // .fan-buttons-container {
+    //   background-color: $ch5-dark-navbar-bg;
+    //   box-shadow: 0px 2px 7px rgb(124, 124, 124);
+    // }
     .plus-minus-btn {
       .ch5-button {
         background: $gradient-btn-dark;

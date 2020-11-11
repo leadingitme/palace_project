@@ -538,6 +538,36 @@
   ],
   "onStart": [
     {
+      "state": "ClimateMode[0].ShowMode1",
+      "type": "b",
+      "value": false
+    },
+    {
+      "state": "ClimateMode[1].ShowMode1",
+      "type": "b",
+      "value": true
+    },
+    {
+      "state": "ClimateMode[2].ShowMode1",
+      "type": "b",
+      "value": true
+    },
+    {
+      "state": "ClimateMode[3].ShowMode1",
+      "type": "b",
+      "value": true
+    },
+    {
+      "state": "ClimateMode[0].ShowMode1",
+      "type": "b",
+      "value": false
+    },
+    {
+      "state": "ClimateMode[0].ShowMode1",
+      "type": "b",
+      "value": false
+    },
+    {
       "state": "Climate.GuestRoom.NumberOfRooms",
       "type": "n",
       "value": 4

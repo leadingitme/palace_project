@@ -1,6 +1,6 @@
 {
 	"name": "Palace_Suites",
-	"timestamp": "2020-11-04 14:56:46.148",
+	"timestamp": "2020-11-11 12:08:26.801",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Using Wing -> Suite -> Area",
@@ -115,7 +115,10 @@
 					"3": "ClimateMode[0].OffIsSelected",
 					"4": "ClimateMode[0].Mode1Selected",
 					"5": "ClimateMode[0].Mode2Selected",
-					"6": "ClimateMode[0].Mode3Selected"
+					"6": "ClimateMode[0].Mode3Selected",
+					"7": "ClimateMode[0].ShowMode1",
+					"8": "ClimateMode[0].ShowMode2",
+					"9": "ClimateMode[0].ShowMode3"
 				},
 				"55": {
 					"1": "ClimateMode[1].TurboIsSelected",
@@ -123,7 +126,10 @@
 					"3": "ClimateMode[1].OffIsSelected",
 					"4": "ClimateMode[1].Mode1Selected",
 					"5": "ClimateMode[1].Mode2Selected",
-					"6": "ClimateMode[1].Mode3Selected"
+					"6": "ClimateMode[1].Mode3Selected",
+					"7": "ClimateMode[1].ShowMode1",
+					"8": "ClimateMode[1].ShowMode2",
+					"9": "ClimateMode[1].ShowMode3"
 				},
 				"56": {
 					"1": "ClimateMode[2].TurboIsSelected",
@@ -131,7 +137,10 @@
 					"3": "ClimateMode[2].OffIsSelected",
 					"4": "ClimateMode[2].Mode1Selected",
 					"5": "ClimateMode[2].Mode2Selected",
-					"6": "ClimateMode[2].Mode3Selected"
+					"6": "ClimateMode[2].Mode3Selected",
+					"7": "ClimateMode[2].ShowMode1",
+					"8": "ClimateMode[2].ShowMode2",
+					"9": "ClimateMode[2].ShowMode3"
 				},
 				"57": {
 					"1": "ClimateMode[3].TurboIsSelected",
@@ -139,7 +148,10 @@
 					"3": "ClimateMode[3].OffIsSelected",
 					"4": "ClimateMode[3].Mode1Selected",
 					"5": "ClimateMode[3].Mode2Selected",
-					"6": "ClimateMode[3].Mode3Selected"
+					"6": "ClimateMode[3].Mode3Selected",
+					"7": "ClimateMode[3].ShowMode1",
+					"8": "ClimateMode[3].ShowMode2",
+					"9": "ClimateMode[3].ShowMode3"
 				},
 				"58": {
 					"1": "ClimateMode[4].TurboIsSelected",
@@ -147,7 +159,10 @@
 					"3": "ClimateMode[4].OffIsSelected",
 					"4": "ClimateMode[4].Mode1Selected",
 					"5": "ClimateMode[4].Mode2Selected",
-					"6": "ClimateMode[4].Mode3Selected"
+					"6": "ClimateMode[4].Mode3Selected",
+					"7": "ClimateMode[4].ShowMode1",
+					"8": "ClimateMode[4].ShowMode2",
+					"9": "ClimateMode[4].ShowMode3"
 				},
 				"59": {
 					"1": "ClimateMode[5].TurboIsSelected",
@@ -155,7 +170,10 @@
 					"3": "ClimateMode[5].OffIsSelected",
 					"4": "ClimateMode[5].Mode1Selected",
 					"5": "ClimateMode[5].Mode2Selected",
-					"6": "ClimateMode[5].Mode3Selected"
+					"6": "ClimateMode[5].Mode3Selected",
+					"7": "ClimateMode[5].ShowMode1",
+					"8": "ClimateMode[5].ShowMode2",
+					"9": "ClimateMode[5].ShowMode3"
 				},
 				"60": {
 					"1": "ClimateMode[6].TurboIsSelected",
@@ -163,7 +181,10 @@
 					"3": "ClimateMode[6].OffIsSelected",
 					"4": "ClimateMode[6].Mode1Selected",
 					"5": "ClimateMode[6].Mode2Selected",
-					"6": "ClimateMode[6].Mode3Selected"
+					"6": "ClimateMode[6].Mode3Selected",
+					"7": "ClimateMode[6].ShowMode1",
+					"8": "ClimateMode[6].ShowMode2",
+					"9": "ClimateMode[6].ShowMode3"
 				},
 				"61": {
 					"1": "ClimateMode[7].TurboIsSelected",
@@ -171,7 +192,10 @@
 					"3": "ClimateMode[7].OffIsSelected",
 					"4": "ClimateMode[7].Mode1Selected",
 					"5": "ClimateMode[7].Mode2Selected",
-					"6": "ClimateMode[7].Mode3Selected"
+					"6": "ClimateMode[7].Mode3Selected",
+					"7": "ClimateMode[7].ShowMode1",
+					"8": "ClimateMode[7].ShowMode2",
+					"9": "ClimateMode[7].ShowMode3"
 				},
 				"62": {
 					"1": "ClimateMode[8].TurboIsSelected",
@@ -179,7 +203,10 @@
 					"3": "ClimateMode[8].OffIsSelected",
 					"4": "ClimateMode[8].Mode1Selected",
 					"5": "ClimateMode[8].Mode2Selected",
-					"6": "ClimateMode[8].Mode3Selected"
+					"6": "ClimateMode[8].Mode3Selected",
+					"7": "ClimateMode[8].ShowMode1",
+					"8": "ClimateMode[8].ShowMode2",
+					"9": "ClimateMode[8].ShowMode3"
 				},
 				"63": {
 					"1": "ClimateMode[9].TurboIsSelected",
@@ -187,7 +214,10 @@
 					"3": "ClimateMode[9].OffIsSelected",
 					"4": "ClimateMode[9].Mode1Selected",
 					"5": "ClimateMode[9].Mode2Selected",
-					"6": "ClimateMode[9].Mode3Selected"
+					"6": "ClimateMode[9].Mode3Selected",
+					"7": "ClimateMode[9].ShowMode1",
+					"8": "ClimateMode[9].ShowMode2",
+					"9": "ClimateMode[9].ShowMode3"
 				},
 				"65": {
 					"1": "Sources.Source[0].SourceIsSelected"

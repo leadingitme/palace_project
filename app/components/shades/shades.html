@@ -1,76 +1,13 @@
 <section id="" class="shades">
-  <!-- show vertical list when below large -->
-  <!-- ............ -->
-  <!-- <div
-    class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center"
-  >
-    <ch5-list size="3" orientation="vertical" indexId="idx" receivestatesize="">
-      <template>
-        <span class="window-label">Window #{{idx}} </span>
-
-        <div class="slider-container shades-container container">
-          
-          <ch5-slider
-            class="left-slider"
-            nohandle="true"
-            min="0"
-            max="50"
-            receivestatevalue="Rooms.Blinds.LeftShadeValue"
-          >
-          </ch5-slider>
-          <ch5-slider
-            class="right-slider"
-            nohandle="true"
-            min="0"
-            max="50"
-            receivestatevalue="Rooms.Blinds.RightShadeValue"
-          >
-          </ch5-slider>
-        </div>
-        <div class="open-close-btn-container mt-4">
-          <div class="open-close-btn">
-            <ch5-button
-              id="open_blind"
-              label="Open"
-              shape="circle"
-              stretch="both"
-              sendeventonclick="Rooms.Blinds.OpenShades"
-            >
-            </ch5-button>
-            <ch5-button
-              id="stop_blind"
-              label="Stop"
-              shape="circle"
-              stretch="both"
-              sendeventonclick="Rooms.Blinds.StopShades"
-            >
-            </ch5-button>
-            <ch5-button
-              id="close_blind"
-              label="Close"
-              shape="circle"
-              stretch="both"
-              sendeventonclick="Rooms.Blinds.CloseShades"
-            >
-            </ch5-button>
-          </div>
-        </div>
-      </template>
-    </ch5-list>
-  </div> -->
-
-  <!-- ............ -->
-
-  <!-- show horizontal list when large and above -->
-
   <div
     class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center"
   >
     <ch5-list
-      size="1"
       orientation="horizontal"
       indexId="idx"
       id="shades-horiz-list"
+      size="4"
+      receivestatesize="ShadesListSize"
     >
       <template>
         <span class="window-label">Window #{{idx}} </span>
@@ -93,37 +30,6 @@
             receivestatevalue="Rooms.Blinds.RightShadeValue"
           >
           </ch5-slider>
-
-          <!-- Shades done with JS and css (using transform styles) -->
-          <!-- <ch5-image
-            alt="window-img"
-            class="window-image"
-            url="./assets/img/blinds/window_view1.jpeg"
-          >
-          </ch5-image>
-          <div
-            id="shades-horizontal-right-{{idx}}"
-            class="blinds-image-container-right shade-horizontal-right"
-          >
-            <ch5-image
-              alt="shades-img-right"
-              class="shades-image-right"
-              url="./assets/img/blinds/blinds_transp_white.png"
-            >
-            </ch5-image>
-          </div>
-          <div
-            id="shades-horizontal-left-{{idx}}"
-            class="blinds-image-container-left shade-horizontal-left"
-          >
-            <ch5-image
-              alt="shades-img-left"
-              class="shades-image-left"
-              url="./assets/img/blinds/blinds_transp_white.png"
-            >
-            </ch5-image>
-          </div>
- -->
         </div>
         <div class="open-close-btn-container mt-4">
           <div class="open-close-btn" id="horizontal-buttons">

@@ -15,68 +15,27 @@
         <ch5-button id="all-btn" label="All" size="regular" shape="rectangle" sendeventonclick="Rooms.Blinds.ShowAll" receiveStateSelected="Rooms.Blinds.AllAreShown">
         </ch5-button>
     </div>
+  </div>
+  <ch5-import-htmlsnippet
+    url="./components/blinds-buttons/blinds-buttons.html"
+    class="blinds-buttons"
+    receivestateshow="Curtains.ShowButtons"
+  >
+  </ch5-import-htmlsnippet>
+  <hr />
 
-    <hr />
-    <ch5-triggerview id="shades-blackout-triggerview" activeview="0" gestureable="false" class="">
-        <ch5-triggerview-child receivestateshow="Rooms.Blinds.ShadesAreShown">
-            <ch5-import-htmlsnippet url="./components/shades/shades.html" class="shades-templ">
-            </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <ch5-triggerview-child receivestateshow="Rooms.Blinds.BlackoutAreShown">
-            <ch5-import-htmlsnippet url="./components/blackout/blackout.html" class="blackout-templ">
-            </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-        <ch5-triggerview-child receivestateshow="Rooms.Blinds.AllAreShown">
-            <ch5-import-htmlsnippet url="./components/all-shades-blackout/all-shades-blackout.html" class="all-shades-blackout-templ">
-            </ch5-import-htmlsnippet>
-        </ch5-triggerview-child>
-    </ch5-triggerview>
+  <ch5-import-htmlsnippet
+    url="./components/blinds-triggerview/blinds-triggerview.html"
+    class="blinds-triggerview"
+    receivestateshow="Curtains.ShowTriggerview"
+  >
+  </ch5-import-htmlsnippet>
 
-    <!-- Next block is for shades and blackout when one window in the room -->
-    <!-- <div class="windows-container" id="windows-container">
-        <div class="window-shades-container">
-            <span class="window-label">Shades </span>
-
-            <div class="slider-container shades-container container">
-                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].LeftShadeValue">
-                </ch5-slider>
-                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].RightShadeValue">
-                </ch5-slider>
-            </div>
-            <div class="open-close-btn-container mt-4">
-                <div class="open-close-btn" id="horizontal-buttons">
-                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].OpenShades" receivestateselected="Curtains.Blind[0].OpenShadesFb">
-                    </ch5-button>
-                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].StopShades" receivestateselected="">
-                    </ch5-button>
-                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].CloseShades" receivestateselected="Curtains.Blind[0].CloseShadesFb">
-                    </ch5-button>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="window-blackout-container">
-            <span class="window-label">Blackout </span>
-
-
-            <div class="slider-container blackout-container container">
-                <ch5-slider class="left-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].LeftBlackoutValue">
-                </ch5-slider>
-                <ch5-slider class="right-slider" nohandle="true" min="0" max="50" receivestatevalue="Curtains.Blind[0].RightBlackoutValue">
-                </ch5-slider>
-            </div>
-            <div class="open-close-btn-container mt-4">
-                <div class="open-close-btn" id="horizontal-buttons">
-                    <ch5-button class="open-horiz-shades-button" id="open-shades-horizontal-{{idx}}" label="Open" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].OpenBlackout" receivestateselected="Curtains.Blind[0].OpenBlackoutFb">
-                    </ch5-button>
-                    <ch5-button class="stop-horiz-shades-button" id="stop-shades-horizontal-{{idx}}" label="Stop" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].StopBlackout" receivestateselected="">
-                    </ch5-button>
-                    <ch5-button class="close-horiz-shades-button" id="close-shades-horizontal-{{idx}}" label="Close" onclick="" shape="circle" stretch="both" sendeventonclick="Curtains.Blind[0].CloseBlackout" receivestateselected="Curtains.Blind[0].CloseBlackoutFb">
-                    </ch5-button>
-                </div>
-            </div>
-        </div>
-    </div> -->
+  <!-- Next block is for shades and blackout when one window in the room -->
+  <ch5-import-htmlsnippet
+    url="./components/blinds-one-window/blinds-one-window.html"
+    class="blinds-one-window"
+    receivestateshow="Curtains.ShowOneWindow"
+  >
+  </ch5-import-htmlsnippet>
 </section>

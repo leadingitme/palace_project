@@ -295,10 +295,35 @@
   ],
   "onStart": [
     {
-      "state": "Areas.SuiteName",
-      "type": "s",
-      "value": "Greatest Room"
-  },
+      "state": "Curtains.ShowButtons",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Curtains.ShowTriggerview",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Curtains.ShowOneWindow",
+      "type": "boolean",
+      "logic": "set",
+      "value": false
+    },
+    {
+      "state": "ShadesListSize",
+      "value": 4,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "BlackoutListSize",
+      "value": 3,
+      "type": "n",
+      "logic": "set"
+    },
     {
       "state": "Rooms.Blinds.ShadesAreShown",
       "value": true,

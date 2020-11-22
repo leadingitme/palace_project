@@ -1,6 +1,6 @@
 {
 	"name": "Palace_Suites",
-	"timestamp": "2020-11-11 12:08:26.801",
+	"timestamp": "2020-11-22 18:18:51.347",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Using Wing -> Suite -> Area",
@@ -42,6 +42,11 @@
 				},
 				"13": {
 					"2": "Areas.Area[11].IsSelected"
+				},
+				"14": {
+					"1": "Curtains.ShowMultipleWindows",
+					"2": "Curtains.ShowButtonsWhenMultiple",
+					"3": "Curtains.ShowOneWindow"
 				},
 				"15": {
 					"1": "Curtains.Blind[0].OpenShadesFb",
@@ -794,6 +799,9 @@
 				},
 				"133": {
 					"1": "Players.Radio.Station[59].ChannelFrequency_fb"
+				},
+				"135": {
+					"1": "ClimateZones.NumberOfAreas"
 				}
 			},
 			"string": {

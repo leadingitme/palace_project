@@ -298,19 +298,19 @@
       "state": "Curtains.ShowButtons",
       "type": "boolean",
       "logic": "set",
-      "value": true
+      "value": false
     },
     {
       "state": "Curtains.ShowTriggerview",
       "type": "boolean",
       "logic": "set",
-      "value": true
+      "value": false
     },
     {
       "state": "Curtains.ShowOneWindow",
       "type": "boolean",
       "logic": "set",
-      "value": false
+      "value": true
     },
     {
       "state": "ShadesListSize",

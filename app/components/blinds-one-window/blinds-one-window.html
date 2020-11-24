@@ -8,16 +8,16 @@
           class="left-slider"
           nohandle="true"
           min="0"
-          max="50"
-          receivestatevalue="Rooms.Blinds.LeftShadeValue"
+          max="65553"
+          receivestatevalue="Curtains.Blind[0].LeftShadeValue"
         >
         </ch5-slider>
         <ch5-slider
           class="right-slider"
           nohandle="true"
           min="0"
-          max="50"
-          receivestatevalue="Rooms.Blinds.RightShadeValue"
+          max="65553"
+          receivestatevalue="Curtains.Blind[0].RightShadeValue"
         >
         </ch5-slider>
       </div>
@@ -30,18 +30,18 @@
             onclick=""
             shape="circle"
             stretch="both"
-            sendeventonclick="Rooms.Blinds.OpenShades"
-            receivestateselected="Blinds.OpenShadesIsSelected"
+            sendeventonclick="Curtains.Blind[0].OpenShades"
+            receivestateselected="Curtains.Blind[0].OpenShadesFb"
           >
           </ch5-button>
           <ch5-button
-            class="stop-horiz-shades-button"
+            class="stop-horiz-button"
             id="stop-shades-horizontal-{{idx}}"
             label="Stop"
             shape="circle"
             stretch="both"
-            sendeventonclick="Rooms.Blinds.StopShades"
-            receivestateselected="Blinds.StopShadesIsSelected"
+            sendeventonclick="Curtains.Blind[0].StopShades"
+            receivestateselected=""
           >
           </ch5-button>
           <ch5-button
@@ -51,8 +51,8 @@
             onclick=""
             shape="circle"
             stretch="both"
-            sendeventonclick="Rooms.Blinds.CloseShades"
-            receivestateselected="Blinds.CloseShadesIsSelected"
+            sendeventonclick="Curtains.Blind[0].CloseShades"
+            receivestateselected="Curtains.Blind[0].CloseShadesFb"
           >
           </ch5-button>
         </div>
@@ -66,16 +66,16 @@
           class="left-slider"
           nohandle="true"
           min="0"
-          max="50"
-          receivestatevalue="Rooms.Blinds.LeftBlackoutValue"
+          max="65553"
+          receivestatevalue="Curtains.Blind[0].LeftBlackoutValue"
         >
         </ch5-slider>
         <ch5-slider
           class="right-slider"
           nohandle="true"
           min="0"
-          max="50"
-          receivestatevalue="Rooms.Blinds.RightBlackoutValue"
+          max="65553"
+          receivestatevalue="Curtains.Blind[0].RightBlackoutValue"
         >
         </ch5-slider>
       </div>
@@ -88,18 +88,18 @@
             onclick=""
             shape="circle"
             stretch="both"
-            sendeventonclick="Rooms.Blinds.OpenBlackout"
-            receivestateselected="Blinds.OpenBlackoutIsSelected"
+            sendeventonclick="Curtains.Blind[0].OpenBlackout"
+            receivestateselected="Curtains.Blind[0].OpenBlackoutFb"
           >
           </ch5-button>
           <ch5-button
-            class="stop-horiz-shades-button"
+            class="stop-horiz-button"
             id="stop-shades-horizontal-{{idx}}"
             label="Stop"
             shape="circle"
             stretch="both"
-            sendeventonclick="Rooms.Blinds.StopBlackout"
-            receivestateselected="Blinds.StopBlackoutIsSelected"
+            sendeventonclick="Curtains.Blind[0].StopBlackout"
+            receivestateselected=""
           >
           </ch5-button>
           <ch5-button
@@ -109,8 +109,8 @@
             onclick=""
             shape="circle"
             stretch="both"
-            sendeventonclick="Rooms.Blinds.CloseBlackout"
-            receivestateselected="Blinds.CloseBlackoutIsSelected"
+            sendeventonclick="Curtains.Blind[0].CloseBlackout"
+            receivestateselected="Curtains.Blind[0].CloseBlackoutFb"
           >
           </ch5-button>
         </div>

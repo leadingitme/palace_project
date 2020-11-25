@@ -6,8 +6,8 @@
       label="Shades"
       size="regular"
       shape="rectangle"
-      sendeventonclick="Rooms.Blinds.ShowShades"
-      receiveStateSelected="Rooms.Blinds.ShadesAreShown"
+      sendeventonclick="Curtains.SelectShades"
+      receiveStateSelected="Curtains.ShadesSelected"
     >
     </ch5-button>
     <ch5-button
@@ -15,8 +15,8 @@
       label="Blackout"
       size="regular"
       shape="rectangle"
-      sendeventonclick="Rooms.Blinds.ShowBlackout"
-      receiveStateSelected="Rooms.Blinds.BlackoutAreShown"
+      sendeventonclick="Curtains.SelectBlackout"
+      receiveStateSelected="Curtains.BlackoutSelected"
     >
     </ch5-button>
     <ch5-button
@@ -24,8 +24,8 @@
       label="All"
       size="regular"
       shape="rectangle"
-      sendeventonclick="Rooms.Blinds.ShowAll"
-      receiveStateSelected="Rooms.Blinds.AllAreShown"
+      sendeventonclick="Curtains.SelectAll"
+      receiveStateSelected="Curtains.AllSelected"
     >
     </ch5-button>
   </div>

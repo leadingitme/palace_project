@@ -1,25 +1,34 @@
 <section id="blinds-triggerview-page" class="">
   <ch5-triggerview
-    customclass="shades-blackout-triggerview"
-    id=""
+    id="shades-blackout-triggerview"
+    activeview="0"
     gestureable="false"
-    class=""
+    disableanimation="true"
   >
-    <ch5-triggerview-child receivestateshow="Curtains.ShadesSelected">
+    <ch5-triggerview-child
+      receivestateshow="Curtains.ShadesSelectedEMU"
+      noshowtype="display"
+    >
       <ch5-import-htmlsnippet
         url="./components/shades/shades.html"
         class="shades-templ"
       >
       </ch5-import-htmlsnippet>
     </ch5-triggerview-child>
-    <ch5-triggerview-child receivestateshow="Curtains.BlackoutSelected">
+    <ch5-triggerview-child
+      receivestateshow="Curtains.BlackoutSelectedEMU"
+      noshowtype="display"
+    >
       <ch5-import-htmlsnippet
         url="./components/blackout/blackout.html"
         class="blackout-templ"
       >
       </ch5-import-htmlsnippet>
     </ch5-triggerview-child>
-    <ch5-triggerview-child receivestateshow="Curtains.AllSelected">
+    <ch5-triggerview-child
+      receivestateshow="Curtains.AllSelectedEMU"
+      noshowtype="display"
+    >
       <ch5-import-htmlsnippet
         url="./components/all-shades-blackout/all-shades-blackout.html"
         class="all-shades-blackout-templ"

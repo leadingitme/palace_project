@@ -2,23 +2,23 @@
   "cues": [
     {
       "type": "b",
-      "event": "Rooms.Blinds.ShowShades",
+      "event": "Curtains.SelectShadesEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Rooms.Blinds.ShadesAreShown",
+          "state": "Curtains.ShadesSelectedEMU",
           "value": true,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.BlackoutAreShown",
+          "state": "Curtains.BlackoutSelectedEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.AllAreShown",
+          "state": "Curtains.AllSelectedEMU",
           "value": false,
           "type": "b",
           "logic": "set"
@@ -27,23 +27,23 @@
     },
     {
       "type": "b",
-      "event": "Rooms.Blinds.ShowBlackout",
+      "event": "Curtains.SelectBlackoutEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Rooms.Blinds.ShadesAreShown",
+          "state": "Curtains.ShadesSelectedEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.BlackoutAreShown",
+          "state": "Curtains.BlackoutSelectedEMU",
           "value": true,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.AllAreShown",
+          "state": "Curtains.AllSelectedEMU",
           "value": false,
           "type": "b",
           "logic": "set"
@@ -52,23 +52,23 @@
     },
     {
       "type": "b",
-      "event": "Rooms.Blinds.ShowAll",
+      "event": "Curtains.SelectAllEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Rooms.Blinds.ShadesAreShown",
+          "state": "Curtains.ShadesSelectedEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.BlackoutAreShown",
+          "state": "Curtains.BlackoutSelectedEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Rooms.Blinds.AllAreShown",
+          "state": "Curtains.AllSelectedEMU",
           "value": true,
           "type": "b",
           "logic": "set"
@@ -295,31 +295,37 @@
   ],
   "onStart": [
     {
-      "state": "Curtains.ShowButtons",
-      "type": "boolean",
-      "logic": "set",
-      "value": false
-    },
-    {
-      "state": "Curtains.ShowTriggerview",
-      "type": "boolean",
-      "logic": "set",
-      "value": false
-    },
-    {
-      "state": "Curtains.ShowOneWindow",
+      "state": "Curtains.ShowButtonsWhenMultiple",
       "type": "boolean",
       "logic": "set",
       "value": true
     },
     {
-      "state": "ShadesListSize",
+      "state": "Curtains.ShowMultipleWindows",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Curtains.ShowOneWindow",
+      "type": "boolean",
+      "logic": "set",
+      "value": false
+    },
+    {
+      "state": "Curtains.ShadesSelectedEMU",
+      "value": true,
+      "type": "b",
+      "logic": "set"
+    },
+    {
+      "state": "Curtains.ShadesListSize",
       "value": 4,
       "type": "n",
       "logic": "set"
     },
     {
-      "state": "BlackoutListSize",
+      "state": "Curtains.BlackOutListSize",
       "value": 3,
       "type": "n",
       "logic": "set"

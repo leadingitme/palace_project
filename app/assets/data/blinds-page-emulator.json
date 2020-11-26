@@ -319,13 +319,13 @@
       "logic": "set"
     },
     {
-      "state": "Curtains.ShadesListSize",
+      "state": "Curtains.ShadesListSizeEMU",
       "value": 4,
       "type": "n",
       "logic": "set"
     },
     {
-      "state": "Curtains.BlackOutListSize",
+      "state": "Curtains.BlackOutListSizeEMU",
       "value": 3,
       "type": "n",
       "logic": "set"

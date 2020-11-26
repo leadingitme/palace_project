@@ -28,22 +28,22 @@ var blindsPageModule = (function () {
   // var blackoutListLengthHoriz = document.getElementById("cr-id-25").childNodes
   //   .length;
 
-  function hideTriggerview() {
-    let shadesBlackoutButtons = document.getElementById("blackout-shades-btn");
-    let shadesBlackoutTriggerview = document.querySelector(
-      ".shades-blackout-triggerview"
-    );
-    let windowsContainer = document.getElementById("windows-container");
-    if (shadesListLengthHoriz < 2 && blackoutListLengthHoriz < 2) {
-      windowsContainer.classList.remove("d-none");
-      shadesBlackoutButtons.classList.add("d-none");
-      shadesBlackoutTriggerview.classList.add("d-none");
-    } else {
-      shadesBlackoutButtons.classList.remove("d-none");
-      shadesBlackoutTriggerview.classList.remove("d-none");
-      windowsContainer.classList.add("d-none");
-    }
-  }
+  // function hideTriggerview() {
+  //   let shadesBlackoutButtons = document.getElementById("blackout-shades-btn");
+  //   let shadesBlackoutTriggerview = document.querySelector(
+  //     ".shades-blackout-triggerview"
+  //   );
+  //   let windowsContainer = document.getElementById("windows-container");
+  //   if (shadesListLengthHoriz < 2 && blackoutListLengthHoriz < 2) {
+  //     windowsContainer.classList.remove("d-none");
+  //     shadesBlackoutButtons.classList.add("d-none");
+  //     shadesBlackoutTriggerview.classList.add("d-none");
+  //   } else {
+  //     shadesBlackoutButtons.classList.remove("d-none");
+  //     shadesBlackoutTriggerview.classList.remove("d-none");
+  //     windowsContainer.classList.add("d-none");
+  //   }
+  // }
   // setTimeout(function () {
   //   hideTriggerview();
   // }, 15000);

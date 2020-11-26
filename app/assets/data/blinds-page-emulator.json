@@ -30,6 +30,7 @@
       "event": "Curtains.SelectBlackoutEMU",
       "trigger": true,
       "actions": [
+       
         {
           "state": "Curtains.ShadesSelectedEMU",
           "value": false,

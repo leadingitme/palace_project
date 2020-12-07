@@ -320,6 +320,12 @@
       "logic": "set"
     },
     {
+      "state": "Curtains.ShadesSelected",
+      "value": true,
+      "type": "b",
+      "logic": "set"
+    },
+    {
       "state": "Curtains.ShadesListSizeEMU",
       "value": 4,
       "type": "n",

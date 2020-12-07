@@ -891,6 +891,11 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       left: 42%;
     }
   }
+  .shades-blackout-triggerview {
+    .ch5-viewchild {
+      width: 640px !important;
+    }
+  }
   .windows-container {
     display: flex;
     justify-content: center;

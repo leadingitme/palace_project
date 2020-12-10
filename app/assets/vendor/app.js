@@ -381,6 +381,23 @@ var appModule = (function () {
     navbarThumb.classList.remove("open");
   });
 
+   /**
+   * This method will reload the page clearing the cache
+   */
+
+  
+
+  function pageReload () {
+    var reload;
+    reload = setTimeout(function (){
+      location.reload(true);
+     },500)
+     clearTimeout(reload);
+  }
+  
+
+  
+
   /**
    * Airplay snippet (at music page), historical average snippet (at weather page)
    * to add d-none onload
@@ -395,6 +412,7 @@ var appModule = (function () {
    * Load the emulator, theme, default language and listeners
    */
   function onLoadInit() {
+    pageReload ()
     loadEmulator();
     // newClock();
     changeTheme("LIGHT");

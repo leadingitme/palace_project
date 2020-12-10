@@ -296,22 +296,22 @@
   ],
   "onStart": [
     {
-      "state": "Curtains.ShowButtonsWhenMultiple",
-      "type": "boolean",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Curtains.ShowMultipleWindows",
-      "type": "boolean",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Curtains.ShowOneWindow",
+      "state": "Curtains.ShowButtonsWhenMultipleEMU",
       "type": "boolean",
       "logic": "set",
       "value": false
+    },
+    {
+      "state": "Curtains.ShowMultipleWindowsEMU",
+      "type": "boolean",
+      "logic": "set",
+      "value": false
+    },
+    {
+      "state": "Curtains.ShowOneWindowEMU",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
     },
     {
       "state": "Curtains.ShadesSelectedEMU",
@@ -320,7 +320,7 @@
       "logic": "set"
     },
     {
-      "state": "Curtains.ShadesSelected",
+      "state": "Curtains.BlackoutSelectedEMU",
       "value": true,
       "type": "b",
       "logic": "set"
@@ -335,24 +335,6 @@
       "state": "Curtains.BlackOutListSizeEMU",
       "value": 3,
       "type": "n",
-      "logic": "set"
-    },
-    {
-      "state": "Rooms.Blinds.ShadesAreShown",
-      "value": true,
-      "type": "b",
-      "logic": "set"
-    },
-    {
-      "state": "Blinds.OpenShadesIsSelected",
-      "value": true,
-      "type": "b",
-      "logic": "set"
-    },
-    {
-      "state": "Blinds.OpenBlackoutIsSelected",
-      "value": true,
-      "type": "b",
       "logic": "set"
     },
     {

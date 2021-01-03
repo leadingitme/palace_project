@@ -387,13 +387,13 @@ var appModule = (function () {
 
   
 
-  function pageReload () {
-    var reload;
-    reload = setTimeout(function (){
-      location.reload(true);
-     },500)
-     clearTimeout(reload);
-  }
+  // function pageReload () {
+  //   var reload;
+  //   reload = setTimeout(function (){
+  //     location.reload(true);
+  //    },10000)
+  //    clearTimeout(reload);
+  // }
   
 
   
@@ -412,9 +412,7 @@ var appModule = (function () {
    * Load the emulator, theme, default language and listeners
    */
   function onLoadInit() {
-    pageReload ()
     loadEmulator();
-    // newClock();
     changeTheme("LIGHT");
     translateModule.getLanguage(translateModule.defaultLng);
     getAppVersionInfo();

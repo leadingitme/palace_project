@@ -9,11 +9,7 @@
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
-    <!-- Animate css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+
     <!-- inject:css -->
     <link rel="stylesheet" href="./assets/css/external.css" />
     <link rel="stylesheet" href="./assets/css/light-theme.css" />
@@ -37,12 +33,27 @@
       url="./components/inactivity-page/inactivity-page.html"
     ></ch5-import-htmlsnippet>
 
-    <!-- inject:js -->
+    <!-- Crestron component library -->
+    <script
+      src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/custom-elements-es5-adapter.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
 
     <script src="./assets/vendor/cr-com-lib.js"></script>
+    <!-- ... -->
+
+    <!-- inject:js -->
     <script src="./assets/vendor/component.js"></script>
-    <!-- endinject -->
+    <!-- .... -->
+
     <!-- Bootstrap and others -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

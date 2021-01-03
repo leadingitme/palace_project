@@ -1449,12 +1449,10 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     .ch5-list-horizontal {
       .list-item {
         width: 50vw;
-        border-right: 1px solid rgb(78, 78, 78);
         padding: 0 2rem 0 1rem;
-
-        // @include media-breakpoint-up(xl) {
-        //   padding-top: 2rem;
-        // }
+      }
+      .list-item:not(:first-child) {
+        border-left: 1px solid rgb(78, 78, 78);
       }
     }
   }

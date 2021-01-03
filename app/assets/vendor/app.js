@@ -381,6 +381,23 @@ var appModule = (function () {
     navbarThumb.classList.remove("open");
   });
 
+   /**
+   * This method will reload the page clearing the cache
+   */
+
+  
+
+  // function pageReload () {
+  //   var reload;
+  //   reload = setTimeout(function (){
+  //     location.reload(true);
+  //    },10000)
+  //    clearTimeout(reload);
+  // }
+  
+
+  
+
   /**
    * Airplay snippet (at music page), historical average snippet (at weather page)
    * to add d-none onload
@@ -396,7 +413,6 @@ var appModule = (function () {
    */
   function onLoadInit() {
     loadEmulator();
-    // newClock();
     changeTheme("LIGHT");
     translateModule.getLanguage(translateModule.defaultLng);
     getAppVersionInfo();

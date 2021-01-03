@@ -9,52 +9,49 @@
           Room Name
         </h2> -->
         <div class="dropdown area-selection-dropdown">
-          <ch5-button 
-          id="lightingAreaDropdownBtn"
-          class="dropdown-toggle area-dropdown-btn"
-          label="AREAS"
-          onclick="lightingModule.openAreaDropdown()"
-          receivestatelabel="Areas.SelectedAreaName"
+          <ch5-button
+            id="lightingAreaDropdownBtn"
+            class="dropdown-toggle area-dropdown-btn"
+            label="AREAS"
+            onclick="lightingModule.openAreaDropdown()"
+            receivestatelabel="Areas.SelectedAreaName"
           >
-        </ch5-button>
+          </ch5-button>
           <div
-          id="lighting-area-dropdown"
-          onclick="musicPageModule.dropDownStopPropagation()"
-          class="dropdown-menu area-list-container"
-        >
-          <ch5-list
-            orientation="vertical"
-            class="ch5-custom-list"
-            indexid="idx"
-            receivestatesize="Areas.NumberOfAreas"
-            minHeight="100px"
-            maxHeight="250px"
-            minwidth="200px"
-            scrollbar="true"
+            id="lighting-area-dropdown"
+            onclick="musicPageModule.dropDownStopPropagation()"
+            class="dropdown-menu area-list-container"
           >
-            <template>
-              <div class="vertical-list-item">
-                <ch5-button
-                  customClass=""
-                  type="text"
-                  stretch="width"
-                  label="Area"
-                  onclick="lightingModule.closeAreaDropdown()"
-                  shape="rectangle"
-                  sendeventonclick="Areas.Area[{{idx}}].Select"
-                  receivestatelabel="Areas.Area[{{idx}}].Name"
-                  receivestateselected="Areas.Area[{{idx}}].IsSelected"
-                >
-                </ch5-button>
-              </div>
-            </template>
-          </ch5-list>
-        </div>
-  
+            <ch5-list
+              orientation="vertical"
+              class="ch5-custom-list"
+              indexid="idx"
+              receivestatesize="Areas.NumberOfAreas"
+              minHeight="100px"
+              maxHeight="250px"
+              minwidth="200px"
+              scrollbar="true"
+            >
+              <template>
+                <div class="vertical-list-item">
+                  <ch5-button
+                    customClass=""
+                    type="text"
+                    stretch="width"
+                    label="Area"
+                    onclick="lightingModule.closeAreaDropdown()"
+                    shape="rectangle"
+                    sendeventonclick="Areas.Area[{{idx}}].Select"
+                    receivestatelabel="Areas.Area[{{idx}}].Name"
+                    receivestateselected="Areas.Area[{{idx}}].IsSelected"
+                  >
+                  </ch5-button>
+                </div>
+              </template>
+            </ch5-list>
+          </div>
         </div>
       </div>
-      
-   
     </div>
     <!-- <ch5-list class="ch5-custom-list dim">
       <template>
@@ -159,12 +156,12 @@
           <ch5-select-option
             sendEventOnClick="Lights.Scene[{{idx}}].TriggerStartScene"
           >
-            <span
-              data-ch5-textContent="Lights.Scene[{{idx}}].NameOfScene"
-            >Scene Label</span>
+            <span data-ch5-textContent="Lights.Scene[{{idx}}].NameOfScene"
+              >Scene Label</span
+            >
           </ch5-select-option>
         </template>
-            </ch5-select>
-        </aside>
-    </div>
+      </ch5-select>
+    </aside>
+  </div>
 </section>

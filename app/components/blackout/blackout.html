@@ -1,72 +1,19 @@
-<section class="blackout">
-  <!-- show vertical list when below large -->
-  <!-- ............ -->
-
-  <!-- <div
-    class="blinds-list-container d-flex d-sm-none justify-content-center align-items-center"
+<section id="blackout" class="blackout">
+  <div
+    class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center"
   >
-    <ch5-list size="3" orientation="vertical" indexId="idx">
+    <ch5-list
+      id="blackout-horiz-list"
+      receivestatesize="Curtains.BlackOutListSize"
+      orientation="horizontal"
+      indexId="idx"
+    >
       <template>
-        <span class="window-label">Window #{{idx}} </span>
-
-        <div class="slider-container blackout-container container">
-          <ch5-slider
-            class="left-slider"
-            nohandle="true"
-            min="0"
-            max="50"
-            receivestatevalue="Room.Blinds.LeftBlackoutValue"
-          >
-          </ch5-slider>
-          <ch5-slider
-            class="right-slider"
-            nohandle="true"
-            min="0"
-            max="50"
-            receivestatevalue="Room.Blinds.RightBlackoutValue"
-          >
-          </ch5-slider>
-        </div>
-        <div class="open-close-btn-container mt-3">
-          <div class="open-close-btn">
-            <ch5-button
-              id="open_blind"
-              label="Open"
-              shape="circle"
-              stretch="both"
-              sendeventonclick="Room.Blinds.OpenBlackout"
-            >
-            </ch5-button>
-            <ch5-button
-              id="stop_blind"
-              label="Stop"
-              shape="circle"
-              stretch="both"
-              sendeventonclick="Room.Blinds.StopBlackout"
-            >
-            </ch5-button>
-            <ch5-button
-              id="close_blind"
-              label="Close"
-              shape="circle"
-              stretch="both"
-              sendeventonclick="Room.Blinds.CloseBlackout"
-            >
-            </ch5-button>
-          </div>
-        </div>
-      </template>
-    </ch5-list>
-  </div> -->
-
-    <!-- .............. -->
-
-    <!-- show horizontal list when large and above -->
-
-    <div class="blinds-list-container d-sm-flex d-none justify-content-center align-items-center">
-        <ch5-list id="blackout-horiz-list"  receivestatesize="Curtains.BlackOutListSize" orientation="horizontal" indexId="idx">
-            <template>
-        <span class="window-label" data-ch5-textcontent="Curtains.Blind[{{idx}}].Name">Window Name</span>
+        <span
+          class="window-label"
+          data-ch5-textcontent="Curtains.Blind[{{idx}}].Name"
+          >Window Name</span
+        >
 
         <div class="slider-container blackout-container container">
           <!-- Blackout done with ch5-slider -->
@@ -86,30 +33,6 @@
             receivestatevalue="Curtains.Blind[{{idx}}].RightBlackoutValue"
           >
           </ch5-slider>
-
-          <!-- Blackout done with css and JS -->
-          <!-- <ch5-image
-            alt="window-img"
-            class="window-image"
-            url="./assets/img/blinds/window_view1.jpeg"
-          >
-          </ch5-image>
-          <div class="blinds-image-container-right blackout-horizontal-right">
-            <ch5-image
-              alt="blackout-img-right"
-              class="blackout-image-right"
-              url="./assets/img/blinds/curtain_grey_right.png"
-            >
-            </ch5-image>
-          </div>
-          <div class="blinds-image-container-left blackout-horizontal-left">
-            <ch5-image
-              alt="blackout-img-left"
-              class="blackout-image-left"
-              url="./assets/img/blinds/curtain_grey_left.png"
-            >
-            </ch5-image>
-          </div> -->
         </div>
         <div class="open-close-btn-container mt-3">
           <div class="open-close-btn">
@@ -148,6 +71,6 @@
           </div>
         </div>
       </template>
-        </ch5-list>
-    </div>
+    </ch5-list>
+  </div>
 </section>

@@ -26,7 +26,7 @@
               orientation="vertical"
               class="ch5-custom-list"
               indexid="idx"
-              receivestatesize="Areas.NumberOfAreas"
+              receivestatesize="Areas.NumberOfAreasEMU"
               minHeight="100px"
               maxHeight="250px"
               minwidth="200px"
@@ -41,9 +41,9 @@
                     label="Area"
                     onclick="lightingModule.closeAreaDropdown()"
                     shape="rectangle"
-                    sendeventonclick="Areas.Area[{{idx}}].Select"
-                    receivestatelabel="Areas.Area[{{idx}}].Name"
-                    receivestateselected="Areas.Area[{{idx}}].IsSelected"
+                    sendeventonclick="Area[{{idx}}].SelectEMU"
+                    receivestatelabel="Areas.Area[{{idx}}].NameEMU"
+                    receivestateselected="Areas.Area[{{idx}}].IsSelectedEMU"
                   >
                   </ch5-button>
                 </div>
@@ -80,14 +80,14 @@
       <button
         class="navbar-toggler d-md-none sidebar-toggler-btn"
         type="button"
-        onclick="lightingModule.lightingSidebarToggle()"
+        onclick=""
       >
         <span class=""><i class="fas fa-caret-left mr-1"></i>SCENES</span>
       </button>
     </div>
   </nav>
   <div class="row no-gutters">
-    <div class="col-md-9">
+    <div class="col-sm-10">
       <ch5-list
         class="ch5-custom-list"
         maxHeight="240px"
@@ -96,13 +96,13 @@
         orientation="vertical"
         indexId="idx"
         scrollbar="true"
-        receiveStateSize="Lights.NumberOfLights"
+        receiveStateSize="Lights.NumberOfLightsEMU"
       >
         <template>
           <div class="vertical-list-item">
             <span
               class="light-name-label"
-              data-ch5-textcontent="Lights.DimmableLight[{{idx}}].NameOfLight"
+              data-ch5-textcontent="Room.DimmableLights[{{idx}}].NameOfLight"
               >Light Label</span
             >
             <div class="d-flex align-items-center">
@@ -134,7 +134,7 @@
       </ch5-list>
     </div>
     <aside
-      class="col-md-3 lighting-sidebar"
+      class="col-sm-2 lighting-sidebar"
       id="lightingSidebar"
       onclick="dropDownStopPropagation()"
     >
@@ -147,16 +147,17 @@
         maxheight="255px"
         minwidth="80px"
         maxwidth="90px"
-        receiveStateSize="Lights.NumberOfScenes"
+        receiveStateSize="Lights.NumberOfScenesEMU"
         receiveStateValue="NotDefinedOnPurpose"
         signalValueSyncTimeout="3000"
         panelScrollHeight="300"
       >
         <template>
           <ch5-select-option
-            sendEventOnClick="Lights.Scene[{{idx}}].TriggerStartScene"
+            sendEventOnClick="Room.Scenes[{{idx}}].TriggerSceneStart"
+            receivestateselected=""
           >
-            <span data-ch5-textContent="Lights.Scene[{{idx}}].NameOfScene"
+            <span data-ch5-textContent="Room.Scenes[{{idx}}].NameOfScene"
               >Scene Label</span
             >
           </ch5-select-option>

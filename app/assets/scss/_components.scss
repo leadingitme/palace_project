@@ -1173,7 +1173,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     .vertical-list-item {
       span {
         font-weight: bold !important;
-        font-size: 13px !important;
+        font-size: 16px !important;
       }
     }
     .navbar {
@@ -1268,21 +1268,31 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       }
 
       .lighting-sidebar {
-        width: auto;
-        margin-right: -200px;
-        transition: transform 300ms ease-out;
-        transform: none;
-        position: relative;
-        z-index: 10;
-
-        &.open {
-          transition: transform 300ms ease-out;
-          transform: translateX(-100%);
-        }
         .ch5-select__main {
           display: none;
         }
       }
+      // Scenes Sidebar hide/show
+      // ...
+
+      // .lighting-sidebar {
+      //   width: auto;
+      //   margin-right: -200px;
+      //   transition: transform 300ms ease-out;
+      //   transform: none;
+      //   position: relative;
+      //   z-index: 10;
+
+      //   &.open {
+      //     transition: transform 300ms ease-out;
+      //     transform: translateX(-100%);
+      //   }
+      //   .ch5-select__main {
+      //     display: none;
+      //   }
+      // }
+
+      // .....
     }
     .ch5-select {
       .ch5-select__panel__item {

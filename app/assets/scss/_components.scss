@@ -376,18 +376,19 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   .time {
     span {
       font-weight: bold;
+      font-size: 1.4rem;
     }
   }
   .outside-temp {
     h4 {
-      font-size: 0.8rem;
+      font-size: 1.1rem;
     }
     h3 {
-      font-size: 0.9rem;
-      margin-top: 0.1rem;
+      font-size: 1rem;
+      margin-top: 0.35rem;
     }
     h2 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
     h4,
     h3,

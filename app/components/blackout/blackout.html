@@ -4,7 +4,7 @@
   >
     <ch5-list
       id="blackout-horiz-list"
-      receivestatesize="Curtains.BlackOutListSize"
+      receivestatesize="Curtains.BlackOutListSizeEMU"
       orientation="horizontal"
       indexId="idx"
     >
@@ -22,7 +22,7 @@
             nohandle="true"
             min="0"
             max="65535"
-            receivestatevalue="Curtains.Blind[{{idx}}].LeftBlackoutValue"
+            receivestatevalue="Curtains.Blind[{{idx}}].LeftBlackoutValueEMU"
           >
           </ch5-slider>
           <ch5-slider
@@ -30,7 +30,7 @@
             nohandle="true"
             min="0"
             max="65535"
-            receivestatevalue="Curtains.Blind[{{idx}}].RightBlackoutValue"
+            receivestatevalue="Curtains.Blind[{{idx}}].RightBlackoutValueEMU"
           >
           </ch5-slider>
         </div>
@@ -43,8 +43,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Curtains.Blind[{{idx}}].OpenBlackout"
-              receivestateselected="Curtains.Blind[{{idx}}].OpenBlackoutFb"
+              sendeventonclick="Curtains.Blind[{{idx}}].OpenBlackoutEMU"
+              receivestateselected="Curtains.Blind[{{idx}}].OpenBlackoutFbEMU"
             >
             </ch5-button>
             <ch5-button
@@ -53,7 +53,7 @@
               label="Stop"
               shape="circle"
               stretch="both"
-              sendeventonclick="Curtains.Blind[{{idx}}].StopBlackout"
+              sendeventonclick="Curtains.Blind[{{idx}}].StopBlackoutEMU"
               receivestateselected=""
             >
             </ch5-button>
@@ -64,8 +64,8 @@
               onclick=""
               shape="circle"
               stretch="both"
-              sendeventonclick="Curtains.Blind[{{idx}}].CloseBlackout"
-              receivestateselected="Curtains.Blind[{{idx}}].CloseBlackoutFb"
+              sendeventonclick="Curtains.Blind[{{idx}}].CloseBlackoutEMU"
+              receivestateselected="Curtains.Blind[{{idx}}].CloseBlackoutFbEMU"
             >
             </ch5-button>
           </div>

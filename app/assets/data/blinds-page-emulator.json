@@ -78,17 +78,17 @@
     },
     {
       "type": "b",
-      "event": "Room.Blinds.StopShades",
+      "event": "Curtains.Blind[0].StopShadesEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Blinds.OpenShadesIsSelected",
+          "state": "Curtains.Blind[0].OpenShadesFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Blinds.CloseShadesIsSelected",
+          "state": "Curtains.Blind[0].CloseShadesFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
@@ -100,12 +100,23 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.ShadeSliderValue",
+          "state": "Curtains.Blind[0].RightShadeValueEMU",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
-              "value": 25,
+              "value": 30000,
+              "time": 2000
+            }
+          }
+        },
+        {
+          "state": "Curtains.Blind[0].LeftShadeValueEMU",
+          "type": "object",
+          "logic": "set",
+          "value": {
+            "rcb": {
+              "value": 30000,
               "time": 2000
             }
           }
@@ -114,17 +125,17 @@
     },
     {
       "type": "b",
-      "event": "Room.Blinds.OpenShades",
+      "event": "Curtains.Blind[0].OpenShadesEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Blinds.OpenShadesIsSelected",
+          "state": "Curtains.Blind[0].OpenShadesFbEMU",
           "value": true,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Blinds.CloseShadesIsSelected",
+          "state": "Curtains.Blind[0].CloseShadesFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
@@ -136,7 +147,18 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.ShadeSliderValue",
+          "state": "Curtains.Blind[0].RightShadeValueEMU",
+          "type": "object",
+          "logic": "set",
+          "value": {
+            "rcb": {
+              "value": 0,
+              "time": 8000
+            }
+          }
+        },
+        {
+          "state": "Curtains.Blind[0].LeftShadeValueEMU",
           "type": "object",
           "logic": "set",
           "value": {
@@ -150,17 +172,17 @@
     },
     {
       "type": "b",
-      "event": "Room.Blinds.CloseShades",
+      "event": "Curtains.Blind[0].CloseShadesEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Blinds.OpenShadesIsSelected",
+          "state": "Curtains.Blind[0].OpenShadesFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Blinds.CloseShadesIsSelected",
+          "state": "Curtains.Blind[0].CloseShadesFbEMU",
           "value": true,
           "type": "b",
           "logic": "set"
@@ -171,14 +193,24 @@
           "type": "b",
           "logic": "set"
         },
-
         {
-          "state": "Room.Blinds.ShadeSliderValue",
+          "state": "Curtains.Blind[0].RightShadeValueEMU",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
-              "value": 50,
+              "value": 65553,
+              "time": 8000
+            }
+          }
+        },
+        {
+          "state": "Curtains.Blind[0].LeftShadeValueEMU",
+          "type": "object",
+          "logic": "set",
+          "value": {
+            "rcb": {
+              "value": 65553,
               "time": 8000
             }
           }
@@ -187,17 +219,17 @@
     },
     {
       "type": "b",
-      "event": "Room.Blinds.StopBlackout",
+      "event": "Curtains.Blind[0].StopBlackoutEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Blinds.OpenBlackoutIsSelected",
+          "state": "Curtains.Blind[0].OpenBlackoutFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Blinds.CloseBlackoutIsSelected",
+          "state": "Curtains.Blind[0].CloseBlackoutFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
@@ -209,12 +241,23 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.BlackoutSliderValue",
+          "state": "Curtains.Blind[0].LeftBlackoutValueEMU",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
-              "value": 25,
+              "value": 30000,
+              "time": 2000
+            }
+          }
+        },
+        {
+          "state": "Curtains.Blind[0].RightBlackoutValueEMU",
+          "type": "object",
+          "logic": "set",
+          "value": {
+            "rcb": {
+              "value": 30000,
               "time": 2000
             }
           }
@@ -223,17 +266,17 @@
     },
     {
       "type": "b",
-      "event": "Room.Blinds.OpenBlackout",
+      "event": "Curtains.Blind[0].OpenBlackoutEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Blinds.OpenBlackoutIsSelected",
+          "state": "Curtains.Blind[0].OpenBlackoutFbEMU",
           "value": true,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Blinds.CloseBlackoutIsSelected",
+          "state": "Curtains.Blind[0].CloseBlackoutFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
@@ -245,7 +288,18 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.BlackoutSliderValue",
+          "state": "Curtains.Blind[0].LeftBlackoutValueEMU",
+          "type": "object",
+          "logic": "set",
+          "value": {
+            "rcb": {
+              "value": 0,
+              "time": 8000
+            }
+          }
+        },
+        {
+          "state": "Curtains.Blind[0].RightBlackoutValueEMU",
           "type": "object",
           "logic": "set",
           "value": {
@@ -259,17 +313,17 @@
     },
     {
       "type": "b",
-      "event": "Room.Blinds.CloseBlackout",
+      "event": "Curtains.Blind[0].CloseBlackoutEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Blinds.OpenBlackoutIsSelected",
+          "state": "Curtains.Blind[0].OpenBlackoutFbEMU",
           "value": false,
           "type": "b",
           "logic": "set"
         },
         {
-          "state": "Blinds.CloseBlackoutIsSelected",
+          "state": "Curtains.Blind[0].CloseBlackoutFbEMU",
           "value": true,
           "type": "b",
           "logic": "set"
@@ -281,12 +335,23 @@
           "logic": "set"
         },
         {
-          "state": "Room.Blinds.BlackoutSliderValue",
+          "state": "Curtains.Blind[0].LeftBlackoutValueEMU",
           "type": "object",
           "logic": "set",
           "value": {
             "rcb": {
-              "value": 50,
+              "value": 65553,
+              "time": 8000
+            }
+          }
+        },
+        {
+          "state": "Curtains.Blind[0].RightBlackoutValueEMU",
+          "type": "object",
+          "logic": "set",
+          "value": {
+            "rcb": {
+              "value": 65553,
               "time": 8000
             }
           }

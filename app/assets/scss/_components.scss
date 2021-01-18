@@ -376,18 +376,19 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   .time {
     span {
       font-weight: bold;
+      font-size: 1.4rem;
     }
   }
   .outside-temp {
     h4 {
-      font-size: 0.8rem;
+      font-size: 1.1rem;
     }
     h3 {
-      font-size: 0.9rem;
-      margin-top: 0.1rem;
+      font-size: 1rem;
+      margin-top: 0.35rem;
     }
     h2 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
     h4,
     h3,
@@ -1297,6 +1298,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     .ch5-select {
       .ch5-select__panel__item {
         padding: 0.67rem 1rem;
+      }
+      span {
+        text-transform: uppercase;
       }
     }
 
@@ -2523,18 +2527,18 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 5.4rem;
     color: #696e73 !important;
   }
   h4 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #474d52 !important;
   }
   h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 0.2rem;
   }
   h1,
@@ -2544,7 +2548,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     color: #696e73 !important;
   }
   span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #696e73 !important;
     font-weight: bold;
   }

@@ -862,9 +862,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     padding-left: 30px;
     font-weight: bold;
     @include media-breakpoint-up(sm) {
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-bottom: 0.3rem;
-      margin-top: 0.4rem;
+      margin-top: 0.1rem;
     }
   }
   .navbar-text {
@@ -902,7 +902,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     justify-content: center;
     align-items: center;
     .window-shades-container {
-      margin-right: 4.5rem;
+      margin-right: 5rem;
     }
   }
 
@@ -911,7 +911,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     justify-content: center;
     // margin-bottom: 1rem;
     @include media-breakpoint-up(sm) {
-      margin-top: 0.8rem !important;
+      margin-top: 0.65rem !important;
     }
   }
 
@@ -921,8 +921,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     grid-auto-rows: 1fr;
     grid-gap: 2rem;
     @include media-breakpoint-up(sm) {
-      grid-template-columns: repeat(3, minmax(auto, 14vmin));
-      grid-gap: 1.7rem;
+      grid-template-columns: repeat(3, minmax(auto, 20vmin));
+      grid-gap: 1.5rem;
     }
     @include media-breakpoint-up(md) {
       grid-template-columns: repeat(3, minmax(auto, 16vmin));
@@ -941,7 +941,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       align-items: center;
       border: none;
       @include media-breakpoint-up(sm) {
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
     }
   }
@@ -973,7 +973,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         position: absolute;
         z-index: -1;
         @include media-breakpoint-up(sm) {
-          left: -10.5rem;
+          left: -9rem;
           bottom: -8rem;
         }
       }
@@ -1044,8 +1044,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     height: 18rem;
     width: 25rem;
     @include media-breakpoint-up(sm) {
-      height: 13rem;
-      width: 20rem;
+      height: 11rem;
+      width: 18rem;
     }
     @include media-breakpoint-up(md) {
       height: 20rem;
@@ -1107,8 +1107,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         }
       }
       @include media-breakpoint-up(sm) {
-        height: 12.6rem;
-        width: 9.8rem !important;
+        height: 10rem;
+        width: 8.9rem !important;
       }
       @include media-breakpoint-up(md) {
         height: 19.2rem;
@@ -1122,8 +1122,8 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         width: 12rem;
         border: 0;
         @include media-breakpoint-up(sm) {
-          height: 12.6rem;
-          width: 9.5rem;
+          height: 10rem;
+          width: 8.7rem;
         }
         @include media-breakpoint-up(md) {
           height: 20rem;

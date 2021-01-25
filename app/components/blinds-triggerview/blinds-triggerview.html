@@ -1,43 +1,25 @@
 <section id="blinds-triggerview-page" class="">
   <div>
-    <ch5-triggerview
-      class="shades-blackout-triggerview"
-      gestureable="false"
-      disableanimation="true"
-      activeview="0"
+    <ch5-import-htmlsnippet
+      class="shades-templ"
+      url="./components/shades/shades.html"
+      receivestateshow="Curtains.ShadesSelectedEMU"
+      noshowtype="display"
     >
-      <ch5-triggerview-child
-        receivestateshow="Curtains.ShadesSelectedEMU"
-        noshowtype="display"
-      >
-        <ch5-import-htmlsnippet
-          class="shades-templ"
-          url="./components/shades/shades.html"
-        >
-        </ch5-import-htmlsnippet>
-      </ch5-triggerview-child>
-
-      <ch5-triggerview-child
-        receivestateshow="Curtains.BlackoutSelectedEMU"
-        noshowtype="display"
-      >
-        <ch5-import-htmlsnippet
-          class="blackout-templ"
-          url="./components/blackout/blackout.html"
-        >
-        </ch5-import-htmlsnippet>
-      </ch5-triggerview-child>
-
-      <ch5-triggerview-child
-        receivestateshow="Curtains.AllSelectedEMU"
-        noshowtype="display"
-      >
-        <ch5-import-htmlsnippet
-          class="all-shades-blackout-templ"
-          url="./components/all-shades-blackout/all-shades-blackout.html"
-        >
-        </ch5-import-htmlsnippet>
-      </ch5-triggerview-child>
-    </ch5-triggerview>
+    </ch5-import-htmlsnippet>
+    <ch5-import-htmlsnippet
+      class="blackout-templ"
+      url="./components/blackout/blackout.html"
+      receivestateshow="Curtains.BlackoutSelectedEMU"
+      noshowtype="display"
+    >
+    </ch5-import-htmlsnippet>
+    <ch5-import-htmlsnippet
+      class="all-shades-blackout-templ"
+      url="./components/all-shades-blackout/all-shades-blackout.html"
+      receivestateshow="Curtains.AllSelectedEMU"
+      noshowtype="display"
+    >
+    </ch5-import-htmlsnippet>
   </div>
 </section>

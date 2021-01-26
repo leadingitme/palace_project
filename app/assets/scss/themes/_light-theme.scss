@@ -128,11 +128,11 @@ $ch5-light-gradient-buttons: map-merge(
 $gradient-btn-light: linear-gradient(
   -45deg,
   rgba(34, 34, 34, 1),
-  rgba(170, 170, 170, 1)
+  rgba(153, 153, 153, 1)
 );
 $gradient-btn-pressed-light: linear-gradient(
   -45deg,
-  rgb(153, 153, 153),
+  rgb(188, 188, 188),
   rgba(34, 34, 34, 0.8)
 );
 // weather station font colors

@@ -302,20 +302,8 @@ var appModule = (function () {
     ) {
       serviceModule.initEmulator(JSON.parse(response));
     });
-    // Source Emulator
-    serviceModule.loadJSON("./assets/data/source-emulator.json", function (
-      response
-    ) {
-      serviceModule.initEmulator(JSON.parse(response));
-    });
     // Lighting Emulator
     serviceModule.loadJSON("./assets/data/lighting-emulator.json", function (
-      response
-    ) {
-      serviceModule.initEmulator(JSON.parse(response));
-    });
-    // Video Emulator
-    serviceModule.loadJSON("./assets/data/video-emulator.json", function (
       response
     ) {
       serviceModule.initEmulator(JSON.parse(response));
@@ -329,12 +317,14 @@ var appModule = (function () {
     });
 
     // Room List Emulator
-    serviceModule.loadJSON(
-      "./assets/data/room-list-templ-emulator.json",
-      function (response) {
-        serviceModule.initEmulator(JSON.parse(response));
-      }
-    );
+    //.....
+    // serviceModule.loadJSON(
+    //   "./assets/data/room-list-templ-emulator.json",
+    //   function (response) {
+    //     serviceModule.initEmulator(JSON.parse(response));
+    //   }
+    // );
+    //.....
     // Music Emulator
     serviceModule.loadJSON("./assets/data/music-page-emulator.json", function (
       response
@@ -344,13 +334,6 @@ var appModule = (function () {
     // Climate Emulator
     serviceModule.loadJSON(
       "./assets/data/climate-page-emulator.json",
-      function (response) {
-        serviceModule.initEmulator(JSON.parse(response));
-      }
-    );
-    // Intercom Emulator
-    serviceModule.loadJSON(
-      "./assets/data/intercom-page-emulator.json",
       function (response) {
         serviceModule.initEmulator(JSON.parse(response));
       }

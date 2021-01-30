@@ -361,6 +361,12 @@
   ],
   "onStart": [
     {
+      "state": "Menu.NumberOfItems",
+      "value": 4,
+      "type": "n",
+      "logic": "set"
+    },
+    {
       "state": "Curtains.ShowButtonsWhenMultipleEMU",
       "type": "boolean",
       "logic": "set",

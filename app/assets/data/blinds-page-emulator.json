@@ -361,6 +361,48 @@
   ],
   "onStart": [
     {
+      "state": "Menu.NumberOfItems",
+      "value": 4,
+      "type": "n",
+      "logic": "set"
+    },
+    {
+      "state": "Menu.Item_[0].ShowButton",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Menu.Item_[1].ShowButton",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Menu.Item_[2].ShowButton",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Menu.Item_[3].ShowButton",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Menu.Item_[4].ShowButton",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
+      "state": "Curtains.ShowTextWhenManualControlsEMU",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
       "state": "Curtains.ShowButtonsWhenMultipleEMU",
       "type": "boolean",
       "logic": "set",
@@ -376,7 +418,7 @@
       "state": "Curtains.ShowOneWindowEMU",
       "type": "boolean",
       "logic": "set",
-      "value": true
+      "value": false
     },
     {
       "state": "Curtains.ShadesSelectedEMU",

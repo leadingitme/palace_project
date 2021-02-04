@@ -308,7 +308,6 @@ var appModule = (function () {
     ) {
       serviceModule.initEmulator(JSON.parse(response));
     });
-
     // Blinds Emulator
     serviceModule.loadJSON("./assets/data/blinds-page-emulator.json", function (
       response

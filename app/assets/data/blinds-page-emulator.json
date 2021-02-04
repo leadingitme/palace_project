@@ -397,6 +397,12 @@
       "value": true
     },
     {
+      "state": "Curtains.ShowTextWhenManualControlsEMU",
+      "type": "boolean",
+      "logic": "set",
+      "value": true
+    },
+    {
       "state": "Curtains.ShowButtonsWhenMultipleEMU",
       "type": "boolean",
       "logic": "set",
@@ -412,7 +418,7 @@
       "state": "Curtains.ShowOneWindowEMU",
       "type": "boolean",
       "logic": "set",
-      "value": true
+      "value": false
     },
     {
       "state": "Curtains.ShadesSelectedEMU",

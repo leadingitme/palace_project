@@ -1,6 +1,6 @@
 {
 	"name": "Palace_Suites",
-	"timestamp": "2020-11-25 14:56:58.596",
+	"timestamp": "2021-02-04 14:43:42.125",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "Using Wing -> Suite -> Area",
@@ -49,7 +49,11 @@
 					"3": "Curtains.ShowOneWindow",
 					"4": "Curtains.ShadesSelected",
 					"5": "Curtains.BlackoutSelected",
-					"6": "Curtains.AllSelected"
+					"6": "Curtains.AllSelected",
+					"7": "Curtains.ShowShadesButton",
+					"8": "Curtains.ShowBlackoutButton",
+					"9": "Curtains.ShowAllButton",
+					"10": "Curtains.ShowWhenManualControls"
 				},
 				"15": {
 					"1": "Curtains.Blind[0].OpenShadesFb",

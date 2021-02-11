@@ -9,7 +9,7 @@
     "start": "yarn clean && webpack --config webpack.dev.js",
     "build:prod": "yarn clean && webpack --config webpack.prod.js && yarn cleanjs",
     "build:archive": "yarn build:prod && ch5-cli archive -p shell-template -P samplesource=Shell -c ./app/config/Palace_Suites.cse2j  -d dist/sheikh_palace -o dist",
-    "build:deploy": "ch5-cli deploy -H 192.168.1.103 -t touchscreen dist/shell-template.ch5z",
+    "build:deploy": "ch5-cli deploy -H 192.168.1.115 -p -t touchscreen dist/shell-template.ch5z",
     "build:onestep": "yarn build:archive && yarn build:deploy",
     "generate:component": "node shell-utilities/generate-component/generate-component.js",
     "gen:c": "node shell-utilities/generate-component/generate-component.js",

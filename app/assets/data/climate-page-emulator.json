@@ -504,27 +504,27 @@
         }
     ],
     "onStart": [{
-            "state": "Climate.GuestRoom.NumberOfRooms",
+            "state": "ClimateZones.NumberOfAreasEMU",
             "type": "n",
-            "value": 2
+            "value": 3
         },
         {
-            "state": "Climate.GuestRoom.Room[0].RoomName",
+            "state": "ClimateArea[0].RoomNameEMU",
             "type": "s",
             "value": "Bedroom"
         },
         {
-            "state": "Climate.GuestRoom.Room[1].RoomName",
+            "state": "ClimateArea[1].RoomNameEMU",
             "type": "s",
             "value": "Corridor"
         },
         {
-            "state": "Climate.GuestRoom.Room[2].RoomName",
+            "state": "ClimateArea[2].RoomNameEMU",
             "type": "s",
             "value": "Closet"
         },
         {
-            "state": "Climate.GuestRoom.Room[3].RoomName",
+            "state": "ClimateArea[3].RoomNameEMU",
             "type": "s",
             "value": "Washroom"
         },

@@ -91,6 +91,7 @@ var appModule = (function () {
     // }
   }
 
+
   // Activity watcher for switching to inactivity page when no action from user
 
   function activityWatcher() {
@@ -394,7 +395,7 @@ var appModule = (function () {
    * Load the emulator, theme, default language and listeners
    */
   function onLoadInit() {
-    pageReload ()
+    pageReload ();
     loadEmulator();
     // newClock();
     changeTheme("LIGHT");

@@ -361,40 +361,10 @@
   ],
   "onStart": [
     {
-      "state": "Menu.NumberOfItems",
-      "value": 4,
-      "type": "n",
-      "logic": "set"
-    },
-    {
-      "state": "Menu.Item_[0].ShowButton",
-      "type": "boolean",
+      "state": "Areas.SuiteNameEMU",
+      "type": "s",
       "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Menu.Item_[1].ShowButton",
-      "type": "boolean",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Menu.Item_[2].ShowButton",
-      "type": "boolean",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Menu.Item_[3].ShowButton",
-      "type": "boolean",
-      "logic": "set",
-      "value": true
-    },
-    {
-      "state": "Menu.Item_[4].ShowButton",
-      "type": "boolean",
-      "logic": "set",
-      "value": true
+      "value": "Suite Name EMU"
     },
     {
       "state": "Curtains.ShowTextWhenManualControlsEMU",
@@ -422,12 +392,6 @@
     },
     {
       "state": "Curtains.ShadesSelectedEMU",
-      "value": true,
-      "type": "b",
-      "logic": "set"
-    },
-    {
-      "state": "Curtains.BlackoutSelectedEMU",
       "value": true,
       "type": "b",
       "logic": "set"

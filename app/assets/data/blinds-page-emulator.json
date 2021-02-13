@@ -400,19 +400,19 @@
       "state": "Curtains.ShowTextWhenManualControlsEMU",
       "type": "boolean",
       "logic": "set",
-      "value": true
+      "value": false
     },
     {
       "state": "Curtains.ShowButtonsWhenMultipleEMU",
       "type": "boolean",
       "logic": "set",
-      "value": false
+      "value": true
     },
     {
       "state": "Curtains.ShowMultipleWindowsEMU",
       "type": "boolean",
       "logic": "set",
-      "value": false
+      "value": true
     },
     {
       "state": "Curtains.ShowOneWindowEMU",
@@ -440,7 +440,7 @@
     },
     {
       "state": "Curtains.BlackOutListSizeEMU",
-      "value": 3,
+      "value": 4,
       "type": "n",
       "logic": "set"
     },

@@ -1727,15 +1727,15 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     //   position: absolute;
     //   bottom: 0.3rem;
     // }
-    @include media-breakpoint-up(md) {
-      position: absolute;
-      bottom: 1rem;
-    }
-    @include media-breakpoint-up(lg) {
-      position: absolute;
-      right: -2.8rem;
-      bottom: 1rem;
-    }
+    // @include media-breakpoint-up(md) {
+    //   position: absolute;
+    //   bottom: 1rem;
+    // }
+    // @include media-breakpoint-up(lg) {
+    //   position: absolute;
+    //   right: -2.8rem;
+    //   bottom: 1rem;
+    // }
     @include media-breakpoint-up(xl) {
       position: absolute;
       bottom: 3rem;

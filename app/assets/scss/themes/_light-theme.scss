@@ -432,6 +432,9 @@ $weather-value-light: #0d2335;
 
   // blinds page / shades/ blackout
   .blinds-page {
+    span.window-label {
+      color: #333;
+    }
     .open-close-btn {
       .ch5-button {
         background: $gradient-btn-light;

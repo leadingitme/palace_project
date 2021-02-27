@@ -503,7 +503,44 @@
             ]
         }
     ],
-    "onStart": [{
+    "onStart": [
+        {
+            "state": "ClimateMode[0].ShowMode1EMU",
+            "type": "b",
+            "logic": "set",
+            "value": false
+        },
+        {
+            "state": "ClimateMode[0].ShowMode2EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[0].ShowMode3EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[1].ShowMode1EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[1].ShowMode2EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[1].ShowMode3EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
             "state": "ClimateZones.NumberOfAreasEMU",
             "type": "n",
             "value": 3

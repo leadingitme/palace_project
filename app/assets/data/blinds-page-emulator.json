@@ -398,13 +398,13 @@
     },
     {
       "state": "Curtains.ShadesListSizeEMU",
-      "value": 4,
+      "value": 3,
       "type": "n",
       "logic": "set"
     },
     {
       "state": "Curtains.BlackOutListSizeEMU",
-      "value": 4,
+      "value": 3,
       "type": "n",
       "logic": "set"
     },

@@ -1509,6 +1509,10 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         font-size: 1.3rem;
         margin-bottom: 0.1rem;
       }
+      @include media-breakpoint-up(lg) {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+      }
     }
     h4 {
       font-size: 1rem;
@@ -1524,11 +1528,29 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     h2 {
       margin-bottom: 0.2rem;
     }
+    @include media-breakpoint-up(lg) {
+      margin-top: 0.6rem;
+      padding-top: 0.3rem;
+      margin-bottom: 2rem;
+      h4 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
   }
   .navbar-text {
     margin-top: 0rem;
     padding-top: 0rem;
     padding-bottom: 0.2 rem;
+    @include media-breakpoint-up(lg) {
+      margin-top: 0.6rem;
+      padding-top: 0.3rem;
+    }
   }
 
   hr {
@@ -1542,6 +1564,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
   ch5-list {
     // height: 80vh;
     // padding-top: 0;
+    @include media-breakpoint-up(lg) {
+      padding-top: 3rem;
+    }
     .list-item {
       background-color: transparent !important;
       border: none;
@@ -1624,6 +1649,12 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
       span {
         font-size: 1.4rem;
         font-weight: bold;
+      }
+      .cb-btn {
+        @include media-breakpoint-up(lg) {
+          height: 60px;
+          width: 120px;
+        }
       }
     }
     // display: grid;

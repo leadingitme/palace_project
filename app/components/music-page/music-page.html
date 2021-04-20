@@ -2,7 +2,7 @@
   <div class="navbar-text">
     <div class="room-info mb-1 pt-2 text-uppercase text-white">
       <span class="d-sm-block">Music</span>
-      <h2 class="mb-0" data-ch5-textcontent="Areas.SuiteNameEMU">
+      <h2 class="mb-0" data-ch5-textcontent="Areas.SuiteName">
         Room (Suite) Name
       </h2>
     </div>
@@ -29,7 +29,7 @@
           orientation="vertical"
           class="ch5-custom-list"
           indexid="idx"
-          receivestatesize="Sources.NumberOfSourcesEMU"
+          receivestatesize="Sources.NumberOfSources"
         >
           <template>
             <div class="vertical-list-item music-source-btn-div">
@@ -40,9 +40,9 @@
                 label="Source-{{idx}}"
                 shape="rectangle"
                 onclick="musicPageModule.closeMusicSourceDropdown()"
-                sendeventonclick="Sources.Source[{{idx}}].SetSourceSelectedEMU"
-                receivestatelabel="Sources.Source[{{idx}}].SourceNameEMU"
-                receivestateselected="Sources.Source[{{idx}}].SourceIsSelectedEMU"
+                sendeventonclick="Sources.Source[{{idx}}].SetSourceSelected"
+                receivestatelabel="Sources.Source[{{idx}}].SourceName"
+                receivestateselected="Sources.Source[{{idx}}].SourceIsSelected"
               >
               </ch5-button>
             </div>
@@ -54,7 +54,7 @@
   <!-- source dropdown end -->
   <div class="source-name">
     <i class="fas fa-angle-right mr-1"></i>
-    <span class="" data-ch5-textContent="Sources.SelectedSourceNameEMU"
+    <span class="" data-ch5-textContent="Sources.SelectedSourceName"
       >Source Name</span
     >
   </div>
@@ -62,7 +62,7 @@
     <ch5-import-htmlsnippet
       url="./components/airplay-player/airplay-player.html"
       class="airplay-player-templ"
-      receivestateshow="Players.Airplay.ShowPlayerEMU"
+      receivestateshow="Players.Airplay.ShowPlayer"
       noshowtype="display"
     >
     </ch5-import-htmlsnippet>
@@ -71,7 +71,7 @@
     <ch5-import-htmlsnippet
       url="./components/radio-player/radio-player.html"
       class="radio-player-templ"
-      receivestateshow="Players.Radio.ShowPlayerEMU"
+      receivestateshow="Players.Radio.ShowPlayer"
       noshowtype="display"
     >
     </ch5-import-htmlsnippet>

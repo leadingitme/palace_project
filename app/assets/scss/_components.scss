@@ -2233,11 +2233,11 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
         margin-bottom: 1.6rem;
 
         .fa-volume-mute {
-          font-size: 1.3rem;
+          font-size: 2.2rem;
         }
         .fa-volume-down,
         .fa-volume-up {
-          font-size: 1.2rem;
+          font-size: 2rem;
         }
         .cb-btn {
           width: 100%;
@@ -2249,7 +2249,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
           .fa-volume-down,
           .fa-volume-up {
-            font-size: 1.5rem;
+            font-size: 2.4rem;
           }
           // .fa-volume-up {
           //   font-size: 1.3rem;
@@ -2266,7 +2266,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
 
         .ch5-button--selected {
           .fa-volume-mute {
-            font-size: 1.6rem;
+            font-size: 2.6rem;
             // margin-bottom: 0.5rem;
           }
         }
@@ -2279,9 +2279,9 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           margin-bottom: 1.3rem;
         }
         .noUi-handle {
-          height: 17px;
-          width: 17px;
-          top: -4px;
+          height: 24px;
+          width: 24px;
+          top: -8px;
           right: -9px;
           border: none;
         }
@@ -2400,11 +2400,11 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
           background-color: transparent;
         }
         i {
-          font-size: 1.4rem;
+          font-size: 1.8rem;
         }
         &.ch5-button--selected {
           i {
-            font-size: 1.7rem;
+            font-size: 2rem;
           }
         }
       }
@@ -2425,7 +2425,7 @@ $blackout_bg_image: url("./../img/blinds/curtain_grey_left_resized.png");
     }
     .station-selection {
       .ch5-button {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       .station-list-btn {
         margin-left: 11rem;

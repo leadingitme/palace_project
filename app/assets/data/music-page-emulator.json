@@ -2,17 +2,17 @@
   "cues": [
     {
       "type": "boolean",
-      "event": "Rooms.Music.Source[0].SetSourceSelected",
+      "event": "Sources.Source[0].SetSourceSelectedEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Music.ShowAirplay",
+          "state": "Players.Airplay.ShowPlayerEMU",
           "type": "boolean",
           "logic": "set",
           "value": true
         },
         {
-          "state": "Music.ShowRadio",
+          "state": "Players.Radio.ShowPlayerEMU",
           "type": "boolean",
           "logic": "set",
           "value": false
@@ -43,32 +43,32 @@
           "value": 0
         },
         {
-          "state": "Rooms.Music.SelectedSourceName",
+          "state": "Sources.SelectedSourceName",
           "type": "s",
           "value": "AirPlay",
           "logic": "set"
         },
         {
           "type": "b",
-          "state": "Rooms.Music.Source[0].SourceIsSelected",
+          "state": "Sources.Source[0].SourceIsSelected",
           "logic": "set",
           "value": true
         },
         {
           "type": "b",
-          "state": "Rooms.Music.Source[1].SourceIsSelected",
+          "state": "Sources.Source[1].SourceIsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Rooms.Music.Source[2].SourceIsSelected",
+          "state": "Sources.Source[2].SourceIsSelected",
           "logic": "set",
           "value": false
         },
         {
           "type": "b",
-          "state": "Rooms.Music.Source[3].SourceIsSelected",
+          "state": "Sources.Source[3].SourceIsSelectedEMU",
           "logic": "set",
           "value": false
         },
@@ -202,36 +202,31 @@
     },
     {
       "type": "boolean",
-      "event": "Rooms.Music.Source[1].SetSourceSelected",
+      "event": "Sources.Source[1].SetSourceSelectedEMU",
       "trigger": true,
       "actions": [
         {
-          "state": "Music.ShowAirplay",
+          "state": "Players.Airplay.ShowPlayerEMU",
           "type": "boolean",
           "logic": "set",
           "value": false
         },
         {
-          "state": "Music.ShowRadio",
+          "state": "Players.Radio.ShowPlayerEMU",
           "type": "boolean",
           "logic": "set",
           "value": true
         },
         {
-          "state": "Rooms.Music.SelectedSourceName",
+          "state": "Sources.SelectedSourceNameEMU",
           "type": "s",
           "value": "Radio",
           "logic": "set"
         },
-        {
-            "state": "Rooms.Music.SelectedSourceName",
-            "type": "s",
-            "value": "Radio",
-            "logic": "set"
-        },
+       
         {
             "type": "b",
-            "state": "Rooms.Music.Source[1].SourceIsSelected",
+            "state": "Sources.Source[1].SourceIsSelectedEMU",
             "logic": "set",
             "value": true
         },
@@ -482,32 +477,32 @@
   ],
   "onStart": [
     {
-      "state": "Music.ShowAirplay",
+      "state": "Players.Airplay.ShowPlayerEMU",
       "type": "boolean",
       "logic": "set",
       "value": true
     },
     {
-      "state": "Music.ShowRadio",
+      "state": "Players.Radio.ShowPlayerEMU",
       "type": "boolean",
       "logic": "set",
       "value": false
     },
    
     {
-      "state": "Rooms.Music.SelectedSourceName",
+      "state": "Sources.SelectedSourceNameEMU",
       "type": "s",
       "value": "Airplay",
       "logic": "set"
     },
     {
       "type": "b",
-      "state": "Rooms.Music.Source[0].SourceIsSelected",
+      "state": "Sources.Source[0].SourceIsSelectedEMU",
       "logic": "set",
       "value": true
     },
     {
-      "state": "Rooms.Music.NumberOfSources",
+      "state": "Sources.NumberOfSourcesEMU",
       "type": "n",
       "value": 2,
       "logic": "set"
@@ -663,17 +658,17 @@
       "value": "The best of MJ"
     },
     {
-      "state": "Rooms.Music.Source[0].SourceName",
+      "state": "Sources.Source[0].SourceNameEMU",
       "type": "s",
       "value": "AirPlay"
     },
     {
-      "state": "Rooms.Music.Source[1].SourceName",
+      "state": "Sources.Source[1].SourceNameEMU",
       "type": "s",
       "value": "Radio"
     },
     {
-      "state": "Rooms.Music.Source[2].SourceName",
+      "state": "Sources.Source[2].SourceNameEMU",
       "type": "s",
       "value": "AirMedia"
     },

@@ -1,23 +1,37 @@
 <section id="music-page" class="music-page">
-    <div class="navbar-text">
-        <div class="room-info mb-1 pt-2 text-uppercase text-white">
-            <span class="d-sm-block">Music</span>
-            <h2 class="mb-0" data-ch5-textcontent="Areas.SuiteName">
-                Room (Suite) Name
-            </h2>
-        </div>
+  <div class="navbar-text">
+    <div class="room-info mb-1 pt-2 text-uppercase text-white">
+      <span class="d-sm-block">Music</span>
+      <h2 class="mb-0" data-ch5-textcontent="Areas.SuiteNameEMU">
+        Room (Suite) Name
+      </h2>
     </div>
-    <div class="dropdown-btn-container">
-        <!-- 'source' dropdown start -->
+  </div>
+  <div class="dropdown-btn-container">
+    <!-- 'source' dropdown start -->
 
-        <div class="dropdown">
-            <button class="btn btn-lg dropdown-toggle" type="button" onclick="musicPageModule.openMusicSourceDropdown()" id="musicSourceDropdown">
+    <div class="dropdown">
+      <button
+        class="btn btn-lg dropdown-toggle"
+        type="button"
+        onclick="musicPageModule.openMusicSourceDropdown()"
+        id="musicSourceDropdown"
+      >
         <span>SOURCE</span>
         <!-- <span class="d-block"><i class="fas fa-caret-down"></i> </span> -->
       </button>
-            <div id="music-source-dropdown" onclick="musicPageModule.dropDownStopPropagation()" class="dropdown-menu source-list-container">
-                <ch5-list orientation="vertical" class="ch5-custom-list" indexid="idx" receivestatesize="Sources.NumberOfSources">
-                    <template>
+      <div
+        id="music-source-dropdown"
+        onclick="musicPageModule.dropDownStopPropagation()"
+        class="dropdown-menu source-list-container"
+      >
+        <ch5-list
+          orientation="vertical"
+          class="ch5-custom-list"
+          indexid="idx"
+          receivestatesize="Sources.NumberOfSourcesEMU"
+        >
+          <template>
             <div class="vertical-list-item music-source-btn-div">
               <ch5-button
                 customClass="music-source-btn-{{idx}}"
@@ -26,28 +40,29 @@
                 label="Source-{{idx}}"
                 shape="rectangle"
                 onclick="musicPageModule.closeMusicSourceDropdown()"
-                sendeventonclick="Sources.Source[{{idx}}].SetSourceSelected"
-                receivestatelabel="Sources.Source[{{idx}}].SourceName"
-                receivestateselected="Sources.Source[{{idx}}].SourceIsSelected"
+                sendeventonclick="Sources.Source[{{idx}}].SetSourceSelectedEMU"
+                receivestatelabel="Sources.Source[{{idx}}].SourceNameEMU"
+                receivestateselected="Sources.Source[{{idx}}].SourceIsSelectedEMU"
               >
               </ch5-button>
             </div>
           </template>
-                </ch5-list>
-            </div>
-        </div>
+        </ch5-list>
+      </div>
     </div>
-    <!-- source dropdown end -->
-    <div class="source-name">
-        <i class="fas fa-angle-right mr-1"></i>
-        <span class="" data-ch5-textContent="Sources.SelectedSourceName">Source Name</span
+  </div>
+  <!-- source dropdown end -->
+  <div class="source-name">
+    <i class="fas fa-angle-right mr-1"></i>
+    <span class="" data-ch5-textContent="Sources.SelectedSourceNameEMU"
+      >Source Name</span
     >
   </div>
   <div>
     <ch5-import-htmlsnippet
       url="./components/airplay-player/airplay-player.html"
       class="airplay-player-templ"
-      receivestateshow="Players.Airplay.ShowPlayer"
+      receivestateshow="Players.Airplay.ShowPlayerEMU"
       noshowtype="display"
     >
     </ch5-import-htmlsnippet>
@@ -56,9 +71,8 @@
     <ch5-import-htmlsnippet
       url="./components/radio-player/radio-player.html"
       class="radio-player-templ"
-      receivestateshow="Players.Radio.ShowPlayer"
+      receivestateshow="Players.Radio.ShowPlayerEMU"
       noshowtype="display"
-
     >
     </ch5-import-htmlsnippet>
   </div>

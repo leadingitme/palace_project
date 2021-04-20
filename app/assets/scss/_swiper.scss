@@ -4,6 +4,10 @@
   overflow: hidden;
   @include size(100%);
 
+  @media (min-height: 760px) {
+    height: 76vh;
+  }
+
   .swiper-wrapper {
     height: 100%;
   }

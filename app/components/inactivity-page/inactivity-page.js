@@ -35,6 +35,8 @@ var inactivityPageModule = (function () {
   // Display Clock in the inactivity page
   function inactivityClockDate() {
     var clock = new Date();
+    console.log("New Date:" + clock);
+
     var days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     var months = [
       "JAN",
@@ -71,12 +73,16 @@ var inactivityPageModule = (function () {
 
     let print_date = days[day] + " " + date + " " + months[month];
 
+    console.log("Print clock:" + print_clock);
+
+
     document.getElementById("inactivity-page-time").innerHTML = print_clock;
     document.getElementById("inactivity-page-date").innerHTML = print_date;
 
+
     // setTimeout(newClock, 1000);
   }
-  // setTimeout(inactivityClockDate, 1000);
+  setTimeout(inactivityClockDate, 1000);
 
   /**
    * All public or private methods which need to call onInit

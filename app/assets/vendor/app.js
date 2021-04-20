@@ -91,6 +91,7 @@ var appModule = (function () {
     // }
   }
 
+
   // Activity watcher for switching to inactivity page when no action from user
 
   function activityWatcher() {

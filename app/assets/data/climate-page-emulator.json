@@ -503,28 +503,65 @@
             ]
         }
     ],
-    "onStart": [{
-            "state": "Climate.GuestRoom.NumberOfRooms",
-            "type": "n",
-            "value": 2
+    "onStart": [
+        {
+            "state": "ClimateMode[0].ShowMode1EMU",
+            "type": "b",
+            "logic": "set",
+            "value": false
         },
         {
-            "state": "Climate.GuestRoom.Room[0].RoomName",
+            "state": "ClimateMode[0].ShowMode2EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[0].ShowMode3EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[1].ShowMode1EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[1].ShowMode2EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateMode[1].ShowMode3EMU",
+            "type": "b",
+            "logic": "set",
+            "value": true
+        },
+        {
+            "state": "ClimateZones.NumberOfAreasEMU",
+            "type": "n",
+            "value": 3
+        },
+        {
+            "state": "ClimateArea[0].RoomNameEMU",
             "type": "s",
             "value": "Bedroom"
         },
         {
-            "state": "Climate.GuestRoom.Room[1].RoomName",
+            "state": "ClimateArea[1].RoomNameEMU",
             "type": "s",
             "value": "Corridor"
         },
         {
-            "state": "Climate.GuestRoom.Room[2].RoomName",
+            "state": "ClimateArea[2].RoomNameEMU",
             "type": "s",
             "value": "Closet"
         },
         {
-            "state": "Climate.GuestRoom.Room[3].RoomName",
+            "state": "ClimateArea[3].RoomNameEMU",
             "type": "s",
             "value": "Washroom"
         },

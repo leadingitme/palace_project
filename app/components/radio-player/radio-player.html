@@ -63,6 +63,7 @@
             <div class="controllers-btn-container">
               <div class="controllers-btn">
                 <ch5-button
+                  class="invisible"
                   stretch="both"
                   iconclass="fas fa-backward fa-2x"
                   sendeventonclick="Players.Radio.PrevStation"
@@ -78,6 +79,7 @@
                                     </ch5-triggerview-child>
                                 </ch5-triggerview> -->
                 <ch5-button
+                  class="invisible"
                   stretch="both"
                   class="d-none"
                   iconclass="fas fa-power-off fa-2x"
@@ -87,6 +89,7 @@
                 </ch5-button>
 
                 <ch5-button
+                  class="invisible"
                   stretch="both"
                   iconclass="fas fa-forward fa-2x"
                   sendeventonclick="Players.Radio.NextStation"
@@ -103,14 +106,14 @@
               >
               </ch5-toggle> -->
               <ch5-button
-                class="mute-btn mr-4"
+                class="mute-btn mr-3"
                 size="x-small"
                 iconclass="fas fa-volume-mute"
                 sendeventonclick="Players.Radio.MuteToggle"
                 receivestateselected="Players.Radio.MuteFb"
               ></ch5-button>
               <ch5-button
-                class="mr-1"
+                class="mr-2 pr-2"
                 size="x-small"
                 iconclass="fas fa-volume-down"
                 sendeventonclick="Players.Radio.VolDownIsClicked"
